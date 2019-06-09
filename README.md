@@ -1,20 +1,20 @@
 # Eclipse IDE Improvements Videos
 
 ## [Eclipse 2019-06](https://wiki.eclipse.org/Category:SimRel-2019-06) - [June 19, 2019](https://calendar.google.com/calendar/event?eid=NGNmcXVrajlwa3E4bG5iZWR2OGxhc2U4ZnYgZ2NoczdubTRudnBtODM3NDY5ZGRqOXRqbGtAZw&ctz=Europe/Berlin) ([calendar](https://calendar.google.com/calendar/embed?src=gchs7nm4nvpm837469ddj9tjlk@group.calendar.google.com&ctz=Europe/Berlin))
-* [75 projects](https://projects.eclipse.org/releases/2019-06) - [Website](https://eclipse.org/eclipseide/2019-06) ([New & Noteworthy](https://eclipse.org/eclipseide/2019-06/noteworthy))
+* [76 projects](https://projects.eclipse.org/releases/2019-06) ([-1 +1 → +/-0](https://projects.eclipse.org/releases/2019-03)) - [Website](https://eclipse.org/eclipseide/2019-06) ([New & Noteworthy](https://eclipse.org/eclipseide/2019-06/noteworthy)) - [Splash screen](https://bugs.eclipse.org/bugs/show_bug.cgi?id=545158)
 * [Latest CI builds](https://hudson.eclipse.org/packaging/job/simrel.epp-tycho-build/lastSuccessfulBuild/artifact/org.eclipse.epp.packages/archive/) (Update site: [staging](https://download.eclipse.org/staging/2019-06), [release](http://download.eclipse.org/releases/2019-06))
 * Social media: [Twitter](http://twitter.com/EclipseJavaIDE), [YouTube](https://www.youtube.com/user/EclipseFdn) ([Eclipse IDE playlist](https://www.youtube.com/playlist?list=PLy7t4z5SYNaSNjL60ofpwVhfA7mOF3Pgk))
 
 ### General and Git
 * **Sources**
-    * **Platform** 4.11→**4.12** [Eclipse 4.12 - New and Noteworthy - Platform and Equinox](https://www.eclipse.org/eclipse/news/4.12/platform.php)
-    * Marketplace Client (MPC) 1.7.5→**1.7.6**: [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=MPC&query_format=advanced&target_milestone=1.7.4&target_milestone=1.7.5), [Git](https://git.eclipse.org/c/mpc/org.eclipse.epp.mpc.git/log/)
-    * (Eclipse User Storage Service 1.2→1.2: [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=USSSDK&query_format=advanced), [Git](https://git.eclipse.org/c/usssdk/org.eclipse.usssdk.git/log/))
+    * **Platform** 4.11→**4.12**: [Eclipse 4.12 - New and Noteworthy - Platform and Equinox](https://www.eclipse.org/eclipse/news/4.12/platform.php)
+    * Marketplace Client (MPC) 1.7.5→**1.7.6**: [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=MPC&query_format=advanced&order=changeddate%20DESC), [Git](https://git.eclipse.org/c/mpc/org.eclipse.epp.mpc.git/log/)
+    * (Eclipse User Storage Service 1.2→1.2: [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=USSSDK&query_format=advanced&order=changeddate%20DESC), [Git](https://git.eclipse.org/c/usssdk/org.eclipse.usssdk.git/log/))
     * (Mylyn Tasks 3.24.2→3.24.2: [New & Noteworthy](https://www.eclipse.org/mylyn/new/), [Git](https://git.eclipse.org/c/mylyn/org.eclipse.mylyn.tasks.git/log/), ...)
     * Mylyn WikiText 3.0.25→**3.0.29**: (Markdown editor, etc.): [Git](https://git.eclipse.org/c/mylyn/org.eclipse.mylyn.docs.git/log/)
-    * WTP Source Editing (XML editor, etc.) 3.13→**3.14**: [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=WTP%20Source%20Editing&query_format=advanced), [Git](https://git.eclipse.org/c/sourceediting/webtools.sourceediting.git/log/)
-    * Oomph 1.12→**1.13**: [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=Oomph&query_format=advanced), [Git](https://git.eclipse.org/c/oomph/org.eclipse.oomph.git/log/)
-    * EPP: [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=EPP&query_format=advanced), [Git](https://git.eclipse.org/c/epp/org.eclipse.epp.packages.git/log/)
+    * WTP Source Editing (XML editor, etc.) 3.13→**3.14**: [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=WTP%20Source%20Editing&query_format=advanced&order=changeddate%20DESC), [Git](https://git.eclipse.org/c/sourceediting/webtools.sourceediting.git/log/)
+    * Oomph 1.12→**1.13**: [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=Oomph&query_format=advanced&order=changeddate%20DESC), [Git](https://git.eclipse.org/c/oomph/org.eclipse.oomph.git/log/)
+    * EPP: [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=EPP&query_format=advanced&order=changeddate%20DESC), [Git](https://git.eclipse.org/c/epp/org.eclipse.epp.packages.git/log/)
     * J**Git**/EGit 5.3→**5.4**: wiki [JGit](https://wiki.eclipse.org/JGit/New_and_Noteworthy/5.4)/[EGit](https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.4), review [JGit](https://projects.eclipse.org/projects/technology.jgit/reviews/5.4.0-release-review)/[EGit](https://projects.eclipse.org/projects/technology.egit/reviews/5.4.0-release-review)
 * **Features to show**
     * **General**:
@@ -27,9 +27,10 @@
             1. _Create or use import External Tool run configuration: `Clock`, `c:\windows\system32\cmd.exe`, `/c echo %time%`_
             2. _Quick Access (Ctrl+3) + type `clock`_
             3. _→ Current time shown in Console view_
-        * [Improved view menu icon (in Dark theme and/or in high-DPI)](https://www.eclipse.org/eclipse/news/4.12/platform.php#view-menu)
-        * ([XML editor Outline view: show the beginning of the comment instead of 'comment'](https://git.eclipse.org/c/sourceediting/webtools.sourceediting.git/commit/?id=f9b248d880a857dfc17c4f525860ba856110cd7b))
-        * ([XML editor Outline view: show the beginning of contained text](https://git.eclipse.org/c/sourceediting/webtools.sourceediting.git/commit/?id=44a79685c3cc8546700fb4542f36e24e231c0065))
+        * [Improved view menu icon (→ Dark theme + high-DPI)](https://www.eclipse.org/eclipse/news/4.12/platform.php#view-menu)
+        * XML editor _Outline_ view:
+            * ([Show the beginning of the comment instead of 'comment'](https://git.eclipse.org/c/sourceediting/webtools.sourceediting.git/commit/?id=f9b248d880a857dfc17c4f525860ba856110cd7b))
+            * ([Show the beginning of contained text](https://git.eclipse.org/c/sourceediting/webtools.sourceediting.git/commit/?id=44a79685c3cc8546700fb4542f36e24e231c0065))
     * **Git**:
         * [History view: Check Out This Version](https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.4#Checking_out_Files_from_a_Commit)
         * _Git Repositories_ view:
@@ -41,11 +42,74 @@
 
 ### Java, Maven, Gradle
 * **Sources**
+    * Java development tools (JDT) 4.11→**4.12**: [Eclipse 4.12 - New and Noteworthy - Java Development Tools](https://www.eclipse.org/eclipse/news/4.12/jdt.php)
+        * Java 12: [bugs dependencies](https://bugs.eclipse.org/bugs/showdependencytree.cgi?id=536055), [examples](https://wiki.eclipse.org/Java12/Examples)
+    * (EclEmma (Java code coverage)) 3.1.2→3.1.2: ...)
+    * (M2Eclipse (Maven) 1.11→**1.12**: [Git](https://git.eclipse.org/c/m2e/m2e-core.git/log/), [review](https://projects.eclipse.org/projects/technology.m2e/reviews/1.12-release-review))
+    * Buildship (Gradle) 3.0.1→**3.1.0**: [review](https://projects.eclipse.org/projects/tools.buildship/releases/3.1.0)
+    * EPP: [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=EPP&query_format=advanced&order=changeddate%20DESC), [Git](https://git.eclipse.org/c/epp/org.eclipse.epp.packages.git/log/)
 * **Features to show**
+    * **Java**:
+        * Java 12:
+            * [New Java Project: JavaSE-12](https://www.eclipse.org/eclipse/news/4.12/jdt.php#quickfix-change-compliance-12): show it in the drop-down, but start with JavaSE-11
+            * [Generate comments check boxes for `module-info.java`/`package-info.java`](https://www.eclipse.org/eclipse/news/4.12/jdt.php#comment-generation-checkbox) - not Java-12-specific, but show it by the way
+
+            * One new languages feature only as preview: [JEP 325 - Switch Expressions (Preview)](https://openjdk.java.net/jeps/325)
+                1. [Switch label template](https://www.eclipse.org/eclipse/news/4.12/jdt.php#new-switch_labeled_statment_expression_template):
+                2. List cases with `,`: → Quick Fixes:
+                    * [_Split case labels_](https://www.eclipse.org/eclipse/news/4.12/jdt.php#split-switch-case-labels)
+                    * [_Change project compliance and JRE to 12_](https://www.eclipse.org/eclipse/news/4.12/jdt.php#quickfix-change-compliance-12)
+                    * _Open project compiler properties_ to [enable preview features manually](https://www.eclipse.org/eclipse/news/4.12/jdt.php#enable-preview)
+                    * [_Enable preview features on project properties_](https://www.eclipse.org/eclipse/news/4.12/jdt.php#quickfix-enable-preview-12)
+                    * [_Configure problem severity_ of preview features](https://www.eclipse.org/eclipse/news/4.12/jdt.php#quickfix-configure-severity-12)
+                3. `->`: without `break`; multiple expression in block
+                4. As (assignment or as) return value: [switch templates](https://www.eclipse.org/eclipse/news/4.12/jdt.php#new-switch_labeled_statment_expression_template)
+                5. [Formatter](https://www.eclipse.org/eclipse/news/4.12/jdt.php#switch-spaces)
+            * (New API, e.g. `Files.mismatch(Path, Path)` or `"a\n  b".indent(4)`)
+        * Code Minings:
+            * [New: Show method parameter names](https://www.eclipse.org/eclipse/news/4.12/jdt.php#parameter-name-codemining)
+            * [_Show implementations_ now also for methods](https://www.eclipse.org/eclipse/news/4.12/jdt.php#method-implementation-codemining)
+            * [Ctrl+click on _1 implementation/reference_ to jump directly to the single implementation/reference](https://www.eclipse.org/eclipse/news/4.12/jdt.php#ctrl-click-codemining) (instead showing list with one item in a view)
+        * JPMS:
+            * [_Project > Properties: Java Build Path_: new _Module Dependencies_ tab](https://www.eclipse.org/eclipse/news/4.12/jdt.php#buildpath-module-dependencies)
+            * [In `module-info.java` two new Quick Fixes for service providers](https://www.eclipse.org/eclipse/news/4.12/jdt.php#service-provider-constructor-quick-fix):
+                * Create constructor (if non-existent)
+                * Change visibility of constructor to public (if not visible)
+        * [Support for new Javadoc tags: proposed by content assist where it can be used, section title in Javadoc view](https://www.eclipse.org/eclipse/news/4.12/jdt.php#javadoc-support-tags) ([documentation](https://docs.oracle.com/en/java/javase/12/docs/specs/doc-comment-spec.html), search for examples: e.g. `"@apiNote" site:github.com/AdoptOpenJDK/openjdk-jdk12u`, [JDK 12 Javadoc](https://docs.oracle.com/en/java/javase/12/docs/api/))
+                * `@apiNote` (since Java 8; in Javadoc shown as _API Note_): `IntStream peek(IntConsumer)`
+                * `@implSpec` (since Java 8; in Javadoc shown as _Implementation Requirements_): `AbstractList.add(E)`
+                * `@implNote` (since Java 8; in Javadoc shown as _Implementation Note_): `List.sort(Comparator)`
+                * `@index` (since Java 9; → Javadoc HTML search field): `java.util`
+                * `@hidden` (since Java 9; → not shown in Javadoc HTML)
+                * `@provides` (since Java 9; → in `module-info.java` service provider description)
+                * `@uses` (since Java 9; → in `module-info.java` description for an used service)
+                * `@summary` (since Java 10; → the text part that should be used as short description instead of the first sentence)
+        * [_Encapsulate Field_ dialog: check boxes for getter and setter](https://www.eclipse.org/eclipse/news/4.12/jdt.php#getter-setter-quick-assist)
+        * [New Quick Fix: _Open required projects_](https://www.eclipse.org/eclipse/news/4.12/jdt.php#quickfix-open-missing-projects)
+        * Debug:
+            * [New default shortcut for the (existing) command _Run to Line_: Ctrl+Alt+Click in annotation ruler](https://www.eclipse.org/eclipse/news/4.12/jdt.php#run-to-line-in-annotation-ruler) (similar to Ctrl+R for the cursor line)
+            * [_Variables_ view: shows Lambda field names](https://www.eclipse.org/eclipse/news/4.12/jdt.php#lambda-variables-variable-view) (effectively final variables/parameters from outside lambda expression used inside lambda body; see [example](https://bugs.eclipse.org/bugs/show_bug.cgi?id=516319#c12))
+            * [_Debug Shell_: hint for content assist (Ctrl+Space) support](https://www.eclipse.org/eclipse/news/4.12/jdt.php#content-assist-debug-shell)
+            * ([_Java Stack Trace Console_: remove usage hint when starting typing/pasting](https://www.eclipse.org/eclipse/news/4.12/jdt.php#jstc-clear-initial-message))
+    * **Maven**:
+        * POM editor: right-click + _Maven > Update Project..._
+        * Java 12...
+    * **Gradle**:
+        * ...
 
 ### C/C++, PHP, Rust, Web
 * **Sources**
+    * CDT (C/C++)
+    * PDT (PHP)
+    * [Corrosion](https://github.com/eclipse/corrosion) (Rust)
+    * [Wild Web Developer](https://github.com/eclipse/wildwebdeveloper)
+    * LSP4J (LSP Java framework)
+    * LSP4E (LSP Eclipse IDE integration)
+    * TM4E (TextMate)
+    * EPP: [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=EPP&query_format=advanced&order=changeddate%20DESC), [Git](https://git.eclipse.org/c/epp/org.eclipse.epp.packages.git/log/)
 * **Features to show**
+     * IDE Packages
+         * [JavaScript IDE package based on now Wild Web Developer](https://bugs.eclipse.org/bugs/show_bug.cgi?id=544355) (instead of WTP JSDT): LSP & node.js
 
 ## Publish
 * → [As YouTube video](https://www.youtube.com/playlist?list=PLnh_8hTD4yvnhXSttuewEKgKkmlIj_ND-)

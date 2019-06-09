@@ -1,0 +1,2 @@
++ Eclipse Passage	0.5.0
+- Eclipse Accessibility Tools Framework	1.6.0
