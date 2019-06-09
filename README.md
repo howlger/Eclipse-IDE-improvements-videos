@@ -62,8 +62,8 @@
                     * _Open project compiler properties_ to [enable preview features manually](https://www.eclipse.org/eclipse/news/4.12/jdt.php#enable-preview)
                     * [_Enable preview features on project properties_](https://www.eclipse.org/eclipse/news/4.12/jdt.php#quickfix-enable-preview-12)
                     * [_Configure problem severity_ of preview features](https://www.eclipse.org/eclipse/news/4.12/jdt.php#quickfix-configure-severity-12)
-                3. `->`: without `break`; multiple expression in block
-                4. As (assignment or as) return value: [switch templates](https://www.eclipse.org/eclipse/news/4.12/jdt.php#new-switch_labeled_statment_expression_template)
+                3. `->`: without `break`; right side must be a single statement/block
+                4. As assignment or as return value: [switch templates](https://www.eclipse.org/eclipse/news/4.12/jdt.php#new-switch_labeled_statment_expression_template)
                 5. [Formatter](https://www.eclipse.org/eclipse/news/4.12/jdt.php#switch-spaces)
             * (New API, e.g. `Files.mismatch(Path, Path)` or `"a\n  b".indent(4)`)
         * Code Minings:
@@ -90,12 +90,14 @@
             * [New default shortcut for the (existing) command _Run to Line_: Ctrl+Alt+Click in annotation ruler](https://www.eclipse.org/eclipse/news/4.12/jdt.php#run-to-line-in-annotation-ruler) (similar to Ctrl+R for the cursor line)
             * [_Variables_ view: shows Lambda field names](https://www.eclipse.org/eclipse/news/4.12/jdt.php#lambda-variables-variable-view) (effectively final variables/parameters from outside lambda expression used inside lambda body; see [example](https://bugs.eclipse.org/bugs/show_bug.cgi?id=516319#c12))
             * [_Debug Shell_: hint for content assist (Ctrl+Space) support](https://www.eclipse.org/eclipse/news/4.12/jdt.php#content-assist-debug-shell)
-            * ([_Java Stack Trace Console_: remove usage hint when starting typing/pasting](https://www.eclipse.org/eclipse/news/4.12/jdt.php#jstc-clear-initial-message))
+            * ([_Java Stack Trace Console_: usage hint will be removed when starting typing/pasting](https://www.eclipse.org/eclipse/news/4.12/jdt.php#jstc-clear-initial-message))
     * **Maven**:
-        * POM editor: right-click + _Maven > Update Project..._
-        * Java 12...
+        * Java 12: Support for preview feature flag (bug [545462](https://bugs.eclipse.org/bugs/show_bug.cgi?id=545462) and [545470](https://bugs.eclipse.org/bugs/show_bug.cgi?id=545470)): `<compilerArgs>--enable-preview</compilerArgs>`
+        * [_Maven POM_ editor: right-click + _Maven > Update Project..._](https://bugs.eclipse.org/bugs/show_bug.cgi?id=547765)
+        * [Embedded Maven 3.5.3→3.6.1](https://git.eclipse.org/c/m2e/m2e-core.git/commit/?id=c9e4eb3dd7ca4585b93e226d6258a3cb9f9f4170)
+        * Performance improvements (see e.g. bug [515668](https://bugs.eclipse.org/bugs/show_bug.cgi?id=515668) or [547239](https://bugs.eclipse.org/bugs/show_bug.cgi?id=547239))
     * **Gradle**:
-        * ...
+        * [Tasks to run on project synchronization (`synchronizationTasks`) and on project build (`autoBuildTasks`)](https://projects.eclipse.org/projects/tools.buildship/releases/3.1.0)
 
 ### C/C++, PHP, Rust, Web
 * **Sources**
