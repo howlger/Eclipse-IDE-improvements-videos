@@ -101,17 +101,24 @@
 
 ### C/C++, PHP, Rust, Web
 * **Sources**
-    * CDT (C/C++)
-    * PDT (PHP)
-    * [Corrosion](https://github.com/eclipse/corrosion) (Rust)
+    * [CDT](https://projects.eclipse.org/projects/tools.cdt) (C/C++) 9.7→**9.8**: [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=CDT&query_format=advanced&order=changeddate%20DESC), [review](https://projects.eclipse.org/projects/tools.cdt/reviews/9.8.0-release-review), [_New & Noteworthy_](https://wiki.eclipse.org/CDT/User/NewIn98)
+    * [PDT](https://projects.eclipse.org/projects/tools.pdt) (PHP) 6.3→**6.4?**: [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=PDT&query_format=advanced&order=changeddate%20DESC), [Git](https://git.eclipse.org/c/pdt/org.eclipse.pdt.git/log/), (no more _New & Noteworthy_ [like in the past](https://wiki.eclipse.org/PDT/NewIn62)?)
+    * [Corrosion](https://github.com/eclipse/corrosion) (Rust) 0.3→**0.4**: [Git](https://github.com/eclipse/corrosion/commits/master), ([review](https://projects.eclipse.org/projects/tools.corrosion/reviews/0.4.0-release-review))
     * [Wild Web Developer](https://github.com/eclipse/wildwebdeveloper)
-    * LSP4J (LSP Java framework)
-    * LSP4E (LSP Eclipse IDE integration)
-    * TM4E (TextMate)
+    * [LSP4J](https://projects.eclipse.org/projects/technology.lsp4j) (LSP Java binding) 0.7.0/1?→**0.7.2**: [Git](https://github.com/eclipse/lsp4j/commits/master), ([review](https://projects.eclipse.org/projects/technology.lsp4j))
+    * [LSP4E](https://projects.eclipse.org/projects/technology.lsp4e) (LSP Eclipse IDE integration) 0.9?→**0.10**: [Git](https://git.eclipse.org/c/lsp4e/lsp4e.git/log/), ([review](https://projects.eclipse.org/projects/technology.lsp4e/reviews/0.10.0-release-review))
+    * [TM4E](https://projects.eclipse.org/projects/technology.tm4e) (TextMate) 3.2?→**3.3**: [Git](https://github.com/eclipse/tm4e/commits/master), ([review](https://projects.eclipse.org/projects/technology.tm4e/reviews/0.3.3-release-review))
     * EPP: [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=EPP&query_format=advanced&order=changeddate%20DESC), [Git](https://git.eclipse.org/c/epp/org.eclipse.epp.packages.git/log/)
 * **Features to show**
-     * IDE Packages
-         * [JavaScript IDE package based on now Wild Web Developer](https://bugs.eclipse.org/bugs/show_bug.cgi?id=544355) (instead of WTP JSDT): LSP & node.js
+    * **Web**:
+        * [JavaScript IDE package based on Wild Web Developer now](https://bugs.eclipse.org/bugs/show_bug.cgi?id=544355) (instead of WTP JSDT as before): LSP & node.js
+        * TypeScript, etc.
+        * [Workspace symbols and commands accessible via Quick Access (Ctrl+3)](https://bugs.eclipse.org/bugs/show_bug.cgi?id=546169)
+    * **C/C++**:
+        * ...
+    * **Rust**:
+        * [Workspace symbols and commands accessible via Quick Access (Ctrl+3)](https://bugs.eclipse.org/bugs/show_bug.cgi?id=546169): see Web above
+        * Compare editor: syntax highlighting?
 
 ## Publish
 * → [As YouTube video](https://www.youtube.com/playlist?list=PLnh_8hTD4yvnhXSttuewEKgKkmlIj_ND-)
