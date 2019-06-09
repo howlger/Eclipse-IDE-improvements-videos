@@ -76,14 +76,14 @@
                 * Create constructor (if non-existent)
                 * Change visibility of constructor to public (if not visible)
         * [Support for new Javadoc tags: proposed by content assist where it can be used, section title in Javadoc view](https://www.eclipse.org/eclipse/news/4.12/jdt.php#javadoc-support-tags) ([documentation](https://docs.oracle.com/en/java/javase/12/docs/specs/doc-comment-spec.html), search for examples: e.g. `"@apiNote" site:github.com/AdoptOpenJDK/openjdk-jdk12u`, [JDK 12 Javadoc](https://docs.oracle.com/en/java/javase/12/docs/api/))
-                * `@apiNote` (since Java 8; in Javadoc shown as _API Note_): `IntStream peek(IntConsumer)`
-                * `@implSpec` (since Java 8; in Javadoc shown as _Implementation Requirements_): `AbstractList.add(E)`
-                * `@implNote` (since Java 8; in Javadoc shown as _Implementation Note_): `List.sort(Comparator)`
-                * `@index` (since Java 9; → Javadoc HTML search field): `java.util`
-                * `@hidden` (since Java 9; → not shown in Javadoc HTML)
-                * `@provides` (since Java 9; → in `module-info.java` service provider description)
-                * `@uses` (since Java 9; → in `module-info.java` description for an used service)
-                * `@summary` (since Java 10; → the text part that should be used as short description instead of the first sentence)
+            * `@apiNote` (since Java 8; in Javadoc shown as _API Note_): `IntStream peek(IntConsumer)`
+            * `@implSpec` (since Java 8; in Javadoc shown as _Implementation Requirements_): `AbstractList.add(E)`
+            * `@implNote` (since Java 8; in Javadoc shown as _Implementation Note_): `List.sort(Comparator)`
+            * `@index` (since Java 9; → Javadoc HTML search field): `java.util`
+            * `@hidden` (since Java 9; → not shown in Javadoc HTML)
+            * `@provides` (since Java 9; → in `module-info.java` service provider description)
+            * `@uses` (since Java 9; → in `module-info.java` description for an used service)
+            * `@summary` (since Java 10; → the text part that should be used as short description instead of the first sentence)
         * [_Encapsulate Field_ dialog: check boxes for getter and setter](https://www.eclipse.org/eclipse/news/4.12/jdt.php#getter-setter-quick-assist)
         * [New Quick Fix: _Open required projects_](https://www.eclipse.org/eclipse/news/4.12/jdt.php#quickfix-open-missing-projects)
         * Debug:
