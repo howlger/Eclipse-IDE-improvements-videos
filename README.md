@@ -109,13 +109,30 @@
     * [LSP4E](https://projects.eclipse.org/projects/technology.lsp4e) (LSP Eclipse IDE integration) 0.9?→**0.10**: [Git](https://git.eclipse.org/c/lsp4e/lsp4e.git/log/), ([review](https://projects.eclipse.org/projects/technology.lsp4e/reviews/0.10.0-release-review))
     * [TM4E](https://projects.eclipse.org/projects/technology.tm4e) (TextMate) 3.2?→**3.3**: [Git](https://github.com/eclipse/tm4e/commits/master), ([review](https://projects.eclipse.org/projects/technology.tm4e/reviews/0.3.3-release-review))
     * EPP: [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=EPP&query_format=advanced&order=changeddate%20DESC), [Git](https://git.eclipse.org/c/epp/org.eclipse.epp.packages.git/log/)
-* **Features to show**
+* **Features (to show)**
     * **Web**:
         * [JavaScript IDE package based on Wild Web Developer now](https://bugs.eclipse.org/bugs/show_bug.cgi?id=544355) (instead of WTP JSDT as before): LSP & node.js
-        * TypeScript, etc.
+        * Supported file formats: HTML (with contained JavaScript and CSS), CSS, [SCSS/SASS](https://en.wikipedia.org/wiki/Sass_(stylesheet_language), [LESS](https://en.wikipedia.org/wiki/Less_(stylesheet_language), JavaScript (EcmaScript 2018), TypeScript (3.3?), JSON (including schema support), YAML (including schema support, Kubernetes schema built-in), XML (including schema support), XSL, XSD, DTD
+        * Supported frameworks: jQuery, React (JSX, TSX, embedded HTML), Angular (Components in TypeScript files), Kubernetes
         * [Workspace symbols and commands accessible via Quick Access (Ctrl+3)](https://bugs.eclipse.org/bugs/show_bug.cgi?id=546169)
+        * _Terminal_ (Ctrl+Alt+T or right-click project/folder and choose _Show in Local Terminal > Terminal_)
+        * Missing:
+            * [Snippets/templates](https://github.com/eclipse/wildwebdeveloper/issues/140) (e.g. in _Terminal_ `npm init -y` creates default `package.json`)
+            * [Wizards/launches](https://github.com/eclipse/wildwebdeveloper/issues/147) (use _Terminal_ instead)
+            * Project builders ([video how to add `npm update` project builder manually](https://www.screencast.com/t/BbWiKutjYI95))
+            * Framework support, e.g. for [Vue.js](https://github.com/eclipse/wildwebdeveloper/issues/83),
     * **C/C++**:
-        * ...
+        * ... (see [new in 9.8](https://wiki.eclipse.org/CDT/User/NewIn98))
+            * Copy qualified name
+            * _New C++ Class_ dialog options to generate method stubs:
+                * Copy constructor
+                * Move constructor
+                * Copy assignment
+                * Move assignment
+            * New refactoring: Override virtual methods
+            * Code Analysis: 4 new checks: ...
+            * More formatter settings: ...
+            * GDB Remote Launch Bar Target support
     * **Rust**:
         * [Workspace symbols and commands accessible via Quick Access (Ctrl+3)](https://bugs.eclipse.org/bugs/show_bug.cgi?id=546169): see Web above
         * Compare editor: syntax highlighting?
