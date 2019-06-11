@@ -12,7 +12,6 @@
     * (Eclipse User Storage Service 1.2→1.2: [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=USSSDK&query_format=advanced&order=changeddate%20DESC), [Git](https://git.eclipse.org/c/usssdk/org.eclipse.usssdk.git/log/))
     * (Mylyn Tasks 3.24.2→3.24.2: [New & Noteworthy](https://www.eclipse.org/mylyn/new/), [Git](https://git.eclipse.org/c/mylyn/org.eclipse.mylyn.tasks.git/log/), ...)
     * Mylyn WikiText 3.0.25→**3.0.29**: (Markdown editor, etc.): [Git](https://git.eclipse.org/c/mylyn/org.eclipse.mylyn.docs.git/log/)
-    * WTP Source Editing (XML editor, etc.) 3.13→**3.14**: [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=WTP%20Source%20Editing&query_format=advanced&order=changeddate%20DESC), [Git](https://git.eclipse.org/c/sourceediting/webtools.sourceediting.git/log/)
     * Oomph 1.12→**1.13**: [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=Oomph&query_format=advanced&order=changeddate%20DESC), [Git](https://git.eclipse.org/c/oomph/org.eclipse.oomph.git/log/)
     * EPP: [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=EPP&query_format=advanced&order=changeddate%20DESC), [Git](https://git.eclipse.org/c/epp/org.eclipse.epp.packages.git/log/)
     * J**Git**/EGit 5.3→**5.4**: wiki [JGit](https://wiki.eclipse.org/JGit/New_and_Noteworthy/5.4)/[EGit](https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.4), review [JGit](https://projects.eclipse.org/projects/technology.jgit/reviews/5.4.0-release-review)/[EGit](https://projects.eclipse.org/projects/technology.egit/reviews/5.4.0-release-review)
@@ -28,11 +27,8 @@
             2. _Quick Access (Ctrl+3) + type `clock`_
             3. _→ Current time shown in Console view_
         * [Improved view menu icon (→ Dark theme + high-DPI)](https://www.eclipse.org/eclipse/news/4.12/platform.php#view-menu)
-        * XML editor _Outline_ view:
-            * ([Show the beginning of the comment instead of 'comment'](https://git.eclipse.org/c/sourceediting/webtools.sourceediting.git/commit/?id=f9b248d880a857dfc17c4f525860ba856110cd7b))
-            * ([Show the beginning of contained text](https://git.eclipse.org/c/sourceediting/webtools.sourceediting.git/commit/?id=44a79685c3cc8546700fb4542f36e24e231c0065))
     * **Git**:
-        * [History view: Check Out This Version](https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.4#Checking_out_Files_from_a_Commit)
+        * [History view files right-click menu: _Check Out This Version_](https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.4#Checking_out_Files_from_a_Commit)
         * _Git Repositories_ view:
             * [Filters and Customizations...](https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.4#Filtering_Content_from_the_Git_Repositories_View)
             * [Right-click on a branch node: Show In > Git Reflog](https://bugs.eclipse.org/bugs/show_bug.cgi?id=544981)
@@ -47,6 +43,7 @@
     * (EclEmma (Java code coverage)) 3.1.2→3.1.2: ...)
     * (M2Eclipse (Maven) 1.11→**1.12**: [Git](https://git.eclipse.org/c/m2e/m2e-core.git/log/), [review](https://projects.eclipse.org/projects/technology.m2e/reviews/1.12-release-review))
     * Buildship (Gradle) 3.0.1→**3.1.0**: [review](https://projects.eclipse.org/projects/tools.buildship/releases/3.1.0)
+    * (WTP Source Editing (XML editor, in Java EE also HTML and CSS editors) 3.13→**3.14**: [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=WTP%20Source%20Editing&query_format=advanced&order=changeddate%20DESC), [Git](https://git.eclipse.org/c/sourceediting/webtools.sourceediting.git/log/))
     * EPP: [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=EPP&query_format=advanced&order=changeddate%20DESC), [Git](https://git.eclipse.org/c/epp/org.eclipse.epp.packages.git/log/)
 * **Features to show**
     * **Java**:
@@ -91,6 +88,9 @@
             * [_Variables_ view: shows Lambda field names](https://www.eclipse.org/eclipse/news/4.12/jdt.php#lambda-variables-variable-view) (effectively final variables/parameters from outside lambda expression used inside lambda body; see [example](https://bugs.eclipse.org/bugs/show_bug.cgi?id=516319#c12))
             * [_Debug Shell_: hint for content assist (Ctrl+Space) support](https://www.eclipse.org/eclipse/news/4.12/jdt.php#content-assist-debug-shell)
             * ([_Java Stack Trace Console_: usage hint will be removed when starting typing/pasting](https://www.eclipse.org/eclipse/news/4.12/jdt.php#jstc-clear-initial-message))
+        * XML editor _Outline_ view:
+            * ([Show the beginning of the comment instead of 'comment'](https://git.eclipse.org/c/sourceediting/webtools.sourceediting.git/commit/?id=f9b248d880a857dfc17c4f525860ba856110cd7b))
+            * ([Show the beginning of contained text](https://git.eclipse.org/c/sourceediting/webtools.sourceediting.git/commit/?id=44a79685c3cc8546700fb4542f36e24e231c0065))
     * **Maven**:
         * Java 12: Support for preview feature flag (bug [545462](https://bugs.eclipse.org/bugs/show_bug.cgi?id=545462) and [545470](https://bugs.eclipse.org/bugs/show_bug.cgi?id=545470)): `<compilerArgs>--enable-preview</compilerArgs>`
         * [_Maven POM_ editor: right-click + _Maven > Update Project..._](https://bugs.eclipse.org/bugs/show_bug.cgi?id=547765)
