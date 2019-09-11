@@ -23,6 +23,7 @@
         * [Compare editor with colors](https://www.eclipse.org/eclipse/news/4.13/platform.php#colors-in-compareviewer)
         * [External Tools Configuration: Show Command Line](https://www.eclipse.org/eclipse/news/4.13/platform.php#external-tool-showcommandline)
         * Bunch of minor UI improvements (see also [bug tree](https://bugs.eclipse.org/bugs/showdependencytree.cgi?id=548042))
+            * [Improved interactive performance](https://www.eclipse.org/eclipse/news/4.13/platform.php#ui-performance), e.g. [in the Smart Import dialog, switching between _Select All_ and _Deselect All_ is clearly faster](https://bugs.eclipse.org/bugs/show_bug.cgi?id=546450)
             * [Shorter dialog text](https://www.eclipse.org/eclipse/news/4.13/platform.php#shorter-dialog-texts) (without "Are you sure you want to..."), e.g. in _Close Unrelated Projects_
             * [Project Explorer: Close project via middle-click](https://www.eclipse.org/eclipse/news/4.13/platform.php#close-project-via-middle-click)
             * [_Window > Preferences: General > Editors > Text Editor_: Items shown with the configured color](https://www.eclipse.org/eclipse/news/4.13/platform.php#text-editors-color-preview)
@@ -39,7 +40,8 @@
             * [Resource filters via single button with drop-down](https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.5#Shorter_View_Toolbar)
         * Other UI improvements:
             * [_Git Staging_ view: flat or (compact) tree toolbar button instead of submenu in view menu](https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.5#Staged_files_as_list_or_tree)
-            * [Direct renaming of branches](https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.5#Renaming_branches_became_easier)
+            * [_Git Repositories_ view: F2 on repository node to rename current branch](https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.5#Renaming_branches_became_easier)
+            * Shorter dialog texts, verbs instead of OK ([e.g. _Reword_ instead of _OK_](https://bugs.eclipse.org/bugs/show_bug.cgi?id=548144)), performance improvements, etc.
 
 ### Java, Maven, Gradle
 * TODO
