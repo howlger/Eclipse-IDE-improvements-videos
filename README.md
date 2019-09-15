@@ -19,19 +19,24 @@
     * **General**:
         * [Show key bindings when command is invoked (disabled by default)](https://www.eclipse.org/eclipse/news/4.13/platform.php#show-keybinding)
         * [Quick Search (Ctrl+Alt+Shift+L)](https://www.eclipse.org/eclipse/news/4.13/platform.php#quick-text-search)
+            * Can be shown with the following projects:
+                * `examples/org.eclipse.swt.snippets` of Git repository [`https://git.eclipse.org/r/platform/eclipse.platform.swt`](https://git.eclipse.org/r/platform/eclipse.platform.swt)
+                * [`swt-4.12-win32-win32-x86_64.zip`](https://download.eclipse.org/eclipse/downloads/drops4/R-4.12-201906051800/download.php?dropFile=swt-4.12-win32-win32-x86_64.zip) (required by above SWT snippets)
         * [Status line shows offset or selection length](https://www.eclipse.org/eclipse/news/4.13/platform.php#editor-status-line)
         * [Compare editor with colors](https://www.eclipse.org/eclipse/news/4.13/platform.php#colors-in-compareviewer)
         * [External Tools Configuration: Show Command Line](https://www.eclipse.org/eclipse/news/4.13/platform.php#external-tool-showcommandline)
+            * e.g. `C:\Windows\System32\cmd.exe` with argument `/c certutil -hashfile "${selected_resource_loc}" MD5`
         * Bunch of minor UI improvements (see also [bug tree](https://bugs.eclipse.org/bugs/showdependencytree.cgi?id=548042))
-            * [Improved interactive performance](https://www.eclipse.org/eclipse/news/4.13/platform.php#ui-performance), e.g. [in the Smart Import dialog, switching between _Select All_ and _Deselect All_ is clearly faster](https://bugs.eclipse.org/bugs/show_bug.cgi?id=546450)
             * [Shorter dialog text](https://www.eclipse.org/eclipse/news/4.13/platform.php#shorter-dialog-texts) (without "Are you sure you want to..."), e.g. in _Close Unrelated Projects_
             * [Project Explorer: Close project via middle-click](https://www.eclipse.org/eclipse/news/4.13/platform.php#close-project-via-middle-click)
             * [_Window > Preferences: General > Editors > Text Editor_: Items shown with the configured color](https://www.eclipse.org/eclipse/news/4.13/platform.php#text-editors-color-preview)
-            * [On Linux and macOS the the default theme, light or dark theme, is set based on the active OS theme](https://www.eclipse.org/eclipse/news/4.13/platform.php#start-in-dark-theme)
+            * ([Project Explorer: Inline rename](https://www.eclipse.org/eclipse/news/4.13/platform.php#project-explorer-normal-resource-inline-rename) → [can cause crashing of the Java VM](https://bugs.eclipse.org/bugs/show_bug.cgi?id=550857))
+            * [Bug 550857](https://bugs.eclipse.org/bugs/show_bug.cgi?id=550857) warning (see above)
+            * [Improved interactive performance](https://www.eclipse.org/eclipse/news/4.13/platform.php#ui-performance), e.g. [in the Smart Import dialog, switching between _Select All_ and _Deselect All_ is clearly faster](https://bugs.eclipse.org/bugs/show_bug.cgi?id=546450)
+            * [On Linux and macOS the default theme, light or dark theme, is set based on the active OS theme](https://www.eclipse.org/eclipse/news/4.13/platform.php#start-in-dark-theme)
             * ([Improved dark theme on Windows](https://www.eclipse.org/eclipse/news/4.13/platform.php#styling-forms), e.g. Manifest editor)
             * ([_Project Explorer_: _Show In_ right-click menu also for non-Java projects](https://www.eclipse.org/eclipse/news/4.13/platform.php#showin-action-project-explorer))
             * ([Save active editor even when the _Project Explorer_ has focus](https://www.eclipse.org/eclipse/news/4.13/platform.php#save-action-project-explorer) → same behavior as in the _Package Explorer_)
-            * ([Project Explorer: Inline rename](https://www.eclipse.org/eclipse/news/4.13/platform.php#project-explorer-normal-resource-inline-rename) → [can cause crashing of the Java VM](https://bugs.eclipse.org/bugs/show_bug.cgi?id=550857))
             * ([Launch Configuration: Inline rename of environment variable names and values](https://www.eclipse.org/eclipse/news/4.13/platform.php#environment-table-improvements))
     * **Git**:
         * [Creation of lightweight tags](https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.5#Creating_Lightweight_Tags)
