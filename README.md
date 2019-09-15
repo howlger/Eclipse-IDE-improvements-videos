@@ -44,7 +44,43 @@
             * Shorter dialog texts, verbs instead of OK ([e.g. _Reword_ instead of _OK_](https://bugs.eclipse.org/bugs/show_bug.cgi?id=548144)), performance improvements, etc.
 
 ### Java, Maven, Gradle
-* TODO
+* **Sources**
+    * Java development tools (JDT) 4.12→**4.13**: [Eclipse 4.13 - New and Noteworthy - Java Development Tools](https://www.eclipse.org/eclipse/news/4.13/jdt.php)
+        * Java 13 as preview via [Marketplace](https://marketplace.eclipse.org/content/java-13-support-eclipse-2019-09-413) ([bug 547710](https://bugs.eclipse.org/bugs/show_bug.cgi?id=547710)): [bug tree](https://bugs.eclipse.org/bugs/showdependencytree.cgi?id=539066), [examples](https://wiki.eclipse.org/Java13/Examples)
+    * (EclEmma (Java code coverage)) 3.1.3→3.1.3: [changes](https://www.eclemma.org/changes.html), [Git](https://github.com/eclipse/eclemma/commits/master), [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=Eclemma&query_format=advanced&order=changeddate%20DESC))
+    * (M2Eclipse (Maven) 1.12→**1.13**: [Git](https://git.eclipse.org/c/m2e/m2e-core.git/log/), [review](https://projects.eclipse.org/projects/technology.m2e/reviews/1.13-release-review))
+    * Buildship (Gradle) 3.1.0→**3.1.2**: [review](https://projects.eclipse.org/projects/tools.buildship/releases/3.1.2) → announcements [3.1.1](https://discuss.gradle.org/t/buildship-3-1-1-is-now-available/32257), [3.1.2](https://discuss.gradle.org/t/buildship-3-1-2-is-now-available/33034)
+    * (WTP Source Editing (XML editor, in Java EE also HTML and CSS editors) 3.14→**3.15**: [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=WTP%20Source%20Editing&query_format=advanced&order=changeddate%20DESC), [Git](https://git.eclipse.org/c/sourceediting/webtools.sourceediting.git/log/))
+    * EPP: [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=EPP&query_format=advanced&order=changeddate%20DESC), [Git](https://git.eclipse.org/c/epp/org.eclipse.epp.packages.git/log/)
+* **Features to show**
+    * **Java**:
+        * Java 13 support via [Marketplace](https://marketplace.eclipse.org/content/java-13-support-eclipse-2019-09-413):
+            * (New Java Project: JavaSE-13)
+            * (Enable Preview features)
+                * [JEP 355](https://openjdk.java.net/jeps/355): [Text Blocks](https://bugs.eclipse.org/bugs/show_bug.cgi?id=531716)
+                * [JEP 354](https://openjdk.java.net/jeps/354): [Switch Expression](https://bugs.eclipse.org/bugs/show_bug.cgi?id=549435)
+        * Java editor:
+            * ([Chain Completion Code Assist](https://www.eclipse.org/eclipse/news/4.13/jdt.php#chain-completion) (disabled by default) → does not work for me)
+            * [Quick fix: _Convert to enhanced 'for' loop_](https://www.eclipse.org/eclipse/news/4.13/jdt.php#foreach-loop-collections)
+            * [Quick fix: _Initialize final field '...' in constructor_](https://www.eclipse.org/eclipse/news/4.13/jdt.php#foreach-loop-collections)
+            * [Source clean ups: Use _Autoboxing_ and _Unboxing_](https://www.eclipse.org/eclipse/news/4.13/jdt.php#autoboxing-unboxing)
+            * [Source clean ups: _Remove redundant modifier_ improved to remove also _abstract_ at interfaces](https://www.eclipse.org/eclipse/news/4.13/jdt.php#enhanced-redundant-modifier-removal)
+        * Formatter
+            * [Blank lines: New option _Remove excess blank lines_ (if lines set to 0)](https://www.eclipse.org/eclipse/news/4.13/jdt.php#remove-excess-blank-lines)
+            * [Blank lines: New section (some restructured, most new) and configurable for more places (12→20)](https://www.eclipse.org/eclipse/news/4.13/jdt.php#blank-lines-changes)
+        * [_Console_: Synchronize standard and error output (disables coloring)](https://www.eclipse.org/eclipse/news/4.13/jdt.php#console-output-synchronization)
+        * JPMS:
+            * [_Patch with..._ can be overridden in launch configuration](https://www.eclipse.org/eclipse/news/4.13/jdt.php#blank-lines-changes)
+            * [Code templates: _Comments > Modules_](https://www.eclipse.org/eclipse/news/4.13/jdt.php#javadoc-for-module-info)
+        * [Embedded JUnit 5.4→5.5.1](https://www.eclipse.org/eclipse/news/4.13/jdt.php#junit-5.5.1)
+            * Declarative timeouts via [`@Timeout(value = 42, unit = SECONDS)`](https://github.com/junit-team/junit5/blob/master/junit-jupiter-api/src/main/java/org/junit/jupiter/api/Timeout.java) (in addition to `assertTimeout(Duration.ofSeconds(1), () -> { ... });``
+        * [Full build on project preferences change (`.settings/org.eclipse.jdt.core.prefs`)](https://www.eclipse.org/eclipse/news/4.13/jdt.php#full-build-on-jdt-core-settings-change)
+            * `-Dorg.eclipse.disableAutoBuildOnSettingsChange=true`
+    * **Gradle**:
+        * name deduplication
+        * _Debug As > Gradle Test_
+            * → launches a Gradle build that executes the selected test in debug mode and automatically connects an IDE debug session to it
+        * Closed projects are replaced with a library (JAR) dependency that is automatically built during the synchronization
 
 ### C/C++, PHP, Rust, Web
 * TODO
