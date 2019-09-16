@@ -66,24 +66,23 @@
                 * [JEP 354](https://openjdk.java.net/jeps/354): [Switch Expression](https://bugs.eclipse.org/bugs/show_bug.cgi?id=549435)
         * Java editor:
             * ([Chain Completion Code Assist](https://www.eclipse.org/eclipse/news/4.13/jdt.php#chain-completion) (disabled by default) → does not work for me)
+            * [Quick fix: _Initialize final field '...' in constructor_](https://www.eclipse.org/eclipse/news/4.13/jdt.php#final-fields-quickfix)
             * [Quick fix: _Convert to enhanced 'for' loop_](https://www.eclipse.org/eclipse/news/4.13/jdt.php#foreach-loop-collections)
-            * [Quick fix: _Initialize final field '...' in constructor_](https://www.eclipse.org/eclipse/news/4.13/jdt.php#foreach-loop-collections)
-            * [Source clean ups: Use _Autoboxing_ and _Unboxing_](https://www.eclipse.org/eclipse/news/4.13/jdt.php#autoboxing-unboxing)
+                * Clean up _Convert 'for' loops to enhanced_ works now in addition on loops with arrays on loops with Collections
             * [Source clean ups: _Remove redundant modifier_ improved to remove also _abstract_ at interfaces](https://www.eclipse.org/eclipse/news/4.13/jdt.php#enhanced-redundant-modifier-removal)
+            * [Source clean ups: Use _Autoboxing_ and _Unboxing_](https://www.eclipse.org/eclipse/news/4.13/jdt.php#autoboxing-unboxing)
         * Formatter
             * [Blank lines: New option _Remove excess blank lines_](https://www.eclipse.org/eclipse/news/4.13/jdt.php#remove-excess-blank-lines) for <= _Number of empty lines to preserve_
             * [Blank lines: New section (some restructured, most new) and configurable for more places (12→20)](https://www.eclipse.org/eclipse/news/4.13/jdt.php#blank-lines-changes)
-        * [_Console_: Synchronize standard and error output (disables coloring)](https://www.eclipse.org/eclipse/news/4.13/jdt.php#console-output-synchronization)
         * JPMS:
-            * [_Patch with..._ can be overridden in launch configuration](https://www.eclipse.org/eclipse/news/4.13/jdt.php#blank-lines-changes)
             * [Code templates: _Comments > Modules_](https://www.eclipse.org/eclipse/news/4.13/jdt.php#javadoc-for-module-info)
-        * [Embedded JUnit 5.4→5.5.1](https://www.eclipse.org/eclipse/news/4.13/jdt.php#junit-5.5.1)
-            * Declarative timeouts via [`@Timeout(value = 42, unit = SECONDS)`](https://github.com/junit-team/junit5/blob/master/junit-jupiter-api/src/main/java/org/junit/jupiter/api/Timeout.java) (in addition to `assertTimeout(Duration.ofSeconds(1), () -> { ... });`
+            * [_Patch with..._ can be overridden in launch configuration](https://www.eclipse.org/eclipse/news/4.13/jdt.php#blank-lines-changes)
+        * [_Console_: Synchronize standard and error output (disables coloring)](https://www.eclipse.org/eclipse/news/4.13/jdt.php#console-output-synchronization)
+        * Performance: [Very large source files](https://bugs.eclipse.org/bugs/show_bug.cgi?id=544921)
         * [Full build on project preferences change (`.settings/org.eclipse.jdt.core.prefs`)](https://www.eclipse.org/eclipse/news/4.13/jdt.php#full-build-on-jdt-core-settings-change)
             * `-Dorg.eclipse.disableAutoBuildOnSettingsChange=true`
-        * Performance
-            * [Very large source files](https://bugs.eclipse.org/bugs/show_bug.cgi?id=544921)
-            * [Java (Quick?) Outline](https://bugs.eclipse.org/bugs/show_bug.cgi?id=550197)
+        * [Embedded JUnit 5.4→5.5.1](https://www.eclipse.org/eclipse/news/4.13/jdt.php#junit-5.5.1)
+            * Declarative timeouts via [`@Timeout(value = 42, unit = SECONDS)`](https://github.com/junit-team/junit5/blob/master/junit-jupiter-api/src/main/java/org/junit/jupiter/api/Timeout.java) (in addition to `assertTimeout(Duration.ofSeconds(1), () -> { ... });`
     * **Gradle**:
         * ([Name deduplication](https://github.com/eclipse/buildship/commit/37851bfdfd81b285bffd8bb3544ebcb0809c2cb2) → not figured out how to show that)
         * [_Debug As > Gradle Test_](https://discuss.gradle.org/t/buildship-3-1-2-is-now-available/33034)
