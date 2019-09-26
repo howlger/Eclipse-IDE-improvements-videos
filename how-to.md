@@ -38,6 +38,12 @@
 5. Publishing
     1. Upload to **YouTube** (maybe in future also to Vimeo which provides fullscreen when the video is embedded in a website in contrast to YouTube)
 
+## Recommendations (my learnings)
+
+* Background music only at the beginning and at the end
+* When clicking something, wait a second after moving the mouse and before clicking (otherwise it's hard to see what was clicked)
+* If possible, use high-resolution screen of a small size (e.g. 1920x1080 with 175% scaling; on 1920x1440/non-high-DPI text and cursor are too small)
+
 ## Tools (currently not used tools in parentheses)
 
 * Screen recording
