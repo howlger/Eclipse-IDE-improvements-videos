@@ -1,0 +1,3 @@
+rootProject.name = 'Gradle_Sample_App'
+include ':Gradle_Sample_Core'
+project(':Gradle_Sample_Core').projectDir = new File('../Gradle_Sample_Core')
