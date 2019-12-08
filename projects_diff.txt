@@ -1,2 +1,1 @@
-- Eclipse PMF	0.4.0
-  Presentation Modeling Framework; archived: https://projects.eclipse.org/projects/modeling.pmf
++ Eclipse Accessibility Tools Framework	1.5.1
