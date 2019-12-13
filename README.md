@@ -1,7 +1,7 @@
 # Eclipse IDE Improvements Videos
 
 ## [Eclipse 2019-12](https://wiki.eclipse.org/Category:SimRel-2019-12) - [December 18, 2019](https://www.google.com/calendar/event?eid=NWFubTFwcWNyMWMzc2gzZDYxcTFqcTA1NjMgZ2NoczdubTRudnBtODM3NDY5ZGRqOXRqbGtAZw&ctz=Europe/Berlin) ([calendar](https://calendar.google.com/calendar/embed?src=gchs7nm4nvpm837469ddj9tjlk@group.calendar.google.com&ctz=Europe/Berlin))
-* [76 projects](https://projects.eclipse.org/releases/2019-12) ([-0 +1 → +1](https://projects.eclipse.org/releases/2019-09)) - [Website](https://staging.eclipse.org/eclipseide/2019-12) ([New & Noteworthy](https://staging.eclipse.org/eclipseide/2019-12/noteworthy)) - [Splash screen](https://bugs.eclipse.org/bugs/show_bug.cgi?id=545158)
+* [76 projects](https://projects.eclipse.org/releases/2019-12) ([-0 +1 → +1](https://projects.eclipse.org/releases/2019-09)) - [Website](https://eclipse.org/eclipseide/2019-12) ([New & Noteworthy](https://eclipse.org/eclipseide/2019-12/noteworthy)) - [Splash screen](https://bugs.eclipse.org/bugs/show_bug.cgi?id=545158)
 * [Latest CI builds](https://hudson.eclipse.org/packaging/job/simrel.epp-tycho-build/lastSuccessfulBuild/artifact/org.eclipse.epp.packages/archive/) (Update site: [staging](https://download.eclipse.org/staging/2019-12), [release](http://download.eclipse.org/releases/2019-12))
 * Social media: [Twitter](http://twitter.com/EclipseJavaIDE), [YouTube](https://www.youtube.com/user/EclipseFdn) ([Eclipse IDE playlist](https://www.youtube.com/playlist?list=PLy7t4z5SYNaSNjL60ofpwVhfA7mOF3Pgk)), [Instagram](https://www.instagram.com/eclipsejavaide)
 
@@ -24,14 +24,14 @@
         * [Show problems inline as _Code Minings_](https://www.eclipse.org/eclipse/news/4.14/platform.php#show-markers-as-code-minings) (disabled by default)
             * In the Java editor _Code Minings_ have to be enabled
         * [Backspace/delete can treat spaces as tabs](https://www.eclipse.org/eclipse/news/4.14/platform.php#delete-spaces-as-tabs)
+        * [_Console_: Interpretation of control characters can be enabled](https://www.eclipse.org/eclipse/news/4.14/platform.php#control-character-console)
         * UI improvements:
-            * [Perspective switcher](https://www.eclipse.org/eclipse/news/4.14/platform.php#perspective-switcher)
+            * [Perspective switcher](https://www.eclipse.org/eclipse/news/4.14/platform.php#perspective-switcher) → vertically more compact
             * [New view menu icon](https://www.eclipse.org/eclipse/news/4.14/platform.php#new-view-menu-icon) and new filter icons
             * [Inline renaming](https://www.eclipse.org/eclipse/news/4.14/platform.php#project-explorer-inline-rename) (for simple files, not for files with refactor support like Java files)
-            * Dark theme:
-                * (TODO [Forms](https://www.eclipse.org/eclipse/news/4.14/platform.php#ui-forms-styling))
-                * (TODO [Reduced number of colors](https://www.eclipse.org/eclipse/news/4.14/platform.php#dark-colors-usage))
-        * (TODO Performance improvement that can be shown, e.g. startup, etc.)
+            * (Dark theme:
+                * [Forms](https://www.eclipse.org/eclipse/news/4.14/platform.php#ui-forms-styling)
+                * [Reduced number of colors](https://www.eclipse.org/eclipse/news/4.14/platform.php#dark-colors-usage), e.g. background of view toolbar  and of search fields darker)
         * [Automatic updates: _Latest Eclipse Release_ enabled by default](https://bugs.eclipse.org/bugs/show_bug.cgi?id=551709)
     * **Git**:
         * [_History_ view: Select branches to show](https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.6#History_View:_Select_the_Branches_to_Show)
@@ -75,12 +75,11 @@
             * [Space after not operator](https://www.eclipse.org/eclipse/news/4.14/jdt.php#formatter-space-before-not)
         * JPMS:
             * [Javadoc tag checking for modules](https://www.eclipse.org/eclipse/news/4.14/jdt.php#module-javadoc-checking)
-        * [_Console_: Interpretation of control characters can be enabled](https://www.eclipse.org/eclipse/news/4.14/platform.php#control-character-console)
         * [Debug: No suspending on exception recurrence](https://www.eclipse.org/eclipse/news/4.14/jdt.php#exception-instance-recurrence)
         * (Performance: TODO [Content assist not in UI thread?](https://www.eclipse.org/eclipse/news/4.14/jdt.php#completion-ext-flag-uithread))
         * (Apache Ant: [1.10.5→**1.10.7**](https://www.eclipse.org/eclipse/news/4.14/platform.php#ant-version-upgrade); [support for the `include` task added](https://www.eclipse.org/eclipse/news/4.14/platform.php#ant-ui-support-for-include-task))
     * **Maven**:
-        * (Not yet, probably in next release: Embedded Maven updated from 3.6.1 to 3.6.3 (→ supports POM-less Tycho))
+        * Embedded Maven updated from 3.6.1 to 3.6.3 (→ supports POM-less Tycho)
 
 ### C/C++, PHP, Rust, Web
 * TODO
