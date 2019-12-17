@@ -58,21 +58,20 @@
             * Text blocks (Preview feature; [JEP 355](https://openjdk.java.net/jeps/355): [Text Blocks](https://bugs.eclipse.org/bugs/show_bug.cgi?id=531716))
                 * Warning and Quick Fixes for text blocks without preview features enabled
                 * [Keyboard shortcut for Text Block creation](https://www.eclipse.org/eclipse/news/4.14/jdt.php#Text_Block_Creation_Keyboard_ShortCut)
-                * [Formatter: Indentation of text blocks](https://www.eclipse.org/eclipse/news/4.14/jdt.php#formatter-text-block)
             * `switch` (Preview feature; [JEP 354](https://openjdk.java.net/jeps/354): [Switch Expression](https://bugs.eclipse.org/bugs/show_bug.cgi?id=549435))
                 * In switch expressions `break` became `yield` (new Java keyword; in switch statements it's still `break`; → incompatible to Java 12)
         * Java editor:
+            * [Templates for empty Java source files](https://www.eclipse.org/eclipse/news/4.14/jdt.php#templates-empty-java-file)
             * Content assist:
                 * [Postfix completion](https://www.eclipse.org/eclipse/news/4.14/jdt.php#postfix-completion) (disabled by default)
                 * (Improvements Chain Completion ([introduced in 4.13](https://www.eclipse.org/eclipse/news/4.13/jdt.php#chain-completion)) e.g. [bug 550821](https://bugs.eclipse.org/bugs/show_bug.cgi?id=550821), etc. (disabled by default))
-            * [Templates for empty Java source files](https://www.eclipse.org/eclipse/news/4.14/jdt.php#templates-empty-java-file)
             * [Quick fix: _Surround with try-with-resources_](https://www.eclipse.org/eclipse/news/4.14/jdt.php#try-with-resources)
-            * [Source clean ups: _Remove unnecessary array creation_](https://www.eclipse.org/eclipse/news/4.14/jdt.php#unnecessary-array-creation)
             * [Source clean ups: _Push negation down in expression_](https://www.eclipse.org/eclipse/news/4.14/jdt.php#push-down-negation)
+            * [Source clean ups: _Remove unnecessary array creation_](https://www.eclipse.org/eclipse/news/4.14/jdt.php#unnecessary-array-creation)
         * Formatter
-            * See above: text blocks, etc.
-            * [Blank lines between Javadoc tags](https://www.eclipse.org/eclipse/news/4.14/jdt.php#formatter-javadoc-tags-blank-lines)
+            * [Indentation of text blocks](https://www.eclipse.org/eclipse/news/4.14/jdt.php#formatter-text-block)
             * [Space after not operator](https://www.eclipse.org/eclipse/news/4.14/jdt.php#formatter-space-before-not)
+            * [Blank lines between Javadoc tags](https://www.eclipse.org/eclipse/news/4.14/jdt.php#formatter-javadoc-tags-blank-lines)
         * JPMS:
             * [Javadoc tag checking for modules](https://www.eclipse.org/eclipse/news/4.14/jdt.php#module-javadoc-checking)
         * [Debug: No suspending on exception recurrence](https://www.eclipse.org/eclipse/news/4.14/jdt.php#exception-instance-recurrence)
