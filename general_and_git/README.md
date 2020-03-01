@@ -13,52 +13,29 @@ Storyboard:
 
  2. `eclipse .`
 
+Interpretation of control characters: Spinner sample as Windows batch script
 
-    // selecting (over a cell) -> select table row
-    // default selecting (hitting "ENTER) -> pop up a text editor
-    cursor.addSelectionListener(new SelectionAdapter() {
-        @Override
-        public void widgetSelected(SelectionEvent e) {
-            table.setSelection(new TableItem[] { cursor.getRow() });
-        }
-        // when the user hits "ENTER"
+    @echo off & setlocal enabledelayedexpansion
+    for /f %%a in ('copy "%~f0" nul /z') do set "CR=%%a"
+    for /f %%a in ('prompt $H ^& cmd /k ^<nul') do set "BS=%%a"
+    set SPINNER=-\^|/
 
+    echo|set /p="Spinner via backspace: "
+    for /l %%i in (1, 1, 3) do (
+        for /l %%j in (0, 1, 3) do (
+            echo|set /p="!SPINNER:~%%j,1!!BS!"
+            ping -n 1 example.com > nul 2>&1
+        )
+    )
+    echo(done.
 
-new.txt
-
-added lines
-added lines
-added lines
-
-some lines
-some lines
-some lines
-
-more lines
-more lines
-more lines
-
-changed lines with added characters
-changed lines
-changed lines
+    echo Spinner via carriage return:
+    for /l %%i in (1, 1, 3) do (
+        for /l %%j in (0, 1, 3) do (
+            <nul set /p ".=processing... !SPINNER:~%%j,1!!CR!"
+            ping -n 1 example.com > nul 2>&1
+        )
+    )
+    echo(done.
 
 
-old.txt
-
-some lines
-some lines
-some lines
-
-removed lines
-removed lines
-removed lines
-
-more lines
-more lines
-more lines
-
-modified lines
-modified lines
-modified lines with removed characters
-
-https://youtu.be/SYqFybeUbeI
