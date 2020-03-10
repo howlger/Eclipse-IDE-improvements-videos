@@ -8,7 +8,7 @@
 ### Java, Maven, Gradle
 * **Sources**
     * Java development tools (JDT) 4.14→**4.15**: [Eclipse 4.15 - New and Noteworthy - Java Development Tools](https://www.eclipse.org/eclipse/news/4.15/jdt.php)
-        * Java 14 ([March 17, 2020](https://openjdk.java.net/projects/jdk/14/)): [via Marketplace](https://marketplace.eclipse.org/content/java-14-support-eclipse-2020-03-415), [bug tree](https://bugs.eclipse.org/bugs/showdependencytree.cgi?id=549808), [examples](https://wiki.eclipse.org/Java14/Examples)
+        * Java 14 ([March 17, 2020](https://openjdk.java.net/projects/jdk/14/), [download](https://jdk.java.net/14/)): [via Marketplace](https://marketplace.eclipse.org/content/java-14-support-eclipse-2020-03-415), [bug tree](https://bugs.eclipse.org/bugs/showdependencytree.cgi?id=549808), [examples](https://wiki.eclipse.org/Java14/Examples)
     * (EclEmma (Java code coverage)) 3.1.2→**3.1.3**: [changes](https://www.eclemma.org/changes.html), [Git](https://github.com/eclipse/eclemma/commits/master), [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=Eclemma&query_format=advanced&order=changeddate%20DESC))
     * (M2Eclipse (Maven) 1.14→**1.15**: [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=m2e&query_format=advanced&order=changeddate%20DESC&target_milestone=1.15.0), [Git](https://git.eclipse.org/c/m2e/m2e-core.git/log/), [review](https://projects.eclipse.org/projects/technology.m2e/reviews/1.15-release-review))
     * (Buildship (Gradle) 3.1.3: [review](https://projects.eclipse.org/projects/tools.buildship/releases/3.1.3) → [announcements](https://discuss.gradle.org/tag/buildship-release))
@@ -17,24 +17,26 @@
 * **Features to show**
     * **Java**:
         * Java 14 support via [Marketplace](https://marketplace.eclipse.org/content/java-14-support-eclipse-2020-03-415)
-        * [_Eclipse IDE for Enterprise Java Developers_ shipped now with **Wild Web Developer**](https://bugs.eclipse.org/bugs/show_bug.cgi?id=551408)
+        * _Eclipse IDE for **Enterprise Java** Developers_ (the most downloaded IDE package) and _Eclipse IDE for Eclipse Committers_: [with **Wild Web Developer**](https://bugs.eclipse.org/bugs/show_bug.cgi?id=551408)
         * Editor:
             * Content Assist:
-                * [Subtype aware](https://www.eclipse.org/eclipse/news/4.15/jdt.php#subtype-code-completion) (e.g. `List<String> list = new a|`)
-                * [Match subwords](https://www.eclipse.org/eclipse/news/4.15/jdt.php#subword-code-completion) (e.g. `"".toupcas|` but not `"".toa|`; _substring_ means contains, not only start with): disabled by default (_Window > Preferences: Java > Editor > Content Assist: Show subword matches_)
+                * [Subtype aware](https://www.eclipse.org/eclipse/news/4.15/jdt.php#subtype-code-completion), e.g. `List<String> l = new a|`, `Iterator<String> l2 = Collections.|` or `foo(new a|)`
+                * [Match subwords](https://www.eclipse.org/eclipse/news/4.15/jdt.php#subword-code-completion): disabled by default (_Window > Preferences: Java > Editor > Content Assist: Show subword matches_), e.g. `"hello".upcase|` (but not `"hello".upa|` since there is nothing that contains the substring `upa` nor camel-case-concated words starting with any of these parts)
                 * ([For imports statements no unnecessary semicolon if one already exists](https://www.eclipse.org/eclipse/news/4.15/jdt.php#import-completion))
                 * (TODO: Can it be enabled or not yet because of Mylyn [Non-blocking](https://www.eclipse.org/eclipse/news/4.15/jdt.php#non-blocking-completion))
-            * [Improved annotated-based null analysis](https://www.eclipse.org/eclipse/news/4.15/jdt.php#null-legacy-interface)
-            * [Improved resource leak analysis](https://www.eclipse.org/eclipse/news/4.15/jdt.php#resource-leak-analysis)
+            * [Improved annotated-based null analysis](https://www.eclipse.org/eclipse/news/4.15/jdt.php#null-legacy-interface) ([blog](https://objectteams.wordpress.com/2020/02/06/interfacing-null-safe-code-with-legacy-code/))
+            * [Improved resource leak analysis](https://www.eclipse.org/eclipse/news/4.15/jdt.php#resource-leak-analysis),
+                * e.g. `new PrintWriter("out.txt").append("text").close();` no false _resource never closed_ positive anymore (the compiler now understands that in this fluent API `append("text")` returns `this` that is closed)
+                * e.g. `getZipFile().getName();` has not been reported as a potential resource leak in previous versions
             * [Surround With: Try-with-resources Block](https://www.eclipse.org/eclipse/news/4.15/jdt.php#surround-with-try-with-resources)
             * Quick fix:
                 * [Wrap with `Optional`](https://www.eclipse.org/eclipse/news/4.15/jdt.php#quickfix-wrap-optional)
                 * [Missing or duplicate `@provides` or `@uses`](https://www.eclipse.org/eclipse/news/4.15/jdt.php#improve-lambda)
         * Clean up:
-            * [Simplify lambda expression](https://www.eclipse.org/eclipse/news/4.15/jdt.php#improve-lambda) removes if possible removes `(...)`, `{...}` and replaces lambda with method reference (`::`)
-            * [Operate on Maps directly](https://www.eclipse.org/eclipse/news/4.15/jdt.php#map-method)
-            * [Use uppercase for long literal suffix](https://www.eclipse.org/eclipse/news/4.15/jdt.php#uppercase-literal-suffix)
-        * [Lambda expressions can be used in _Expressions_ view and in breakpoint conditions](https://www.eclipse.org/eclipse/news/4.15/jdt.php#functional-expressions-in-debug)
+            * [Code Style: Simplify lambda expression](https://www.eclipse.org/eclipse/news/4.15/jdt.php#improve-lambda) removes if possible removes `(...)`, `{...}` and replaces lambda with method reference (`::`)
+            * [Code Style: Use uppercase for long literal suffix](https://www.eclipse.org/eclipse/news/4.15/jdt.php#uppercase-literal-suffix)
+            * [Unnecessary Code: Operate on Maps directly](https://www.eclipse.org/eclipse/news/4.15/jdt.php#map-method)
+        * [Lambda expressions can be used in _Expressions_ view and in breakpoint conditions](https://www.eclipse.org/eclipse/news/4.15/jdt.php#functional-expressions-in-debug), `list.stream().anyMatch(s -> s.isBlank())` or `list.stream().anyMatch(String::isBlank)`
         * (JUnit 5.5.1→5.6)
     * **Maven**:
         * [Parallel downloads](https://bugs.eclipse.org/bugs/show_bug.cgi?id=560544)
@@ -58,8 +60,8 @@
 * **Features to show**
     * **Git**:
         * [Repository Groups: Right-click menu with _Switch Repositories To_ and _Pull_](https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.7#Repository_Groups)
-        * [_Git Repositories_ view: Comparing Branches and Tags](https://git.eclipse.org/c/egit/egit.git/commit/?id=9680c04610188d9210e0df5056803cec452ac4f3)
         * [Dynamic label for Push to/Fetch from Upstream](https://git.eclipse.org/c/egit/egit.git/commit/?id=6f46e09be6e1ec6425b21c4650f6504a2a386eee)
+        * [_Git Repositories_ view: Comparing Branches and Tags](https://git.eclipse.org/c/egit/egit.git/commit/?id=9680c04610188d9210e0df5056803cec452ac4f3)
         * [_History_ view: _Show Unified Diff_](https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.7#Unified_Diffs)
         * [_Select a Commit_ dialog with search field](https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.7#Searching_for_Commits_in_the_Commit_Selection_Dialog) (to show dialog right-click a project/folder/file and choose _Compare With > Commit..._)
     * **General**:
