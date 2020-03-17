@@ -20,14 +20,18 @@
         * _Eclipse IDE for **Enterprise Java** Developers_ (the most downloaded IDE package) and _Eclipse IDE for Eclipse Committers_: [with **Wild Web Developer**](https://bugs.eclipse.org/bugs/show_bug.cgi?id=551408)
         * Editor:
             * Content Assist:
-                * [Subtype aware](https://www.eclipse.org/eclipse/news/4.15/jdt.php#subtype-code-completion), e.g. `List<String> l = new a|`, `Iterator<String> l2 = Collections.|` or `foo(new a|)`
+                * [Subtype aware](https://www.eclipse.org/eclipse/news/4.15/jdt.php#subtype-code-completion), e.g.
+                    * `List<String> list = new a|`
+                    * `Iterator<String> iter = Collections.|`
+                    * `foo(new h|)` (with `void foo(Map<String, Integer> map)`)
+                    * `foo(Collections.|)` (with `void foo(Map<String, Integer> map)`)
                 * [Match subwords](https://www.eclipse.org/eclipse/news/4.15/jdt.php#subword-code-completion): disabled by default (_Window > Preferences: Java > Editor > Content Assist: Show subword matches_), e.g. `"hello".upcase|` (but not `"hello".upa|` since there is nothing that contains the substring `upa` nor camel-case-concated words starting with any of these parts)
                 * ([For imports statements no unnecessary semicolon if one already exists](https://www.eclipse.org/eclipse/news/4.15/jdt.php#import-completion))
                 * (TODO: Can it be enabled or not yet because of Mylyn [Non-blocking](https://www.eclipse.org/eclipse/news/4.15/jdt.php#non-blocking-completion))
-            * [Improved annotated-based null analysis](https://www.eclipse.org/eclipse/news/4.15/jdt.php#null-legacy-interface) ([blog](https://objectteams.wordpress.com/2020/02/06/interfacing-null-safe-code-with-legacy-code/))
-            * [Improved resource leak analysis](https://www.eclipse.org/eclipse/news/4.15/jdt.php#resource-leak-analysis),
-                * e.g. `new PrintWriter("out.txt").append("text").close();` no false _resource never closed_ positive anymore (the compiler now understands that in this fluent API `append("text")` returns `this` that is closed)
-                * e.g. `getZipFile().getName();` has not been reported as a potential resource leak in previous versions
+            * [Improved annotation-based null analysis](https://www.eclipse.org/eclipse/news/4.15/jdt.php#null-legacy-interface) ([blog](https://objectteams.wordpress.com/2020/02/06/interfacing-null-safe-code-with-legacy-code/))
+            * [Improved resource leak analysis](https://www.eclipse.org/eclipse/news/4.15/jdt.php#resource-leak-analysis), e.g.
+                * `new PrintWriter("out.txt").append("text").close();` no false _resource never closed_ positive anymore (the compiler now understands that in this fluent API `append("text")` returns `this` that is closed)
+                * `ZipFile zipFile = Storage.getZipFile();` has not been reported as a potential resource leak in previous versions
             * [Surround With: Try-with-resources Block](https://www.eclipse.org/eclipse/news/4.15/jdt.php#surround-with-try-with-resources)
             * Quick fix:
                 * [Wrap with `Optional`](https://www.eclipse.org/eclipse/news/4.15/jdt.php#quickfix-wrap-optional)
