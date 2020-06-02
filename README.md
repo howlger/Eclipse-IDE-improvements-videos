@@ -1,7 +1,7 @@
 # Eclipse IDE Improvements Videos
 
 ## [Eclipse 2020-06](https://wiki.eclipse.org/Category:SimRel-2020-06) - [March 18, 2020](https://calendar.google.com/calendar/event?eid=MDhpMWdvM24xOW12ODRjbmxndjFwc2RjY20gZ2NoczdubTRudnBtODM3NDY5ZGRqOXRqbGtAZw&ctz=Europe/Berlin) ([calendar](https://calendar.google.com/calendar/embed?src=gchs7nm4nvpm837469ddj9tjlk@group.calendar.google.com&ctz=Europe/Berlin))
-* [73 projects](https://projects.eclipse.org/releases/2020-06) ([-1 +0 → -1](projects_diff.txt)) - [Website](https://eclipse.org/eclipseide/2020-06) ([New & Noteworthy](https://eclipse.org/eclipseide/2020-06/noteworthy)) - [Splash screen](https://bugs.eclipse.org/bugs/show_bug.cgi?id=545158)
+* [73 projects](https://projects.eclipse.org/releases/2020-06) ([-1 +0 → -1](projects_diff.txt)) - [Website](https://eclipse.org/eclipseide/2020-06) ([New & Noteworthy](https://eclipse.org/eclipseide/2020-06/noteworthy)) - [Splash screen](https://bugs.eclipse.org/bugs/show_bug.cgi?id=553853)
 * [Latest CI builds](https://hudson.eclipse.org/packaging/job/simrel.epp-tycho-build/lastSuccessfulBuild/artifact/org.eclipse.epp.packages/archive/) (Update site: [staging](https://download.eclipse.org/staging/2020-06), [release](http://download.eclipse.org/releases/2020-06))
 * Social media: [Twitter](http://twitter.com/EclipseJavaIDE), [YouTube](https://www.youtube.com/user/EclipseFdn) ([Eclipse IDE playlist](https://www.youtube.com/playlist?list=PLy7t4z5SYNaSNjL60ofpwVhfA7mOF3Pgk)), [Instagram](https://www.instagram.com/eclipsejavaide)
 
