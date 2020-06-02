@@ -1,4 +1,1 @@
-- Eclipse EMF Diff/Merge	0.11.2
-- Eclipse JWT	1.8.0
-- Eclipse Lua Development Tools	1.4.2
-+ Eclipse MoDisco	2020-03 (1.5.1)
+- Eclipse Business Intelligence and Reporting Tools (BIRT)	4.7.0

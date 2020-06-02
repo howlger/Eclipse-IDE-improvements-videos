@@ -1,0 +1,73 @@
+Eclipse Acceleo	3.7.10
+Eclipse Accessibility Tools Framework	1.5.1
+Eclipse ATL	4.2.0
+Eclipse BPEL Designer	1.1.2
+Eclipse BPMN2 Modeler Project	1.5.1
+Eclipse Buildship: Eclipse Plug-ins for Gradle	3.1.4
+Eclipse Business Process Model and Notation (BPMN2)	1.5.0
+Eclipse C/C++ Development Tooling (CDT)	9.11.1
+Eclipse CDO Model Repository	4.10.0
+Eclipse Collections	10.2.0
+Eclipse Communication Framework	3.14.8
+Eclipse Corrosion: the Eclipse IDE for Rust	0.4.2
+Eclipse Data Tools Platform	1.14.102
+Eclipse Dynamic Languages Toolkit	6.1
+Eclipse EclEmma	3.1.4
+Eclipse Ecore Tools	3.3.2
+Eclipse EGit: Git Integration for Eclipse	5.8.0
+Eclipse EMF	2.21.0
+Eclipse EMF Client Platform	1.24.0
+Eclipse EMF Compare	3.3.10
+Eclipse EMF Parsley	1.11.0
+Eclipse EMF Services	1.12.1
+Eclipse EMFStore	1.9.0
+Eclipse Extended Editing Framework (EEF)	2.1.4
+Eclipse Generation Factories (EGF)	1.6.2
+Eclipse GMF Runtime	1.13.0
+Eclipse Graphical Editing Framework (GEF)	5.3.0 (2020-06)
+Eclipse Graphiti	0.16.1
+Eclipse JGit: Java implementation of Git	5.8.0
+Eclipse Jubula Functional Testing Tool	8.0.3 (2020-06)
+Eclipse Linux Tools	7.6.0
+Eclipse LSP4E	0.15.0
+Eclipse LSP4J	0.9.0
+Eclipse Marketplace Client	1.8.3
+Eclipse Maven Integration	1.15
+Eclipse Maven Integration for Web Tools Platform	1.4.3
+Eclipse MDT UML2	5.5.1
+Eclipse MDT XSD (XML Schema Definition)	2.21.0
+Eclipse Memory Analyzer	1.10.0
+Eclipse Modeling Workflow Engine	2.11.3
+Eclipse MoDisco	2020-03 (1.5.1)
+Eclipse Mylyn	3.24
+Eclipse Mylyn Docs	3.0.37
+Eclipse Object Teams	2.8.1 (2020-06)
+Eclipse OCL (Object Constraint Language)	2020-06 (6.12.0)
+Eclipse Oomph	1.16.0
+Eclipse Packaging Project	4.16.0
+Eclipse Papyrus	4.7.0
+Eclipse Parallel Tools Platform (PTP)	9.4.0
+Eclipse Passage	0.9.0
+Eclipse PHP Development Tools	7.2
+Eclipse Project	4.16.0
+Eclipse QVT Operational	2020-06 (3.10.2)
+Eclipse QVTd (QVT Declarative)	2020-06 (0.23.0)
+Eclipse RCP Testing Tool	2.5.1
+Eclipse RedDeer	3.0.0
+Eclipse Remote Application Platform	3.12
+Eclipse Scout	10.0.0
+Eclipse Sirius	6.3.1
+Eclipse SWTBot	3.0.0
+Eclipse Target Communication Framework	1.6.2
+Eclipse Target Management: Terminal and Remote System Explorer (RSE)	4.5
+Eclipse TM4E - TextMate support in the Eclipse IDE 	0.3.4
+Eclipse Tools for Cloud Foundry	1.2.0 (Photon)
+Eclipse Trace Compass	6.0.0
+Eclipse User Storage Service SDK	2.0.0
+Eclipse VIATRA	2.4.0
+Eclipse Web Tools Platform Project	3.18
+Eclipse Wild Web Developer	0.9.1
+Eclipse WindowBuilder	1.9.2
+Eclipse Xpand	2.2.0
+Eclipse Xtext	2.22.0
+Eclipse XWT	1.4.100
