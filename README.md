@@ -1,6 +1,6 @@
 # Eclipse IDE Improvements Videos
 
-## [Eclipse 2020-06](https://wiki.eclipse.org/Category:SimRel-2020-06) - [March 18, 2020](https://calendar.google.com/calendar/event?eid=MDhpMWdvM24xOW12ODRjbmxndjFwc2RjY20gZ2NoczdubTRudnBtODM3NDY5ZGRqOXRqbGtAZw&ctz=Europe/Berlin) ([calendar](https://calendar.google.com/calendar/embed?src=gchs7nm4nvpm837469ddj9tjlk@group.calendar.google.com&ctz=Europe/Berlin))
+## [Eclipse 2020-06](https://wiki.eclipse.org/Category:SimRel-2020-06) - [June 17, 2020](https://calendar.google.com/calendar/event?eid=MDhpMWdvM24xOW12ODRjbmxndjFwc2RjY20gZ2NoczdubTRudnBtODM3NDY5ZGRqOXRqbGtAZw&ctz=Europe/Berlin) ([calendar](https://calendar.google.com/calendar/embed?src=gchs7nm4nvpm837469ddj9tjlk@group.calendar.google.com&ctz=Europe/Berlin))
 * [73 projects](https://projects.eclipse.org/releases/2020-06) ([-1 +0 → -1](projects_diff.txt)) - [Website](https://eclipse.org/eclipseide/2020-06) ([New & Noteworthy](https://eclipse.org/eclipseide/2020-06/noteworthy)) - [Splash screen](https://bugs.eclipse.org/bugs/show_bug.cgi?id=553853)
 * [Latest CI builds](https://hudson.eclipse.org/packaging/job/simrel.epp-tycho-build/lastSuccessfulBuild/artifact/org.eclipse.epp.packages/archive/) (Update site: [staging](https://download.eclipse.org/staging/2020-06), [release](http://download.eclipse.org/releases/2020-06))
 * Social media: [Twitter](http://twitter.com/EclipseJavaIDE), [YouTube](https://www.youtube.com/user/EclipseFdn) ([Eclipse IDE playlist](https://www.youtube.com/playlist?list=PLy7t4z5SYNaSNjL60ofpwVhfA7mOF3Pgk)), [Instagram](https://www.instagram.com/eclipsejavaide)
@@ -38,14 +38,13 @@
 ### Features to show
 
 * **General** (1/2)
-    * UI:
-        * [Gray background on Windows](https://www.eclipse.org/eclipse/news/4.16/platform.php#light-theme-win10)
-        * [Square instead of round tabs](https://www.eclipse.org/eclipse/news/4.16/platform.php#round-tabs-preference): _Window > **Preferences: General > Appearance**_
+    * UI: [Light gray background on Windows](https://www.eclipse.org/eclipse/news/4.16/platform.php#light-theme-win10)
     * [Display shortcuts: when used and/or when not used](https://www.eclipse.org/eclipse/news/4.16/platform.php#show-keybinding) (useful for presenting and for learning shortcuts): _Window > **Preferences: General > Keys**_
 * **Java**:
     * Built-in [Java 14](https://openjdk.java.net/projects/jdk/14/) support:
         * [Set Java compliance level up to 14](https://www.eclipse.org/eclipse/news/4.16/jdt.php#jdk-compliance-14)
         * Switch expressions ([JEP 361](http://openjdk.java.net/jeps/361)) become standard: all four switch templates can be used without enabling preview features
+            * [Quick fix to change return statement to yield statement in Switch Expression](https://www.eclipse.org/eclipse/news/4.16/jdt.php#quickfix-switch-expression-return-to-yield)
         * [Enable preview features via _Configure_ menu](https://www.eclipse.org/eclipse/news/4.16/jdt.php#enable-preview): right-click project and choose _Configure > Enable preview features_ (Eclipse compiler supports preview features for Java 14 only)
         * Records (Preview, [JEP 359](https://openjdk.java.net/jeps/359); `record` like `var` restricted identifier, not keyword)
             * [Wizard](https://www.eclipse.org/eclipse/news/4.16/jdt.php#new-record-creation-wizard)
@@ -54,39 +53,40 @@
         * Text Blocks ([JEP 368](https://openjdk.java.net/jeps/368); Second Preview; → Java 15) with [new escape sequences](https://openjdk.java.net/jeps/368#New-escape-sequences): `\` at the end of a line and `\s` as space not be stripped
         * Pattern Matching for instanceof ([JEP 305](https://openjdk.java.net/jeps/305); Preview; Second preview in Java 15)
         * [Gradle support for running and building with Java 14](https://discuss.gradle.org/t/buildship-3-1-4-is-now-available/35428)
-    * Editor:
-        * [Quick fix to change return statement to yield statement in Switch Expression](https://www.eclipse.org/eclipse/news/4.16/jdt.php#quickfix-switch-expression-return-to-yield)
-        * [Non-blocking Java code completion](https://www.eclipse.org/eclipse/news/4.16/jdt.php#default-non-blocking-completion)
     * Clean up:
-        * [Use `var`](https://www.eclipse.org/eclipse/news/4.16/jdt.php#variable-type-inference)
+        * Code Style: [Use `var`](https://www.eclipse.org/eclipse/news/4.16/jdt.php#variable-type-inference)
+        * Code Style: [Instead of `|` and `&` use `||` and `&&`](https://www.eclipse.org/eclipse/news/4.16/jdt.php#lazy-logical)
         * [Merge same blocks of `if`, `if else` and `else`](https://www.eclipse.org/eclipse/news/4.16/jdt.php#merge-conditional)
-        * [Instead of `|` and `&` use `||` and `&&`](https://www.eclipse.org/eclipse/news/4.16/jdt.php#lazy-logical)
     * Debug
-        * Tip: When using Java 14, use helpful NullPointerExceptions ([JEP 358](https://openjdk.java.net/jeps/358)) `-XX:+ShowCodeDetailsInExceptionMessages` as default VM argument in installed JRE/JDK
         * [Synthetic variables inspection](https://www.eclipse.org/eclipse/news/4.16/jdt.php#synthetic-variables-inspection)
+        * Tip: When using Java 14, use helpful NullPointerExceptions ([JEP 358](https://openjdk.java.net/jeps/358)) `-XX:+ShowCodeDetailsInExceptionMessages` as default VM argument in installed JRE/JDK
+            * HotSport: in Java 14 and probably upcoming releases
+            * OpenJ9: [not yet but](https://github.com/eclipse/openj9/pull/8495) in the [upcoming 0.21 release on July 20, 2020](https://projects.eclipse.org/projects/technology.openj9/releases/0.21) (already in the nightly build) in Java 14; [will be probably backported to Java 8 and 11](https://twitter.com/howlger/status/1270605875150012416)
+    * (Editor: [Non-blocking Java code completion](https://www.eclipse.org/eclipse/news/4.16/jdt.php#default-non-blocking-completion) ← in _Eclipse IDE for Enterprise Java Developers_ blocked by JAXB, jpt and jst proposals)
 * **Git**
     * [_Repositories View_ view: Filter for tags](https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.8#Repositories_View): `?`, `*`, `^`, `$` and `#10` to show only the 10 most recent committed tags (filter per repository; will be persisted)
     * [Clone from a local Git bundle file](https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.8#Cloning) ([a Git bundle file is an archive in a Git specific format](https://git-scm.com/docs/git-bundle), e.g. created via `git bundle create file.bundle master`)
-    * [_Staging_ view, "Commit and Push..." becomes "Push HEAD..." when there is nothing to commit](https://git.eclipse.org/c/egit/egit.git/commit/?id=cc5d94f2bf9753fc61c17042238f359e5a09d3bc)
-    * [Diff Viewer](https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.8#Diff_Viewer):
-        * _Outline_ view has now a toolbar: collapse all and toggle presentation flat vs. folder tree
+    * [_Git Staging_ view, "Commit and Push..." becomes "Push HEAD..." when there is nothing to commit](https://git.eclipse.org/c/egit/egit.git/commit/?id=cc5d94f2bf9753fc61c17042238f359e5a09d3bc)
+    * [Commit Viewer - Diff](https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.8#Diff_Viewer):
         * Quick Outline (Ctrl+O)
+        * _Outline_ view has now a toolbar: collapse all and toggle presentation flat vs. folder tree
 * **General** (2/2)
+    * [Ligatures on Windows](https://www.eclipse.org/eclipse/news/4.16/platform.php#eclipse-win-ligatures-support) ([already supported on Linux and macOS](https://www.eclipse.org/eclipse/news/4.16/platform_isv.php#win-ligatures-support); see [bug 562165](https://bugs.eclipse.org/bugs/show_bug.cgi?id=562165)), e.g. when using a font with programming ligatures like [Fira Code](https://github.com/tonsky/FiraCode), [Monoid](https://github.com/larsenwork/monoid) or [Victor Mono](https://rubjo.github.io/victor-mono/)
     * [_New File_ wizard: create missing folders](https://www.eclipse.org/eclipse/news/4.16/platform.php#create-subfolder)
-    * [Ligatures on Windows](https://www.eclipse.org/eclipse/news/4.16/platform.php#eclipse-win-ligatures-support) ([already supported on Linux and macOS](https://www.eclipse.org/eclipse/news/4.16/platform_isv.php#win-ligatures-support); see [bug 562165](https://bugs.eclipse.org/bugs/show_bug.cgi?id=562165)), e.g. font "Fira Code" or "[Victor Mono](https://rubjo.github.io/victor-mono/)"
-    * New Splash Screen
-    * Faster start-up
-    * (Donate page)
-    * Dark Theme:
-        * [Dark scrollbars on Windows 10](https://www.eclipse.org/eclipse/news/4.16/platform.php#win-dark-theme-scrollbars)
-        * [Consistent view toolbar colors](https://www.eclipse.org/eclipse/news/4.16/platform.php#dark-toolbars)
-        * [...](https://www.eclipse.org/eclipse/news/4.16/platform_isv.php#win-dark-scrollbars)
-    * [Install/Update: Check compatibility with used Java version](https://www.eclipse.org/eclipse/news/4.16/platform.php#verify-jre-installation)
+    * Switch to _Dark Theme_:
+        * [Square instead of round tabs](https://www.eclipse.org/eclipse/news/4.16/platform.php#round-tabs-preference): _Window > Preferences: General > Appearance_
+        * New Splash Screen
+        * Faster start-up
+        * Dark Theme:
+            * [Dark scrollbars on Windows 10](https://www.eclipse.org/eclipse/news/4.16/platform.php#win-dark-theme-scrollbars) and dark menu
+            * [Consistent view toolbar colors](https://www.eclipse.org/eclipse/news/4.16/platform.php#dark-toolbars)
+            * [...](https://www.eclipse.org/eclipse/news/4.16/platform_isv.php#win-dark-tweaks)
+    * ([Install/Update: Check compatibility with used Java version](https://www.eclipse.org/eclipse/news/4.16/platform.php#verify-jre-installation))
     * ([Handle `eclipse+command://` links](https://www.eclipse.org/eclipse/news/4.16/platform_isv.php#eclipse-command-url-handler))
+* **Web/Misc**:
+    * [_Eclipse IDE for Enterprise Java Developers_](https://bugs.eclipse.org/bugs/show_bug.cgi?id=559907) and [_Eclipse IDE for PHP Developers_](https://bugs.eclipse.org/bugs/show_bug.cgi?id=561624): JavaScript support for `.js` files via Eclipse Wild Web Developer (WTP editors still for HTML, CSS, XML files)
     * [Linux: GTK 3.20 or higher required](https://www.eclipse.org/eclipse/news/4.16/platform_isv.php#gtk-min-version) ([instead of GTK 3.14+](https://git.eclipse.org/r/#/c/159264/2/bundles/org.eclipse.swt/Eclipse+SWT/gtk/org/eclipse/swt/widgets/Display.java))
-* **Web**:
-    * [Eclipse IDE for Enterprise Java Developers: JavaScript support via Eclipse Wild Web Developer](https://bugs.eclipse.org/bugs/show_bug.cgi?id=559907) (WTP editors by default for HTML, CSS, XML files)
-    * [Eclipse IDE for PHP Developers: Web support via Eclipse Wild Web Developer](https://bugs.eclipse.org/bugs/show_bug.cgi?id=561624)
+    * _Help > Donate_
 
 ## Publish
 * → [As YouTube video](https://www.youtube.com/playlist?list=PLnh_8hTD4yvnhXSttuewEKgKkmlIj_ND-)
