@@ -26,8 +26,9 @@ Eclipse Graphical Editing Framework (GEF)	5.3.1 (2020-09)
 Eclipse Graphiti	0.17.0
 Eclipse JGit: Java implementation of Git	5.9.0
 Eclipse Jubula Functional Testing Tool	8.0.4 (2020-09)
+Eclipse JustJ	1.0
 Eclipse Linux Tools	8.0.0
-Eclipse LSP4E	0.15.0
+Eclipse LSP4E	0.15.1
 Eclipse LSP4J	0.9.0
 Eclipse Marketplace Client	1.8.4
 Eclipse Maven Integration	1.16.1
@@ -37,9 +38,8 @@ Eclipse MDT XSD (XML Schema Definition)	2.23.0
 Eclipse Memory Analyzer	1.10.0
 Eclipse Modeling Workflow Engine	2.11.3
 Eclipse MoDisco	2020-03 (1.5.1)
-Eclipse Mylyn	3.25.1
+Eclipse Mylyn	3.25.2
 Eclipse Mylyn Docs	3.0.38
-Eclipse Object Teams	2.8.1 (2020-06)
 Eclipse OCL (Object Constraint Language)	2020-06 (6.12.0)
 Eclipse Oomph	1.18.0
 Eclipse Packaging Project	4.17.0
@@ -54,7 +54,7 @@ Eclipse RCP Testing Tool	2.5.1
 Eclipse RedDeer	3.1.0
 Eclipse Remote Application Platform	3.14.0
 Eclipse Scout	10.0.0
-Eclipse Sirius	6.3.2
+Eclipse Sirius	6.3.4
 Eclipse SWTBot	3.0.0
 Eclipse Target Communication Framework	1.6.3
 Eclipse Target Management: Terminal and Remote System Explorer (RSE)	4.5.200
@@ -63,7 +63,7 @@ Eclipse Trace Compass	6.1.0
 Eclipse User Storage Service SDK	2.0.0
 Eclipse VIATRA	2.4.1
 Eclipse Web Tools Platform Project	3.19 (2020-09)
-Eclipse Wild Web Developer	0.11.0
+Eclipse Wild Web Developer	0.11.1
 Eclipse WindowBuilder	1.9.4
 Eclipse Xpand	2.2.0
 Eclipse Xtext	2.23.0

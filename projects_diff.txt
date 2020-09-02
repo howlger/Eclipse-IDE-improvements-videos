@@ -1,3 +1,5 @@
++ Eclipse JustJ	1.0
 - Eclipse Corrosion: the Eclipse IDE for Rust	0.4.2
 - Eclipse EMFStore	1.9.0
+- Eclipse Object Teams	2.8.1 (2020-06)
 - Eclipse Tools for Cloud Foundry	1.2.0 (Photon)
