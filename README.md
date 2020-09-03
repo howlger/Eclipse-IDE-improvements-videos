@@ -25,7 +25,8 @@
     * WTP Source Editing (XML editor, in Java EE also HTML and CSS editors) 3.17→**3.18**: [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=WTP%20Source%20Editing&query_format=advanced&order=changeddate%20DESC), [Git](https://git.eclipse.org/c/sourceediting/webtools.sourceediting.git/log/)
 * J**Git**/EGit 5.8→**5.9**: wiki [JGit](https://wiki.eclipse.org/JGit/New_and_Noteworthy/5.9)/[EGit](https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.9), review [JGit](https://projects.eclipse.org/projects/technology.jgit/reviews/5.9.0-release-review)/[EGit](https://projects.eclipse.org/projects/technology.egit/reviews/5.9.0-release-review), [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=EGit&product=JGit&query_format=advanced&order=changeddate%20DESC), Git [JGit](https://git.eclipse.org/c/jgit/jgit.git/log/)/[EGit](https://git.eclipse.org/c/egit/egit.git/log/)
 * Web, XML
-    * [Wild Web Developer](https://projects.eclipse.org/projects/tools.wildwebdeveloper) 0.9.1→**0.11.1**: [GitHub](https://github.com/eclipse/wildwebdeveloper) [commits](https://github.com/eclipse/wildwebdeveloper/compare/0.9.1...0.11.1)
+    * [Wild Web Developer](https://projects.eclipse.org/projects/tools.wildwebdeveloper) 0.9.1→**0.11.1**: [GitHub](https://github.com/eclipse/wildwebdeveloper), [commits](https://github.com/eclipse/wildwebdeveloper/compare/0.9.1...0.11.1)
+        * JavaScript/TypeScript language server ([`typescript@...`](https://github.com/eclipse/wildwebdeveloper/blob/master/org.eclipse.wildwebdeveloper/pom.xml); `plugins/org.eclipse.wildwebdeveloper_<version>/node_modules/typescript/package.json`): 3.8.2→**3.9.7** [releases](https://github.com/microsoft/TypeScript/releases), [announcement](https://devblogs.microsoft.com/typescript/announcing-typescript-3-9/)
     * [LemMinX](https://projects.eclipse.org/projects/technology.lemminx) 0.11: [GitHub](https://github.com/eclipse/lemminx) [changelog](https://github.com/eclipse/lemminx/blob/master/CHANGELOG.md#change-log)
 * C/C++, PHP, Rust
     * [CDT](https://projects.eclipse.org/projects/tools.cdt) (C/C++) 9.11.1→**10.0**: [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=CDT&query_format=advanced&order=changeddate%20DESC), [review](https://projects.eclipse.org/projects/tools.cdt/reviews/10.0.0-release-review), [_New & Noteworthy_](https://wiki.eclipse.org/CDT/User/NewIn100)
@@ -38,8 +39,64 @@
 
 ### Features to show
 
-* ... TODO
-
+* **Java**
+    * Java 15 support via Marketplace ### TODO Wait for [Marketplace entry](https://marketplace.eclipse.org/search/site/java%252015) to be created ([bug 566302](https://bugs.eclipse.org/bugs/show_bug.cgi?id=566302))
+    * Java editor:
+        * ([Non-blocking Java code completion](https://www.eclipse.org/eclipse/news/4.16/jdt.php#default-non-blocking-completion) ← in _Eclipse IDE for Enterprise Java Developers_ blocked by jpt proposals)
+        * [Substring/Subword matches](https://www.eclipse.org/eclipse/news/4.17/jdt.php#content-assist-substring-types)
+        * Quick fixes:
+            * [Use `String.format` instead of string concatenation](https://www.eclipse.org/eclipse/news/4.17/jdt.php#String.format-quickfix)
+            * [_Add missing method_ for method references in simple cases](https://www.eclipse.org/eclipse/news/4.17/jdt.php#method_reference-quickfix)
+        * [Toggle showing code minings via _Find Actions_](https://www.eclipse.org/eclipse/news/4.17/jdt.php#toggle-code-minings)
+    * Clean up:
+        * [_Optimization_ tab](https://www.eclipse.org/eclipse/news/4.17/jdt.php#optimization) with old _Use lazy logical operator_ and new _Precompiles reused regular expressions_ (see below)
+        * [_Precompiles reused regular expressions_](https://www.eclipse.org/eclipse/news/4.17/jdt.php#regex)
+        * [_Use Objects.equals() in the equals method implementation_](https://www.eclipse.org/eclipse/news/4.17/jdt.php#objects-equals) (in the _Unnecessary Code_ tab at the bottom)
+    * [Formatter: line wrapping of `assert`](https://www.eclipse.org/eclipse/news/4.17/jdt.php#formatter-wrap-assert)
+    * _JUnit_ view:
+        * [_Collapse All_](https://www.eclipse.org/eclipse/news/4.17/jdt.php#junit-collapse-all)
+        * [_Sort By > Execution Time_](https://www.eclipse.org/eclipse/news/4.17/jdt.php#junit-sort-time)
+    * Debug:
+        * [Java launch configurations: Use helpful NullPointerExceptions checkbox](https://www.eclipse.org/eclipse/news/4.17/jdt.php#helpful-nullpointer-exceptions) (enabled by default)
+        * [Actual type in _Variables_ view](https://www.eclipse.org/eclipse/news/4.17/jdt.php#variables-actual-type)
+        * [Anonymous class instance in evaluation](https://www.eclipse.org/eclipse/news/4.17/jdt.php#anonymous-class-inspection)
+* **General**
+    * [Multiple last edit locations](https://www.eclipse.org/eclipse/news/4.17/platform.php#multiple-last-edit-locations): Ctrl+Alt+←/→ Previous/Next Edit Location
+    * [Font (size) in trees and tables can be changed](https://www.eclipse.org/eclipse/news/4.17/platform.php#adjustable-view-fonts)
+    * [By default no confirm on exit dialog](https://www.eclipse.org/eclipse/news/4.17/platform.php#confirm-on-exit)
+    * [Console view: interpretation of ASCII control characters ignores null byte (`\0`)](https://www.eclipse.org/eclipse/news/4.17/platform.php#console-null-byte)) ← helpful on Linux where after a null byte the rest of the line will not be shown
+    * [UI](https://bugs.eclipse.org/bugs/showdependencytree.cgi?id=563540):
+        * [Linux: Improved light theme](https://www.eclipse.org/eclipse/news/4.17/platform.php#gtk-light-theme)
+        * [Highlighting of active tab](https://www.eclipse.org/eclipse/news/4.17/platform.php#dark-selection-highlighter)
+        * Windows: Improved dark theme
+            * [Dark menus](https://www.eclipse.org/eclipse/news/4.17/platform.php#dark-win32-menu)
+            * [Selection highlighting in tables and trees fixed](https://www.eclipse.org/eclipse/news/4.17/platform.php#dark-selection-win32-highlighter)
+            * [Dark drop-down boxes](https://www.eclipse.org/eclipse/news/4.17/platform.php#dark-win32-combo)
+        * Shorter text, e.g. [_... exists. Do you wish to overwrite?_ → _Overwrite ...?_](https://bugs.eclipse.org/bugs/show_bug.cgi?id=565800)
+        * [Improved interactive and startup performance](https://bugs.eclipse.org/bugs/show_bug.cgi?id=563542) (when copying a file from outside into Eclipse)
+            * Startup of _Eclipse IDE for Java Developers_ on my machine: ~ 4.5s instead of 5s
+    * [Linux AArch64 (aka Arm64) support](https://www.eclipse.org/eclipse/news/4.17/platform.php#arm64), e.g. for Raspberry Pi
+* **Git**
+     * ([Git index 4 support](https://wiki.eclipse.org/JGit/New_and_Noteworthy/5.9#New_Features))
+     * _Git Staging_ view:
+         * _Always show Push Wizard for Commit and Push_ preference (_Team > Git > Confirmations and Warnings_)
+         * ([Commit message content assist replaces selection](https://git.eclipse.org/c/egit/egit.git/commit/?id=eb071addfdd0313dcb4cbd6d0183d284fb97c05b) (instead of inserting proposal before the selection))
+* **Web**
+    * Embedded Node.js
+    * [Add TextMate theme](https://github.com/eclipse/tm4e/blob/master/RELEASE_NOTES.md#041): _Window > **Preferences: TextMate > Theme: Add...**_
+    * Language servers updated, e.g. code action _Extract function_ preservers empty lines now
+    * [JavaScript task tag detection](https://bugs.eclipse.org/bugs/show_bug.cgi?id=565543)
+* **Misc**
+    * Java 11 required to run Eclipse
+        * ([Install/Update: Check compatibility with used Java version](https://www.eclipse.org/eclipse/news/4.16/platform.php#verify-jre-installation) since last release)
+    * 3 of 13 IDE packages are shipped with Java:
+        * _Eclipse IDE for **C/C++** Developers_
+        * _Eclipse IDE for **Web and JavaScript** Developers_
+        * _Eclipse IDE for **Rust** Developers_
+    * (No Mylyn Task view in Java IDE package anymore, but it's still in the Java EE package)
+    * ([Prepared to include Chromium, but not yet included](https://bugs.eclipse.org/bugs/show_bug.cgi?id=549585#c117))
+    * ([Update sites: HTTPS instead of HTTP](https://git.eclipse.org/c/epp/org.eclipse.epp.packages.git/commit/?id=4ba6ff7b188d38345c70d6b5a58a979fa6ca0a77))
+    * (Not covered: C/C++ support via CDT 9.11.1→**10.0** improvements)
 
 ## Publish
 * → [As YouTube video](https://www.youtube.com/playlist?list=PLnh_8hTD4yvnhXSttuewEKgKkmlIj_ND-)
