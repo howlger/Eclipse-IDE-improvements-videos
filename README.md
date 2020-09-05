@@ -42,32 +42,34 @@
 * **Java**
     * Java 15 support via Marketplace ### TODO Wait for [Marketplace entry](https://marketplace.eclipse.org/search/site/java%252015) to be created ([bug 566302](https://bugs.eclipse.org/bugs/show_bug.cgi?id=566302))
     * Java editor:
-        * ([Non-blocking Java code completion](https://www.eclipse.org/eclipse/news/4.16/jdt.php#default-non-blocking-completion) ← in _Eclipse IDE for Enterprise Java Developers_ blocked by jpt proposals)
-        * [Substring/Subword matches](https://www.eclipse.org/eclipse/news/4.17/jdt.php#content-assist-substring-types)
+        * ([Non-blocking Java code completion](https://www.eclipse.org/eclipse/news/4.16/jdt.php#default-non-blocking-completion) ← in _Eclipse IDE for Enterprise Java Developers_ [still blocked by JPA JPQL proposals](https://bugs.eclipse.org/bugs/show_bug.cgi?id=563158#c5))
+        * Content assist:
+            * [Substring/subword matches also for types](https://www.eclipse.org/eclipse/news/4.17/jdt.php#content-assist-substring-types), e.g. _linkedq_ → _Concurrent**LinkedQ**ueue_, _**Linked**Blocking**Q**ueue_, _**Linked**Transfer**Q**ueue_
+            * In the _Eclipse IDE for **Enterprise Java** Developers_ wrong order of substring proposals fixed ([Mylyn bug](https://bugs.eclipse.org/bugs/show_bug.cgi?id=506804)), e.g. when typing char by char `List.of` first proposal is `copyOf` instead of `of`
         * Quick fixes:
-            * [Use `String.format` instead of string concatenation](https://www.eclipse.org/eclipse/news/4.17/jdt.php#String.format-quickfix)
-            * [_Add missing method_ for method references in simple cases](https://www.eclipse.org/eclipse/news/4.17/jdt.php#method_reference-quickfix)
-        * [Toggle showing code minings via _Find Actions_](https://www.eclipse.org/eclipse/news/4.17/jdt.php#toggle-code-minings)
+            * [Use `String.format` instead of string concatenation](https://www.eclipse.org/eclipse/news/4.17/jdt.php#String.format-quickfix), e.g. `String info = args.length + " arguments; path: " + System.getenv("PATH");`
+            * [_Add missing method_ for method references in simple cases](https://www.eclipse.org/eclipse/news/4.17/jdt.php#method_reference-quickfix), e.g. `void foo() { List.of(1, 2, 3).forEach(this::missing); }`
+        * [Toggle showing Java code minings via _Find Actions_](https://www.eclipse.org/eclipse/news/4.17/jdt.php#toggle-code-minings)
     * Clean up:
         * [_Optimization_ tab](https://www.eclipse.org/eclipse/news/4.17/jdt.php#optimization) with old _Use lazy logical operator_ and new _Precompiles reused regular expressions_ (see below)
-        * [_Precompiles reused regular expressions_](https://www.eclipse.org/eclipse/news/4.17/jdt.php#regex)
+        * [_Precompiles reused regular expressions_](https://www.eclipse.org/eclipse/news/4.17/jdt.php#regex): when the same String is used more than one time as regular expression
         * [_Use Objects.equals() in the equals method implementation_](https://www.eclipse.org/eclipse/news/4.17/jdt.php#objects-equals) (in the _Unnecessary Code_ tab at the bottom)
     * [Formatter: line wrapping of `assert`](https://www.eclipse.org/eclipse/news/4.17/jdt.php#formatter-wrap-assert)
     * _JUnit_ view:
         * [_Collapse All_](https://www.eclipse.org/eclipse/news/4.17/jdt.php#junit-collapse-all)
-        * [_Sort By > Execution Time_](https://www.eclipse.org/eclipse/news/4.17/jdt.php#junit-sort-time)
+        * [_Sort By_: _Execution Order_ (default and old behavior), _Execution Time_ or _Name_](https://www.eclipse.org/eclipse/news/4.17/jdt.php#junit-sort-time) (in view menu)
     * Debug:
-        * [Java launch configurations: Use helpful NullPointerExceptions checkbox](https://www.eclipse.org/eclipse/news/4.17/jdt.php#helpful-nullpointer-exceptions) (enabled by default)
-        * [Actual type in _Variables_ view](https://www.eclipse.org/eclipse/news/4.17/jdt.php#variables-actual-type)
-        * [Anonymous class instance in evaluation](https://www.eclipse.org/eclipse/news/4.17/jdt.php#anonymous-class-inspection)
+        * [Java launch configurations: Use helpful NullPointerExceptions checkbox](https://www.eclipse.org/eclipse/news/4.17/jdt.php#helpful-nullpointer-exceptions) in all Java based launch configurations in the _Arguments_ tab; enabled by default and available
+        * [_Variables_ view: _Show Type Names_ shows actual instead of declared type](https://www.eclipse.org/eclipse/news/4.17/jdt.php#variables-actual-type) (the _Show Type Names_ toolbar button can be pressed if in the view menu _Layout > Show Columns_ is disabled)
+        * [Inspect/Display/Execute of expressions with anonymous class instances works now](https://www.eclipse.org/eclipse/news/4.17/jdt.php#anonymous-class-inspection) - Inspect (Ctrl+Shift+I)
 * **General**
     * [Multiple last edit locations](https://www.eclipse.org/eclipse/news/4.17/platform.php#multiple-last-edit-locations): Ctrl+Alt+←/→ Previous/Next Edit Location
     * [Font (size) in trees and tables can be changed](https://www.eclipse.org/eclipse/news/4.17/platform.php#adjustable-view-fonts)
-    * [By default no confirm on exit dialog](https://www.eclipse.org/eclipse/news/4.17/platform.php#confirm-on-exit)
-    * [Console view: interpretation of ASCII control characters ignores null byte (`\0`)](https://www.eclipse.org/eclipse/news/4.17/platform.php#console-null-byte)) ← helpful on Linux where after a null byte the rest of the line will not be shown
+    * [Console view: interpretation of ASCII control characters ignores null byte (`\0`)](https://www.eclipse.org/eclipse/news/4.17/platform.php#console-null-byte) ← helpful on Linux where after a null byte the rest of the line will not be shown
     * [UI](https://bugs.eclipse.org/bugs/showdependencytree.cgi?id=563540):
         * [Linux: Improved light theme](https://www.eclipse.org/eclipse/news/4.17/platform.php#gtk-light-theme)
         * [Highlighting of active tab](https://www.eclipse.org/eclipse/news/4.17/platform.php#dark-selection-highlighter)
+        * [Notification when switching theme to restart Eclipse](https://bugs.eclipse.org/bugs/show_bug.cgi?id=564335)
         * Windows: Improved dark theme
             * [Dark menus](https://www.eclipse.org/eclipse/news/4.17/platform.php#dark-win32-menu)
             * [Selection highlighting in tables and trees fixed](https://www.eclipse.org/eclipse/news/4.17/platform.php#dark-selection-win32-highlighter)
@@ -97,6 +99,7 @@
     * ([Prepared to include Chromium, but not yet included](https://bugs.eclipse.org/bugs/show_bug.cgi?id=549585#c117))
     * ([Update sites: HTTPS instead of HTTP](https://git.eclipse.org/c/epp/org.eclipse.epp.packages.git/commit/?id=4ba6ff7b188d38345c70d6b5a58a979fa6ca0a77))
     * (Not covered: C/C++ support via CDT 9.11.1→**10.0** improvements)
+    * [By default no confirm on exit dialog](https://www.eclipse.org/eclipse/news/4.17/platform.php#confirm-on-exit)
 
 ## Publish
 * → [As YouTube video](https://www.youtube.com/playlist?list=PLnh_8hTD4yvnhXSttuewEKgKkmlIj_ND-)
