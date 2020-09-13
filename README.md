@@ -18,7 +18,7 @@
     * EPP: [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=EPP&query_format=advanced&order=changeddate%20DESC), [Git](https://git.eclipse.org/c/epp/org.eclipse.epp.packages.git/log/)
 * Java, Maven, Gradle
     * Java development tools (JDT) 4.16→**4.17**: [Eclipse 4.17 - New and Noteworthy - Java Development Tools](https://www.eclipse.org/eclipse/news/4.17/jdt.php), [plan](https://www.eclipse.org/projects/project-plan.php?planurl=http://www.eclipse.org/eclipse/development/plans/eclipse_project_plan_4_17.xml#themes_and_priorities)
-        * Java 15 as preview via [Marketplace](https://marketplace.eclipse.org/search/site/java%252015) ([bug 566302](https://bugs.eclipse.org/bugs/show_bug.cgi?id=566302)): [bug tree](https://bugs.eclipse.org/bugs/showdependencytree.cgi?id=559959), [examples](https://wiki.eclipse.org/Java15/Examples)
+        * Java 15 as preview via [Marketplace](https://marketplace.eclipse.org/content/java-15-support-eclipse-2020-09-417) ([bug 566302](https://bugs.eclipse.org/bugs/show_bug.cgi?id=566302)): [bug tree](https://bugs.eclipse.org/bugs/showdependencytree.cgi?id=559959), [examples](https://wiki.eclipse.org/Java15/Examples)
     * (EclEmma (Java code coverage)) 3.1.3→**3.1.4**: [changes](https://www.eclemma.org/changes.html), [Git](https://github.com/eclipse/eclemma/commits/master), [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=Eclemma&query_format=advanced&order=changeddate%20DESC))
     * (M2Eclipse (Maven) 1.16→**1.16.2**: [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=m2e&query_format=advanced&order=changeddate%20DESC&target_milestone=1.15.0), [Git](https://git.eclipse.org/c/m2e/m2e-core.git/log/), [review](https://projects.eclipse.org/projects/technology.m2e/reviews/1.15-release-review))
     * (Buildship (Gradle) 3.1.4: [review](https://projects.eclipse.org/projects/tools.buildship/releases/3.1.4) → [announcements](https://discuss.gradle.org/tag/buildship-release))
@@ -40,7 +40,7 @@
 ### Features to show
 
 * **Java**
-    * Java 15 support via Marketplace ### TODO Wait for [Marketplace entry](https://marketplace.eclipse.org/search/site/java%252015) to be created ([bug 566302](https://bugs.eclipse.org/bugs/show_bug.cgi?id=566302))
+    * [Java 15 support via Marketplace](https://marketplace.eclipse.org/content/java-15-support-eclipse-2020-09-417)
     * Java editor:
         * ([Non-blocking Java code completion](https://www.eclipse.org/eclipse/news/4.16/jdt.php#default-non-blocking-completion) ← in _Eclipse IDE for Enterprise Java Developers_ [still blocked by JPA JPQL proposals](https://bugs.eclipse.org/bugs/show_bug.cgi?id=563158#c5))
         * Content assist:
@@ -54,7 +54,7 @@
         * [_Optimization_ tab](https://www.eclipse.org/eclipse/news/4.17/jdt.php#optimization) with old _Use lazy logical operator_ and new _Precompiles reused regular expressions_ (see below)
         * [_Precompiles reused regular expressions_](https://www.eclipse.org/eclipse/news/4.17/jdt.php#regex): when the same String is used more than one time as regular expression
         * [_Use Objects.equals() in the equals method implementation_](https://www.eclipse.org/eclipse/news/4.17/jdt.php#objects-equals) (in the _Unnecessary Code_ tab at the bottom)
-    * [Formatter: line wrapping of `assert`](https://www.eclipse.org/eclipse/news/4.17/jdt.php#formatter-wrap-assert)
+    * ([Formatter: line wrapping of `assert`](https://www.eclipse.org/eclipse/news/4.17/jdt.php#formatter-wrap-assert))
     * _JUnit_ view:
         * [_Collapse All_](https://www.eclipse.org/eclipse/news/4.17/jdt.php#junit-collapse-all)
         * [_Sort By_: _Execution Order_ (default and old behavior), _Execution Time_ or _Name_](https://www.eclipse.org/eclipse/news/4.17/jdt.php#junit-sort-time) (in view menu)
@@ -64,8 +64,8 @@
         * [Inspect/Display/Execute of expressions with anonymous class instances works now](https://www.eclipse.org/eclipse/news/4.17/jdt.php#anonymous-class-inspection) - Inspect (Ctrl+Shift+I)
 * **General**
     * [Multiple last edit locations](https://www.eclipse.org/eclipse/news/4.17/platform.php#multiple-last-edit-locations): Ctrl+Alt+←/→ Previous/Next Edit Location
-    * [Font (size) in trees and tables can be changed](https://www.eclipse.org/eclipse/news/4.17/platform.php#adjustable-view-fonts)
     * [Console view: interpretation of ASCII control characters ignores null byte (`\0`)](https://www.eclipse.org/eclipse/news/4.17/platform.php#console-null-byte) ← helpful on Linux where after a null byte the rest of the line will not be shown
+    * [Font (size) in trees and tables can be changed](https://www.eclipse.org/eclipse/news/4.17/platform.php#adjustable-view-fonts)
     * [UI](https://bugs.eclipse.org/bugs/showdependencytree.cgi?id=563540):
         * [Linux: Improved light theme](https://www.eclipse.org/eclipse/news/4.17/platform.php#gtk-light-theme) to align better with the default GTK3 theme
         * Improved dark theme
@@ -73,9 +73,9 @@
             * [Highlighting of active tab](https://www.eclipse.org/eclipse/news/4.17/platform.php#dark-selection-highlighter)
             * Windows:
                 * [Dark menus](https://www.eclipse.org/eclipse/news/4.17/platform.php#dark-win32-menu)
-                * [Selection highlighting in tables and trees fixed](https://www.eclipse.org/eclipse/news/4.17/platform.php#dark-selection-win32-highlighter)
+                * [Selection highlighting in tables has been fixed](https://www.eclipse.org/eclipse/news/4.17/platform.php#dark-selection-win32-highlighter), e.g. in the content assist and in the _Quick Switch Editor_ (Ctrl+E)
                 * [Dark drop-down boxes](https://www.eclipse.org/eclipse/news/4.17/platform.php#dark-win32-combo)
-        * Shorter text, e.g. [_... exists. Do you wish to overwrite?_ → _Overwrite ...?_](https://bugs.eclipse.org/bugs/show_bug.cgi?id=565800)
+        * (Shorter text, e.g. [_... exists. Do you wish to overwrite?_ → _Overwrite ...?_](https://bugs.eclipse.org/bugs/show_bug.cgi?id=565800))
         * [Improved interactive and startup performance](https://bugs.eclipse.org/bugs/show_bug.cgi?id=563542) (when copying a file from outside into Eclipse)
             * Startup of _Eclipse IDE for Java Developers_ on my machine: ~ 4.5s instead of 5s
 * **Git**
