@@ -25,7 +25,7 @@
     * (WTP Source Editing (XML editor, in Java EE also HTML and CSS editors) 3.19→**3.20**: [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=WTP%20Source%20Editing&query_format=advanced&order=changeddate%20DESC), [Git](https://git.eclipse.org/c/sourceediting/webtools.sourceediting.git/log/))
 * J**Git**/EGit 5.9→**5.10**: wiki [JGit](https://wiki.eclipse.org/JGit/New_and_Noteworthy/5.10)/[EGit](https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.10), review [JGit](https://projects.eclipse.org/projects/technology.jgit/reviews/5.10.0-release-review)/[EGit](https://projects.eclipse.org/projects/technology.egit/reviews/5.10.0-release-review), [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=EGit&product=JGit&query_format=advanced&order=changeddate%20DESC), Git [JGit](https://git.eclipse.org/c/jgit/jgit.git/log/)/[EGit](https://git.eclipse.org/c/egit/egit.git/log/)
 * Web, XML
-    * [Wild Web Developer](https://projects.eclipse.org/projects/tools.wildwebdeveloper) 0.11.1→**0.11.3**: [GitHub](https://github.com/eclipse/wildwebdeveloper), [commits](https://github.com/eclipse/wildwebdeveloper/compare/0.11.1...0.11.3)
+    * [Wild Web Developer](https://projects.eclipse.org/projects/tools.wildwebdeveloper) 0.11.1→**0.11.4**: [GitHub](https://github.com/eclipse/wildwebdeveloper), [commits](https://github.com/eclipse/wildwebdeveloper/compare/0.11.1...0.11.4)
         * JavaScript/TypeScript language server ([`typescript@...`](https://github.com/eclipse/wildwebdeveloper/blob/master/org.eclipse.wildwebdeveloper/pom.xml); `plugins/org.eclipse.wildwebdeveloper_<version>/node_modules/typescript/package.json`): 3.9.7→**4.0.5** [releases](https://github.com/microsoft/TypeScript/releases), [announcement](https://devblogs.microsoft.com/typescript/announcing-typescript-4-0/)
     * [LemMinX](https://projects.eclipse.org/projects/technology.lemminx) 0.11→**0.14.1**: [GitHub](https://github.com/eclipse/lemminx), [changelog](https://github.com/eclipse/lemminx/blob/master/CHANGELOG.md#change-log)
 * C/C++, PHP, Rust
@@ -134,7 +134,7 @@
     * ([_Staging_ view: redraws reduced](https://bugs.eclipse.org/bugs/show_bug.cgi?id=565019))
 * **Web**
     * LSP4E: _Format_ menu item has been relocated Generic Editor _Source_ submenu
-    * ([Wild Web Developer not yet updated: 2020-12 still contains the version of 2020-09, although newer versions exist](https://twitter.com/howlger/status/1333435109056401411))
+    * TODO: [Wild Web Developer 0.11.2, 0.11.3 and 0.11.4 improvements](https://github.com/eclipse/wildwebdeveloper/blob/master/RELEASE_NOTES.md#0114), TypeScript/JavaScript language server update and new ESLint language server
 * **(Under development)**
     * ([Upgrade and improve Chromium support in SWT](https://bugs.eclipse.org/bugs/show_bug.cgi?id=566608): no commits in last 3 month (see also [how to enable it](https://bugs.eclipse.org/bugs/show_bug.cgi?id=549585#c117)))
     * ([Eclipse also available for Linux AArch64 aka Arm64](https://www.eclipse.org/eclipse/news/4.17/platform.php#arm64) ([bug tree](https://bugs.eclipse.org/bugs/showdependencytree.cgi?id=565419)) to run Eclipse native e.g. on [Raspberry Pi](https://twitter.com/akurtakov/status/1291011562745061378), but no Linux AArch64 IDE packages yet)
