@@ -46,7 +46,7 @@
         * _Eclipse IDE for **Enterprise Java** Developers_
         * _Eclipse IDE for **C/C++** Developers_
         * _Eclipse IDE for **Embedded C/C++** Developers_ (new; 13→14 IDE packages): C/C++ for Arm/RISC-V based on the formerly _GNU MCU/ARM Eclipse_ plugin, which became the _C/C++ Development Tools_ Eclipse project
-            * By the way, **Linux AArch64**: all 14 IDE packages also available for Linux ARM 64bit, e.g. to run Eclipse native on [Raspberry Pi](https://twitter.com/akurtakov/status/1291011562745061378)
+            * By the way, [all 14 IDE packages also available for **Linux AArch64** aka ARM 64bit](https://www.eclipse.org/eclipse/news/4.17/platform.php#arm64) ([bug tree](https://bugs.eclipse.org/bugs/showdependencytree.cgi?id=565419)) to run Eclipse native e.g. on [Raspberry Pi](https://twitter.com/akurtakov/status/1291011562745061378)
                 * in addition to the x86 64bit Windows, macOS and Linux platforms
                 * macOS with Apple silicon (M1 which is also ARM 64bit) not yet native supported
                 * but [support for Big Sur (macOS 11)](https://bugs.eclipse.org/bugs/show_bug.cgi?id=565691)
@@ -134,10 +134,11 @@
     * ([_Staging_ view: redraws reduced](https://bugs.eclipse.org/bugs/show_bug.cgi?id=565019))
 * **Web**
     * LSP4E: _Format_ menu item has been relocated Generic Editor _Source_ submenu
-    * TODO: [Wild Web Developer 0.11.2, 0.11.3 and 0.11.4 improvements](https://github.com/eclipse/wildwebdeveloper/blob/master/RELEASE_NOTES.md#0114), TypeScript/JavaScript language server update and new ESLint language server
+    * Embedded language server updated:
+        * TypeScript 4.0
+        * `/** @deprecated */`, e.g. with `class Outdated {}` `new Outdated();` gives the info `'Outdated' is deprecated`
 * **(Under development)**
     * ([Upgrade and improve Chromium support in SWT](https://bugs.eclipse.org/bugs/show_bug.cgi?id=566608): no commits in last 3 month (see also [how to enable it](https://bugs.eclipse.org/bugs/show_bug.cgi?id=549585#c117)))
-    * ([Eclipse also available for Linux AArch64 aka Arm64](https://www.eclipse.org/eclipse/news/4.17/platform.php#arm64) ([bug tree](https://bugs.eclipse.org/bugs/showdependencytree.cgi?id=565419)) to run Eclipse native e.g. on [Raspberry Pi](https://twitter.com/akurtakov/status/1291011562745061378), but no Linux AArch64 IDE packages yet)
     * ([Support upcoming Mac on Apple silicon](https://bugs.eclipse.org/bugs/show_bug.cgi?id=565690))
     * ([Java 16](https://jdk.java.net/16/) support: [bug tree](https://bugs.eclipse.org/bugs/showdependencytree.cgi?id=565620), [examples](https://wiki.eclipse.org/Java16/Examples))
 
