@@ -2,14 +2,14 @@
 
 ## [Eclipse 2020-12](https://wiki.eclipse.org/Category:SimRel-2020-12) - [September 16, 2020](https://calendar.google.com/calendar/event?eid=NWJyY3FsZ24wZmU1aW9jcmg2bTdocmY2a2sgZ2NoczdubTRudnBtODM3NDY5ZGRqOXRqbGtAZw&ctz=Europe/Berlin) ([calendar](https://calendar.google.com/calendar/embed?src=gchs7nm4nvpm837469ddj9tjlk@group.calendar.google.com&ctz=Europe/Berlin))
 * [71 projects](https://projects.eclipse.org/releases/2020-12) ([-0 +1 → +1](projects_diff.txt)) - [Website](https://eclipse.org/eclipseide/2020-12) ([New & Noteworthy](https://eclipse.org/eclipseide/2020-12/noteworthy)) - [Splash screen](https://bugs.eclipse.org/bugs/show_bug.cgi?id=553853)
-* [Latest CI builds](https://ci.eclipse.org/packaging/job/simrel.epp-tycho-build/lastSuccessfulBuild/artifact/org.eclipse.epp.packages/archive/) (Update site: [staging](https://download.eclipse.org/staging/2020-12), [release](http://download.eclipse.org/releases/2020-12))
+* [Latest CI builds](https://ci.eclipse.org/packaging/job/simrel.epp-tycho-build/lastSuccessfulBuild/artifact/org.eclipse.epp.packages/archive/) ([log](https://git.eclipse.org/c/simrel/org.eclipse.simrel.build.git/log/), update sites: [staging](https://download.eclipse.org/staging/2020-12), [release](http://download.eclipse.org/releases/2020-12))
 * Social media: [Twitter](http://twitter.com/EclipseJavaIDE), [YouTube](https://www.youtube.com/user/EclipseFdn) ([Eclipse IDE playlist](https://www.youtube.com/playlist?list=PLy7t4z5SYNaSNjL60ofpwVhfA7mOF3Pgk)), [Instagram](https://www.instagram.com/eclipsejavaide)
 
 
 ### Sources
 
 * General
-    * **Platform** 4.17→**4.18**: [Eclipse 4.18 - New and Noteworthy - Platform and Equinox](https://www.eclipse.org/eclipse/news/4.18/platform.php), [plan](https://www.eclipse.org/projects/project-plan.php?planurl=http://www.eclipse.org/eclipse/development/plans/eclipse_project_plan_4_18.xml#themes_and_priorities), [resolved bugs](https://bugs.eclipse.org/bugs/buglist.cgi?bug_status=RESOLVED&resolution=---&resolution=FIXED&product=JDT&query_format=advanced&order=changeddate%20DESC)
+    * **Platform** 4.17→**4.18**: [Eclipse 4.18 - New and Noteworthy - Platform and Equinox](https://www.eclipse.org/eclipse/news/4.18/platform.php) ([log](https://git.eclipse.org/c/www.eclipse.org/eclipse/news.git/log/)), [plan](https://www.eclipse.org/projects/project-plan.php?planurl=http://www.eclipse.org/eclipse/development/plans/eclipse_project_plan_4_18.xml#themes_and_priorities), [resolved bugs](https://bugs.eclipse.org/bugs/buglist.cgi?bug_status=RESOLVED&resolution=---&resolution=FIXED&product=JDT&query_format=advanced&order=changeddate%20DESC)
     * (Marketplace Client (MPC) 1.8.4→**1.9.0**: [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=MPC&query_format=advanced&order=changeddate%20DESC), [Git](https://git.eclipse.org/c/mpc/org.eclipse.epp.mpc.git/log/))
     * (Eclipse User Storage 2.0: [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=USSSDK&query_format=advanced&order=changeddate%20DESC), [Git](https://git.eclipse.org/c/usssdk/org.eclipse.usssdk.git/log/))
     * (Mylyn WikiText 3.0.38: (Markdown editor, etc.): [Git](https://git.eclipse.org/c/mylyn/org.eclipse.mylyn.docs.git/log/))
@@ -17,7 +17,7 @@
     * (Oomph 1.17/18: [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=Oomph&query_format=advanced&order=changeddate%20DESC), [Git](https://git.eclipse.org/c/oomph/org.eclipse.oomph.git/log/))
     * EPP: [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=EPP&query_format=advanced&order=changeddate%20DESC), [Git](https://git.eclipse.org/c/epp/org.eclipse.epp.packages.git/log/)
 * Java, Maven, Gradle
-    * Java development tools (JDT) 4.17→**4.18**: [Eclipse 4.18 - New and Noteworthy - Java Development Tools](https://www.eclipse.org/eclipse/news/4.18/jdt.php), [plan](https://www.eclipse.org/projects/project-plan.php?planurl=http://www.eclipse.org/eclipse/development/plans/eclipse_project_plan_4_18.xml#themes_and_priorities)
+    * Java development tools (JDT) 4.17→**4.18**: [Eclipse 4.18 - New and Noteworthy - Java Development Tools](https://www.eclipse.org/eclipse/news/4.18/jdt.php) ([log](https://git.eclipse.org/c/www.eclipse.org/eclipse/news.git/log/)), [plan](https://www.eclipse.org/projects/project-plan.php?planurl=http://www.eclipse.org/eclipse/development/plans/eclipse_project_plan_4_18.xml#themes_and_priorities)
         * [Java 15](https://jdk.java.net/15/): [bug tree](https://bugs.eclipse.org/bugs/showdependencytree.cgi?id=559959), [examples](https://wiki.eclipse.org/Java15/Examples)
     * (EclEmma (Java code coverage) 3.1.4: [changes](https://www.eclemma.org/changes.html), [Git](https://github.com/eclipse/eclemma/commits/master), [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=Eclemma&query_format=advanced&order=changeddate%20DESC))
     * (M2Eclipse (Maven) 1.16.2: [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=m2e&query_format=advanced&order=changeddate%20DESC&target_milestone=1.16.2), [Git](https://git.eclipse.org/c/m2e/m2e-core.git/log/), [review](https://projects.eclipse.org/projects/technology.m2e/reviews/1.16.2-release-review))
