@@ -63,15 +63,16 @@
             * [JEP 375: Pattern Matching for instanceof (Second Preview)](https://openjdk.java.net/jeps/375): [_"with no changes relative to the preview in JDK 14, in order to gather additional feedback"_](https://openjdk.java.net/jeps/375#History)
             * [JEP 384: Records (Second Preview)](https://openjdk.java.net/jeps/384)
             * [JEP 360: Sealed Classes](https://openjdk.java.net/jeps/360): second preview in Java 16
-                * Quick fixes to change between sealed, non-sealed and final
-                * Java Search: _Permitted type declarations_
+                * [Quick fixes on permitted types (sealed classes Java 15 preview feature)](https://www.eclipse.org/eclipse/news/4.18/jdt.php#quick-fixes-permitted-types) to add `sealed`, `non-sealed`, or `final` modifiers on permitted type declarations, as applicable
+                * [Java Search: _Permitted type declarations_](https://www.eclipse.org/eclipse/news/4.18/jdt.php#search-permitted-types)
     * Java editor:
-        * [Completion overwrites by default](https://www.eclipse.org/eclipse/news/4.18/jdt.php#completion-overwrites)
-        * [Insert best guessed parameters by default](https://www.eclipse.org/eclipse/news/4.18/jdt.php#param-best-guessed)
+        * [Completion overwrites by default](https://www.eclipse.org/eclipse/news/4.18/jdt.php#completion-overwrites) (preferences: _Java > Editor > Content Assist_)
+        * [Insert best guessed parameters by default](https://www.eclipse.org/eclipse/news/4.18/jdt.php#param-best-guessed) (preferences: _Java > Editor > Content Assist_)
+        * Speaking of new default behavior:
+            * [_Sort library entries alphabetically in Package Explorer_ is now enabled by default](https://www.eclipse.org/eclipse/news/4.18/jdt.php#package-explorer-lib-sortedbydefault) (preferences: _Java > Appearance_)
         * Quick assists:
             * [Create new implementation](https://www.eclipse.org/eclipse/news/4.18/jdt.php#quick-assist-new-impl) on an interface or abstract class declaration launches the New Java Class wizard
         * Quick fixes:
-            * [Quick fixes on permitted types (sealed classes Java 15 preview feature)](https://www.eclipse.org/eclipse/news/4.18/jdt.php#quick-fixes-permitted-types) to add `sealed`, `non-sealed`, or `final` modifiers on permitted type declarations, as applicable
             * [Convert switch statement to switch expression](https://www.eclipse.org/eclipse/news/4.18/jdt.php#switch-expressions) (also available as clean-up: see below)
     * Clean-up (+25; [AutoRefactor](https://github.com/JnRouvignac/AutoRefactor) merged into [Eclipse](https://bugs.eclipse.org/bugs/buglist.cgi?classification=Eclipse%20Project&product=JDT&query_format=advanced&short_desc=AutoRefactor&short_desc_type=allwordssubstr) by [Fabrice Tiercelin](https://projects.eclipse.org/projects/eclipse.jdt/elections/election-fabrice-tiercelin-committer-eclipse-java-development-tools-jdt))
         * _Code Style_ (+5)
@@ -105,20 +106,18 @@
             * [_Primitive serialization_](https://www.eclipse.org/eclipse/news/4.18/jdt.php#primitive-serialization)
             * [_Prefer boolean literals_](https://www.eclipse.org/eclipse/news/4.18/jdt.php#boolean-literal)
     * Formatter
-        * [Annotations wrapping](https://www.eclipse.org/eclipse/news/4.18/jdt.php#formatter-wrap-annotations)
-    * [Launch configuration: _Use @argfile when launching_](https://www.eclipse.org/eclipse/news/4.18/jdt.php#launch-with-argfile)
+        * ([Annotations wrapping](https://www.eclipse.org/eclipse/news/4.18/jdt.php#formatter-wrap-annotations))
+    * [Launch configuration: _Use @argfile when launching_](https://www.eclipse.org/eclipse/news/4.18/jdt.php#launch-with-argfile) (Java 9 or higher)
     * ([Stabilized logical structures in Variables view with active GC](https://www.eclipse.org/eclipse/news/4.18/jdt.php#logicalstructure-gc): _Debug_ view no longer breaks when logical structures are shown while the application's garbage collector is active (`com.sun.jdi.ObjectCollectedException` occurred while retrieving value))
-    * [The Preferences > Java > Appearance > [x] Sort library entries alphabetically in Package Explorer is now enabled by default](https://www.eclipse.org/eclipse/news/4.18/jdt.php#package-explorer-lib-sortedbydefault)
-    * [JUnit 5.7](https://www.eclipse.org/eclipse/news/4.18/jdt.php#junit-5.7): see [release notes](https://junit.org/junit5/docs/current/release-notes/index.html#release-notes-5.7.0/)
+    * ([JUnit 5.7](https://www.eclipse.org/eclipse/news/4.18/jdt.php#junit-5.7): see [release notes](https://junit.org/junit5/docs/current/release-notes/index.html#release-notes-5.7.0/))
 * **General**
     * [UI](https://bugs.eclipse.org/bugs/showdependencytree.cgi?id=566539&hide_resolved=0)
         * [New "System" theme](https://www.eclipse.org/eclipse/news/4.18/platform.php#system-theme)
             * [macOS: Light theme improved](https://www.eclipse.org/eclipse/news/4.18/platform.php#mac-theme-light)
         * [_Open With > ..._ no longer remembers the chosen editor to open that file next time](https://www.eclipse.org/eclipse/news/4.18/platform.php#store-default-editor) ([bug 378488](https://bugs.eclipse.org/bugs/show_bug.cgi?id=378488))
-        * [_Open With > ..._ no longer remembers the chosen editor to open that file next time](https://www.eclipse.org/eclipse/news/4.18/platform.php#store-default-editor) ([bug 378488](https://bugs.eclipse.org/bugs/show_bug.cgi?id=378488))
         * [Remember last used page in the Search dialog](https://www.eclipse.org/eclipse/news/4.18/platform.php#remember-last-search): enabled by default; moved to _Preferences_ dialog (from _Search_ dialog _Customize..._)
         * [Installation Details - Configuration: filter field](https://www.eclipse.org/eclipse/news/4.18/platform.php#configuration-filter)
-        * Dark theme improvements:
+        * (Dark theme improvements:)
             * [Windows: progress bars](https://www.eclipse.org/eclipse/news/4.18/platform.php#win32-dark-progressbar)
             * [Avoid hard code dark colors in the dark theme and find better colors](https://bugs.eclipse.org/bugs/show_bug.cgi?id=566549)
             * [Git _History_ view: Branch label color is too bright](https://bugs.eclipse.org/bugs/show_bug.cgi?id=536171)
@@ -128,7 +127,7 @@
     * [Preferences: _Teams_ became _Version Control (Teams)_](https://bugs.eclipse.org/bugs/show_bug.cgi?id=32023)
     * ([Generic extensible "test report" view](https://www.eclipse.org/eclipse/news/4.18/platform_isv.php#unit-test-view) ([bug 507626](https://bugs.eclipse.org/bugs/show_bug.cgi?id=507626))
 * **Git**
-    * [F5 in _Staging_ and _History_ views](https://bugs.eclipse.org/bugs/show_bug.cgi?id=567600)
+    * [F5 in _Git Staging_ and _History_ views](https://bugs.eclipse.org/bugs/show_bug.cgi?id=567600)
     * [Better secure store handling for SSH key passphrases](https://git.eclipse.org/c/egit/egit.git/commit/?id=05f6aa2f360c8111b7b83af7dd824eb5b5eed531): Preferences: _Store SSH key passphrases in secure store_, etc.
     * [ProxyJump support](https://git.eclipse.org/c/jgit/jgit.git/commit/?id=566e49d7d39b12c785be24b8b61b4960a4b7ea17) (see [ProxyJump support](https://man.openbsd.org/ssh_config#ProxyJump))
     * ([_Staging_ view: redraws reduced](https://bugs.eclipse.org/bugs/show_bug.cgi?id=565019))
@@ -141,6 +140,7 @@
     * ([Upgrade and improve Chromium support in SWT](https://bugs.eclipse.org/bugs/show_bug.cgi?id=566608): no commits in last 3 month (see also [how to enable it](https://bugs.eclipse.org/bugs/show_bug.cgi?id=549585#c117)))
     * ([Support upcoming Mac on Apple silicon](https://bugs.eclipse.org/bugs/show_bug.cgi?id=565690))
     * ([Java 16](https://jdk.java.net/16/) support: [bug tree](https://bugs.eclipse.org/bugs/showdependencytree.cgi?id=565620), [examples](https://wiki.eclipse.org/Java16/Examples))
+    * ([Non-blocking Java code completion](https://www.eclipse.org/eclipse/news/4.16/jdt.php#default-non-blocking-completion) ← in _Eclipse IDE for Enterprise Java Developers_ [still blocked by JPA JPQL proposals](https://bugs.eclipse.org/bugs/show_bug.cgi?id=563158#c5))
 
 ## Publish
 * → [As YouTube video](https://www.youtube.com/playlist?list=PLnh_8hTD4yvnhXSttuewEKgKkmlIj_ND-)
