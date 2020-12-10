@@ -74,15 +74,15 @@
             * [Create new implementation](https://www.eclipse.org/eclipse/news/4.18/jdt.php#quick-assist-new-impl) on an interface or abstract class declaration launches the New Java Class wizard
         * Quick fixes:
             * [Convert switch statement to switch expression](https://www.eclipse.org/eclipse/news/4.18/jdt.php#switch-expressions) (also available as clean-up: see below)
-    * Clean-up (+25; [AutoRefactor](https://github.com/JnRouvignac/AutoRefactor) merged into [Eclipse](https://bugs.eclipse.org/bugs/buglist.cgi?classification=Eclipse%20Project&product=JDT&query_format=advanced&short_desc=AutoRefactor&short_desc_type=allwordssubstr) by [Fabrice Tiercelin](https://projects.eclipse.org/projects/eclipse.jdt/elections/election-fabrice-tiercelin-committer-eclipse-java-development-tools-jdt))
-        * _Code Style_ (+5)
+    * Clean-up (+27; [AutoRefactor](https://github.com/JnRouvignac/AutoRefactor) merged into [Eclipse](https://bugs.eclipse.org/bugs/buglist.cgi?classification=Eclipse%20Project&product=JDT&query_format=advanced&short_desc=AutoRefactor&short_desc_type=allwordssubstr) by [Fabrice Tiercelin](https://projects.eclipse.org/projects/eclipse.jdt/elections/election-fabrice-tiercelin-committer-eclipse-java-development-tools-jdt))
+        * _Code Style_ (+6)
             * [_Convert to switch expression (Java 14 or higher)_](https://www.eclipse.org/eclipse/news/4.18/jdt.php#switch-expressions) (also available as quick fix: see above)
             * [_Combine nested 'if' statement in 'else' block to 'else if'_](https://www.eclipse.org/eclipse/news/4.18/jdt.php#else-if)
-            * [_Add elements in collections without loop_](https://www.eclipse.org/eclipse/news/4.18/jdt.php#add-remove)
             * [_Convert if/else if/else chain to switch_](https://www.eclipse.org/eclipse/news/4.18/jdt.php#use-switch)
+            * [_Add elements in collections without loop_](https://www.eclipse.org/eclipse/news/4.18/jdt.php#add-remove)
             * [_Compare with != 0 for bitwise expressions (use it carefully, it may alter the behavior)_](https://www.eclipse.org/eclipse/news/4.18/jdt.php#bitwise-expressions)
             * [_Pull up assignment_](https://www.eclipse.org/eclipse/news/4.18/jdt.php#pull-up-assignment)
-        * _Duplicate code_ (+4)
+        * _Duplicate code_ (+4; new tab)
             * [_Replace (X && Y) || (!X && Z) by X ? Y : Z_](https://www.eclipse.org/eclipse/news/4.18/jdt.php#ternary-operator): use ternary operator
             * [_Use '==' or '^' on booleans_](https://www.eclipse.org/eclipse/news/4.18/jdt.php#xor): equals (`==`) and XOR (`^`) on passive boolean operands only
             * [_Remove redundant end of block with jump statement_](https://www.eclipse.org/eclipse/news/4.18/jdt.php#redundant-falling-blocks)
@@ -100,10 +100,11 @@
             * [_Remove overridden assignment_](https://www.eclipse.org/eclipse/news/4.18/jdt.php#overridden-assignment)
             * [_Remove useless continue_](https://www.eclipse.org/eclipse/news/4.18/jdt.php#redundant-continue)
             * [_Use try-with-resource (1.7 or higher)_](https://www.eclipse.org/eclipse/news/4.18/jdt.php#try-with-resource)
-        * _Optimization_ (+4)
+        * _Optimization_ (+5)
             * [_Exit loop earlier_](https://www.eclipse.org/eclipse/news/4.18/jdt.php#break-loop)
             * [_Replace String concatenation by StringBuilder_](https://www.eclipse.org/eclipse/news/4.18/jdt.php#stringbuilder)
             * [_Primitive serialization_](https://www.eclipse.org/eclipse/news/4.18/jdt.php#primitive-serialization)
+            * [_Remove unnecessary String creation_](https://bugs.eclipse.org/bugs/show_bug.cgi?id=567009)
             * [_Prefer boolean literals_](https://www.eclipse.org/eclipse/news/4.18/jdt.php#boolean-literal)
     * Formatter
         * ([Annotations wrapping](https://www.eclipse.org/eclipse/news/4.18/jdt.php#formatter-wrap-annotations))
