@@ -1,4 +1,4 @@
-package clean_ups;
+package legacy_code;
 
 public class DuplicateCode {
     int sample(int i, boolean isValid, boolean isEnabled, Boolean isDone) {

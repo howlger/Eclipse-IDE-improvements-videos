@@ -1,4 +1,4 @@
-package clean_ups;
+package legacy_code;
 
 import java.io.FileInputStream;
 import java.io.IOException;

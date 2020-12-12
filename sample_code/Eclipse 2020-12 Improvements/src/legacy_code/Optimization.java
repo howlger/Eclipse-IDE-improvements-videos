@@ -1,4 +1,4 @@
-package clean_ups;
+package legacy_code;
 
 public class Optimization {
     void sample(int number, char letter) {
