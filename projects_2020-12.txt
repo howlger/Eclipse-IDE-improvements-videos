@@ -28,11 +28,11 @@ Eclipse Graphiti	0.17.0
 Eclipse JGit: Java implementation of Git	5.10.0
 Eclipse Jubula Functional Testing Tool	8.0.5
 Eclipse JustJ	1.1
-Eclipse Linux Tools	8.0.0
+Eclipse Linux Tools	8.1.0
 Eclipse LSP4E	0.17.0
 Eclipse LSP4J	0.10.0
 Eclipse Marketplace Client	1.9.0
-Eclipse Maven Integration	1.16.2
+Eclipse Maven Integration	1.17.1
 Eclipse Maven Integration for Web Tools Platform	1.4.3
 Eclipse MDT UML2	5.5.1
 Eclipse MDT XSD (XML Schema Definition)	2.24.0
@@ -49,7 +49,7 @@ Eclipse Parallel Tools Platform (PTP)	9.4.0
 Eclipse Passage	1.1.0
 Eclipse PHP Development Tools	7.2
 Eclipse Project	4.18.0
-Eclipse QVT Operational	2021-03 (3.10.3)
+Eclipse QVT Operational	2020-06 (3.10.2)
 Eclipse QVTd (QVT Declarative)	2020-12 (0.24.0)
 Eclipse RCP Testing Tool	2.5.1
 Eclipse RedDeer	3.2.0
@@ -64,7 +64,7 @@ Eclipse Trace Compass	6.2.0
 Eclipse User Storage Service SDK	2.0.0
 Eclipse VIATRA	2.5.0
 Eclipse Web Tools Platform Project	3.20 (2020-12)
-Eclipse Wild Web Developer	0.11.3
+Eclipse Wild Web Developer	0.11.4
 Eclipse WindowBuilder	1.9.4
 Eclipse Xpand	2.2.0
 Eclipse Xtext	2.24.0
