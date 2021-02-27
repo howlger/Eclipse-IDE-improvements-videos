@@ -8,10 +8,8 @@
 [2020-12](https://github.com/howlger/Eclipse-IDE-improvements-videos/tree/2020-12)
 </sup>
 
-# Eclipse IDE Improvements Videos
-
-## [Eclipse 2021-03](https://wiki.eclipse.org/Category:SimRel-2021-03) - [March 17, 2021](https://www.google.com/calendar/event?eid=NnNtbjdzMXJiZXRjN2lnYnNyZHV1azgwOTAgZ2NoczdubTRudnBtODM3NDY5ZGRqOXRqbGtAZw&ctz=Europe/Berlin) ([calendar](https://calendar.google.com/calendar/embed?src=gchs7nm4nvpm837469ddj9tjlk@group.calendar.google.com&ctz=Europe/Berlin))
-* [70 projects](https://projects.eclipse.org/releases/2021-03) ([-1 +0 → -1](projects_diff.txt)) - [Website](https://eclipse.org/eclipseide/2021-03) ([New & Noteworthy](https://eclipse.org/eclipseide/2021-03/noteworthy)) - [Splash screen](https://bugs.eclipse.org/bugs/show_bug.cgi?id=553853)
+# [Eclipse IDE 2021-03](https://wiki.eclipse.org/Category:SimRel-2021-03) Improvements Video
+* [March 17, 2021](https://www.google.com/calendar/event?eid=NnNtbjdzMXJiZXRjN2lnYnNyZHV1azgwOTAgZ2NoczdubTRudnBtODM3NDY5ZGRqOXRqbGtAZw&ctz=Europe/Berlin) ([calendar](https://calendar.google.com/calendar/embed?src=gchs7nm4nvpm837469ddj9tjlk@group.calendar.google.com&ctz=Europe/Berlin)) - [70 projects](https://projects.eclipse.org/releases/2021-03) ([-1 +0 → -1](projects_diff.txt)) - [Website](https://eclipse.org/eclipseide/2021-03) ([New & Noteworthy](https://eclipse.org/eclipseide/2021-03/noteworthy)) - [Splash screen](https://bugs.eclipse.org/bugs/show_bug.cgi?id=553853)
 * [Latest CI builds](https://ci.eclipse.org/packaging/job/simrel.epp-tycho-build/lastSuccessfulBuild/artifact/org.eclipse.epp.packages/archive/) ([log](https://git.eclipse.org/c/simrel/org.eclipse.simrel.build.git/log/), update sites: [staging](https://download.eclipse.org/staging/2021-03), [release](http://download.eclipse.org/releases/2021-03))
 * Social media: [Twitter](http://twitter.com/EclipseJavaIDE), [YouTube](https://www.youtube.com/user/EclipseFdn) ([Eclipse IDE playlist](https://www.youtube.com/playlist?list=PLy7t4z5SYNaSNjL60ofpwVhfA7mOF3Pgk)), [Instagram](https://www.instagram.com/eclipsejavaide)
 
@@ -50,7 +48,57 @@
 
 ### Features to show
 
-* TODO
+* **Java**
+    * [Java 16 support via Marketplace](https://marketplace.eclipse.org/content/java-16-support-eclipse-2021-03-419)
+    * Java editor:
+        * [Non-blocking Java code completion also in the _Eclipse IDE for Enterprise Java Developers_](https://www.eclipse.org/eclipse/news/4.16/jdt.php#default-non-blocking-completion)
+        * Quick assists:
+            * [Create try-with-resources](https://www.eclipse.org/eclipse/news/4.19/jdt.php#try-with-resources-quick-assist)
+        * Quick fixes:
+            * [Create permitted type declaration](https://www.eclipse.org/eclipse/news/4.19/jdt.php#create-permitted-type-declaration)
+        * [Add catch clause to try-with-resources assists](https://www.eclipse.org/eclipse/news/4.19/jdt.php#add-catch-to-try-with-resources-assists)
+    * Clean-up (+16; [AutoRefactor](https://github.com/JnRouvignac/AutoRefactor) merged into [Eclipse](https://bugs.eclipse.org/bugs/buglist.cgi?classification=Eclipse%20Project&product=JDT&query_format=advanced&short_desc=AutoRefactor&short_desc_type=allwordssubstr) by [Fabrice Tiercelin](https://projects.eclipse.org/projects/eclipse.jdt/elections/election-fabrice-tiercelin-committer-eclipse-java-development-tools-jdt))
+        * [_Java Feature_](https://www.eclipse.org/eclipse/news/4.19/jdt.php#java-feature) (+3; new tab)
+            * [Java 15 with preview features: _Pattern matching for instanceof_](https://www.eclipse.org/eclipse/news/4.19/jdt.php#pattern-matching)
+            * [Java 8: _Use Comparator.comparing()_](https://www.eclipse.org/eclipse/news/4.19/jdt.php#comparator-comparing)
+            * [Java 7: _Use Multi-catch_](https://www.eclipse.org/eclipse/news/4.19/jdt.php#multi-catch)
+        * [_Source Fixing_](https://www.eclipse.org/eclipse/news/4.19/jdt.php#source-fixing) (+2; new tab)
+            * [_Avoid Object::equals or String::equalsIgnoreCase on null objects_](https://www.eclipse.org/eclipse/news/4.19/jdt.php#invert-equals)
+            * [_Compare to zero_](https://www.eclipse.org/eclipse/news/4.19/jdt.php#comparison-zero)
+        * _Code Style_ (+2)
+            * [_Reduce indentation when possible_](https://www.eclipse.org/eclipse/news/4.19/jdt.php#reduce-indentation)
+            * [_Extract increment/decrement from statement_](https://www.eclipse.org/eclipse/news/4.19/jdt.php#extract-increment)
+        * _Duplicate code_ (+1)
+            * [_Pull down common code from if/else statement_](https://www.eclipse.org/eclipse/news/4.19/jdt.php#control-flow-merge)
+        * _Unnecessary Code_ (+3)
+            * [_Redundant String.substring() parameter_](https://www.eclipse.org/eclipse/news/4.19/jdt.php#substring)
+            * [_Unreachable block_](https://www.eclipse.org/eclipse/news/4.19/jdt.php#unreachable-block)
+            * [_Convert loop into if when possible_](https://www.eclipse.org/eclipse/news/4.19/jdt.php#unlooped-while)
+        * _Optimization_ (+5)
+            * [_Convert fields into local variables if the use is only local_](https://www.eclipse.org/eclipse/news/4.19/jdt.php#convert-fields)
+            * [_Make inner classes static where possible_](https://www.eclipse.org/eclipse/news/4.19/jdt.php#static-inner-class)
+            * [_Use String.replace() instead of String.replaceAll() when possible_](https://www.eclipse.org/eclipse/news/4.19/jdt.php#string-replace)
+            * [_Primitive comparison_](https://www.eclipse.org/eclipse/news/4.19/jdt.php#primitive-comparison)
+            * [_Primitive parsing_](https://www.eclipse.org/eclipse/news/4.19/jdt.php#primitive-parsing)
+    * [Coloring of restricted identifiers](https://www.eclipse.org/eclipse/news/4.19/jdt.php#restricted-identifier-preference)
+    * Formatter
+        *
+    * [Externally annotate sources](https://www.eclipse.org/eclipse/news/4.19/jdt.php#annotate-for-source-folders)
+    * Debug
+        * [Toggle tracepoints in editor ruler](https://www.eclipse.org/eclipse/news/4.19/jdt.php#toggle-tracepoints)
+        * [Toggle breakpoint on a list of methods including abstract method](https://www.eclipse.org/eclipse/news/4.19/jdt.php#toggle-breakpoints-works-listofmethods-including-abstract)
+    * Performance:
+        * [Parallel index search](https://www.eclipse.org/eclipse/news/4.19/jdt.php#parallel-index-search)
+        * Atomic marker API
+    * ([JUnit 5.7.1](https://www.eclipse.org/eclipse/news/4.19/jdt.php#junit-5.7.1): see [release notes](https://junit.org/junit5/docs/5.7.1/release-notes/#release-notes-5.7.1/))
+* **General**
+    * TODO
+* **Git**
+    * TODO
+* **Web**
+    * TODO
+* **(Under development)**
+    * TODO
 
 ## Publish
 * → [As YouTube video](https://www.youtube.com/playlist?list=PLnh_8hTD4yvnhXSttuewEKgKkmlIj_ND-)
