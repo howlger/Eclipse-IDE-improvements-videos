@@ -1,11 +1,11 @@
-<sup>Old releases:
-[2019-06](https://github.com/howlger/Eclipse-IDE-improvements-videos/tree/2019-06)
-[2019-09](https://github.com/howlger/Eclipse-IDE-improvements-videos/tree/2019-09)
-[2019-12](https://github.com/howlger/Eclipse-IDE-improvements-videos/tree/2019-12)
-[2020-03](https://github.com/howlger/Eclipse-IDE-improvements-videos/tree/2020-03)
-[2020-06](https://github.com/howlger/Eclipse-IDE-improvements-videos/tree/2020-06)
-[2020-09](https://github.com/howlger/Eclipse-IDE-improvements-videos/tree/2020-09)
+<sup>Past releases:
 [2020-12](https://github.com/howlger/Eclipse-IDE-improvements-videos/tree/2020-12)
+[2020-09](https://github.com/howlger/Eclipse-IDE-improvements-videos/tree/2020-09)
+[2020-06](https://github.com/howlger/Eclipse-IDE-improvements-videos/tree/2020-06)
+[2020-03](https://github.com/howlger/Eclipse-IDE-improvements-videos/tree/2020-03)
+[2019-12](https://github.com/howlger/Eclipse-IDE-improvements-videos/tree/2019-12)
+[2019-09](https://github.com/howlger/Eclipse-IDE-improvements-videos/tree/2019-09)
+[2019-06](https://github.com/howlger/Eclipse-IDE-improvements-videos/tree/2019-06)
 </sup>
 
 # [Eclipse IDE 2021-03](https://wiki.eclipse.org/Category:SimRel-2021-03) Improvements Video
@@ -50,13 +50,6 @@
 
 * **Java**
     * [Java 16 support via Marketplace](https://marketplace.eclipse.org/content/java-16-support-eclipse-2021-03-419)
-    * Java editor:
-        * [Non-blocking Java code completion also in the _Eclipse IDE for Enterprise Java Developers_](https://www.eclipse.org/eclipse/news/4.16/jdt.php#default-non-blocking-completion)
-        * Quick assists:
-            * [Create try-with-resources](https://www.eclipse.org/eclipse/news/4.19/jdt.php#try-with-resources-quick-assist)
-        * Quick fixes:
-            * [Create permitted type declaration](https://www.eclipse.org/eclipse/news/4.19/jdt.php#create-permitted-type-declaration)
-        * [Add catch clause to try-with-resources assists](https://www.eclipse.org/eclipse/news/4.19/jdt.php#add-catch-to-try-with-resources-assists)
     * Clean-up (+16; [AutoRefactor](https://github.com/JnRouvignac/AutoRefactor) merged into [Eclipse](https://bugs.eclipse.org/bugs/buglist.cgi?classification=Eclipse%20Project&product=JDT&query_format=advanced&short_desc=AutoRefactor&short_desc_type=allwordssubstr) by [Fabrice Tiercelin](https://projects.eclipse.org/projects/eclipse.jdt/elections/election-fabrice-tiercelin-committer-eclipse-java-development-tools-jdt))
         * [_Java Feature_](https://www.eclipse.org/eclipse/news/4.19/jdt.php#java-feature) (+3; new tab)
             * [Java 15 with preview features: _Pattern matching for instanceof_](https://www.eclipse.org/eclipse/news/4.19/jdt.php#pattern-matching)
@@ -80,25 +73,64 @@
             * [_Use String.replace() instead of String.replaceAll() when possible_](https://www.eclipse.org/eclipse/news/4.19/jdt.php#string-replace)
             * [_Primitive comparison_](https://www.eclipse.org/eclipse/news/4.19/jdt.php#primitive-comparison)
             * [_Primitive parsing_](https://www.eclipse.org/eclipse/news/4.19/jdt.php#primitive-parsing)
+    * Java editor:
+        * Quick assists:
+            * [Create try-with-resources](https://www.eclipse.org/eclipse/news/4.19/jdt.php#try-with-resources-quick-assist)
+        * Quick fixes:
+            * [Create permitted type declaration](https://www.eclipse.org/eclipse/news/4.19/jdt.php#create-permitted-type-declaration)
+        * [Add catch clause to try-with-resources assists](https://www.eclipse.org/eclipse/news/4.19/jdt.php#add-catch-to-try-with-resources-assists)
     * [Coloring of restricted identifiers](https://www.eclipse.org/eclipse/news/4.19/jdt.php#restricted-identifier-preference)
-    * Formatter
-        *
     * [Externally annotate sources](https://www.eclipse.org/eclipse/news/4.19/jdt.php#annotate-for-source-folders)
+    * Performance:
+        * [Non-blocking Java code completion also in the _Eclipse IDE for Enterprise Java Developers_](https://www.eclipse.org/eclipse/news/4.16/jdt.php#default-non-blocking-completion) ← in _Eclipse IDE for Enterprise Java Developers_ ([was blocked by JPA JPQL proposals](https://bugs.eclipse.org/bugs/show_bug.cgi?id=563158#c5))
+        * [Parallel index search](https://www.eclipse.org/eclipse/news/4.19/jdt.php#parallel-index-search)
+        * [Use of new atomic marker API](https://bugs.eclipse.org/bugs/show_bug.cgi?id=571017)
+        * [Codeminings: less often computed](https://bugs.eclipse.org/bugs/show_bug.cgi?id=570727)
     * Debug
         * [Toggle tracepoints in editor ruler](https://www.eclipse.org/eclipse/news/4.19/jdt.php#toggle-tracepoints)
         * [Toggle breakpoint on a list of methods including abstract method](https://www.eclipse.org/eclipse/news/4.19/jdt.php#toggle-breakpoints-works-listofmethods-including-abstract)
-    * Performance:
-        * [Parallel index search](https://www.eclipse.org/eclipse/news/4.19/jdt.php#parallel-index-search)
-        * Atomic marker API
+        * [_Breakpoints_ view: _Disable All_](https://www.eclipse.org/eclipse/news/4.19/platform.php#disable-all-breakpoints) (general, not only in Java)
     * ([JUnit 5.7.1](https://www.eclipse.org/eclipse/news/4.19/jdt.php#junit-5.7.1): see [release notes](https://junit.org/junit5/docs/5.7.1/release-notes/#release-notes-5.7.1/))
 * **General**
-    * TODO
+    * [_Console_ view: _Find Next_ (Ctrl+K) and _Find Previous_ (Ctrl+Shift+K)](https://www.eclipse.org/eclipse/news/4.19/platform.php#console-find-next-find-previous)
+    * [UI](https://bugs.eclipse.org/bugs/showdependencytree.cgi?id=569282&hide_resolved=0)
+        * [_Open Resource_ dialog shows projects](https://bugs.eclipse.org/bugs/show_bug.cgi?id=479218)
+        * [Horizontal scrolling via Shift plus mouse wheel and via touchpad gestures](https://www.eclipse.org/eclipse/news/4.19/platform.php#editors-horizontal-scroll)
+        * ([_Compare_ editor wastes less space](https://bugs.eclipse.org/bugs/show_bug.cgi?id=551573))
+        * ([Opening an XML file from command line at a specific line number](https://bugs.eclipse.org/bugs/show_bug.cgi?id=567708)) via Quick Search?
+        * [Windows: Microsoft Edge as external browser](https://www.eclipse.org/eclipse/news/4.19/platform.php#browsers-windows-update)
+    * ([Performance improvements](https://bugs.eclipse.org/bugs/show_bug.cgi?id=569285)
+        * [New atomic marker API](https://bugs.eclipse.org/bugs/show_bug.cgi?id=570914) and [make use of it in the platform](https://bugs.eclipse.org/bugs/show_bug.cgi?id=570952)
+        * [Windows: Avoid JNI for trivial arithmetic macros](Avoid JNI for trivial arithmetic macros)
 * **Git**
-    * TODO
+    * [Signing](https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.11#Signatures)
+        * [Signing of tags](https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.11#Creating_Signed_Tags)
+        * [Verifying Commit Signatures](https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.11#Verifying_Commit_Signatures) Disabled by default; in preferences _Git > History_ for _Show in Revision Comment_ option _Verify Signatures_
+        * [External GPG signer support](https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.11#Using_GPG_to_Sign_Commits_and_Tags): requires to interact with the user via GUI dialogs, like GnuPG does ([commit](https://git.eclipse.org/c/egit/egit.git/commit/?id=2b66e9b8baa2104c320c301daea9147227ef39fe): as workaround when patent-encumbered AES/OCB cipher is needed not provided by Bouncy Castle)
+    * [_Properties_ view for _Commit Viewer_ and in _Git Repositories_ view selected tags](https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.11#Properties_View): When the selected tag target is a commit, buttons to open the commit in the _Commit Viewer_ and to show the commit in the _History_ are displayed ([537695](https://bugs.eclipse.org/bugs/show_bug.cgi?id=537695))
+    * [SSH: JSch was dropped in favor of using Apache MINA sshd only](https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.11#Properties_View): so in preference no option anymore to choose which one to use (environment variable `GIT_SSH` to use external SSH tool instead)
+    * Performance
+        * [Fetching: more efficient protocol V2 is used when server supports it](https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.11#Git_Protocol)
+        * Startup (via OSGi services):
+            * [Let the framework run the configuration check](https://git.eclipse.org/c/egit/egit.git/commit/?id=4d8ae5e93d40dbf3908d9abcbf5db5180ec855a8)
+            * [Register template variable resolvers in StartEventListener](https://git.eclipse.org/c/egit/egit.git/commit/?id=6483bcae41c2af9999a9e7d341f207b30dc92938) ([564708](https://bugs.eclipse.org/bugs/show_bug.cgi?id=564708))
+            * [EGit UI DebugOptionsListener as a OSGi declarative service](https://git.eclipse.org/c/egit/egit.git/commit/?id=6c9309466b6f220fd777c0605f2a49caabf66310)
+            * [Simplify the EGit UI Activator by using OSGi declarative services](https://git.eclipse.org/c/egit/egit.git/commit/?id=dfd0958aa593fda3c7a930f600aaf3c46e4f350c)
+        * [ResourceStateFactory: avoid string concatenation](https://bugs.eclipse.org/bugs/show_bug.cgi?id=570962)
 * **Web**
-    * TODO
+    * [_Eclipse IDE for JavaScript and Web Developers_ by _Eclipse Wild Web Developer_ instead of _EPP_](https://bugs.eclipse.org/bugs/show_bug.cgi?id=571132)
+        * Eclipse Installer?
+        * Missing on [download page](https://www.eclipse.org/downloads/packages/release/2021-03/m3)?
+    * [XML CodeLens preference page](https://github.com/eclipse/wildwebdeveloper/issues/636)
+    * [Implemented "openDoc" to open the given url in an External browser](https://github.com/eclipse/wildwebdeveloper/commit/9f742827d63237a0deb9311971cecbe33e4db558): ...?
+    * [Read WTP extension point for catalog mapping](https://github.com/eclipse/wildwebdeveloper/commit/10d7dfed566dec2c8923df9cb855118b803ff952): ...?
+    * LSP4E: ...?
+    * Embedded language server updated:
+        * TypeScript 4.1 support
+        * [Navigation support for `@see` targets](https://devblogs.microsoft.com/typescript/announcing-typescript-4-1/#editor-support-for-the-jsdoc-see-tag), e.g. `@see other.foo`
 * **(Under development)**
-    * TODO
+    * ([Apple silicon](https://bugs.eclipse.org/bugs/show_bug.cgi?id=565690))
+    * ([Upgrade and improve Chromium support in SWT](https://bugs.eclipse.org/bugs/show_bug.cgi?id=566608): no commits in last 3 month (see also [how to enable it](https://bugs.eclipse.org/bugs/show_bug.cgi?id=549585#c117)))
 
 ## Publish
 * → [As YouTube video](https://www.youtube.com/playlist?list=PLnh_8hTD4yvnhXSttuewEKgKkmlIj_ND-)
