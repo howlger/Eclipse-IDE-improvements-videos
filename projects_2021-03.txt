@@ -31,7 +31,7 @@ Eclipse Linux Tools	8.2.0
 Eclipse LSP4E	0.17.0
 Eclipse LSP4J	0.10.0
 Eclipse Marketplace Client	1.9.1
-Eclipse Maven Integration	1.17.1
+Eclipse Maven Integration	1.17.2
 Eclipse Maven Integration for Web Tools Platform	1.4.3
 Eclipse MDT UML2	5.5.2
 Eclipse MDT XSD (XML Schema Definition)	2.24.0

@@ -20,7 +20,7 @@
     * Java development tools (JDT) 4.18→**4.19**: [Eclipse 4.19 - New and Noteworthy - Java Development Tools](https://www.eclipse.org/eclipse/news/4.19/jdt.php) ([log](https://git.eclipse.org/c/www.eclipse.org/eclipse/news.git/log/)), [plan](https://www.eclipse.org/projects/project-plan.php?planurl=http://www.eclipse.org/eclipse/development/plans/eclipse_project_plan_4_19.xml#themes_and_priorities), Git [core](https://git.eclipse.org/c/jdt/eclipse.jdt.core.git/log/) [UI](https://git.eclipse.org/c/jdt/eclipse.jdt.ui.git/log/)
         * [Java 16](https://jdk.java.net/16/) as preview via [Marketplace](https://marketplace.eclipse.org/content/java-16-support-eclipse-2021-03-419): [bug tree](https://bugs.eclipse.org/bugs/showdependencytree.cgi?id=565620&hide_resolved=0), [examples](https://wiki.eclipse.org/Java16/Examples)
     * (EclEmma (Java code coverage) 3.1.4: [changes](https://www.eclemma.org/changes.html), [Git](https://github.com/eclipse/eclemma/commits/master), [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=Eclemma&query_format=advanced&order=changeddate%20DESC))
-    * (M2Eclipse (Maven) 1.16.2: [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=m2e&query_format=advanced&order=changeddate%20DESC&target_milestone=1.16.2), [Git](https://git.eclipse.org/c/m2e/m2e-core.git/log/), [review](https://projects.eclipse.org/projects/technology.m2e/reviews/1.16.2-release-review))
+    * (M2Eclipse (Maven) 1.17.1→**1.17.2**: [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=m2e&query_format=advanced&order=changeddate%20DESC&target_milestone=1.17.2), [Git](https://git.eclipse.org/c/m2e/m2e-core.git/log/), [release notes](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#1172), [review](https://projects.eclipse.org/projects/technology.m2e/reviews/1.16.2-release-review))
     * (Buildship (Gradle) 3.1.4: [review](https://projects.eclipse.org/projects/tools.buildship/releases/3.1.4) → [announcements](https://discuss.gradle.org/tag/buildship-release))
     * (WTP Source Editing (XML editor, in Java EE also HTML and CSS editors) 3.19→**3.20**: [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=WTP%20Source%20Editing&query_format=advanced&order=changeddate%20DESC), [Git](https://git.eclipse.org/c/sourceediting/webtools.sourceediting.git/log/))
 * General
@@ -74,18 +74,16 @@
             * [_Primitive comparison_](https://www.eclipse.org/eclipse/news/4.19/jdt.php#primitive-comparison)
             * [_Primitive parsing_](https://www.eclipse.org/eclipse/news/4.19/jdt.php#primitive-parsing)
     * Java editor:
-        * Quick assists:
-            * [Create try-with-resources](https://www.eclipse.org/eclipse/news/4.19/jdt.php#try-with-resources-quick-assist)
-        * Quick fixes:
-            * [Create permitted type declaration](https://www.eclipse.org/eclipse/news/4.19/jdt.php#create-permitted-type-declaration)
+        * [Quick assists: _Assign to new local variable in try-with-resources (Ctrl+2, T)_](https://www.eclipse.org/eclipse/news/4.19/jdt.php#try-with-resources-quick-assist)
         * [Add catch clause to try-with-resources assists](https://www.eclipse.org/eclipse/news/4.19/jdt.php#add-catch-to-try-with-resources-assists)
+        * [Quick fixes: _Create permitted type declaration_](https://www.eclipse.org/eclipse/news/4.19/jdt.php#create-permitted-type-declaration)
     * [Coloring of restricted identifiers](https://www.eclipse.org/eclipse/news/4.19/jdt.php#restricted-identifier-preference)
     * [Externally annotate sources](https://www.eclipse.org/eclipse/news/4.19/jdt.php#annotate-for-source-folders)
     * Performance:
         * [Non-blocking Java code completion also in the _Eclipse IDE for Enterprise Java Developers_](https://www.eclipse.org/eclipse/news/4.16/jdt.php#default-non-blocking-completion) ← in _Eclipse IDE for Enterprise Java Developers_ ([was blocked by JPA JPQL proposals](https://bugs.eclipse.org/bugs/show_bug.cgi?id=563158#c5))
         * [Parallel index search](https://www.eclipse.org/eclipse/news/4.19/jdt.php#parallel-index-search)
         * [Use of new atomic marker API](https://bugs.eclipse.org/bugs/show_bug.cgi?id=571017)
-        * [Codeminings: less often computed](https://bugs.eclipse.org/bugs/show_bug.cgi?id=570727)
+        * [Code Minings: less often computed](https://bugs.eclipse.org/bugs/show_bug.cgi?id=570727)
     * Debug
         * [Toggle tracepoints in editor ruler](https://www.eclipse.org/eclipse/news/4.19/jdt.php#toggle-tracepoints)
         * [Toggle breakpoint on a list of methods including abstract method](https://www.eclipse.org/eclipse/news/4.19/jdt.php#toggle-breakpoints-works-listofmethods-including-abstract)
@@ -93,6 +91,7 @@
     * ([JUnit 5.7.1](https://www.eclipse.org/eclipse/news/4.19/jdt.php#junit-5.7.1): see [release notes](https://junit.org/junit5/docs/5.7.1/release-notes/#release-notes-5.7.1/))
 * **General**
     * [_Console_ view: _Find Next_ (Ctrl+K) and _Find Previous_ (Ctrl+Shift+K)](https://www.eclipse.org/eclipse/news/4.19/platform.php#console-find-next-find-previous)
+    * [Launch configuration _Common_ tab: _Terminate child-processes if terminating the launched process_ checkbox](https://www.eclipse.org/eclipse/news/4.19/platform.php#termination-of-descendants-is-configurable) enabled by default for same behavior as in previous Eclipse
     * [UI](https://bugs.eclipse.org/bugs/showdependencytree.cgi?id=569282&hide_resolved=0)
         * [_Open Resource_ dialog shows projects](https://bugs.eclipse.org/bugs/show_bug.cgi?id=479218)
         * [Horizontal scrolling via Shift plus mouse wheel and via touchpad gestures](https://www.eclipse.org/eclipse/news/4.19/platform.php#editors-horizontal-scroll)
@@ -119,9 +118,8 @@
         * [ResourceStateFactory: avoid string concatenation](https://bugs.eclipse.org/bugs/show_bug.cgi?id=570962)
 * **Web**
     * [_Eclipse IDE for JavaScript and Web Developers_ by _Eclipse Wild Web Developer_ instead of _EPP_](https://bugs.eclipse.org/bugs/show_bug.cgi?id=571132)
-        * Eclipse Installer?
-        * Missing on [download page](https://www.eclipse.org/downloads/packages/release/2021-03/m3)?
-    * [XML CodeLens preference page](https://github.com/eclipse/wildwebdeveloper/issues/636)
+        * Missing in Eclipse Installer and on [download page](https://www.eclipse.org/downloads/packages/release/2021-03/rc1) ← [intended?](https://twitter.com/howlger/status/1368128352608006144)
+    * ([XML CodeLens preference page](https://github.com/eclipse/wildwebdeveloper/issues/636) ← [not working yet](https://github.com/eclipse/wildwebdeveloper/issues/644))
     * [Implemented "openDoc" to open the given url in an External browser](https://github.com/eclipse/wildwebdeveloper/commit/9f742827d63237a0deb9311971cecbe33e4db558): ...?
     * [Read WTP extension point for catalog mapping](https://github.com/eclipse/wildwebdeveloper/commit/10d7dfed566dec2c8923df9cb855118b803ff952): ...?
     * LSP4E: ...?
