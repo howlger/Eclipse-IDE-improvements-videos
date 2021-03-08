@@ -13,7 +13,7 @@ public class Sample {
 
 	// Quick assists: Assign to new local variable in try-with-resources (Ctrl+2, T)
 	private static Properties readConfig() throws FileNotFoundException {
-		Properties properties = new Properties();
+		var properties = new Properties();
 		// 1.+2. new FileReader("config")
 		return properties;
 	}

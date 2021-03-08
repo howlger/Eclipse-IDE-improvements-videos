@@ -56,7 +56,7 @@
             * [Java 8: _Use Comparator.comparing()_](https://www.eclipse.org/eclipse/news/4.19/jdt.php#comparator-comparing)
             * [Java 7: _Use Multi-catch_](https://www.eclipse.org/eclipse/news/4.19/jdt.php#multi-catch)
         * [_Source Fixing_](https://www.eclipse.org/eclipse/news/4.19/jdt.php#source-fixing) (+2; new tab)
-            * [_Avoid Object::equals or String::equalsIgnoreCase on null objects_](https://www.eclipse.org/eclipse/news/4.19/jdt.php#invert-equals)
+            * [_Avoid Object.equals() or String.equalsIgnoreCase() on null objects_](https://www.eclipse.org/eclipse/news/4.19/jdt.php#invert-equals)
             * [_Compare to zero_](https://www.eclipse.org/eclipse/news/4.19/jdt.php#comparison-zero)
         * _Code Style_ (+2)
             * [_Reduce indentation when possible_](https://www.eclipse.org/eclipse/news/4.19/jdt.php#reduce-indentation)

@@ -1,0 +1,11 @@
+<project name="project" default="default">
+    <target name="default">
+        <loadfile property="model" srcfile="../generated/model.txt"></loadfile>
+    	<condition property="domain.class" value="Item_B.java" else="Item_A.java">
+    		<contains string="${model}" substring="count"/>
+    	</condition>
+    	<copy overwrite="yes"
+    		file="${domain.class}"
+    		tofile="../generated/src/domain/Item.java"/>
+    </target>
+</project>
