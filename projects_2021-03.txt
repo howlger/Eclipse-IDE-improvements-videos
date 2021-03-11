@@ -28,7 +28,7 @@ Eclipse Graphiti	0.17.0
 Eclipse JGit: Java implementation of Git	5.11.0
 Eclipse JustJ	1.1
 Eclipse Linux Tools	8.2.0
-Eclipse LSP4E	0.17.0
+Eclipse LSP4E	0.18.0
 Eclipse LSP4J	0.10.0
 Eclipse Marketplace Client	1.9.1
 Eclipse Maven Integration	1.17.2

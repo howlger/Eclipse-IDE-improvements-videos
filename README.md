@@ -40,8 +40,8 @@
     * [CDT](https://projects.eclipse.org/projects/tools.cdt) (C/C++) 10.1→**10.2**: [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=CDT&query_format=advanced&order=changeddate%20DESC), [review](https://projects.eclipse.org/projects/tools.cdt/reviews/10.2.0-release-review), [_New & Noteworthy_](https://wiki.eclipse.org/CDT/User/NewIn102)
         * [Embedded CDT](https://projects.eclipse.org/projects/iot.embed-cdt) (C/C++ for Arm/RISC-V) 6.0→**6.1.2**: [GitHub](https://github.com/eclipse-embed-cdt/eclipse-plugins), [commits](https://github.com/eclipse-embed-cdt/eclipse-plugins/compare/v6.0.0...v6.1.2-202102181132), [review](https://projects.eclipse.org/projects/iot.embed-cdt/reviews/6.1.2-release-review), [blog](https://gnu-mcu-eclipse.github.io/blog/)
     * ([PDT](https://projects.eclipse.org/projects/tools.pdt) (PHP) 7.2: [issues](https://github.com/eclipse/pdt/issues?q=is%3Aissue+sort%3Aupdated-asc), [Git](https://github.com/eclipse/pdt/commits/master), [_New & Noteworthy_](https://wiki.eclipse.org/PDT/NewIn72))
-    * ([LSP4J](https://projects.eclipse.org/projects/technology.lsp4j) (LSP Java binding) 0.9→**0.10**: [Git](https://github.com/eclipse/lsp4j/commits/master), [review](https://projects.eclipse.org/projects/technology.lsp4j))
-    * ([LSP4E](https://projects.eclipse.org/projects/technology.lsp4e) (LSP Eclipse IDE integration) 0.16→**0.17**: [Git](https://git.eclipse.org/c/lsp4e/lsp4e.git/log/), ([review](https://projects.eclipse.org/projects/technology.lsp4e/reviews/0.15.0-release-review)))
+    * ([LSP4J](https://projects.eclipse.org/projects/technology.lsp4j) (LSP Java binding) 0.10: [Git](https://github.com/eclipse/lsp4j/commits/master), [review](https://projects.eclipse.org/projects/technology.lsp4j))
+    * ([LSP4E](https://projects.eclipse.org/projects/technology.lsp4e) (LSP Eclipse IDE integration) 0.17→**0.18**: [Git](https://git.eclipse.org/c/lsp4e/lsp4e.git/log/), ([review](https://projects.eclipse.org/projects/technology.lsp4e/reviews/0.15.0-release-review)))
     * ([TM4E](https://projects.eclipse.org/projects/technology.tm4e) (TextMate) 0.4.1: [Git](https://github.com/eclipse/tm4e/commits/master), [review](https://projects.eclipse.org/projects/technology.tm4e/reviews/0.4.1-release-review), [_New & Noteworthy_](https://github.com/eclipse/tm4e/blob/master/RELEASE_NOTES.md#041)
     * ([Corrosion](https://github.com/eclipse/corrosion) (only via Eclipse IDE for Rust Developers) 1.1.0→**1.1.1**: [Git](https://github.com/eclipse/corrosion/commits/master), [review](https://projects.eclipse.org/projects/tools.corrosion/reviews/1.1.1-release-review))
 
@@ -76,14 +76,14 @@
     * Java editor:
         * [Quick assists: _Assign to new local variable in try-with-resources (Ctrl+2, T)_](https://www.eclipse.org/eclipse/news/4.19/jdt.php#try-with-resources-quick-assist)
         * [Add catch clause to try-with-resources assists](https://www.eclipse.org/eclipse/news/4.19/jdt.php#add-catch-to-try-with-resources-assists)
-        * [Quick fixes: _Create permitted type declaration_](https://www.eclipse.org/eclipse/news/4.19/jdt.php#create-permitted-type-declaration)
+        * [Quick fixe: _Create permitted type declaration_](https://www.eclipse.org/eclipse/news/4.19/jdt.php#create-permitted-type-declaration)
     * [Coloring of restricted identifiers](https://www.eclipse.org/eclipse/news/4.19/jdt.php#restricted-identifier-preference)
-    * [Externally annotate sources](https://www.eclipse.org/eclipse/news/4.19/jdt.php#annotate-for-source-folders)
     * Performance:
-        * [Non-blocking Java code completion also in the _Eclipse IDE for Enterprise Java Developers_](https://www.eclipse.org/eclipse/news/4.16/jdt.php#default-non-blocking-completion) ← in _Eclipse IDE for Enterprise Java Developers_ ([was blocked by JPA JPQL proposals](https://bugs.eclipse.org/bugs/show_bug.cgi?id=563158#c5))
         * [Parallel index search](https://www.eclipse.org/eclipse/news/4.19/jdt.php#parallel-index-search)
-        * [Use of new atomic marker API](https://bugs.eclipse.org/bugs/show_bug.cgi?id=571017)
-        * [Code Minings: less often computed](https://bugs.eclipse.org/bugs/show_bug.cgi?id=570727)
+        * [Non-blocking Java code completion also in the _Eclipse IDE for Enterprise Java Developers_](https://www.eclipse.org/eclipse/news/4.16/jdt.php#default-non-blocking-completion) ← in _Eclipse IDE for Enterprise Java Developers_ ([was blocked by JPA JPQL proposals](https://bugs.eclipse.org/bugs/show_bug.cgi?id=563158#c5))
+        * ([Use of new atomic marker API](https://bugs.eclipse.org/bugs/show_bug.cgi?id=571017))
+        * ([Code Minings: less often computed](https://bugs.eclipse.org/bugs/show_bug.cgi?id=570727))
+    * [Externally annotate sources](https://www.eclipse.org/eclipse/news/4.19/jdt.php#annotate-for-source-folders)
     * Debug
         * [Toggle tracepoints in editor ruler](https://www.eclipse.org/eclipse/news/4.19/jdt.php#toggle-tracepoints)
         * [Toggle breakpoint on a list of methods including abstract method](https://www.eclipse.org/eclipse/news/4.19/jdt.php#toggle-breakpoints-works-listofmethods-including-abstract)
@@ -91,41 +91,40 @@
     * ([JUnit 5.7.1](https://www.eclipse.org/eclipse/news/4.19/jdt.php#junit-5.7.1): see [release notes](https://junit.org/junit5/docs/5.7.1/release-notes/#release-notes-5.7.1/))
 * **General**
     * [_Console_ view: _Find Next_ (Ctrl+K) and _Find Previous_ (Ctrl+Shift+K)](https://www.eclipse.org/eclipse/news/4.19/platform.php#console-find-next-find-previous)
-    * [Launch configuration _Common_ tab: _Terminate child-processes if terminating the launched process_ checkbox](https://www.eclipse.org/eclipse/news/4.19/platform.php#termination-of-descendants-is-configurable) enabled by default for same behavior as in previous Eclipse
     * [UI](https://bugs.eclipse.org/bugs/showdependencytree.cgi?id=569282&hide_resolved=0)
-        * [_Open Resource_ dialog shows projects](https://bugs.eclipse.org/bugs/show_bug.cgi?id=479218)
         * [Horizontal scrolling via Shift plus mouse wheel and via touchpad gestures](https://www.eclipse.org/eclipse/news/4.19/platform.php#editors-horizontal-scroll)
+        * [_Open Resource_ dialog shows projects](https://bugs.eclipse.org/bugs/show_bug.cgi?id=479218)
         * ([_Compare_ editor wastes less space](https://bugs.eclipse.org/bugs/show_bug.cgi?id=551573))
-        * ([Opening an XML file from command line at a specific line number](https://bugs.eclipse.org/bugs/show_bug.cgi?id=567708)) via Quick Search?
-        * [Windows: Microsoft Edge as external browser](https://www.eclipse.org/eclipse/news/4.19/platform.php#browsers-windows-update)
-    * ([Performance improvements](https://bugs.eclipse.org/bugs/show_bug.cgi?id=569285)
-        * [New atomic marker API](https://bugs.eclipse.org/bugs/show_bug.cgi?id=570914) and [make use of it in the platform](https://bugs.eclipse.org/bugs/show_bug.cgi?id=570952)
-        * [Windows: Avoid JNI for trivial arithmetic macros](Avoid JNI for trivial arithmetic macros)
+        * ([Windows: Microsoft Edge as external browser](https://www.eclipse.org/eclipse/news/4.19/platform.php#browsers-windows-update))
+    * [Performance improvements](https://bugs.eclipse.org/bugs/show_bug.cgi?id=569285)
+        * ([New atomic marker API](https://bugs.eclipse.org/bugs/show_bug.cgi?id=570914) and [make use of it in the platform](https://bugs.eclipse.org/bugs/show_bug.cgi?id=570952))
+        * ([Windows: Avoid JNI for trivial arithmetic macros](https://www.eclipse.org/eclipse/news/4.19/platform.php#linux-equinox-security-jna))
+    * [Launch configuration: _Terminate child-processes if terminating the launched process_ checkbox](https://www.eclipse.org/eclipse/news/4.19/platform.php#termination-of-descendants-is-configurable) in the _Common_ tab; enabled by default for same behavior as in previous Eclipse
 * **Git**
     * [Signing](https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.11#Signatures)
-        * [Signing of tags](https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.11#Creating_Signed_Tags)
-        * [Verifying Commit Signatures](https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.11#Verifying_Commit_Signatures) Disabled by default; in preferences _Git > History_ for _Show in Revision Comment_ option _Verify Signatures_
         * [External GPG signer support](https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.11#Using_GPG_to_Sign_Commits_and_Tags): requires to interact with the user via GUI dialogs, like GnuPG does ([commit](https://git.eclipse.org/c/egit/egit.git/commit/?id=2b66e9b8baa2104c320c301daea9147227ef39fe): as workaround when patent-encumbered AES/OCB cipher is needed not provided by Bouncy Castle)
+        * [Verifying Commit Signatures](https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.11#Verifying_Commit_Signatures) Disabled by default; in preferences _Git > History_ for _Show in Revision Comment_ option _Verify Signatures_
+        * [Signing of tags](https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.11#Creating_Signed_Tags)
     * [_Properties_ view for _Commit Viewer_ and in _Git Repositories_ view selected tags](https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.11#Properties_View): When the selected tag target is a commit, buttons to open the commit in the _Commit Viewer_ and to show the commit in the _History_ are displayed ([537695](https://bugs.eclipse.org/bugs/show_bug.cgi?id=537695))
-    * [SSH: JSch was dropped in favor of using Apache MINA sshd only](https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.11#Properties_View): so in preference no option anymore to choose which one to use (environment variable `GIT_SSH` to use external SSH tool instead)
+    * ([SSH: JSch was dropped in favor of using Apache MINA sshd only](https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.11#Properties_View): so in preference no option anymore to choose which one to use (environment variable `GIT_SSH` to use external SSH tool can be used as before))
     * Performance
-        * [Fetching: more efficient protocol V2 is used when server supports it](https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.11#Git_Protocol)
-        * Startup (via OSGi services):
+        * [Fetching: more efficient protocol V2 is used when server supports it](https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.11#Git_Protocol))
+        * (Startup (via OSGi services)):
             * [Let the framework run the configuration check](https://git.eclipse.org/c/egit/egit.git/commit/?id=4d8ae5e93d40dbf3908d9abcbf5db5180ec855a8)
             * [Register template variable resolvers in StartEventListener](https://git.eclipse.org/c/egit/egit.git/commit/?id=6483bcae41c2af9999a9e7d341f207b30dc92938) ([564708](https://bugs.eclipse.org/bugs/show_bug.cgi?id=564708))
             * [EGit UI DebugOptionsListener as a OSGi declarative service](https://git.eclipse.org/c/egit/egit.git/commit/?id=6c9309466b6f220fd777c0605f2a49caabf66310)
             * [Simplify the EGit UI Activator by using OSGi declarative services](https://git.eclipse.org/c/egit/egit.git/commit/?id=dfd0958aa593fda3c7a930f600aaf3c46e4f350c)
-        * [ResourceStateFactory: avoid string concatenation](https://bugs.eclipse.org/bugs/show_bug.cgi?id=570962)
+        * ([ResourceStateFactory: avoid string concatenation](https://bugs.eclipse.org/bugs/show_bug.cgi?id=570962))
 * **Web**
-    * [_Eclipse IDE for JavaScript and Web Developers_ by _Eclipse Wild Web Developer_ instead of _EPP_](https://bugs.eclipse.org/bugs/show_bug.cgi?id=571132)
-        * Missing in Eclipse Installer and on [download page](https://www.eclipse.org/downloads/packages/release/2021-03/rc1) ← [intended?](https://twitter.com/howlger/status/1368128352608006144)
-    * ([XML CodeLens preference page](https://github.com/eclipse/wildwebdeveloper/issues/636) ← [not working yet](https://github.com/eclipse/wildwebdeveloper/issues/644))
-    * [Implemented "openDoc" to open the given url in an External browser](https://github.com/eclipse/wildwebdeveloper/commit/9f742827d63237a0deb9311971cecbe33e4db558): ...?
-    * [Read WTP extension point for catalog mapping](https://github.com/eclipse/wildwebdeveloper/commit/10d7dfed566dec2c8923df9cb855118b803ff952): ...?
-    * LSP4E: ...?
     * Embedded language server updated:
         * TypeScript 4.1 support
         * [Navigation support for `@see` targets](https://devblogs.microsoft.com/typescript/announcing-typescript-4-1/#editor-support-for-the-jsdoc-see-tag), e.g. `@see other.foo`
+    * ([XML CodeLens preference page](https://github.com/eclipse/wildwebdeveloper/issues/636) ← [not working yet](https://github.com/eclipse/wildwebdeveloper/issues/644))
+    * ([Implemented "openDoc" to open the given URL in an external browser](https://github.com/eclipse/wildwebdeveloper/commit/9f742827d63237a0deb9311971cecbe33e4db558) for ESLint Quick Fix (Ctrl+1) _Show documentation for ..._)
+    * ([Read WTP extension point for catalog mapping](https://github.com/eclipse/wildwebdeveloper/commit/10d7dfed566dec2c8923df9cb855118b803ff952))
+    * ([WTP XML editor: opening an XML file from command line at a specific line number](https://bugs.eclipse.org/bugs/show_bug.cgi?id=567708), e.g. `--launcher.openFile sample.xml:42`)
+    * [_Eclipse IDE for JavaScript and Web Developers_ by _Eclipse Wild Web Developer_ instead of _EPP_](https://bugs.eclipse.org/bugs/show_bug.cgi?id=571132)
+        * Missing in Eclipse Installer and on [download page](https://www.eclipse.org/downloads/packages/release/2021-03/rc1) (see [reasons](https://twitter.com/mickaelistria/status/1369284771063488515))
 * **(Under development)**
     * ([Apple silicon](https://bugs.eclipse.org/bugs/show_bug.cgi?id=565690))
     * ([Upgrade and improve Chromium support in SWT](https://bugs.eclipse.org/bugs/show_bug.cgi?id=566608): no commits in last 3 month (see also [how to enable it](https://bugs.eclipse.org/bugs/show_bug.cgi?id=549585#c117)))
