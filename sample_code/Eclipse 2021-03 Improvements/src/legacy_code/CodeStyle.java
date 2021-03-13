@@ -16,6 +16,7 @@ public class CodeStyle {
 		}
 
 		// (7/16) Extract increment/decrement from statement
+
 		boolean done= --countdown <= 0;
 
 	}

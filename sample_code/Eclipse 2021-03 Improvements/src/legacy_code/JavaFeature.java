@@ -9,16 +9,16 @@ public class JavaFeature {
 		// (1/16) Pattern matching for instanceof (Java 15 preview feature)
 		if (arg instanceof String) {
 			String s= (String) arg;
-			s= s.trim();
+			String trimmed= s.trim();
 			// ...
 		}
 		if (!(arg instanceof String)) return;
 		String s= (String) arg;
-		s= s.trim();
+		String trimmed= s.trim();
 		// ...
 
 		// (2/16) Use Comparator.comparing() (Java 8)
-		Comparator<Object> asStringsComparator= 
+		Comparator<Object> asStringsComparator=
 				new Comparator<>() {
 			@Override
 			public int compare(Object o1, Object o2) {
@@ -43,7 +43,7 @@ public class JavaFeature {
 		} catch (IOException ioe) {
 			ioe.printStackTrace();
 		}
-		
+
 	}
 	void readConfig(Object arg) throws IllegalArgumentException, IOException {}
 }

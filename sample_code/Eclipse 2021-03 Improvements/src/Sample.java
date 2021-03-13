@@ -2,8 +2,7 @@ import java.io.FileNotFoundException;
 import java.util.Map.Entry;
 import java.util.Properties;
 
-public class Sample {
-// 3. public sealed class Sample permits SubSample {
+public abstract class Sample {
 
 	public static void main(String[] args) throws Exception {
 		for (Entry<Object, Object> setting : readConfig().entrySet()) {
@@ -11,11 +10,11 @@ public class Sample {
 		}
 	}
 
-	// Quick assists: Assign to new local variable in try-with-resources (Ctrl+2, T)
 	private static Properties readConfig() throws FileNotFoundException {
 		var properties = new Properties();
-		// 1.+2. new FileReader("config")
 		return properties;
 	}
+
+	abstract void foo();
 
 }
