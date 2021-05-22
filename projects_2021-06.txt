@@ -1,70 +1,70 @@
 Eclipse Acceleo	3.7.10
 Eclipse Accessibility Tools Framework	1.5.1
-Eclipse ATL	4.3.0
+Eclipse ATL	4.4.0
 Eclipse BPEL Designer	1.1.3
-Eclipse BPMN2 Modeler Project	1.5.2
+Eclipse BPMN2 Modeler Project	1.5.3
 Eclipse Buildship: Eclipse Plug-ins for Gradle	3.1.5
 Eclipse Business Process Model and Notation (BPMN2)	1.5.1
-Eclipse C/C++ Development Tooling (CDT)	10.2.0
-Eclipse CDO Model Repository	4.13.0
+Eclipse C/C++ Development Tooling (CDT)	10.3.0
+Eclipse CDO Model Repository	4.14.0
 Eclipse Collections	10.4.0
-Eclipse Communication Framework	3.14.19
+Eclipse Communication Framework	3.14.20
 Eclipse Data Tools Platform	1.14.102
 Eclipse Dynamic Languages Toolkit	6.1
 Eclipse EclEmma	3.1.4
 Eclipse Ecore Tools	3.3.3
-Eclipse EGit: Git Integration for Eclipse	5.11.0
-Eclipse Embedded CDT (C/C++ Development Tools)	6.1.1
-Eclipse EMF	2.24.0
+Eclipse EGit: Git Integration for Eclipse	5.11.1
+Eclipse Embedded CDT (C/C++ Development Tools)	6.1.2
+Eclipse EMF	2.26.0
 Eclipse EMF Client Platform	1.26.0
 Eclipse EMF Compare	3.3.10
 Eclipse EMF Parsley	1.13.0
 Eclipse EMF Services	1.12.2
 Eclipse Extended Editing Framework (EEF)	2.1.5
 Eclipse Generation Factories (EGF)	1.6.2
-Eclipse GMF Runtime	1.13.0
+Eclipse GMF Runtime	1.13.1
 Eclipse Graphical Editing Framework (GEF)	5.3.3 (2021-03)
-Eclipse Graphiti	0.17.0
-Eclipse JGit: Java implementation of Git	5.11.0
+Eclipse Graphiti	0.18.0
+Eclipse JGit: Java implementation of Git	5.11.1
 Eclipse JustJ	1.1
 Eclipse Linux Tools	8.2.0
 Eclipse LSP4E	0.18.0
-Eclipse LSP4J	0.10.0
+Eclipse LSP4J	0.12.0
 Eclipse Marketplace Client	1.9.1
 Eclipse Maven Integration	1.17.2
 Eclipse Maven Integration for Web Tools Platform	1.4.3
 Eclipse MDT UML2	5.5.2
-Eclipse MDT XSD (XML Schema Definition)	2.24.0
-Eclipse Memory Analyzer	1.11.0
-Eclipse Modeling Workflow Engine	2.12.1
+Eclipse MDT XSD (XML Schema Definition)	2.26.0
+Eclipse Memory Analyzer	1.12.0
+Eclipse Modeling Workflow Engine	2.13.0
 Eclipse MoDisco	2020-03 (1.5.1)
 Eclipse Mylyn	3.25.2
-Eclipse Mylyn Docs	3.0.38
-Eclipse OCL (Object Constraint Language)	2020-12 (6.13.0)
-Eclipse Oomph	1.20.0
-Eclipse Packaging Project	4.19.0
-Eclipse Papyrus	5.0.0
+Eclipse Mylyn Docs	3.0.39
+Eclipse OCL (Object Constraint Language)	2021-06 (6.15.0)
+Eclipse Oomph	1.21.0
+Eclipse Packaging Project	4.20.0
+Eclipse Papyrus	5.1.0
 Eclipse Parallel Tools Platform (PTP)	9.4.0
-Eclipse Passage	1.2.0
+Eclipse Passage	2.0.0
 Eclipse PHP Development Tools	7.2
-Eclipse Project	4.19.0
+Eclipse Project	4.20.0
 Eclipse QVT Operational	2021-03 (3.10.3)
-Eclipse QVTd (QVT Declarative)	2020-12 (0.24.0)
+Eclipse QVTd (QVT Declarative)	2021-03 (0.25.0)
 Eclipse RCP Testing Tool	2.5.1
-Eclipse RedDeer™	3.3.0
-Eclipse Remote Application Platform	3.14.0
+Eclipse RedDeer™	3.4.0
+Eclipse Remote Application Platform	3.16.0
 Eclipse Scout	11.0.0
-Eclipse Sirius	6.4.2
-Eclipse SWTBot™	3.0.0
+Eclipse Sirius	6.5.0
+Eclipse SWTBot™	3.1.0
 Eclipse Target Communication Framework	1.6.3
 Eclipse Target Management: Terminal and Remote System Explorer (RSE)	4.5.200
 Eclipse TM4E - TextMate support in the Eclipse IDE 	0.4.1
-Eclipse Trace Compass	6.3.0
+Eclipse Trace Compass	7.0.0
 Eclipse User Storage Service SDK	2.0.0
 Eclipse VIATRA	2.5.0
-Eclipse Web Tools Platform Project	3.21 (2021-03)
-Eclipse Wild Web Developer	0.11.5
-Eclipse WindowBuilder	1.9.4
+Eclipse Web Tools Platform Project	3.22 (2021-06)
+Eclipse Wild Web Developer	0.11.6
+Eclipse WindowBuilder	1.9.6
 Eclipse Xpand	2.2.0
-Eclipse Xtext	2.25.0
+Eclipse Xtext	2.26.0
 Eclipse XWT	1.4.100

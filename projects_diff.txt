@@ -1,1 +1,0 @@
-- Eclipse Jubula Functional Testing Tool	8.0.5
