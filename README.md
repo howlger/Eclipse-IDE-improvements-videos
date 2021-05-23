@@ -51,21 +51,43 @@
 ### Features to show
 
 * **Java**
-    * Java 16
+    * Java 16:
+        * Embedded in _Eclipse IDE for Java Developers_, _Eclipse IDE for Enterprise Java and Web Developers_, _Eclipse IDE for C/C++ Developers_ and _Eclipse IDE for Embedded C/C++ Developers_
+        * _New Java Project_ dialog:
+            * Provides execution environments up to _JavaSE-16_
+            * By the way, [option to create `module-info.java` instead extra dialog](https://www.eclipse.org/eclipse/news/4.20/jdt.php#create-moduleinfo) which will be remembered
+        * Language features (2 became final, 1 still preview, 0 new):
+            * [Pattern Matching for instanceof (Final)](https://openjdk.java.net/jeps/394) supported by cleanup (see below), compiler, etc.
+            * [Records (Final)](https://openjdk.java.net/jeps/395) supported by _New Record_ dialog, compiler, formatter, etc.
+            * [Sealed Classes (Second Preview)](https://openjdk.java.net/jeps/397) supported by quick fixes, compiler, etc.
     * Cleanups (+12; [AutoRefactor](https://github.com/JnRouvignac/AutoRefactor) merged into [Eclipse](https://bugs.eclipse.org/bugs/buglist.cgi?classification=Eclipse%20Project&product=JDT&query_format=advanced&short_desc=AutoRefactor&short_desc_type=allwordssubstr) by [Fabrice Tiercelin](https://projects.eclipse.org/projects/eclipse.jdt/elections/election-fabrice-tiercelin-committer-eclipse-java-development-tools-jdt))
-        * [Default Java cleanup profile with more cleanups](https://www.eclipse.org/eclipse/news/4.20/jdt.php#cleanup-profile-updated): ? -> 17 cleanups
+        * [Default Java cleanup profile enables 9 more cleanups by default](https://www.eclipse.org/eclipse/news/4.20/jdt.php#cleanup-profile-updated) (8→17):
+            * Convert 'for' loops to enhanced 'for' loops
+            * Convert to enhanced 'for' loops only if the loop variable is used
+            * Primitive type rather then wrapper class
+            * Remove redundant semicolons
+            * Organize imports
+            * Remove trailing white spaces on all lines
+            * Boolean value rather than comparison
+            * Single 'if' statement rather than duplicate blocks that fall through
+            * Use diamond operator
         * Improved:
             * [_Use String.replace()_](https://git.eclipse.org/c/jdt/eclipse.jdt.ui.git/commit/?id=c6297368f09953947ef1f8f8a9856ffd830c6e72)
-            * _Simplify lambda expression_:
+            * _Simplify lambda expression and method reference syntax_:
                 * [Better detect type of method](https://bugs.eclipse.org/bugs/show_bug.cgi?id=572692)
                 * [Prefer type ref to method ref to avoid compile error](https://bugs.eclipse.org/bugs/show_bug.cgi?id=572334)
                 * [Handle type ref for self class](https://bugs.eclipse.org/bugs/show_bug.cgi?id=572495)
             * [_Merge conditions of if/else if/else that have the same blocks_ to apply also for nested if/else](https://git.eclipse.org/c/jdt/eclipse.jdt.ui.git/commit/?id=dc0ea9671cf07383c1acb383525756d89a5f54e5)
             * [_Static inner class_ to handle generics](https://bugs.eclipse.org/bugs/show_bug.cgi?id=572716)
+                * Also https://bugs.eclipse.org/bugs/show_bug.cgi?id=572124 ?
             * ...
         * _Java Feature_ (+1)
-            * [_Replace system property with constant_](https://www.eclipse.org/eclipse/news/4.20/jdt.php#replace-system-properties)
-        * _Source Fixing_ (+0)
+            * Java 15 Preview → Java 16: _Pattern Matching for instanceof_
+            * [Java 7: _Replace system property with constant_](https://www.eclipse.org/eclipse/news/4.20/jdt.php#replace-system-properties)
+        * _Optimization_ (+3)
+            * [_String.isBlank() rather than String.strip().isEmpty()_](https://bugs.eclipse.org/bugs/show_bug.cgi?id=573289) avoids the creation of an intermediate trimmed string
+            * [_valueOf() rather than instantiation_](https://www.eclipse.org/eclipse/news/4.20/jdt.php#valueof-rather-than-instantiation) (significantly less memory)
+            * [_Primitive type rather than wrapper class_](https://www.eclipse.org/eclipse/news/4.20/jdt.php#primitive-rather-than-wrapper)
         * _Code Style_ (+1)
             * [_Use instanceof keyword instead of Class.isInstance()_](https://www.eclipse.org/eclipse/news/4.20/jdt.php#use-instanceof)
         * _Duplicate code_ (+3)
@@ -77,16 +99,13 @@
             * [_Use implicit comparator when possible_](https://www.eclipse.org/eclipse/news/4.20/jdt.php#operand-factorization): removes anonymous class, lambda, `Comparator.comparing()`, `Comparator.naturalOrder()` and `null`
             * [_Create array with curly when possible_](https://www.eclipse.org/eclipse/news/4.20/jdt.php#array-with-curly)
             * [_Remove variable assignment before return_](https://www.eclipse.org/eclipse/news/4.20/jdt.php#return-without-assignment)
-        * _Optimization_ (+3)
-            * [_String.isBlank() rather than String.strip().isEmpty()_](https://bugs.eclipse.org/bugs/show_bug.cgi?id=573289) avoids the creation of an intermediate trimmed string
-            * [_valueOf() rather than instantiation_](https://www.eclipse.org/eclipse/news/4.20/jdt.php#valueof-rather-than-instantiation) (significantly less memory)
-            * [_Primitive type rather than wrapper class_](https://www.eclipse.org/eclipse/news/4.20/jdt.php#primitive-rather-than-wrapper)
     * Java editor:
         * [Quick fix _Create local variable_ improved](https://www.eclipse.org/eclipse/news/4.20/jdt.php#foreach-expression-type) to infer the type from an _foreach_ loop
     * [_Search_ view: _In Static Imports_ filter](https://www.eclipse.org/eclipse/news/4.20/jdt.php#search-filter-static-imports)
-    * [_New Java Project_ dialog: create `module-info.java` option instead extra dialog](https://www.eclipse.org/eclipse/news/4.20/jdt.php#create-moduleinfo)
     * Performance:
-        * ([No local history for derived files anymore](https://www.eclipse.org/eclipse/news/4.20/platform.php#history-for-derived-files))
+        * [Faster compiling for large workspace](https://bugs.eclipse.org/bugs/show_bug.cgi?id=570896)
+        * [Use of `Arrays.equals(char[], char[])` (`@HotSpotIntrinsicCandidate`/`@IntrinsicCandidate`)](https://bugs.eclipse.org/bugs/show_bug.cgi?id=571579)
+        * [JDT core: Dogfooding of _Exit loop earlier_](https://bugs.eclipse.org/bugs/show_bug.cgi?id=572213)
     * Debug
         * [Debug hover for chain of variables](https://www.eclipse.org/eclipse/news/4.20/jdt.php#chain-fields)
         * [Launch configuration: _Copy_](https://www.eclipse.org/eclipse/news/4.20/jdt.php#copy-jars)
@@ -98,8 +117,14 @@
     * [Export certificate during installation](https://www.eclipse.org/eclipse/news/4.20/platform.php#export-certificate-at-install)
     * [UI](https://bugs.eclipse.org/bugs/showdependencytree.cgi?id=571203&hide_resolved=0)
     * [Performance improvements](https://bugs.eclipse.org/bugs/showdependencytree.cgi?id=571430&hide_resolved=0)
+        * [No local history for derived files anymore](https://www.eclipse.org/eclipse/news/4.20/platform.php#history-for-derived-files)
+        * ? [Switching perspective](https://bugs.eclipse.org/bugs/show_bug.cgi?id=572711)
+        * ? [Compare Editor (by using SWT buffering)](https://bugs.eclipse.org/bugs/show_bug.cgi?id=571954#c6)
+        * [Removing of activator from `org.eclipse.equinox.p2.ui.imp`](https://bugs.eclipse.org/bugs/show_bug.cgi?id=572410) → faster startup?
+        * [OSGI: Improve performance for name space wiring lookup](https://bugs.eclipse.org/bugs/show_bug.cgi?id=572605) → faster startup?
 * **Git**
     * Performance:
+        * [EGit plugin: Activator → OSGi DS](https://bugs.eclipse.org/bugs/show_bug.cgi?id=560412) → faster startup?
 * **Web**
     * Embedded language server updated:
         * TypeScript/JavaScript 4.2:
