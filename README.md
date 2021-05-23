@@ -9,7 +9,7 @@
 [2019-06](https://github.com/howlger/Eclipse-IDE-improvements-videos/tree/2019-06)
 </sup>
 
-# +++ Work in progress (for June 16, 2021) +++ Eclipse IDE 2021-06 Improvements Video
+# +++ Work in progress (for June 16, 2021) +++<br>Eclipse IDE 2021-06 Improvements Video
 
 * [June 16, 2021](https://www.google.com/calendar/event?eid=NGlyZWg3dXE0NTl1MXBqM2tuY2d2dWZsa2cgZ2NoczdubTRudnBtODM3NDY5ZGRqOXRqbGtAZw&ctz=Europe/Berlin) ([calendar](https://calendar.google.com/calendar/embed?src=gchs7nm4nvpm837469ddj9tjlk@group.calendar.google.com&ctz=Europe/Berlin)) - [70 projects](https://projects.eclipse.org/releases/2021-06) ([-0 +0 → 70](projects_diff.txt)) - [wiki](https://wiki.eclipse.org/Category:SimRel-2021-06) - [website](https://eclipse.org/eclipseide/2021-06) ([New & Noteworthy](https://eclipse.org/eclipseide/2021-06/noteworthy)) - [splash screen](https://bugs.eclipse.org/bugs/show_bug.cgi?id=569333)
 * [Latest CI builds](https://download.eclipse.org/technology/epp/staging/) ([Jenkins](https://ci.eclipse.org/packaging/job/simrel.epp-tycho-build), [log](https://git.eclipse.org/c/simrel/org.eclipse.simrel.build.git/log/), update sites: [staging](https://download.eclipse.org/staging/2021-06), [release](http://download.eclipse.org/releases/2021-06))
