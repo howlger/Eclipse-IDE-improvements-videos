@@ -12,7 +12,7 @@
 # +++ Work in progress (for June 16, 2021) +++<br>Eclipse IDE 2021-06 Improvements Video
 
 * [June 16, 2021](https://www.google.com/calendar/event?eid=NGlyZWg3dXE0NTl1MXBqM2tuY2d2dWZsa2cgZ2NoczdubTRudnBtODM3NDY5ZGRqOXRqbGtAZw&ctz=Europe/Berlin) ([calendar](https://calendar.google.com/calendar/embed?src=gchs7nm4nvpm837469ddj9tjlk@group.calendar.google.com&ctz=Europe/Berlin)) - [70 projects](https://projects.eclipse.org/releases/2021-06) ([-0 +0 → 70](projects_diff.txt)) - [wiki](https://wiki.eclipse.org/Category:SimRel-2021-06) - [website](https://eclipse.org/eclipseide/2021-06) ([New & Noteworthy](https://eclipse.org/eclipseide/2021-06/noteworthy)) - [splash screen](https://bugs.eclipse.org/bugs/show_bug.cgi?id=569333)
-* [Latest CI builds](https://download.eclipse.org/technology/epp/staging/) ([Jenkins](https://ci.eclipse.org/packaging/job/simrel.epp-tycho-build), [log](https://git.eclipse.org/c/simrel/org.eclipse.simrel.build.git/log/), update sites: [staging](https://download.eclipse.org/staging/2021-06), [release](http://download.eclipse.org/releases/2021-06))
+* Builds: [latest unreleased](https://download.eclipse.org/technology/epp/staging/) → [released](https://download.eclipse.org/technology/epp/downloads/release/2021-06/) ([Jenkins](https://ci.eclipse.org/packaging/job/simrel.epp-tycho-build), [log](https://git.eclipse.org/c/simrel/org.eclipse.simrel.build.git/log/), update sites: [staging](https://download.eclipse.org/staging/2021-06), [release](http://download.eclipse.org/releases/2021-06))
 * Social media: [Twitter](http://twitter.com/EclipseJavaIDE), [YouTube](https://www.youtube.com/user/EclipseFdn) ([Eclipse IDE playlist](https://www.youtube.com/playlist?list=PLy7t4z5SYNaSNjL60ofpwVhfA7mOF3Pgk)), [Instagram](https://www.instagram.com/eclipsejavaide)
 
 
@@ -57,12 +57,11 @@
             * Provides execution environments up to _JavaSE-16_
             * By the way, [option to create `module-info.java` instead extra dialog](https://www.eclipse.org/eclipse/news/4.20/jdt.php#create-moduleinfo) which will be remembered
         * Language features (2 became final, 1 still preview, 0 new):
-            * [Pattern Matching for instanceof (Final)](https://openjdk.java.net/jeps/394) supported by cleanup (see below), compiler, etc.
+            * [Pattern matching for instanceof (Final)](https://openjdk.java.net/jeps/394) supported by cleanup (see below), compiler, etc.
             * [Records (Final)](https://openjdk.java.net/jeps/395) supported by _New Record_ dialog, compiler, formatter, etc.
             * [Sealed Classes (Second Preview)](https://openjdk.java.net/jeps/397) supported by quick fixes, compiler, etc.
     * Cleanups (+12; [AutoRefactor](https://github.com/JnRouvignac/AutoRefactor) merged into [Eclipse](https://bugs.eclipse.org/bugs/buglist.cgi?classification=Eclipse%20Project&product=JDT&query_format=advanced&short_desc=AutoRefactor&short_desc_type=allwordssubstr) by [Fabrice Tiercelin](https://projects.eclipse.org/projects/eclipse.jdt/elections/election-fabrice-tiercelin-committer-eclipse-java-development-tools-jdt))
-        * [Default Java cleanup profile enables 9 more cleanups by default](https://www.eclipse.org/eclipse/news/4.20/jdt.php#cleanup-profile-updated) (8→17):
-            * Convert 'for' loops to enhanced 'for' loops
+        * [Default Java cleanup profile enables 9 more cleanups by default](https://www.eclipse.org/eclipse/news/4.20/jdt.php#cleanup-profile-updated) (8→16):
             * Convert to enhanced 'for' loops only if the loop variable is used
             * Primitive type rather then wrapper class
             * Remove redundant semicolons
@@ -82,7 +81,7 @@
                 * Also https://bugs.eclipse.org/bugs/show_bug.cgi?id=572124 ?
             * ...
         * _Java Feature_ (+1)
-            * Java 15 Preview → Java 16: _Pattern Matching for instanceof_
+            * Java 15 Preview → Java 16: _Pattern matching for instanceof_
             * [Java 7: _Replace system property with constant_](https://www.eclipse.org/eclipse/news/4.20/jdt.php#replace-system-properties)
         * _Optimization_ (+3)
             * [_String.isBlank() rather than String.strip().isEmpty()_](https://bugs.eclipse.org/bugs/show_bug.cgi?id=573289) avoids the creation of an intermediate trimmed string
@@ -107,12 +106,13 @@
         * [Use of `Arrays.equals(char[], char[])` (`@HotSpotIntrinsicCandidate`/`@IntrinsicCandidate`)](https://bugs.eclipse.org/bugs/show_bug.cgi?id=571579)
         * [JDT core: Dogfooding of _Exit loop earlier_](https://bugs.eclipse.org/bugs/show_bug.cgi?id=572213)
     * Debug
-        * [Debug hover for chain of variables](https://www.eclipse.org/eclipse/news/4.20/jdt.php#chain-fields)
-        * [Launch configuration: _Copy_](https://www.eclipse.org/eclipse/news/4.20/jdt.php#copy-jars)
+        * [Debug hover for chain of variables](https://www.eclipse.org/eclipse/news/4.20/jdt.php#debug-hover-chain-fields)
+        * ([Launch configuration: _Copy_](https://www.eclipse.org/eclipse/news/4.20/jdt.php#copy-jars))
 * **General**
     * [Terminal](https://wiki.eclipse.org/CDT/User/NewIn103#Terminal) (by CDT 10.3)
-        * Open web link or file via Ctrl +  click
+        * Open a web link or project file via Ctrl + click
         * Local terminals remember working director, shell, arguments and other settings
+        * On Windows, _New Terminal_ and _Show In Local Terminal_ are automatically populated with existing terminals of Windows Subsystem for Linux (WSL)
     * [Quick Search mention max occurrences reached](https://www.eclipse.org/eclipse/news/4.20/platform.php#quick-text-search)
     * [Export certificate during installation](https://www.eclipse.org/eclipse/news/4.20/platform.php#export-certificate-at-install)
     * [UI](https://bugs.eclipse.org/bugs/showdependencytree.cgi?id=571203&hide_resolved=0)

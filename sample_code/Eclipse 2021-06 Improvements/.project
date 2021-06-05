@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>Eclipse 2021-03 Improvements</name>
+	<name>Eclipse 2021-06 Improvements</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -8,15 +8,6 @@
 		<buildCommand>
 			<name>org.eclipse.jdt.core.javabuilder</name>
 			<arguments>
-			</arguments>
-		</buildCommand>
-		<buildCommand>
-			<name>org.eclipse.ui.externaltools.ExternalToolBuilder</name>
-			<arguments>
-				<dictionary>
-					<key>LaunchConfigHandle</key>
-					<value>&lt;project&gt;/.externalToolBuilders/Code Generator.launch</value>
-				</dictionary>
 			</arguments>
 		</buildCommand>
 	</buildSpec>
