@@ -22,7 +22,7 @@
     * Java development tools (JDT) 4.19→**4.20**: [Eclipse 4.20 - New and Noteworthy - Java Development Tools](https://www.eclipse.org/eclipse/news/4.20/jdt.php) ([log](https://git.eclipse.org/c/www.eclipse.org/eclipse/news.git/log/)), [plan](https://www.eclipse.org/projects/project-plan.php?planurl=http://www.eclipse.org/eclipse/development/plans/eclipse_project_plan_4_20.xml#themes_and_priorities), Git [core](https://git.eclipse.org/c/jdt/eclipse.jdt.core.git/log/) [UI](https://git.eclipse.org/c/jdt/eclipse.jdt.ui.git/log/)
         * [Java 16](https://jdk.java.net/16/): [bug tree](https://bugs.eclipse.org/bugs/showdependencytree.cgi?id=565620&hide_resolved=0), [examples](https://wiki.eclipse.org/Java16/Examples)
     * (EclEmma (Java code coverage) 3.1.4: [changes](https://www.eclemma.org/changes.html), [Git](https://github.com/eclipse/eclemma/commits/master), [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=Eclemma&query_format=advanced&order=changeddate%20DESC))
-    * (M2Eclipse (Maven) 1.17.2: [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=m2e&query_format=advanced&order=changeddate%20DESC&target_milestone=1.17.2), [Git](https://git.eclipse.org/c/m2e/m2e-core.git/log/), [release notes](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#1172), [review](https://projects.eclipse.org/projects/technology.m2e/reviews/1.16.2-release-review))
+    * (M2Eclipse (Maven) 1.17.2→**1.18.0**: [release notes](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md), [review](https://projects.eclipse.org/projects/technology.m2e/reviews/1.18.0-release-review), [commits](https://github.com/eclipse-m2e/m2e-core/compare/1.17.2...1.18.0), [https://github.com/eclipse-m2e/m2e-core/issues](https://github.com/eclipse-m2e/m2e-core/issues))
     * (Buildship (Gradle) 3.1.5: [review](https://projects.eclipse.org/projects/tools.buildship/releases/3.1.5) → [announcements](https://discuss.gradle.org/tag/buildship-release))
 * General
     * **Platform** 4.20→**4.20**: [Eclipse 4.20 - New and Noteworthy - Platform and Equinox](https://www.eclipse.org/eclipse/news/4.20/platform.php) ([log](https://git.eclipse.org/c/www.eclipse.org/eclipse/news.git/log/)), [plan](https://www.eclipse.org/projects/project-plan.php?planurl=http://www.eclipse.org/eclipse/development/plans/eclipse_project_plan_4_20.xml#themes_and_priorities), [Git](https://git.eclipse.org/c/platform/eclipse.platform.ui.git/log/), [resolved bugs](https://bugs.eclipse.org/bugs/buglist.cgi?bug_status=RESOLVED&resolution=---&resolution=FIXED&product=JDT&query_format=advanced&order=changeddate%20DESC)
@@ -34,9 +34,9 @@
     * EPP: [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=EPP&query_format=advanced&order=changeddate%20DESC), [Git](https://git.eclipse.org/c/epp/org.eclipse.epp.packages.git/log/)
 * J**Git**/EGit 5.11→**5.12**: wiki [JGit](https://wiki.eclipse.org/JGit/New_and_Noteworthy/5.12)/[EGit](https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.12), review [JGit](https://projects.eclipse.org/projects/technology.jgit/reviews/5.12.0-release-review)/[EGit](https://projects.eclipse.org/projects/technology.egit/reviews/5.12.0-release-review), [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=EGit&product=JGit&query_format=advanced&order=changeddate%20DESC), Git [JGit](https://git.eclipse.org/c/jgit/jgit.git/log/)/[EGit](https://git.eclipse.org/c/egit/egit.git/log/)
 * Web, XML
-    * [Wild Web Developer](https://projects.eclipse.org/projects/tools.wildwebdeveloper) 0.11.5→**0.11.6**: [GitHub](https://github.com/eclipse/wildwebdeveloper), [commits](https://github.com/eclipse/wildwebdeveloper/compare/0.11.5...0.11.6)
-        * JavaScript/TypeScript language server ([`typescript@...`](https://github.com/eclipse/wildwebdeveloper/blob/master/org.eclipse.wildwebdeveloper/pom.xml); `plugins/org.eclipse.wildwebdeveloper_<version>/node_modules/typescript/package.json`): 4.1.3→**4.2?** [releases](https://github.com/microsoft/TypeScript/releases), [announcement](https://devblogs.microsoft.com/typescript/announcing-typescript-4-2)
-    * [LemMinX](https://projects.eclipse.org/projects/technology.lemminx) 0.15→**0.16.2?**: [GitHub](https://github.com/eclipse/lemminx), [changelog](https://github.com/eclipse/lemminx/blob/master/CHANGELOG.md#change-log)
+    * ([Wild Web Developer](https://projects.eclipse.org/projects/tools.wildwebdeveloper) 0.11.5: [GitHub](https://github.com/eclipse/wildwebdeveloper), [commits](https://github.com/eclipse/wildwebdeveloper/compare/0.11.5...0.11.6))
+        * (JavaScript/TypeScript language server ([`typescript@...`](https://github.com/eclipse/wildwebdeveloper/blob/master/org.eclipse.wildwebdeveloper/pom.xml); `plugins/org.eclipse.wildwebdeveloper_<version>/node_modules/typescript/package.json`): 4.1.3 [releases](https://github.com/microsoft/TypeScript/releases), [announcement](https://devblogs.microsoft.com/typescript/announcing-typescript-4-2))
+    * ([LemMinX](https://projects.eclipse.org/projects/technology.lemminx) 0.15: [GitHub](https://github.com/eclipse/lemminx), [changelog](https://github.com/eclipse/lemminx/blob/master/CHANGELOG.md#change-log))
     * [Web Tools Platform](https://projects.eclipse.org/projects/webtools) 3.21→**3.22**: [bugs](https://bugs.eclipse.org/bugs/report.cgi?x_axis_field=bug_status&y_axis_field=product&query_format=report-table&classification=WebTools&target_milestone=3.22&format=table&action=wrap), [_New & Noteworthy_](https://www.eclipse.org/webtools/releases/3.22/NewAndNoteworthy/)
 * C/C++, PHP, Rust
     * [CDT](https://projects.eclipse.org/projects/tools.cdt) (C/C++) 10.2→**10.3**: [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=CDT&query_format=advanced&order=changeddate%20DESC), [review](https://projects.eclipse.org/projects/tools.cdt/reviews/10.3.0-release-review), [_New & Noteworthy_](https://wiki.eclipse.org/CDT/User/NewIn103)
@@ -108,6 +108,7 @@
     * Debug
         * [Debug hover for chain of variables](https://www.eclipse.org/eclipse/news/4.20/jdt.php#debug-hover-chain-fields)
         * ([Launch configuration: _Copy_](https://www.eclipse.org/eclipse/news/4.20/jdt.php#copy-jars))
+    * Maven: [Embedded Maven 3.6.3→3.8.1](https://github.com/eclipse-m2e/m2e-core/issues/159)
 * **General**
     * [Terminal](https://wiki.eclipse.org/CDT/User/NewIn103#Terminal) (by CDT 10.3)
         * Open a web link or project file via Ctrl + click
@@ -115,28 +116,31 @@
         * On Windows, _New Terminal_ and _Show In Local Terminal_ are automatically populated with existing terminals of Windows Subsystem for Linux (WSL)
     * [Quick Search mention max occurrences reached](https://www.eclipse.org/eclipse/news/4.20/platform.php#quick-text-search)
     * [Export certificate during installation](https://www.eclipse.org/eclipse/news/4.20/platform.php#export-certificate-at-install)
-    * [UI](https://bugs.eclipse.org/bugs/showdependencytree.cgi?id=571203&hide_resolved=0)
-    * [Performance improvements](https://bugs.eclipse.org/bugs/showdependencytree.cgi?id=571430&hide_resolved=0)
-        * [No local history for derived files anymore](https://www.eclipse.org/eclipse/news/4.20/platform.php#history-for-derived-files)
-        * ? [Switching perspective](https://bugs.eclipse.org/bugs/show_bug.cgi?id=572711)
-        * ? [Compare Editor (by using SWT buffering)](https://bugs.eclipse.org/bugs/show_bug.cgi?id=571954#c6)
-        * [Removing of activator from `org.eclipse.equinox.p2.ui.imp`](https://bugs.eclipse.org/bugs/show_bug.cgi?id=572410) → faster startup?
-        * [OSGI: Improve performance for name space wiring lookup](https://bugs.eclipse.org/bugs/show_bug.cgi?id=572605) → faster startup?
+    * ([UI](https://bugs.eclipse.org/bugs/showdependencytree.cgi?id=571203&hide_resolved=0))
+    * ([Performance improvements](https://bugs.eclipse.org/bugs/showdependencytree.cgi?id=571430&hide_resolved=0))
+        * ([No local history for derived files anymore](https://www.eclipse.org/eclipse/news/4.20/platform.php#history-for-derived-files) → [currently, no noticeable improvement](https://bugs.eclipse.org/bugs/show_bug.cgi?id=573421#c23))
+        * ([Switching perspective](https://bugs.eclipse.org/bugs/show_bug.cgi?id=572711))
+        * ([Compare Editor (by using SWT buffering)](https://bugs.eclipse.org/bugs/show_bug.cgi?id=571954#c6))
+        * ([Removing of activator from `org.eclipse.equinox.p2.ui.imp`](https://bugs.eclipse.org/bugs/show_bug.cgi?id=572410) → faster startup?)
+        * ([OSGI: Improve performance for name space wiring lookup](https://bugs.eclipse.org/bugs/show_bug.cgi?id=572605) → faster startup?)
+        * ([EGit plugin: Activator → OSGi DS](https://bugs.eclipse.org/bugs/show_bug.cgi?id=560412) → faster startup?)
 * **Git**
-    * Performance:
-        * [EGit plugin: Activator → OSGi DS](https://bugs.eclipse.org/bugs/show_bug.cgi?id=560412) → faster startup?
+    * Handling/resolving of merge/rebase/cherry-picking conflicts improved:
+        * [_Staging_ view shows conflict type](https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.12#Staging_View):
+            * M - modified on both sides
+            * M/D - modified on our side, deleted on their side
+            * D/M - deleted on your side, modified on their side
+            * A - added on both sides, but different content
+        * _Merge Tool_
+            * New third option for merge tool content: _Working Tree Pre-Merged to 'Ours'_ (used by default instead of _Last HEAD_)
+            * _Hiding Changes Between Current and Ancestor_
+        * [_Replace With→Ours/Theirs_](https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.12#Replace_With.E2.86.92Ours.2FTheirs)
+            * For M/D or D/M it will now delete the file and stage the deletion if the file was deleted in the chosen side
+            * Now also shown in _Project Explorer_ and _Package Explorer_
 * **Web**
-    * Embedded language server updated:
-        * TypeScript/JavaScript 4.2:
-            * [Declare Missing Helper Function](https://devblogs.microsoft.com/typescript/announcing-typescript-4-2/#declare-missing-helper)
-            * [Stricter Checks For The in Operator](https://devblogs.microsoft.com/typescript/announcing-typescript-4-2/#stricter-in-checks)
-        * XML:
-            * [Unclosed elements: easier to understand and to fix](https://github.com/eclipse/lemminx/issues/963)
-    * WTP:
-        * [HTML Snippets](https://www.eclipse.org/webtools/releases/3.22/NewAndNoteworthy/#HTML%20Snippets)
+    * (WTP: [_Snippets_ view: HTML section with HTML entities added](https://www.eclipse.org/webtools/releases/3.22/NewAndNoteworthy/#HTML%20Snippets))
 * **(Under development)**
     * ([Apple silicon](https://bugs.eclipse.org/bugs/show_bug.cgi?id=565690))
-    * ([Upgrade and improve Chromium support in SWT](https://bugs.eclipse.org/bugs/show_bug.cgi?id=566608): no commits in last 3 month (see also [how to enable it](https://bugs.eclipse.org/bugs/show_bug.cgi?id=549585#c117)))
     * ([XML CodeLens preference page](https://github.com/eclipse/wildwebdeveloper/issues/636) ← [not working yet](https://github.com/eclipse/wildwebdeveloper/issues/644))
     * ([Implemented "openDoc" to open the given URL in an external browser](https://github.com/eclipse/wildwebdeveloper/commit/9f742827d63237a0deb9311971cecbe33e4db558) for ESLint Quick Fix (Ctrl+1) _Show documentation for ..._)
 
