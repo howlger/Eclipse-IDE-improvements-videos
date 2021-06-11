@@ -3,7 +3,7 @@ package cleanups;
 public class DuplicateCode {
 	void sample(boolean isEnabled, boolean isA, boolean isB) {
 
-		// (6/12) Replace (X && Y) || (X && Z) by (X && (Y || Y))
+		// (6/12) Replace (X && Y) || (X && Z) by (X && (Y || Z))
 		if (isEnabled && isA || isEnabled && isB) {
 			// ...
 		}
