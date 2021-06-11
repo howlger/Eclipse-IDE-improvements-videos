@@ -61,7 +61,7 @@
             * [Records (Final)](https://openjdk.java.net/jeps/395) supported by _New Record_ dialog, compiler, formatter, etc.
             * [Sealed Classes (Second Preview)](https://openjdk.java.net/jeps/397) supported by quick fixes, compiler, etc.
     * Cleanups (+12; [AutoRefactor](https://github.com/JnRouvignac/AutoRefactor) merged into [Eclipse](https://bugs.eclipse.org/bugs/buglist.cgi?classification=Eclipse%20Project&product=JDT&query_format=advanced&short_desc=AutoRefactor&short_desc_type=allwordssubstr) by [Fabrice Tiercelin](https://projects.eclipse.org/projects/eclipse.jdt/elections/election-fabrice-tiercelin-committer-eclipse-java-development-tools-jdt))
-        * [Default Java cleanup profile enables 9 more cleanups by default](https://www.eclipse.org/eclipse/news/4.20/jdt.php#cleanup-profile-updated) (8→16):
+        * [Default Java cleanup profile enables 8 more cleanups by default](https://www.eclipse.org/eclipse/news/4.20/jdt.php#cleanup-profile-updated) (8→16):
             * Convert to enhanced 'for' loops only if the loop variable is used
             * Primitive type rather then wrapper class
             * Remove redundant semicolons
@@ -70,16 +70,6 @@
             * Boolean value rather than comparison
             * Single 'if' statement rather than duplicate blocks that fall through
             * Use diamond operator
-        * Improved:
-            * [_Use String.replace()_](https://git.eclipse.org/c/jdt/eclipse.jdt.ui.git/commit/?id=c6297368f09953947ef1f8f8a9856ffd830c6e72)
-            * _Simplify lambda expression and method reference syntax_:
-                * [Better detect type of method](https://bugs.eclipse.org/bugs/show_bug.cgi?id=572692)
-                * [Prefer type ref to method ref to avoid compile error](https://bugs.eclipse.org/bugs/show_bug.cgi?id=572334)
-                * [Handle type ref for self class](https://bugs.eclipse.org/bugs/show_bug.cgi?id=572495)
-            * [_Merge conditions of if/else if/else that have the same blocks_ to apply also for nested if/else](https://git.eclipse.org/c/jdt/eclipse.jdt.ui.git/commit/?id=dc0ea9671cf07383c1acb383525756d89a5f54e5)
-            * [_Static inner class_ to handle generics](https://bugs.eclipse.org/bugs/show_bug.cgi?id=572716)
-                * Also https://bugs.eclipse.org/bugs/show_bug.cgi?id=572124 ?
-            * ...
         * _Java Feature_ (+1)
             * Java 15 Preview → Java 16: _Pattern matching for instanceof_
             * [Java 7: _Replace system property with constant_](https://www.eclipse.org/eclipse/news/4.20/jdt.php#replace-system-properties)
@@ -98,6 +88,17 @@
             * [_Use implicit comparator when possible_](https://www.eclipse.org/eclipse/news/4.20/jdt.php#operand-factorization): removes anonymous class, lambda, `Comparator.comparing()`, `Comparator.naturalOrder()` and `null`
             * [_Create array with curly when possible_](https://www.eclipse.org/eclipse/news/4.20/jdt.php#array-with-curly)
             * [_Remove variable assignment before return_](https://www.eclipse.org/eclipse/news/4.20/jdt.php#return-without-assignment)
+        * (Fixed:
+            * [_Simplify lambda expression and method reference syntax_](https://bugs.eclipse.org/bugs/show_bug.cgi?id=572495)
+            * _Make inner classes static where possible_:
+                 * [Generics](https://bugs.eclipse.org/bugs/show_bug.cgi?id=572716)
+                 * [Altering the behavior](https://bugs.eclipse.org/bugs/show_bug.cgi?id=572124))
+        * Improved:
+            * [_Merge conditions of if/else if/else that have the same blocks_ to apply also for nested if/else](https://git.eclipse.org/c/jdt/eclipse.jdt.ui.git/commit/?id=dc0ea9671cf07383c1acb383525756d89a5f54e5)
+            * [_Use String.replace()_](https://git.eclipse.org/c/jdt/eclipse.jdt.ui.git/commit/?id=c6297368f09953947ef1f8f8a9856ffd830c6e72)
+                * [Better detect type of method](https://bugs.eclipse.org/bugs/show_bug.cgi?id=572692)
+                * [Prefer type ref to method ref to avoid compile error](https://bugs.eclipse.org/bugs/show_bug.cgi?id=572334)
+                * [Handle type ref for self class](https://bugs.eclipse.org/bugs/show_bug.cgi?id=572495)
     * Java editor:
         * [Quick fix _Create local variable_ improved](https://www.eclipse.org/eclipse/news/4.20/jdt.php#foreach-expression-type) to infer the type from an _foreach_ loop
     * [_Search_ view: _In Static Imports_ filter](https://www.eclipse.org/eclipse/news/4.20/jdt.php#search-filter-static-imports)

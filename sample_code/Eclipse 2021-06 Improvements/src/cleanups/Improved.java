@@ -4,11 +4,21 @@ import java.util.function.Function;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class FixedAndExtended {
-	String sample(String text, String delimiter, String name) {
+public class Improved {
+	String sample(String text, String delimiter, String name, boolean isEnabled, boolean isFound) {
 
-		// Simplify lambda expression and method reference syntax
-		Function<String, Integer> f = s -> strippedLength(s); // not this::strippedLength
+		// Merge conditions of if/else if/else that have the same blocks
+		if (isEnabled) {
+			if (isFound) {
+				// found ...
+			} else {
+				System.out.println("Duplicate code");
+				// ...
+			}
+		} else {
+			System.out.println("Duplicate code");
+			// ...
+		}
 
 		// Use String.replace() instead of String.replaceAll() when possible
 		return text.replaceAll(":-\\)", "\\\\o/")
@@ -21,5 +31,4 @@ public class FixedAndExtended {
 	static int strippedLength(String string) {
 		return string.strip().length();
 	}
-
 }
