@@ -80,9 +80,9 @@
         * _Code Style_ (+1)
             * [_Use instanceof keyword instead of Class.isInstance()_](https://www.eclipse.org/eclipse/news/4.20/jdt.php#use-instanceof)
         * _Duplicate code_ (+3)
-            * [_Replace (X && Y) || (X && Z) by (X && (Y || Y))_](https://www.eclipse.org/eclipse/news/4.20/jdt.php#operand-factorization) Operand factorization when operands are passive and primitive
+            * [Operand Factorization: _Replace (X && Y) || (X && Z) by (X && (Y || Z))_](https://www.eclipse.org/eclipse/news/4.20/jdt.php#operand-factorization) when operands are passive and primitive
             * [_Single 'if' statement rather than duplicate blocks that fall through_](https://www.eclipse.org/eclipse/news/4.20/jdt.php#one-falling-through-if)
-            * [_Pull out a duplicate 'if' from an if/else_](https://www.eclipse.org/eclipse/news/4.20/jdt.php#pull-out-if) when if conditions are passive
+            * [_Pull out a duplicate 'if' from an if/else_](https://www.eclipse.org/eclipse/news/4.20/jdt.php#pull-out-if) when _if_ conditions are passive
         * _Unnecessary Code_ (+4)
             * [_Boolean value rather than comparison_](https://www.eclipse.org/eclipse/news/4.20/jdt.php#redundant-truth)
             * [_Use implicit comparator when possible_](https://www.eclipse.org/eclipse/news/4.20/jdt.php#operand-factorization): removes anonymous class, lambda, `Comparator.comparing()`, `Comparator.naturalOrder()` and `null`
@@ -96,9 +96,6 @@
         * Improved:
             * [_Merge conditions of if/else if/else that have the same blocks_ to apply also for nested if/else](https://git.eclipse.org/c/jdt/eclipse.jdt.ui.git/commit/?id=dc0ea9671cf07383c1acb383525756d89a5f54e5)
             * [_Use String.replace()_](https://git.eclipse.org/c/jdt/eclipse.jdt.ui.git/commit/?id=c6297368f09953947ef1f8f8a9856ffd830c6e72)
-                * [Better detect type of method](https://bugs.eclipse.org/bugs/show_bug.cgi?id=572692)
-                * [Prefer type ref to method ref to avoid compile error](https://bugs.eclipse.org/bugs/show_bug.cgi?id=572334)
-                * [Handle type ref for self class](https://bugs.eclipse.org/bugs/show_bug.cgi?id=572495)
     * Java editor:
         * [Quick fix _Create local variable_ improved](https://www.eclipse.org/eclipse/news/4.20/jdt.php#foreach-expression-type) to infer the type from an _foreach_ loop
     * [_Search_ view: _In Static Imports_ filter](https://www.eclipse.org/eclipse/news/4.20/jdt.php#search-filter-static-imports)
