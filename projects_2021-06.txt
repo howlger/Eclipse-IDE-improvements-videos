@@ -24,18 +24,18 @@ Eclipse Extended Editing Framework (EEF)	2.1.5
 Eclipse Generation Factories (EGF)	1.6.2
 Eclipse GMF Runtime	1.13.1
 Eclipse Graphical Editing Framework (GEF)	5.3.3 (2021-03)
-Eclipse Graphiti	0.18.0
+Eclipse Graphiti™	0.18.0
 Eclipse JGit: Java implementation of Git	5.12.0
 Eclipse JustJ	1.1
 Eclipse Linux Tools	8.3.0
 Eclipse LSP4E	0.18.0
 Eclipse LSP4J	0.12.0
 Eclipse Marketplace Client	1.9.1
-Eclipse Maven Integration	1.18.0
+Eclipse Maven Integration	1.17.2
 Eclipse Maven Integration for Web Tools Platform	1.4.3
 Eclipse MDT UML2	5.5.2
 Eclipse MDT XSD (XML Schema Definition)	2.26.0
-Eclipse Memory Analyzer	1.12.0
+Eclipse Memory Analyzer™	1.12.0
 Eclipse Modeling Workflow Engine	2.12.1
 Eclipse MoDisco	2020-03 (1.5.1)
 Eclipse Mylyn	3.25.2
@@ -52,7 +52,7 @@ Eclipse QVT Operational	2021-06 (3.10.4)
 Eclipse QVTd (QVT Declarative)	2021-06 (0.26.0)
 Eclipse RCP Testing Tool	2.5.1
 Eclipse RedDeer™	3.4.0
-Eclipse Remote Application Platform	3.17.0
+Eclipse Remote Application Platform™	3.17.0
 Eclipse Scout	11.0.0
 Eclipse Sirius	6.5.0
 Eclipse SWTBot™	3.1.0

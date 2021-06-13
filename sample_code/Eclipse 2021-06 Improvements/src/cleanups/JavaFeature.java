@@ -10,10 +10,10 @@ public class JavaFeature {
 		}
 
 		// (1/12) Replace system property with constant
-		String pathSeparator = System.getProperty("path.separator"); // ; or :
 		String fileSeparator = System.getProperty("file.separator"); // \ or /
-		String fileEncoding = System.getProperty("file.encoding");   // Cp1252, UTF-8, ...
+		String pathSeparator = System.getProperty("path.separator"); // ; or :
 		String lineSeparator = System.getProperty("line.separator"); // \r\n, \n or \r
+		String fileEncoding = System.getProperty("file.encoding");   // Cp1252, UTF-8, ...
 		Boolean booleanProperty =
 				Boolean.parseBoolean(System.getProperty("myProperty")); // -DmyProperty=true
 

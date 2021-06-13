@@ -96,6 +96,9 @@
         * Improved:
             * [_Merge conditions of if/else if/else that have the same blocks_ to apply also for nested if/else](https://git.eclipse.org/c/jdt/eclipse.jdt.ui.git/commit/?id=dc0ea9671cf07383c1acb383525756d89a5f54e5)
             * [_Use String.replace()_](https://git.eclipse.org/c/jdt/eclipse.jdt.ui.git/commit/?id=c6297368f09953947ef1f8f8a9856ffd830c6e72)
+    * Debug
+        * [Debug hover for chain of variables](https://www.eclipse.org/eclipse/news/4.20/jdt.php#debug-hover-chain-fields)
+        * ([Launch configuration: _Copy_](https://www.eclipse.org/eclipse/news/4.20/jdt.php#copy-jars))
     * Java editor:
         * [Quick fix _Create local variable_ improved](https://www.eclipse.org/eclipse/news/4.20/jdt.php#foreach-expression-type) to infer the type from an _foreach_ loop
     * [_Search_ view: _In Static Imports_ filter](https://www.eclipse.org/eclipse/news/4.20/jdt.php#search-filter-static-imports)
@@ -103,17 +106,16 @@
         * [Faster compiling for large workspace](https://bugs.eclipse.org/bugs/show_bug.cgi?id=570896)
         * [Use of `Arrays.equals(char[], char[])` (`@HotSpotIntrinsicCandidate`/`@IntrinsicCandidate`)](https://bugs.eclipse.org/bugs/show_bug.cgi?id=571579)
         * [JDT core: Dogfooding of _Exit loop earlier_](https://bugs.eclipse.org/bugs/show_bug.cgi?id=572213)
-    * Debug
-        * [Debug hover for chain of variables](https://www.eclipse.org/eclipse/news/4.20/jdt.php#debug-hover-chain-fields)
-        * ([Launch configuration: _Copy_](https://www.eclipse.org/eclipse/news/4.20/jdt.php#copy-jars))
-    * Maven: [Embedded Maven 3.6.3→3.8.1](https://github.com/eclipse-m2e/m2e-core/issues/159)
+    * (Maven: [Embedded Maven 3.6.3→3.8.1](https://github.com/eclipse-m2e/m2e-core/issues/159))
 * **General**
     * [Terminal](https://wiki.eclipse.org/CDT/User/NewIn103#Terminal) (by CDT 10.3)
-        * Open a web link or project file via Ctrl + click
-        * Local terminals remember working director, shell, arguments and other settings
+        * Open a web link or project file via Ctrl+click
+        * Local terminals remember working directory, shell, arguments and other settings
         * On Windows, _New Terminal_ and _Show In Local Terminal_ are automatically populated with existing terminals of Windows Subsystem for Linux (WSL)
     * [Quick Search mention max occurrences reached](https://www.eclipse.org/eclipse/news/4.20/platform.php#quick-text-search)
-    * [Export certificate during installation](https://www.eclipse.org/eclipse/news/4.20/platform.php#export-certificate-at-install)
+        * Shows the number of matches...
+        * ... and mentions when max results reached (new preference _General > Quick Search: Max results_)
+    * ([Export certificate during installation](https://www.eclipse.org/eclipse/news/4.20/platform.php#export-certificate-at-install))
     * ([UI](https://bugs.eclipse.org/bugs/showdependencytree.cgi?id=571203&hide_resolved=0))
     * ([Performance improvements](https://bugs.eclipse.org/bugs/showdependencytree.cgi?id=571430&hide_resolved=0))
         * ([No local history for derived files anymore](https://www.eclipse.org/eclipse/news/4.20/platform.php#history-for-derived-files) → [currently, no noticeable improvement](https://bugs.eclipse.org/bugs/show_bug.cgi?id=573421#c23))

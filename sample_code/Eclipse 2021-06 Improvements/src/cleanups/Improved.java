@@ -1,6 +1,5 @@
 package cleanups;
 
-import java.util.function.Function;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -22,9 +21,9 @@ public class Improved {
 
 		// Use String.replace() instead of String.replaceAll() when possible
 		return text.replaceAll(":-\\)", "\\\\o/")
-		           .replaceAll("\\.", "/")
 		           .replaceAll(Pattern.quote(delimiter), "\n")
-		           .replaceAll("\\[name\\]", Matcher.quoteReplacement(name));
+		           .replaceAll("\\[name\\]", Matcher.quoteReplacement(name))
+		           .replaceAll("\\.", "/");
 
 	}
 

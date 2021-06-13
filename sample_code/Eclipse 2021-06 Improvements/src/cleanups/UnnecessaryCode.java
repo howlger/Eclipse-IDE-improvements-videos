@@ -1,5 +1,6 @@
 package cleanups;
 
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.Date;
@@ -24,6 +25,7 @@ public class UnnecessaryCode {
 
 		// (11/12) Create array with curly when possible
 		double[] doubleArray = new double[] { 42.42 };
+		int hash = Arrays.hashCode(new double[] { 42.42 }); // cannot be shortened
 
 		// (12/12) Remove variable assignment before return
 		boolean result = isValid && isFound;
