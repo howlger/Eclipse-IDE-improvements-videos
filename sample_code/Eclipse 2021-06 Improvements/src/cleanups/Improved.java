@@ -26,8 +26,4 @@ public class Improved {
 		           .replaceAll("\\.", "/");
 
 	}
-
-	static int strippedLength(String string) {
-		return string.strip().length();
-	}
 }

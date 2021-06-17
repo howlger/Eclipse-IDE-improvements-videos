@@ -10,7 +10,7 @@ public class UnnecessaryCode {
 	boolean sample(boolean isValid, int number, Boolean isFound, List<Date> listToSort ) {
 
 		// (9/12) Boolean value rather than comparison
-		boolean valid	= isValid == true;
+		boolean valid	 = isValid == true;
 		boolean invalid  = isValid == false;
 		boolean negative = Boolean.FALSE.equals(number > 0);
 		boolean missing  = isFound.equals(Boolean.FALSE);

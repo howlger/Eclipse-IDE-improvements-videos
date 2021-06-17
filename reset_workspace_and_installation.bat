@@ -1,5 +1,5 @@
-set IDE=jee-2021-03
-set REPO=samples
+set IDE=java-2021-06
+set REPO=Sample
 
 set ECLIPSE_DIR=%USERPROFILE%\eclipse\%IDE%
 set ECLIPSE_P2_CONFIG_ZIP=%ECLIPSE_DIR%\%IDE%.7z
@@ -33,10 +33,6 @@ if NOT ["%errorlevel%"]==["0"] (echo Restoring of Eclipse installation failed &&
 rmdir /s /q "%ECLIPSE_WORKSPACE%"
 "%UNZIP_7ZIP%" x "%ECLIPSE_WORKSPACE_ZIP%" "-o%ECLIPSE_WORKSPACE%\.."
 
-:: launch current+previous Eclipse and SpeedTypingBot
+:: launch current Eclipse
 cd %ECLIPSE_DIR%
 start eclipse.exe
-cd %ECLIPSE_DIR%\..\jee-2020-12
-start eclipse.exe
-cd C:\Users\Howlger\workspace\Sample\bin
-start "" "%ECLIPSE_DIR%\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955\jre\bin\javaw.exe" SpeedTypingBot

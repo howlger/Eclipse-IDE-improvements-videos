@@ -11,13 +11,13 @@ public class DuplicateCode {
 		// (7/12) Single 'if' statement rather than duplicate blocks that fall through
 		if (isA) {
 			System.out.println("The same code");
-			throw new IllegalStateException();
 			// ...
+			throw new IllegalStateException();
 		}
 		if (isB) {
 			System.out.println("The same code");
-			throw new IllegalStateException();
 			// ...
+			throw new IllegalStateException();
 		}
 
 		// (8/12) Pull out a duplicate 'if' from an if/else
