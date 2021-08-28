@@ -12,7 +12,7 @@
 
 # +++ Work in progress (for September 15, 2021) +++<br> Eclipse IDE 2021-09 Improvements Video
 
-* [September 15, 2021](https://www.google.com/calendar/event?eid=M3RqcXVjamVmNG01bm03bjV0amk3MjcxdmogZ2NoczdubTRudnBtODM3NDY5ZGRqOXRqbGtAZw&ctz=Europe/Berlin) ([calendar](https://calendar.google.com/calendar/embed?src=gchs7nm4nvpm837469ddj9tjlk@group.calendar.google.com&ctz=Europe/Berlin)) - [? projects](https://projects.eclipse.org/releases/2021-09) ([-? +? → ?](projects_diff.txt)) - [wiki](https://wiki.eclipse.org/Category:SimRel-2021-09) - [website](https://eclipse.org/eclipseide/2021-09) ([New & Noteworthy](https://eclipse.org/eclipseide/2021-09/noteworthy)) - [splash screen](https://bugs.eclipse.org/bugs/show_bug.cgi?id=569333)
+* [September 15, 2021](https://www.google.com/calendar/event?eid=M3RqcXVjamVmNG01bm03bjV0amk3MjcxdmogZ2NoczdubTRudnBtODM3NDY5ZGRqOXRqbGtAZw&ctz=Europe/Berlin) ([calendar](https://calendar.google.com/calendar/embed?src=gchs7nm4nvpm837469ddj9tjlk@group.calendar.google.com&ctz=Europe/Berlin)) - [67 projects](https://projects.eclipse.org/releases/2021-09) ([-1 +0 → 67](projects_diff.txt)) - [wiki](https://wiki.eclipse.org/Category:SimRel-2021-09) - [website](https://eclipse.org/eclipseide/2021-09) ([New & Noteworthy](https://eclipse.org/eclipseide/2021-09/noteworthy)) - [splash screen](https://bugs.eclipse.org/bugs/show_bug.cgi?id=569333)
 * Builds: [latest unreleased](https://download.eclipse.org/technology/epp/staging/) → [released](https://download.eclipse.org/technology/epp/downloads/release/2021-09/) ([Jenkins](https://ci.eclipse.org/packaging/job/simrel.epp-tycho-build), [log](https://git.eclipse.org/c/simrel/org.eclipse.simrel.build.git/log/), update sites: [staging](https://download.eclipse.org/staging/2021-09), [release](http://download.eclipse.org/releases/2021-09))
 * Social media: [Twitter](http://twitter.com/EclipseJavaIDE), [YouTube](https://www.youtube.com/user/EclipseFdn) ([Eclipse IDE playlist](https://www.youtube.com/playlist?list=PLy7t4z5SYNaSNjL60ofpwVhfA7mOF3Pgk)), [Instagram](https://www.instagram.com/eclipsejavaide)
 
@@ -22,7 +22,7 @@
 * Java, Maven, Gradle
     * Java development tools (JDT) 4.20→**4.21**: [Eclipse 4.21 - New and Noteworthy - Java Development Tools](https://www.eclipse.org/eclipse/news/4.21/jdt.php) ([log](https://git.eclipse.org/c/www.eclipse.org/eclipse/news.git/log/)), [plan](https://www.eclipse.org/projects/project-plan.php?planurl=http://www.eclipse.org/eclipse/development/plans/eclipse_project_plan_4_21.xml#themes_and_priorities), Git [core](https://git.eclipse.org/c/jdt/eclipse.jdt.core.git/log/) [UI](https://git.eclipse.org/c/jdt/eclipse.jdt.ui.git/log/)
         * [Java 17](https://jdk.java.net/17/) (as preview via [Marketplace?](https://bugs.eclipse.org/bugs/show_bug.cgi?id=575138)): [bug tree](https://bugs.eclipse.org/bugs/showdependencytree.cgi?id=570733&hide_resolved=0), [examples](https://wiki.eclipse.org/Java17/Examples)
-    * (EclEmma (Java code coverage) 3.1.4: [changes](https://www.eclemma.org/changes.html), [Git](https://github.com/eclipse/eclemma/commits/master), [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=Eclemma&query_format=advanced&order=changeddate%20DESC))
+    * EclEmma (Java code coverage) 3.1.4→**3.1.5**: [changes](https://www.eclemma.org/changes.html) ([JaCoCo](https://www.jacoco.org/jacoco/trunk/doc/changes.html)), [Git](https://github.com/eclipse/eclemma/commits/master), [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=Eclemma&query_format=advanced&order=changeddate%20DESC)
     * (M2Eclipse (Maven) 1.18.0→**1.18.1**: [release notes](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md), [review](https://projects.eclipse.org/projects/technology.m2e/reviews/1.18.1-release-review), [commits](https://github.com/eclipse-m2e/m2e-core/compare/1.18.0...1.18.1), [https://github.com/eclipse-m2e/m2e-core/issues](https://github.com/eclipse-m2e/m2e-core/issues))
     * (Buildship (Gradle) 3.1.5→**3.1.6**: [review](https://projects.eclipse.org/projects/tools.buildship/releases/3.1.6), [commits](https://github.com/eclipse/buildship/commits/master), [announcements](https://discuss.gradle.org/tag/buildship-release))
 * General
@@ -52,7 +52,7 @@
 ### Features to show
 
 * **Java**
-    * [Java 17 support via Marketplace?](https://marketplace.eclipse.org/search/site/java%252017)
+    * [Java 17 support via Marketplace](https://marketplace.eclipse.org/content/java-17-support-eclipse-2021-09-421)
     * Java editor:
         * [Content assist fixed/improved: missing proposals](https://bugs.eclipse.org/bugs/show_bug.cgi?id=574913) ([caused by changes for better lambda support](https://bugs.eclipse.org/bugs/show_bug.cgi?id=573853#c6))
         * [New quick assist _Convert while to do/while_](https://www.eclipse.org/eclipse/news/4.21/jdt.php#while-to-do-while) provided only when condition  is known to be initially `true`
@@ -87,11 +87,13 @@
     * [_Show Revision Information_ will updated whenever the HEAD of that repository changes](https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.13#Blame), e.g. when switching the branch or when changes of the currently shown file are committed
     * [Signing: `GNUPGHOME` is used if present](https://wiki.eclipse.org/JGit/New_and_Noteworthy/5.13#GPG) (instead of default locations; can be overridden by `-Djgit.gpg.home=...`)
     * [_Git Repositories_ view: _Show In > System Explorer_ also for repository node](https://bugs.eclipse.org/bugs/show_bug.cgi?id=574144)
+    * UI
+        * [Fetch wizard polishing/simplification](https://bugs.eclipse.org/bugs/show_bug.cgi?id=575566) (right-click repository > _Remote > Fetch..._)
     * Performance:
         * [Change singletons to enumeration literals](https://git.eclipse.org/c/egit/egit.git/commit/?id=a3c2f76211643062a0529a7afc8474345f39994e)
 * **Web**
 * **(Under development)**
-    * ([Apple silicon](https://bugs.eclipse.org/bugs/show_bug.cgi?id=565690))
+    * ([Apple silicon](https://bugs.eclipse.org/bugs/show_bug.cgi?id=565690): [IDE packages](https://bugs.eclipse.org/bugs/show_bug.cgi?id=575680))
     * ([XML CodeLens preference page](https://github.com/eclipse/wildwebdeveloper/issues/636) ← [not working yet](https://github.com/eclipse/wildwebdeveloper/issues/644))
     * ([Implemented "openDoc" to open the given URL in an external browser](https://github.com/eclipse/wildwebdeveloper/commit/9f742827d63237a0deb9311971cecbe33e4db558) for ESLint Quick Fix (Ctrl+1) _Show documentation for ..._)
 

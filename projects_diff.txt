@@ -1,0 +1,1 @@
+- Eclipse Generation Factories (EGF)	1.6.2
