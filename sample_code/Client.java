@@ -1,8 +1,9 @@
 class Client {
 	void printNodeChain(Node root) {
 
-		StringBuffer buffer = Sample.sample(roo);
-		System.out.println(buffer);
+		var log = new StringBuffer();
+		Sample.sample(root, log, null);
+		System.out.println(log);
 
 	}
 }

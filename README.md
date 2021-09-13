@@ -73,8 +73,8 @@
         * [Evaluate variables in current execution stack](https://www.eclipse.org/eclipse/news/4.21/jdt.php#debug-intrim-eval))
     * ([Performance](https://bugs.eclipse.org/bugs/showdependencytree.cgi?id=574015&hide_resolved=0))
     * Default preferences:
-        * [_Java > Editor > Content Assist > Favorites_: `org.mockito.ArgumentMatchers` added](https://www.eclipse.org/eclipse/news/4.21/jdt.php#mockitomatchers)
         * [_Java > Appearance > Type Filters_ populated with `com.sun.*`, `java.awt.*`, ...](https://www.eclipse.org/eclipse/news/4.21/jdt.php#default-type-filters) (previously empty): will be ignored in content assist, _Organize Imports_, _Open Type_ and quick fix
+        * [_Java > Editor > Content Assist > Favorites_: `org.mockito.ArgumentMatchers` added](https://www.eclipse.org/eclipse/news/4.21/jdt.php#mockitomatchers)
 * **General**
     * [UI](https://bugs.eclipse.org/bugs/showdependencytree.cgi?id=574014&hide_resolved=0)
         * [View/editor close button polishing](https://www.eclipse.org/eclipse/news/4.21/platform.php#new-close-icon)
@@ -95,7 +95,7 @@
     * (_History_ view in right click menu, _Compare with Working Tree_ also enabled when multiple files are selected)
     * [_Git Repositories_ view: right-click menu](https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.13#New_Comparison_Commands):
         * _Compare with Working Tree_ for a branch, a tag or another reference
-        * _Show In > ..._ for files and folders in the working tree(options: _HEAD Revision_; _Branch, Tag, or Reference..._; _Commit..._)
+        * _Compare With > ..._ for files and folders in the working tree(options: _HEAD Revision_; _Branch, Tag, or Reference..._; _Commit..._)
         * ([_Show In > System Explorer_ also for repository node](https://bugs.eclipse.org/bugs/show_bug.cgi?id=574144) (in right-click menu disabled, but _Show In System Explorer_ command works via _Find Actions_ (Ctrl+3)))
     * [_Show Revision Information_ will updated whenever the HEAD of that repository changes](https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.13#Blame), e.g. when switching the branch or when changes of the currently shown file are committed
     * [Signing: `GNUPGHOME` is used if present](https://wiki.eclipse.org/JGit/New_and_Noteworthy/5.13#GPG) (instead of default locations; can be overridden by `-Djgit.gpg.home=...`)
