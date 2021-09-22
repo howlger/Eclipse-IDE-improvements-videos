@@ -1,5 +1,5 @@
-set IDE=java-2021-06
-set REPO=Sample
+set IDE=java-2021-09
+set REPO=sample
 
 set ECLIPSE_DIR=%USERPROFILE%\eclipse\%IDE%
 set ECLIPSE_P2_CONFIG_ZIP=%ECLIPSE_DIR%\%IDE%.7z

@@ -15,7 +15,7 @@
    id="svg8"
    inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
    sodipodi:docname="intro_outro_thumbnail.svg"
-   inkscape:export-filename="C:\Users\Howlger\Desktop\Thumbnail_2021-06.png"
+   inkscape:export-filename="C:\Users\Howlger\Desktop\Thumbnail_2021-09.png"
    inkscape:export-xdpi="180"
    inkscape:export-ydpi="180">
   <defs
@@ -64,7 +64,7 @@
      inkscape:cx="441.04443"
      inkscape:cy="288"
      inkscape:document-units="px"
-     inkscape:current-layer="g584"
+     inkscape:current-layer="g2112"
      showgrid="false"
      inkscape:window-width="1837"
      inkscape:window-height="1052"
@@ -112,8 +112,7 @@
      style="display:inline;opacity:1"
      inkscape:label="intro/thumbnail"
      id="g584"
-     inkscape:groupmode="layer"
-     sodipodi:insensitive="true">
+     inkscape:groupmode="layer">
     <g
        transform="matrix(0.96921879,0,0,0.96921879,-31.411024,-18.124843)"
        id="g576"
@@ -259,7 +258,7 @@
                style="font-size:10.3726px"> </tspan></tspan><tspan
              dy="-2.28"
              id="tspan568"
-             style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:9.46269px;font-family:Khula;-inkscape-font-specification:'Khula Semi-Bold';letter-spacing:-0.225194px">2021-06</tspan></tspan><tspan
+             style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:9.46269px;font-family:Khula;-inkscape-font-specification:'Khula Semi-Bold';letter-spacing:-0.225194px">2021-09</tspan></tspan><tspan
            dy="0 0.1"
            id="tspan572"
            rotate="0 0 0 0 0 0 0 0 0 0 0 0 0"
@@ -468,7 +467,7 @@
                id="tspan2145"><tspan
                  dy="2.3841858e-08"
                  id="tspan2143"
-                 style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:8.73479px;line-height:20%;font-family:Khula;-inkscape-font-specification:'Khula Semi-Bold'">2021-06</tspan></tspan></tspan></text>
+                 style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:8.73479px;line-height:20%;font-family:Khula;-inkscape-font-specification:'Khula Semi-Bold'">2021-09</tspan></tspan></tspan></text>
       </g>
     </g>
     <text
@@ -486,7 +485,7 @@
      inkscape:groupmode="layer"
      id="layer1"
      inkscape:label="cc"
-     style="display:inline"
+     style="display:none"
      transform="translate(1.45508,-1.59117)"
      sodipodi:insensitive="true">
     <g

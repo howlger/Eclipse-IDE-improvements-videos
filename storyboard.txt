@@ -1,19 +1,16 @@
 Set-up:
-- Installed JRE: HotSpot Java 14 JDK
 - Disable automatic update
-- Disable Java compiler: "Value of local variable is not used"
+(- Disable Java compiler: "Value of local variable is not used")
 - Perspectives: Java, Git
 - Enable "Link with editor"
+- Show keys
 - Hide right side view stacks
 
 
 Git:
-Rename branch to "main"
+Use "main" as default branch
 Add to config:
 
 [user]
     name = Jane
     email = jane@example.com
-
-
-

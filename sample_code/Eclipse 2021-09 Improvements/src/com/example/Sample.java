@@ -1,3 +1,4 @@
+package com.example;
 class Sample {
 	static String sample(Node root, StringBuffer log, String id) {
 

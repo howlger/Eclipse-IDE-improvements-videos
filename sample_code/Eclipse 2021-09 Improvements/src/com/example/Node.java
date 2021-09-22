@@ -1,3 +1,4 @@
+package com.example;
 public class Node {
 
 	private final String name;

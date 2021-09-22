@@ -10,7 +10,7 @@
 [2019-06](https://github.com/howlger/Eclipse-IDE-improvements-videos/tree/2019-06)
 </sup>
 
-# +++ Work in progress (for September 15, 2021) +++<br> Eclipse IDE 2021-09 Improvements Video
+# Eclipse IDE 2021-09 Improvements Video
 
 * [September 15, 2021](https://www.google.com/calendar/event?eid=M3RqcXVjamVmNG01bm03bjV0amk3MjcxdmogZ2NoczdubTRudnBtODM3NDY5ZGRqOXRqbGtAZw&ctz=Europe/Berlin) ([calendar](https://calendar.google.com/calendar/embed?src=gchs7nm4nvpm837469ddj9tjlk@group.calendar.google.com&ctz=Europe/Berlin)) - [67 projects](https://projects.eclipse.org/releases/2021-09) ([-1 +0 → 67](projects_diff.txt)) - [wiki](https://wiki.eclipse.org/Category:SimRel-2021-09) - [website](https://eclipse.org/eclipseide/2021-09) ([New & Noteworthy](https://eclipse.org/eclipseide/2021-09/noteworthy)) - [splash screen](https://bugs.eclipse.org/bugs/show_bug.cgi?id=569333)
 * Builds: [latest unreleased](https://download.eclipse.org/technology/epp/staging/) → [released](https://download.eclipse.org/technology/epp/downloads/release/2021-09/) ([Jenkins](https://ci.eclipse.org/packaging/job/simrel.epp-tycho-build), [log](https://git.eclipse.org/c/simrel/org.eclipse.simrel.build.git/log/), update sites: [staging](https://download.eclipse.org/staging/2021-09), [release](http://download.eclipse.org/releases/2021-09))
@@ -84,8 +84,8 @@
             * [Content assist background color now same as in file tree](https://bugs.eclipse.org/bugs/show_bug.cgi?id=566280)
             * [Print margin gray instead of red](https://bugs.eclipse.org/bugs/show_bug.cgi?id=573634) ...and by default disabled in JEE again
     * ([Performance](https://bugs.eclipse.org/bugs/showdependencytree.cgi?id=574015&hide_resolved=0): starts a bit faster (Java IDE in 6.x seconds, 0.2..0.6s less))
-    * [Install/Update: remember accepted licenses](https://bugs.eclipse.org/bugs/show_bug.cgi?id=574622)
-    * [Number of recently opened files can now increased from 20 to 100](https://bugs.eclipse.org/bugs/show_bug.cgi?id=574061)
+    * ([Install/Update: remember accepted licenses](https://bugs.eclipse.org/bugs/show_bug.cgi?id=574622))
+    * ([Number of recently opened files can now increased from 20 to 100](https://bugs.eclipse.org/bugs/show_bug.cgi?id=574061))
 * **Git**
     * [_Compare Editor_ in file tree section which is shown when comparing multiple files](https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.13#Compare_Editor)
         * Compact tree → less space
@@ -98,7 +98,7 @@
         * _Compare With > ..._ for files and folders in the working tree(options: _HEAD Revision_; _Branch, Tag, or Reference..._; _Commit..._)
         * ([_Show In > System Explorer_ also for repository node](https://bugs.eclipse.org/bugs/show_bug.cgi?id=574144) (in right-click menu disabled, but _Show In System Explorer_ command works via _Find Actions_ (Ctrl+3)))
     * [_Show Revision Information_ will updated whenever the HEAD of that repository changes](https://wiki.eclipse.org/EGit/New_and_Noteworthy/5.13#Blame), e.g. when switching the branch or when changes of the currently shown file are committed
-    * [Signing: `GNUPGHOME` is used if present](https://wiki.eclipse.org/JGit/New_and_Noteworthy/5.13#GPG) (instead of default locations; can be overridden by `-Djgit.gpg.home=...`)
+    * ([Signing: `GNUPGHOME` is used if present](https://wiki.eclipse.org/JGit/New_and_Noteworthy/5.13#GPG) (instead of default locations; can be overridden by `-Djgit.gpg.home=...`))
     * (UI: [Fetch wizard polishing/simplification](https://bugs.eclipse.org/bugs/show_bug.cgi?id=575566) (right-click repository > _Remote > Fetch..._))
     * (Performance: [Change singletons to enumeration literals](https://git.eclipse.org/c/egit/egit.git/commit/?id=a3c2f76211643062a0529a7afc8474345f39994e))
 * **Web**
