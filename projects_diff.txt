@@ -1,1 +1,2 @@
-- Eclipse Generation Factories (EGF)	1.6.2
++ Eclipse Papyrus™	6.0.0
++ Eclipse XWT
