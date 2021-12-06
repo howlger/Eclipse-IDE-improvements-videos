@@ -54,7 +54,7 @@
 
 * **Java**
     * **Java 17** (LTS):
-        * Java 17 **embedded** (via [JustJ](https://eclipse.org/justj)) in _Eclipse IDE for Java Developers_, _Eclipse IDE for Enterprise Java and Web Developers_, _Eclipse IDE for C/C++ Developers_ and _Eclipse IDE for Embedded C/C++ Developers_
+        * Java 17 **embedded** (via [Eclipse Temurin](https://eclipse.org/temurin) and [JustJ](https://eclipse.org/justj)) in _Eclipse IDE for Java Developers_, _Eclipse IDE for Enterprise Java and Web Developers_, _Eclipse IDE for C/C++ Developers_ and _Eclipse IDE for Embedded C/C++ Developers_
             * → ([Apple silicon](https://bugs.eclipse.org/bugs/show_bug.cgi?id=565690): [IDE packages](https://bugs.eclipse.org/bugs/show_bug.cgi?id=575680) had to wait for the Java 17 HotSpot VM and the native libraries of CDT)
         * [Java 17 **support**](https://www.eclipse.org/eclipse/news/4.22/jdt.php#Java_17)
             * [JEP 409: Sealed Classes (Final)](https://openjdk.java.net/jeps/409): show Quick Fixes (Ctrl+1) introduced in last version, but not shown in last video:
@@ -62,13 +62,12 @@
                 * [_Declare '...' as direct super class/interface of '...'_](https://www.eclipse.org/eclipse/news/4.21/jdt.php#declare-as-super-interface)
             * [JEP 306: Restore Always-Strict Floating-Point Semantics](https://openjdk.java.net/jeps/306): `strictfp` warning when used since it's unnecessary since Java 17
             * [JEP 406: Pattern Matching for switch (Preview)](https://openjdk.java.net/jeps/406)
+    * Cleanups (+1; [AutoRefactor](https://github.com/JnRouvignac/AutoRefactor) merged into [Eclipse](https://bugs.eclipse.org/bugs/buglist.cgi?classification=Eclipse%20Project&product=JDT&query_format=advanced&short_desc=AutoRefactor&short_desc_type=allwordssubstr) by [Fabrice Tiercelin](https://projects.eclipse.org/projects/eclipse.jdt/elections/election-fabrice-tiercelin-committer-eclipse-java-development-tools-jdt))
     * Java editor:
         * [Default _Type Filters_: `java.awt.*` and `org.graalvm.*` disabled; `java.awt.List` added instead](https://bugs.eclipse.org/bugs/show_bug.cgi?id=576549)
-        * [Content assist fixed/improved](https://bugs.eclipse.org/bugs/show_bug.cgi?id=575919)
+        * [Content assist fixed/improved](https://bugs.eclipse.org/bugs/show_bug.cgi?id=575919) ([backstory](https://bugs.eclipse.org/bugs/show_bug.cgi?id=575631#c14))
         * [Content assist proposes lambda expressions](https://bugs.eclipse.org/bugs/show_bug.cgi?id=443091)
-        * New quick fixes (Ctrl+1):
-            * [_Surround with try-with-resources_](https://www.eclipse.org/eclipse/news/4.22/jdt.php#surround-with-try-with-resources-quickfix)
-    * Cleanups (+1; [AutoRefactor](https://github.com/JnRouvignac/AutoRefactor) merged into [Eclipse](https://bugs.eclipse.org/bugs/buglist.cgi?classification=Eclipse%20Project&product=JDT&query_format=advanced&short_desc=AutoRefactor&short_desc_type=allwordssubstr) by [Fabrice Tiercelin](https://projects.eclipse.org/projects/eclipse.jdt/elections/election-fabrice-tiercelin-committer-eclipse-java-development-tools-jdt))
+        * [_Surround with try-with-resources_](https://www.eclipse.org/eclipse/news/4.22/jdt.php#surround-with-try-with-resources-quickfix) quick assist now also as quick fix (Ctrl+1)
         * _Java Feature_ (+1)
             * [_Convert String concatenation to Text Block_](https://www.eclipse.org/eclipse/news/4.22/jdt.php#strconcat-to-textblock): if the option _Only for local variables_ is disabled, also fields and parameters will be converted, which might cause compiler errors in callers and which might alter the behavior since _StringBuffer_ is synchronized in contrast to _StringBuilder_
     * [_Call Hierarchy_: improved lambda support](https://www.eclipse.org/eclipse/news/4.22/jdt.php#CallHierarchy)
@@ -79,7 +78,7 @@
     * Debug:
         * [_Set Object Label..._](https://www.eclipse.org/eclipse/news/4.22/jdt.php#label-objects)
     * [Performance](https://bugs.eclipse.org/bugs/buglist.cgi?classification=Eclipse%20Project&product=JDT&product=PDE&query_format=advanced&short_desc=performance&short_desc_type=allwordssubstr&target_milestone=4.22&target_milestone=4.22%20M1&target_milestone=4.22%20M2&target_milestone=4.22%20M3&target_milestone=4.22%20RC1&target_milestone=4.22%20RC2):
-        * [Content assist faster for type name](https://bugs.eclipse.org/bugs/show_bug.cgi?id=575562)
+        * [Content assist faster for type names](https://bugs.eclipse.org/bugs/show_bug.cgi?id=575562)
         * [Faster building of large Java projects](https://bugs.eclipse.org/bugs/show_bug.cgi?id=575733) ([example](https://bugs.eclipse.org/bugs/show_bug.cgi?id=575733#c14))
         * [Faster Java searching](https://bugs.eclipse.org/bugs/show_bug.cgi?id=576601)
         * [Faster index reading](https://bugs.eclipse.org/bugs/show_bug.cgi?id=574464)
@@ -94,6 +93,8 @@
     * [UI](https://bugs.eclipse.org/bugs/showdependencytree.cgi?id=575807&hide_resolved=0):
         * Dark Theme:
             * [On Windows: dark title bar](https://www.eclipse.org/eclipse/news/4.22/platform.php#win32-dark-titlebar-css)
+            * _Minimize_ and _Maximize_ icons outline instead of filled with white
+            * Content assist: dark instead of bright top border
     * [Performance](https://bugs.eclipse.org/bugs/buglist.cgi?classification=Eclipse%20Project&product=e4&product=Equinox&product=Incubator&product=Platform&query_format=advanced&short_desc=performance&short_desc_type=allwordssubstr&target_milestone=4.22&target_milestone=4.22%20M1&target_milestone=4.22%20M2&target_milestone=4.22%20M3&target_milestone=4.22%20RC1&target_milestone=4.22%20RC2):
         * Starts a bit faster: JEE IDE in about 5.4 instead of 5.8 seconds
             * [Faster `Program.getPrograms()`](https://bugs.eclipse.org/bugs/show_bug.cgi?id=574639) and [also cached](https://bugs.eclipse.org/bugs/show_bug.cgi?id=575569) (e.g. speeds up right-click + _Open With > Other: External programs_)
