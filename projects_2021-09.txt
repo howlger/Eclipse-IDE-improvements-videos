@@ -5,7 +5,7 @@ Eclipse BPEL Designer	1.1.3
 Eclipse BPMN2 Modeler Project	1.5.3
 Eclipse Buildship: Eclipse Plug-ins for Gradle	3.1.5
 Eclipse Business Process Model and Notation (BPMN2)	1.5.1
-Eclipse CDO Model Repository	4.15.0
+Eclipse CDO™ Model Repository	4.15.0
 Eclipse CDT™ (C/C++ Development Tooling)	10.4.0
 Eclipse Collections™	10.4.0
 Eclipse Communication Framework	3.14.22
@@ -15,11 +15,11 @@ Eclipse EclEmma	3.1.5
 Eclipse Ecore Tools	3.3.3
 Eclipse EGit™: Git Integration for Eclipse	5.13.0
 Eclipse Embedded CDT (C/C++ Development Tools)	6.1.2
-Eclipse EMF	2.27.0
 Eclipse EMF Client Platform	1.26.0
 Eclipse EMF Compare	3.3.10
 Eclipse EMF Parsley	1.13.0
 Eclipse EMF Services	1.12.2
+Eclipse EMF™	2.27.0
 Eclipse Extended Editing Framework (EEF)	2.1.5
 Eclipse GMF Runtime™	1.13.1
 Eclipse Graphical Editing Framework (GEF)	5.3.3 (2021-03)
@@ -33,25 +33,25 @@ Eclipse Marketplace Client	1.9.2
 Eclipse Maven Integration - m2eclipse™	1.18.1
 Eclipse Maven Integration for Web Tools Platform	1.4.3
 Eclipse MDT UML2	5.5.2
-Eclipse MDT XSD (XML Schema Definition)	2.27.0
+Eclipse MDT XSD™ (XML Schema Definition)	2.27.0
 Eclipse Memory Analyzer™	1.12.0
-Eclipse Modeling Workflow Engine	2.12.1
+Eclipse Modeling Workflow Engine™	2.12.1
 Eclipse MoDisco	2020-03 (1.5.1)
 Eclipse Mylyn	3.25.2
 Eclipse Mylyn Docs	3.0.39
-Eclipse OCL (Object Constraint Language)	2021-09 (6.16.0)
-Eclipse Oomph	1.22.0
+Eclipse OCL™ (Object Constraint Language)	2021-09 (6.16.0)
+Eclipse Oomph™	1.22.0
 Eclipse Packaging Project	4.21.0
 Eclipse Parallel Tools Platform (PTP)	9.4.0
 Eclipse Passage™	2.1.0
 Eclipse PHP Development Tools	7.2
 Eclipse Project	4.21.0
 Eclipse QVT Operational	2021-06 (3.10.4)
-Eclipse QVTd (QVT Declarative)	2021-09 (0.27.0)
+Eclipse QVTd™ (QVT Declarative)	2021-09 (0.27.0)
 Eclipse RCP Testing Tool	2.5.1
 Eclipse RedDeer™	3.5.0
 Eclipse Remote Application Platform™	3.17.0
-Eclipse Scout	11.0.0
+Eclipse Scout™	11.0.0
 Eclipse Sirius	6.5.1
 Eclipse SWTBot™	3.1.0
 Eclipse Target Communication Framework	1.7.0
@@ -64,4 +64,4 @@ Eclipse Web Tools Platform Project	3.23
 Eclipse Wild Web Developer	0.12.0
 Eclipse WindowBuilder	1.9.7
 Eclipse Xpand	2.2.0
-Eclipse Xtext	2.25.0
+Eclipse Xtext™	2.25.0

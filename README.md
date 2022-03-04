@@ -11,7 +11,7 @@
 [2019-06](https://github.com/howlger/Eclipse-IDE-improvements-videos/tree/2019-06)
 </sup>
 
-# +++ Work in progress (for December 8, 2021) +++<br> Eclipse IDE 2021-12 Improvements Video
+# Eclipse IDE 2021-12 Improvements Video
 
 * [December 8, 2021](https://www.google.com/calendar/event?eid=NzRlajUydW5qZTc0OGozNzdycjc3dXRxOTggZ2NoczdubTRudnBtODM3NDY5ZGRqOXRqbGtAZw&ctz=Europe/Berlin) ([calendar](https://calendar.google.com/calendar/embed?src=gchs7nm4nvpm837469ddj9tjlk@group.calendar.google.com&ctz=Europe/Berlin)) - [69 projects](https://projects.eclipse.org/releases/2021-12) ([-0 +2 → 69](projects_diff.txt)) - [wiki](https://wiki.eclipse.org/Category:SimRel-2021-12) - [website](https://eclipse.org/eclipseide/2021-12) ([New & Noteworthy](https://eclipse.org/eclipseide/2021-12/noteworthy)) - [splash screen](https://bugs.eclipse.org/bugs/show_bug.cgi?id=569333)
 * Builds: [latest unreleased](https://download.eclipse.org/technology/epp/staging/) → [released](https://download.eclipse.org/technology/epp/downloads/release/2021-12/) ([Jenkins](https://ci.eclipse.org/packaging/job/simrel.epp-tycho-build), [log](https://git.eclipse.org/c/simrel/org.eclipse.simrel.build.git/log/), update sites: [staging](https://download.eclipse.org/staging/2021-12), [release](http://download.eclipse.org/releases/2021-12))
@@ -24,7 +24,7 @@
     * Java development tools (JDT) 4.21→**4.22**: [Eclipse 4.22 - New and Noteworthy - Java Development Tools](https://www.eclipse.org/eclipse/news/4.22/jdt.php) ([log](https://git.eclipse.org/c/www.eclipse.org/eclipse/news.git/log/)), [plan](https://www.eclipse.org/projects/project-plan.php?planurl=http://www.eclipse.org/eclipse/development/plans/eclipse_project_plan_4_22.xml#themes_and_priorities), Git [core](https://git.eclipse.org/c/jdt/eclipse.jdt.core.git/log/) [UI](https://git.eclipse.org/c/jdt/eclipse.jdt.ui.git/log/)
         * [Java 17](https://jdk.java.net/17/): [bug tree](https://bugs.eclipse.org/bugs/showdependencytree.cgi?id=570733&hide_resolved=0), [examples](https://wiki.eclipse.org/Java17/Examples)
     * (EclEmma (Java code coverage) 3.1.5: [changes](https://www.eclemma.org/changes.html) ([JaCoCo](https://www.jacoco.org/jacoco/trunk/doc/changes.html)), [Git](https://github.com/eclipse/eclemma/commits/master), [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=Eclemma&query_format=advanced&order=changeddate%20DESC))
-    * (M2Eclipse (Maven) 1.18.1→**1.18.2**: [release notes](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#1182), [review](https://projects.eclipse.org/projects/technology.m2e/reviews/1.18.2-release-review), [commits](https://github.com/eclipse-m2e/m2e-core/compare/1.18.1...1.18.2), [issues](https://github.com/eclipse-m2e/m2e-core/issues?q=is%3Aissue+sort%3Aupdated-desc+is%3Aclosed))
+    * (M2Eclipse (Maven) 1.18.1→**1.19.0**: [release notes](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#1190), [review](https://projects.eclipse.org/projects/technology.m2e/reviews/1.18.2-release-review), [commits](https://github.com/eclipse-m2e/m2e-core/compare/1.18.1...1.18.2), [issues](https://github.com/eclipse-m2e/m2e-core/issues?q=is%3Aissue+sort%3Aupdated-desc+is%3Aclosed))
         * (LemMinx-Maven 0.4.0→**0.4.1**: [release notes](https://github.com/eclipse/lemminx-maven/blob/master/RELEASE_NOTES.md#041), [commits](https://github.com/eclipse/lemminx-maven/compare/0.4.0...0.4.1), [issues](https://github.com/eclipse/lemminx-maven/issues?q=is%3Aissue+sort%3Aupdated-desc+is%3Aclosed))
     * (Buildship (Gradle) 3.1.5: [review](https://projects.eclipse.org/projects/tools.buildship/releases/3.1.5), [commits](https://github.com/eclipse/buildship/commits/master), [announcements](https://discuss.gradle.org/tag/buildship-release))
 * General
@@ -54,64 +54,66 @@
 ### Features to show
 
 * **Java**
-    * **Java 17** (LTS):
-        * Java 17 **embedded** (via [Eclipse Temurin](https://eclipse.org/temurin) and [JustJ](https://eclipse.org/justj)) in _Eclipse IDE for Java Developers_, _Eclipse IDE for Enterprise Java and Web Developers_, _Eclipse IDE for C/C++ Developers_ and _Eclipse IDE for Embedded C/C++ Developers_
-            * → ([Apple silicon](https://bugs.eclipse.org/bugs/show_bug.cgi?id=565690): [IDE packages](https://bugs.eclipse.org/bugs/show_bug.cgi?id=575680) had to wait for the Java 17 HotSpot VM and the native libraries of CDT)
-        * [Java 17 **support**](https://www.eclipse.org/eclipse/news/4.22/jdt.php#Java_17)
-            * [JEP 409: Sealed Classes (Final)](https://openjdk.java.net/jeps/409): show Quick Fixes (Ctrl+1) introduced in last version, but not shown in last video:
-                * [_Declare '...' as permitted subtype of '...'_](https://www.eclipse.org/eclipse/news/4.21/jdt.php#add-to-permitted-types)
-                * [_Declare '...' as direct super class/interface of '...'_](https://www.eclipse.org/eclipse/news/4.21/jdt.php#declare-as-super-interface)
-            * [JEP 306: Restore Always-Strict Floating-Point Semantics](https://openjdk.java.net/jeps/306): `strictfp` warning when used since it's unnecessary since Java 17
-            * [JEP 406: Pattern Matching for switch (Preview)](https://openjdk.java.net/jeps/406)
+    * [**Java 17** (LTS) **support**](https://www.eclipse.org/eclipse/news/4.22/jdt.php#Java_17)
+         * [JEP 409: Sealed Classes (Final)](https://openjdk.java.net/jeps/409): show Quick Fixes (Ctrl+1) introduced in last version, but not shown in last video:
+             * [_Declare '...' as permitted subtype of '...'_](https://www.eclipse.org/eclipse/news/4.21/jdt.php#add-to-permitted-types)
+             * [_Declare '...' as direct super class/interface of '...'_](https://www.eclipse.org/eclipse/news/4.21/jdt.php#declare-as-super-interface)
+         * [JEP 306: Restore Always-Strict Floating-Point Semantics](https://openjdk.java.net/jeps/306): `strictfp` warning when used since it's unnecessary since Java 17
+         * ([JEP 406: Pattern Matching for switch (Preview)](https://openjdk.java.net/jeps/406))
     * Cleanups (+1; [AutoRefactor](https://github.com/JnRouvignac/AutoRefactor) merged into [Eclipse](https://bugs.eclipse.org/bugs/buglist.cgi?classification=Eclipse%20Project&product=JDT&query_format=advanced&short_desc=AutoRefactor&short_desc_type=allwordssubstr) by [Fabrice Tiercelin](https://projects.eclipse.org/projects/eclipse.jdt/elections/election-fabrice-tiercelin-committer-eclipse-java-development-tools-jdt))
-    * Java editor:
-        * [Default _Type Filters_: `java.awt.*` and `org.graalvm.*` disabled; `java.awt.List` added instead](https://bugs.eclipse.org/bugs/show_bug.cgi?id=576549)
-        * [Content assist fixed/improved](https://bugs.eclipse.org/bugs/show_bug.cgi?id=575919) ([backstory](https://bugs.eclipse.org/bugs/show_bug.cgi?id=575631#c14))
-        * [Content assist proposes lambda expressions](https://bugs.eclipse.org/bugs/show_bug.cgi?id=443091)
-        * [_Surround with try-with-resources_](https://www.eclipse.org/eclipse/news/4.22/jdt.php#surround-with-try-with-resources-quickfix) quick assist now also as quick fix (Ctrl+1)
         * _Java Feature_ (+1)
             * [_Convert String concatenation to Text Block_](https://www.eclipse.org/eclipse/news/4.22/jdt.php#strconcat-to-textblock): if the option _Only for local variables_ is disabled, also fields and parameters will be converted, which might cause compiler errors in callers and which might alter the behavior since _StringBuffer_ is synchronized in contrast to _StringBuilder_
+    * Java editor:
+        * [Default _Type Filters_: `java.awt.*` and `org.graalvm.*` disabled; `java.awt.List` added instead](https://bugs.eclipse.org/bugs/show_bug.cgi?id=576549)
+        * ([Content assist fixed/improved](https://bugs.eclipse.org/bugs/show_bug.cgi?id=575919) ([backstory](https://bugs.eclipse.org/bugs/show_bug.cgi?id=575631#c14)))
+        * [Content assist proposes lambda expressions](https://bugs.eclipse.org/bugs/show_bug.cgi?id=443091)
+        * ([_Surround with try-with-resources_](https://www.eclipse.org/eclipse/news/4.22/jdt.php#surround-with-try-with-resources-quickfix) quick assist now also as quick fix (Ctrl+1))
     * [_Call Hierarchy_: improved lambda support](https://www.eclipse.org/eclipse/news/4.22/jdt.php#CallHierarchy)
+    * Debug:
+        * [_Set Object Label..._](https://www.eclipse.org/eclipse/news/4.22/jdt.php#label-objects)
     * [_Open Type_ dialog: pasted text automatically corrected](https://www.eclipse.org/eclipse/news/4.22/jdt.php#OpenTypeSelectionDialog)
     * JUnit:
         * [Support of records for JUnit tests](https://www.eclipse.org/eclipse/news/4.22/jdt.php#junit-record)
-        * Embedded JUnit updated: [4.13.0→4.13.2](https://www.eclipse.org/eclipse/news/4.22/jdt.php#junit-4.13.2) and [5.7.1→5.8.1](https://www.eclipse.org/eclipse/news/4.22/jdt.php#junit-5.8.1)
-    * Debug:
-        * [_Set Object Label..._](https://www.eclipse.org/eclipse/news/4.22/jdt.php#label-objects)
-    * [Performance](https://bugs.eclipse.org/bugs/buglist.cgi?classification=Eclipse%20Project&product=JDT&product=PDE&query_format=advanced&short_desc=performance&short_desc_type=allwordssubstr&target_milestone=4.22&target_milestone=4.22%20M1&target_milestone=4.22%20M2&target_milestone=4.22%20M3&target_milestone=4.22%20RC1&target_milestone=4.22%20RC2):
+        * (Embedded JUnit updated: [4.13.0→4.13.2](https://www.eclipse.org/eclipse/news/4.22/jdt.php#junit-4.13.2) and [5.7.1→5.8.1](https://www.eclipse.org/eclipse/news/4.22/jdt.php#junit-5.8.1))
+    * ([Performance](https://bugs.eclipse.org/bugs/buglist.cgi?classification=Eclipse%20Project&product=JDT&product=PDE&query_format=advanced&short_desc=performance&short_desc_type=allwordssubstr&target_milestone=4.22&target_milestone=4.22%20M1&target_milestone=4.22%20M2&target_milestone=4.22%20M3&target_milestone=4.22%20RC1&target_milestone=4.22%20RC2):
         * [Content assist faster for type names](https://bugs.eclipse.org/bugs/show_bug.cgi?id=575562)
         * [Faster building of large Java projects](https://bugs.eclipse.org/bugs/show_bug.cgi?id=575733) ([example](https://bugs.eclipse.org/bugs/show_bug.cgi?id=575733#c14))
         * [Faster Java searching](https://bugs.eclipse.org/bugs/show_bug.cgi?id=576601)
-        * [Faster index reading](https://bugs.eclipse.org/bugs/show_bug.cgi?id=574464)
+        * [Faster index reading](https://bugs.eclipse.org/bugs/show_bug.cgi?id=574464))
+    * Maven:
+        * [Maven POM Editor: in _Source_ tab _Generic Text Editor_ with LemMinX-Maven used by default](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#generic-editor-with-lemminx-maven-used-as-default-source-editor): content assist to add dependencies, versions, etc.
 * **General**
+    * [New view: _Launch Configuration_](https://www.eclipse.org/eclipse/news/4.22/platform.php#launch-config-view)
     * [Multiple text selection](https://www.eclipse.org/eclipse/news/4.22/platform.php#multi-selection)
         * In a text based editor: Alt+click
         * _Find_ dialog: _Select All_
         * In block selection mode via _To multi-selection_ command (useful for adding extra lines)
-    * [New view: _Launch Configuration_](https://www.eclipse.org/eclipse/news/4.22/platform.php#launch-config-view)
     * [_Problems_ view: double-clicking a problem without a path, selects the project in default view](https://www.eclipse.org/eclipse/news/4.22/platform.php#defaultShowIn)
     * [External browser used by default](https://www.eclipse.org/eclipse/news/4.22/platform.php#external-browser-default): in preferences _General > Web Browser_
-    * [UI](https://bugs.eclipse.org/bugs/showdependencytree.cgi?id=575807&hide_resolved=0):
-        * Dark Theme:
-            * [On Windows: dark title bar](https://www.eclipse.org/eclipse/news/4.22/platform.php#win32-dark-titlebar-css)
-            * _Minimize_ and _Maximize_ icons outline instead of filled with white
-            * Content assist: dark instead of bright top border
     * [Performance](https://bugs.eclipse.org/bugs/buglist.cgi?classification=Eclipse%20Project&product=e4&product=Equinox&product=Incubator&product=Platform&query_format=advanced&short_desc=performance&short_desc_type=allwordssubstr&target_milestone=4.22&target_milestone=4.22%20M1&target_milestone=4.22%20M2&target_milestone=4.22%20M3&target_milestone=4.22%20RC1&target_milestone=4.22%20RC2):
         * Starts a bit faster: JEE IDE in about 5.4 instead of 5.8 seconds
             * [Faster `Program.getPrograms()`](https://bugs.eclipse.org/bugs/show_bug.cgi?id=574639) and [also cached](https://bugs.eclipse.org/bugs/show_bug.cgi?id=575569) (e.g. speeds up right-click + _Open With > Other: External programs_)
         * ([Faster editor open/close](https://bugs.eclipse.org/bugs/show_bug.cgi?id=576333))
         * ([Faster _Search > File..._](https://bugs.eclipse.org/bugs/show_bug.cgi?id=575893))
+    * [UI](https://bugs.eclipse.org/bugs/showdependencytree.cgi?id=575807&hide_resolved=0):
+        * Dark Theme:
+            * [On Windows: dark title bar](https://www.eclipse.org/eclipse/news/4.22/platform.php#win32-dark-titlebar-css)
+            * _Minimize_ and _Maximize_ icons outline instead of filled with white
+            * Content assist: dark instead of bright top border
 * **Git**
     * [_Fetch Github/Gitlab Pull/Merge Request..._](https://wiki.eclipse.org/EGit/New_and_Noteworthy/6.0#Fetching_Pull_Requests): [Configure servers for Pull/Merge Requests in preferences _Version Control (Team) > Git > Servers_ (by default empty)](https://wiki.eclipse.org/EGit/New_and_Noteworthy/6.0#Configuring_Hosts_for_Pull_Requests)
     * [SSH Agent support](https://wiki.eclipse.org/EGit/New_and_Noteworthy/6.0#SSH_Agent) (see also [JGit](https://wiki.eclipse.org/JGit/New_and_Noteworthy/6.0#SSH_Agent_Support)): on Windows Pageant (PuTTY), on Linux and macOS via Unix domain socket mechanism (environment variable `SSH_AUTH_SOCK`): in preferences _Version Control (Team) > Git_: _Use SSH Agent for SSH connections_ (Linux/macOS) or _Use Pageant for SSH connections_ (Windows) enabled by default
-    * [_Clone Git Repository_ dialog: pasted clone command parameter in quotes](https://bugs.eclipse.org/bugs/show_bug.cgi?id=566305): e.g. `git clone "ssh://jane@example.com:29418/sample"` (in additon to `git clone ssh://jane@example.com:29418/sample`)
+    * ([_Clone Git Repository_ dialog: pasted clone command parameter in quotes](https://bugs.eclipse.org/bugs/show_bug.cgi?id=566305): e.g. `git clone "ssh://jane@example.com:29418/sample"` (in additon to `git clone ssh://jane@example.com:29418/sample`))
     * ([Performance: stackless _BinaryBlobException_](https://git.eclipse.org/c/jgit/jgit.git/commit/?id=ee28780bf2dfe8574905835d43b5bb0738ad81ad))
 * **Web**
     * JavaScript:
         * [Spelling suggestions](https://devblogs.microsoft.com/typescript/announcing-typescript-4-4/#spelling-corrections-js): error message with additional _Did you mean '...'?_; can be applied via Quick Fix (Ctrl+1)
-    * XML opened with the _Generic Text Editor_:
-        * Editing of start and end tag is bound together
+    * (XML opened with the _Generic Text Editor_: Editing of start and end tag is bound together)
     * _Generic Text Editor_ in general: Alt+Shift+R (instead of F2) for _Rename_ (to avoid conflict with _Show Tooltip Description_)
+* **Misc**
+    * (Java 17 **embedded** (via [Eclipse Temurin](https://eclipse.org/temurin) and [JustJ](https://eclipse.org/justj)) in _Eclipse IDE for Java Developers_, _Eclipse IDE for Enterprise Java and Web Developers_, _Eclipse IDE for C/C++ Developers_ and _Eclipse IDE for Embedded C/C++ Developers_)
+    * ([Apple silicon](https://bugs.eclipse.org/bugs/show_bug.cgi?id=565690): [IDE packages](https://bugs.eclipse.org/bugs/show_bug.cgi?id=575680) had to wait for the Java 17 HotSpot VM and the native libraries of CDT)
+
 * **(Under development)**
     * ([XML CodeLens preference page](https://github.com/eclipse/wildwebdeveloper/issues/636) ← [not working yet](https://github.com/eclipse/wildwebdeveloper/issues/644))
 
