@@ -1,2 +1,1 @@
-+ Eclipse Papyrus™	6.0.0
-+ Eclipse XWT
+- Eclipse BPEL Designer	1.1.3

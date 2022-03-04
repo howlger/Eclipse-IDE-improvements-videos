@@ -1,0 +1,68 @@
+Eclipse Acceleo	3.7.10
+Eclipse Accessibility Tools Framework	1.5.1
+Eclipse ATL	4.5.0
+Eclipse BPMN2 Modeler Project	1.5.3
+Eclipse Buildship: Eclipse Plug-ins for Gradle	3.1.5
+Eclipse Business Process Model and Notation (BPMN2)	1.5.1
+Eclipse CDO™ Model Repository	4.18.0
+Eclipse CDT™ (C/C++ Development Tooling)	10.6.0
+Eclipse Collections™	10.4.0
+Eclipse Communication Framework	3.14.32
+Eclipse Data Tools Platform	1.14.300
+Eclipse Dynamic Languages Toolkit	6.1
+Eclipse EclEmma	3.1.5
+Eclipse Ecore Tools	3.4.0
+Eclipse EGit™: Git Integration for Eclipse	6.1.0
+Eclipse Embedded CDT (C/C++ Development Tools)	6.1.2
+Eclipse EMF Client Platform	1.26.1
+Eclipse EMF Compare	3.3.10
+Eclipse EMF Parsley	1.13.0
+Eclipse EMF Services	1.13.0
+Eclipse EMF™	2.28.0
+Eclipse Extended Editing Framework (EEF)	2.1.5
+Eclipse GMF Runtime™	1.14.1
+Eclipse Graphical Editing Framework (GEF)	5.3.3 (2021-03)
+Eclipse Graphiti™	0.18.0
+Eclipse JGit™: Java implementation of Git	6.1.0
+Eclipse JustJ	1.1
+Eclipse Linux Tools	8.6.0
+Eclipse LSP4E	0.20.2
+Eclipse LSP4J	0.12.0
+Eclipse Marketplace Client	1.9.3
+Eclipse Maven Integration - m2eclipse™	1.20.0
+Eclipse Maven Integration for Web Tools Platform	1.4.3
+Eclipse MDT UML2	5.5.2
+Eclipse MDT XSD™ (XML Schema Definition)	2.28.0
+Eclipse Memory Analyzer™	1.12.0
+Eclipse Modeling Workflow Engine™	2.12.2
+Eclipse MoDisco	2021-12 (1.5.2)
+Eclipse Mylyn	3.25.2
+Eclipse Mylyn Docs	3.0.42
+Eclipse OCL™ (Object Constraint Language)	2022-03 (6.17.1)
+Eclipse Oomph™	1.24.0
+Eclipse Packaging Project	4.23.0
+Eclipse Papyrus™	6.1.0
+Eclipse Parallel Tools Platform (PTP)	9.4.0
+Eclipse Passage™	2.3.0
+Eclipse PHP Development Tools	7.2.1
+Eclipse Project	4.23.0
+Eclipse QVT Operational	2022-03 (3.10.6)
+Eclipse QVTd™ (QVT Declarative)	2022-03 (0.28.1)
+Eclipse RCP Testing Tool	2.5.1
+Eclipse RedDeer™	4.1.0
+Eclipse Remote Application Platform™	3.20.0
+Eclipse Scout™	22.0
+Eclipse Sirius	7.0.0
+Eclipse SWTBot™	3.1.0
+Eclipse Target Communication Framework	1.7.0
+Eclipse Target Management: Terminal and Remote System Explorer (RSE)	4.5.200
+Eclipse TM4E™ - TextMate support in the Eclipse IDE 	0.4.3
+Eclipse Trace Compass™	7.3.0
+Eclipse User Storage Service SDK	1.2.2
+Eclipse VIATRA	2.7.0
+Eclipse Web Tools Platform Project	3.25
+Eclipse Wild Web Developer	0.13.2
+Eclipse WindowBuilder	1.9.7
+Eclipse Xpand	2.2.0
+Eclipse Xtext™	2.26.0
+Eclipse XWT	1.4.100
