@@ -26,7 +26,7 @@
         * [Java 18](https://jdk.java.net/18/): [bug tree](https://bugs.eclipse.org/bugs/showdependencytree.cgi?id=575752&hide_resolved=0), [examples](https://wiki.eclipse.org/Java18/Examples)
     * (EclEmma (Java code coverage) 3.1.5: [changes](https://www.eclemma.org/changes.html) ([JaCoCo](https://www.jacoco.org/jacoco/trunk/doc/changes.html)), [Git](https://github.com/eclipse/eclemma/commits/master), [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=Eclemma&query_format=advanced&order=changeddate%20DESC))
     * M2Eclipse (Maven) 1.19.0→**1.20.0**: [release notes](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#1200), [review](https://projects.eclipse.org/projects/technology.m2e/reviews/1.20.0-release-review), [commits](https://github.com/eclipse-m2e/m2e-core/compare/1.19.0...1.20.0), [issues](https://github.com/eclipse-m2e/m2e-core/issues?q=is%3Aissue+sort%3Aupdated-desc+is%3Aclosed)
-        * LemMinx-Maven 0.4.1→**0.5.0**: [release notes](https://github.com/eclipse/lemminx-maven/blob/master/RELEASE_NOTES.md#050), [commits](https://github.com/eclipse/lemminx-maven/compare/0.4.1...0.5.0), [issues](https://github.com/eclipse/lemminx-maven/issues?q=is%3Aissue+sort%3Aupdated-desc+is%3Aclosed)
+        * LemMinx-Maven 0.4.1→**0.5.1**: [release notes](https://github.com/eclipse/lemminx-maven/blob/master/RELEASE_NOTES.md#051), [commits](https://github.com/eclipse/lemminx-maven/compare/0.4.1...0.5.1), [issues](https://github.com/eclipse/lemminx-maven/issues?q=is%3Aissue+sort%3Aupdated-desc+is%3Aclosed)
     * (Buildship (Gradle) 3.1.5: [review](https://projects.eclipse.org/projects/tools.buildship/releases/3.1.5), [commits](https://github.com/eclipse/buildship/commits/master), [announcements](https://discuss.gradle.org/tag/buildship-release))
 * General
     * **Platform** 4.22→**4.23**: [Eclipse 4.23 - New and Noteworthy - Platform and Equinox](https://www.eclipse.org/eclipse/news/4.23/platform.php) ([log](https://git.eclipse.org/c/www.eclipse.org/eclipse/news.git/log/)), [plan](https://www.eclipse.org/projects/project-plan.php?planurl=http://www.eclipse.org/eclipse/development/plans/eclipse_project_plan_4_23.xml#themes_and_priorities), [Git](https://git.eclipse.org/c/platform/eclipse.platform.ui.git/log/), [resolved bugs](https://bugs.eclipse.org/bugs/buglist.cgi?bug_status=RESOLVED&resolution=---&resolution=FIXED&product=Equinox&product=Platform&query_format=advanced&order=changeddate%20DESC)
@@ -54,9 +54,77 @@
 
 ### Features to show
 
-* TODO
+* **Java**
+    * [Java 18 support via Marketplace](https://marketplace.eclipse.org/content/https://marketplace.eclipse.org/content/java-18-support-eclipse-2022-03-423)
+    * Java editor:
+        * [Save to static favorites](https://www.eclipse.org/eclipse/news/4.23/jdt.php#save-to-static-favorites) in preferences _Java > Editor > Content Assist > Favorites_
+        * ([Content assist in Javadoc in `@see`, `@link` and `@linkplain` proposes modules](https://www.eclipse.org/eclipse/news/4.23/jdt.php#codeassist-module))
+        * [Content assist: _Extract lambda body to method_](https://www.eclipse.org/eclipse/news/4.23/jdt.php#extract-lambda-body-to-method)
+    * Debug:
+        * [Lambda debugging improvements](https://bugs.eclipse.org/bugs/showdependencytree.cgi?id=578069&hide_resolved=0)
+            * [Lambda Entry Breakpoint](https://www.eclipse.org/eclipse/news/4.23/jdt.php#lambda-entry-declaration)
+        * [Open field declaration](https://www.eclipse.org/eclipse/news/4.23/jdt.php#open-field-declaration)
+        * [Highlight labeled objects in the _Expressions_ view too](https://www.eclipse.org/eclipse/news/4.23/jdt.php#labels-in-expressions-view)
+        * [Warning about changing final fields](https://www.eclipse.org/eclipse/news/4.23/jdt.php#finalFields)
+        * [Process ID displayed in _Console_ view header, in _Debug_ view and in properties page of the process](https://www.eclipse.org/eclipse/news/4.23/platform.php#process-pid)
+    * [_Call Hierarchy_: Show implementations of callee](https://www.eclipse.org/eclipse/news/4.23/jdt.php#show-implementations-of-callee) in preferences: _Java_ (disabled by default)
+    * Java Formatter:
+        * [New options for switch/case constructs](https://www.eclipse.org/eclipse/news/4.23/jdt.php#formatter-switch-case)
+        * [Method invocation wrapping indentation](https://www.eclipse.org/eclipse/news/4.23/jdt.php#formatter-wrap-invocation)
+    * [Performance](https://bugs.eclipse.org/bugs/buglist.cgi?classification=Eclipse%20Project&product=JDT&product=PDE&query_format=advanced&short_desc=performance&short_desc_type=allwordssubstr&target_milestone=4.23&target_milestone=4.23%20M1&target_milestone=4.23%20M2&target_milestone=4.23%20M3&target_milestone=4.23%20RC1&target_milestone=4.23%20RC2) (see also [changes by J&ouml;rg Kubitz](https://git.eclipse.org/r/q/owner:jkubitz-eclipse%2540gmx.de+status:merged))
+        * [Speed up startup/shutdown by reducing `state.dat` file sizes](https://bugs.eclipse.org/bugs/show_bug.cgi?id=576646) (caching of Java model)
+        * [`CoreASTProvider.getAST()` - Reconciler freezes are sometimes just waits](https://bugs.eclipse.org/bugs/show_bug.cgi?id=575864)
+        * ...
+    * [Maven](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#1200):
+        * [Automatically launch and attach remote debugger](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#automatically-launch-and-attach-remote-application-debugger-when-maven-plug-in-starts-a-forked-jvm-that-waits-for-a-debugger) set breakpoint and `maven.surefire.debug=true` (Tycho: `debugPort=<port-number>`; in the past `Listening for transport dt_socket at address: <port-number>` was logged and a _Remote Java Application_ debug configuration had to be configured and run manually)
+        * [_Console_ view: improved linking](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#improved-links-to-junit-test-reports-and-project-pomxml-in-the-console-of-a-maven-build)
+            * Test case (`Running <test>`): opens _JUnit_ view with test results
+            * Project (project's headline or `Failed ... on <project>`): opens `pom.xml` of that project
+        * Content assist:
+            * [Short description of a configuration parameter at the top](https://github.com/eclipse-m2e/m2e-core/issues/477) (instead of at the bottom)
+            * [Without indexer](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#improved-lemminx-based-editor-with-newer-lemminx-maven) requires less disk space (no `.m2/repository/index/`) by using https://search.maven.org/ instead ([commit](https://github.com/eclipse/lemminx-maven/commit/3047870c5a8eb7c84f574e3156535cb60098d036)
+        * XML editor fixes and improvements:
+            * _Esc_ to not edit start and end tags together
+            * Connected editing of start and end tag highlighted with gray instead of pink background
+            * Ctrl+click on start tag to jump to end tag and vice versa
+            * ...
+        * Performance improvements: [parent project resolution](https://github.com/eclipse-m2e/m2e-core/commit/ec12bd6222c377f93e21af0dc1988fba2134123d), [`workspaceReader`](https://github.com/eclipse/lemminx-maven/commit/18fb1e5c791435d44d9ce176145622d43556ec1d) and [more](https://github.com/eclipse/lemminx-maven/commit/256aad5056a9963b284a961971cb39ab543ae118)
+        * Embedded Maven updated from 3.8.1 to 3.8.4
+* **General**
+    * [Large file associations](https://www.eclipse.org/eclipse/news/4.23/platform.php#large-file-associations): in preferences _General > Editors > Large File Associations_ can be specified which editor is used to open large files of a specific type
+    * [Preferences: _Install/Update > Trust](https://www.eclipse.org/eclipse/news/4.23/platform.php#manage-trusted-pgp-keys)
+    * UI:
+        * ([_Progress_ view: new jobs added on bottom](https://www.eclipse.org/eclipse/news/4.23/platform.php#ProgressStableSort) so long running jobs stay on top which makes it easier to hit the cancel button)
+        * ([Dark theme on Windows: natively styled buttons](https://www.eclipse.org/eclipse/news/4.23/platform.php#win32-dark-buttons-css))
+    * ([Debug: show values inline](https://www.eclipse.org/eclipse/news/4.23/platform.php#inline-debug-values) (not yet supported by JDT, Wild Web Developer, etc.))
+    * [Performance](https://bugs.eclipse.org/bugs/buglist.cgi?classification=Eclipse%20Project&product=JDT&product=PDE&query_format=advanced&short_desc=performance&short_desc_type=allwordssubstr&target_milestone=4.23&target_milestone=4.23%20M1&target_milestone=4.23%20M2&target_milestone=4.23%20M3&target_milestone=4.23%20RC1&target_milestone=4.23%20RC2) (see also [changes by J&ouml;rg Kubitz](https://git.eclipse.org/r/q/owner:jkubitz-eclipse%2540gmx.de+status:merged))
+    * [UI](https://bugs.eclipse.org/bugs/showdependencytree.cgi?id=577357&hide_resolved=0):
+        * Dark Theme:
+            * [On Windows: dark title bar](https://www.eclipse.org/eclipse/news/4.22/platform.php#win32-dark-titlebar-css)
+            * _Minimize_ and _Maximize_ icons outline instead of filled with white
+            * Content assist: dark instead of bright top border
+* **Git**
+    * _Git Staging_ view:
+        * [_Commit Message_: clean up (as specified by `commit.cleanup`), highlighting of comment lines, preview](https://wiki.eclipse.org/EGit/New_and_Noteworthy/6.1#Commit_Messages) (comment lines, trailing whitespace, leading and trailing empty lines will be removed by default)
+        * [_Hide Untracked Files_ button](https://wiki.eclipse.org/EGit/New_and_Noteworthy/6.1#Hiding_Untracked_Files) when enabled, number of unstaged changes shown as `(<visible>/<total>)`; switching to a different repository will disable the button
+    * [_Push to Upstream_](https://wiki.eclipse.org/EGit/New_and_Noteworthy/6.1#Push_to_Upstream)
+    * [Push dialog: allow skipping preview](https://bugs.eclipse.org/bugs/show_bug.cgi?id=577079)
+    * [Git branch configuration dialog: now with _Push remote_](https://git.eclipse.org/c/egit/egit.git/commit/?id=d5001280ff9d97634b0f777902c05ebfabd81580) also shown [in the _Properties_ view for a selected branch](https://git.eclipse.org/c/egit/egit.git/commit/?id=871e432f6cf67358ad53df051bb396e6e503551d) (in config as `branch.<name>.pushRemote`)
+    * [On Windows, SSH agent support for Win32-OpenSSH (in addition to Pageant)](https://wiki.eclipse.org/EGit/New_and_Noteworthy/6.1#SSH_Agent_Support) in preferences _Version Control (Team) > Git_ which can be overridden by the `IdentityAgent` config setting
+    * [_Fetch Gitea Pull Request..._](https://wiki.eclipse.org/EGit/New_and_Noteworthy/6.1#Fetching_Pull_Requests) (for [gitea.com](https://gitea.com) and as in the preferences _Version Control (Team) > Git > Servers_)
+    * [_Git Repositories_ view: _Open in Commit Viewer_ also for branches and tags](https://wiki.eclipse.org/EGit/New_and_Noteworthy/6.1#Git_Repositories_View)
+* **(Web)**
+    * JavaScript/TypeScript:
+        * ([Const Assertions and Default Type Arguments in JSDoc](https://devblogs.microsoft.com/typescript/announcing-typescript-4-5/#jsdoc-const-and-type-arg-defaults))
+        * ([New Snippet Completions](https://devblogs.microsoft.com/typescript/announcing-typescript-4-5/#snippet-completions) only for TypeScript)
+* **Misc**
+    * [Basic feature set in all 11 IDE packages](https://bugs.eclipse.org/bugs/show_bug.cgi?id=577714)
+        * Embedded Java 17.0.2 (e.g. now also in _Eclipse IDE for Eclipse Committers_)
+        * Terminal (e.g. now also in _Eclipse IDE for Eclipse Committers_)
+        * (Git support via JGit/EGit)
 
 * **(Under development)**
+    * ([Debug: show values inline](https://www.eclipse.org/eclipse/news/4.23/platform.php#inline-debug-values) (not yet supported in Java, JavaScript, etc.))
     * ([XML CodeLens preference page](https://github.com/eclipse/wildwebdeveloper/issues/636) ← [not working yet](https://github.com/eclipse/wildwebdeveloper/issues/644))
 
 ## Publish
