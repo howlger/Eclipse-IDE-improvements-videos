@@ -61,57 +61,62 @@
         * ([Content assist in Javadoc in `@see`, `@link` and `@linkplain` proposes modules](https://www.eclipse.org/eclipse/news/4.23/jdt.php#codeassist-module))
         * [Content assist: _Extract lambda body to method_](https://www.eclipse.org/eclipse/news/4.23/jdt.php#extract-lambda-body-to-method)
     * Debug:
-        * [Lambda debugging improvements](https://bugs.eclipse.org/bugs/showdependencytree.cgi?id=578069&hide_resolved=0)
+        * [Lambda debugging improvements and fixes](https://bugs.eclipse.org/bugs/showdependencytree.cgi?id=578069&hide_resolved=0)
             * [Lambda Entry Breakpoint](https://www.eclipse.org/eclipse/news/4.23/jdt.php#lambda-entry-declaration)
+            * ([_Step Over_ filters lambda synthetic line now](https://git.eclipse.org/c/jdt/eclipse.jdt.debug.git/commit/?id=010526220bd9e1ec8bf644fa40f947dc6b24b3bd))
         * [Open field declaration](https://www.eclipse.org/eclipse/news/4.23/jdt.php#open-field-declaration)
         * [Highlight labeled objects in the _Expressions_ view too](https://www.eclipse.org/eclipse/news/4.23/jdt.php#labels-in-expressions-view)
-        * [Warning about changing final fields](https://www.eclipse.org/eclipse/news/4.23/jdt.php#finalFields)
+        * [Warning before changing a final field](https://www.eclipse.org/eclipse/news/4.23/jdt.php#finalFields) enabled by default (preferences: _Java > Debug : Warn before changing final fields_)
         * [Process ID displayed in _Console_ view header, in _Debug_ view and in properties page of the process](https://www.eclipse.org/eclipse/news/4.23/platform.php#process-pid)
     * [_Call Hierarchy_: Show implementations of callee](https://www.eclipse.org/eclipse/news/4.23/jdt.php#show-implementations-of-callee) in preferences: _Java_ (disabled by default)
     * Java Formatter:
-        * [New options for switch/case constructs](https://www.eclipse.org/eclipse/news/4.23/jdt.php#formatter-switch-case)
-        * [Method invocation wrapping indentation](https://www.eclipse.org/eclipse/news/4.23/jdt.php#formatter-wrap-invocation)
-    * [Performance](https://bugs.eclipse.org/bugs/buglist.cgi?classification=Eclipse%20Project&product=JDT&product=PDE&query_format=advanced&short_desc=performance&short_desc_type=allwordssubstr&target_milestone=4.23&target_milestone=4.23%20M1&target_milestone=4.23%20M2&target_milestone=4.23%20M3&target_milestone=4.23%20RC1&target_milestone=4.23%20RC2) (see also [changes by J&ouml;rg Kubitz](https://git.eclipse.org/r/q/owner:jkubitz-eclipse%2540gmx.de+status:merged))
+        * [Method invocation wrapping indentation](https://www.eclipse.org/eclipse/news/4.23/jdt.php#formatter-wrap-invocation) (enabled by default; can change formatting):
+            * _Line Wrapping > Wrapping settings > Function Calls_ (1)
+                * _Qualified invocations > Indent from the base expression's first line_
+        * [New options for switch/case constructs](https://www.eclipse.org/eclipse/news/4.23/jdt.php#formatter-switch-case):
+            * _New Lines > Keep braced code on one line_ (2)
+                * _Switch case with arrow_
+                * _Switch expression/statement with arrows_
+            * _Line Wrapping > Wrapping Settings > Statement_ (3)
+                * _'switch' case with arrow_
+                * _Expressions in 'switch' case with arrow_
+                * _Expressions in 'switch' case with colon_
+    * ([Performance](https://bugs.eclipse.org/bugs/buglist.cgi?classification=Eclipse%20Project&product=JDT&product=PDE&query_format=advanced&short_desc=performance&short_desc_type=allwordssubstr&target_milestone=4.23&target_milestone=4.23%20M1&target_milestone=4.23%20M2&target_milestone=4.23%20M3&target_milestone=4.23%20RC1&target_milestone=4.23%20RC2) (see also [changes by J&ouml;rg Kubitz](https://git.eclipse.org/r/q/owner:jkubitz-eclipse%2540gmx.de+status:merged)))
         * [Speed up startup/shutdown by reducing `state.dat` file sizes](https://bugs.eclipse.org/bugs/show_bug.cgi?id=576646) (caching of Java model)
         * [`CoreASTProvider.getAST()` - Reconciler freezes are sometimes just waits](https://bugs.eclipse.org/bugs/show_bug.cgi?id=575864)
         * ...
     * [Maven](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#1200):
-        * [Automatically launch and attach remote debugger](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#automatically-launch-and-attach-remote-application-debugger-when-maven-plug-in-starts-a-forked-jvm-that-waits-for-a-debugger) set breakpoint and `maven.surefire.debug=true` (Tycho: `debugPort=<port-number>`; in the past `Listening for transport dt_socket at address: <port-number>` was logged and a _Remote Java Application_ debug configuration had to be configured and run manually)
         * [_Console_ view: improved linking](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#improved-links-to-junit-test-reports-and-project-pomxml-in-the-console-of-a-maven-build)
             * Test case (`Running <test>`): opens _JUnit_ view with test results
             * Project (project's headline or `Failed ... on <project>`): opens `pom.xml` of that project
+        * [Automatically launch and attach remote debugger](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#automatically-launch-and-attach-remote-application-debugger-when-maven-plug-in-starts-a-forked-jvm-that-waits-for-a-debugger) set breakpoint and `maven.surefire.debug=true` (Tycho: `debugPort=<port-number>`; in the past `Listening for transport dt_socket at address: <port-number>` was logged and a _Remote Java Application_ debug configuration had to be configured and run manually)
         * Content assist:
-            * [Short description of a configuration parameter at the top](https://github.com/eclipse-m2e/m2e-core/issues/477) (instead of at the bottom)
             * [Without indexer](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#improved-lemminx-based-editor-with-newer-lemminx-maven) requires less disk space (no `.m2/repository/index/`) by using https://search.maven.org/ instead ([commit](https://github.com/eclipse/lemminx-maven/commit/3047870c5a8eb7c84f574e3156535cb60098d036)
+            * [Short description of a configuration parameter at the top](https://github.com/eclipse-m2e/m2e-core/issues/477) (instead of at the bottom)
         * XML editor fixes and improvements:
-            * _Esc_ to not edit start and end tags together
             * Connected editing of start and end tag highlighted with gray instead of pink background
+            * _Esc_ to not edit start and end tags together
             * Ctrl+click on start tag to jump to end tag and vice versa
             * ...
-        * Performance improvements: [parent project resolution](https://github.com/eclipse-m2e/m2e-core/commit/ec12bd6222c377f93e21af0dc1988fba2134123d), [`workspaceReader`](https://github.com/eclipse/lemminx-maven/commit/18fb1e5c791435d44d9ce176145622d43556ec1d) and [more](https://github.com/eclipse/lemminx-maven/commit/256aad5056a9963b284a961971cb39ab543ae118)
-        * Embedded Maven updated from 3.8.1 to 3.8.4
+        * (Performance improvements: [parent project resolution](https://github.com/eclipse-m2e/m2e-core/commit/ec12bd6222c377f93e21af0dc1988fba2134123d), [`workspaceReader`](https://github.com/eclipse/lemminx-maven/commit/18fb1e5c791435d44d9ce176145622d43556ec1d) and [more](https://github.com/eclipse/lemminx-maven/commit/256aad5056a9963b284a961971cb39ab543ae118))
+        * (Embedded Maven updated from 3.8.1 to 3.8.4)
 * **General**
     * [Large file associations](https://www.eclipse.org/eclipse/news/4.23/platform.php#large-file-associations): in preferences _General > Editors > Large File Associations_ can be specified which editor is used to open large files of a specific type
-    * [Preferences: _Install/Update > Trust](https://www.eclipse.org/eclipse/news/4.23/platform.php#manage-trusted-pgp-keys)
-    * UI:
+    * [Preferences: _Install/Update > Trust_](https://www.eclipse.org/eclipse/news/4.23/platform.php#manage-trusted-pgp-keys)
+    * (UI):
         * ([_Progress_ view: new jobs added on bottom](https://www.eclipse.org/eclipse/news/4.23/platform.php#ProgressStableSort) so long running jobs stay on top which makes it easier to hit the cancel button)
         * ([Dark theme on Windows: natively styled buttons](https://www.eclipse.org/eclipse/news/4.23/platform.php#win32-dark-buttons-css))
     * ([Debug: show values inline](https://www.eclipse.org/eclipse/news/4.23/platform.php#inline-debug-values) (not yet supported by JDT, Wild Web Developer, etc.))
-    * [Performance](https://bugs.eclipse.org/bugs/buglist.cgi?classification=Eclipse%20Project&product=JDT&product=PDE&query_format=advanced&short_desc=performance&short_desc_type=allwordssubstr&target_milestone=4.23&target_milestone=4.23%20M1&target_milestone=4.23%20M2&target_milestone=4.23%20M3&target_milestone=4.23%20RC1&target_milestone=4.23%20RC2) (see also [changes by J&ouml;rg Kubitz](https://git.eclipse.org/r/q/owner:jkubitz-eclipse%2540gmx.de+status:merged))
-    * [UI](https://bugs.eclipse.org/bugs/showdependencytree.cgi?id=577357&hide_resolved=0):
-        * Dark Theme:
-            * [On Windows: dark title bar](https://www.eclipse.org/eclipse/news/4.22/platform.php#win32-dark-titlebar-css)
-            * _Minimize_ and _Maximize_ icons outline instead of filled with white
-            * Content assist: dark instead of bright top border
+    * ([Performance](https://bugs.eclipse.org/bugs/buglist.cgi?classification=Eclipse%20Project&product=JDT&product=PDE&query_format=advanced&short_desc=performance&short_desc_type=allwordssubstr&target_milestone=4.23&target_milestone=4.23%20M1&target_milestone=4.23%20M2&target_milestone=4.23%20M3&target_milestone=4.23%20RC1&target_milestone=4.23%20RC2) (see also [changes by J&ouml;rg Kubitz](https://git.eclipse.org/r/q/owner:jkubitz-eclipse%2540gmx.de+status:merged)))
 * **Git**
+    * [_Fetch Gitea Pull Request..._](https://wiki.eclipse.org/EGit/New_and_Noteworthy/6.1#Fetching_Pull_Requests) (for [gitea.com](https://gitea.com) and as in the preferences _Version Control (Team) > Git > Servers_)
     * _Git Staging_ view:
         * [_Commit Message_: clean up (as specified by `commit.cleanup`), highlighting of comment lines, preview](https://wiki.eclipse.org/EGit/New_and_Noteworthy/6.1#Commit_Messages) (comment lines, trailing whitespace, leading and trailing empty lines will be removed by default)
         * [_Hide Untracked Files_ button](https://wiki.eclipse.org/EGit/New_and_Noteworthy/6.1#Hiding_Untracked_Files) when enabled, number of unstaged changes shown as `(<visible>/<total>)`; switching to a different repository will disable the button
-    * [_Push to Upstream_](https://wiki.eclipse.org/EGit/New_and_Noteworthy/6.1#Push_to_Upstream)
+    * [_Push to Upstream_](https://wiki.eclipse.org/EGit/New_and_Noteworthy/6.1#Push_to_Upstream): considers Git config's `branch.<name>.pushRemote`, `remote.pushDefault` and `push.default` now (like `git push` does on the command line)
     * [Push dialog: allow skipping preview](https://bugs.eclipse.org/bugs/show_bug.cgi?id=577079)
     * [Git branch configuration dialog: now with _Push remote_](https://git.eclipse.org/c/egit/egit.git/commit/?id=d5001280ff9d97634b0f777902c05ebfabd81580) also shown [in the _Properties_ view for a selected branch](https://git.eclipse.org/c/egit/egit.git/commit/?id=871e432f6cf67358ad53df051bb396e6e503551d) (in config as `branch.<name>.pushRemote`)
     * [On Windows, SSH agent support for Win32-OpenSSH (in addition to Pageant)](https://wiki.eclipse.org/EGit/New_and_Noteworthy/6.1#SSH_Agent_Support) in preferences _Version Control (Team) > Git_ which can be overridden by the `IdentityAgent` config setting
-    * [_Fetch Gitea Pull Request..._](https://wiki.eclipse.org/EGit/New_and_Noteworthy/6.1#Fetching_Pull_Requests) (for [gitea.com](https://gitea.com) and as in the preferences _Version Control (Team) > Git > Servers_)
     * [_Git Repositories_ view: _Open in Commit Viewer_ also for branches and tags](https://wiki.eclipse.org/EGit/New_and_Noteworthy/6.1#Git_Repositories_View)
 * **(Web)**
     * JavaScript/TypeScript:
