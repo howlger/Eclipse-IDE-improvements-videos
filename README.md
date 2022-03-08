@@ -57,16 +57,16 @@
 * **Java**
     * [Java 18 support via Marketplace](https://marketplace.eclipse.org/content/https://marketplace.eclipse.org/content/java-18-support-eclipse-2022-03-423)
     * Java editor:
-        * [Save to static favorites](https://www.eclipse.org/eclipse/news/4.23/jdt.php#save-to-static-favorites) in preferences _Java > Editor > Content Assist > Favorites_
+        * [New quick assist: _Add ... to static member favorites list_](https://www.eclipse.org/eclipse/news/4.23/jdt.php#save-to-static-favorites) to add a static import to preferences _Java > Editor > Content Assist > Favorites_
+        * [New quick assist: _Extract lambda body to method_](https://www.eclipse.org/eclipse/news/4.23/jdt.php#extract-lambda-body-to-method)
         * ([Content assist in Javadoc in `@see`, `@link` and `@linkplain` proposes modules](https://www.eclipse.org/eclipse/news/4.23/jdt.php#codeassist-module))
-        * [Content assist: _Extract lambda body to method_](https://www.eclipse.org/eclipse/news/4.23/jdt.php#extract-lambda-body-to-method)
     * Debug:
         * [Lambda debugging improvements and fixes](https://bugs.eclipse.org/bugs/showdependencytree.cgi?id=578069&hide_resolved=0)
-            * [Lambda Entry Breakpoint](https://www.eclipse.org/eclipse/news/4.23/jdt.php#lambda-entry-declaration)
+            * [Lambda breakpoints](https://www.eclipse.org/eclipse/news/4.23/jdt.php#lambda-entry-declaration): right-click left ruler (where the lambda parameters are declared) and choose _Toggle Lambda Entry Breakpoint_
             * ([_Step Over_ filters lambda synthetic line now](https://git.eclipse.org/c/jdt/eclipse.jdt.debug.git/commit/?id=010526220bd9e1ec8bf644fa40f947dc6b24b3bd))
-        * [Open field declaration](https://www.eclipse.org/eclipse/news/4.23/jdt.php#open-field-declaration)
-        * [Highlight labeled objects in the _Expressions_ view too](https://www.eclipse.org/eclipse/news/4.23/jdt.php#labels-in-expressions-view)
+        * [_Variables_ view: _Open Field Declaration_](https://www.eclipse.org/eclipse/news/4.23/jdt.php#open-field-declaration)
         * [Warning before changing a final field](https://www.eclipse.org/eclipse/news/4.23/jdt.php#finalFields) enabled by default (preferences: _Java > Debug : Warn before changing final fields_)
+        * [Highlight labeled objects in the _Expressions_ view too](https://www.eclipse.org/eclipse/news/4.23/jdt.php#labels-in-expressions-view)
         * [Process ID displayed in _Console_ view header, in _Debug_ view and in properties page of the process](https://www.eclipse.org/eclipse/news/4.23/platform.php#process-pid)
     * [_Call Hierarchy_: Show implementations of callee](https://www.eclipse.org/eclipse/news/4.23/jdt.php#show-implementations-of-callee) in preferences: _Java_ (disabled by default)
     * Java Formatter:
@@ -93,6 +93,7 @@
         * Content assist:
             * [Without indexer](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#improved-lemminx-based-editor-with-newer-lemminx-maven) requires less disk space (no `.m2/repository/index/`) by using https://search.maven.org/ instead ([commit](https://github.com/eclipse/lemminx-maven/commit/3047870c5a8eb7c84f574e3156535cb60098d036)
             * [Short description of a configuration parameter at the top](https://github.com/eclipse-m2e/m2e-core/issues/477) (instead of at the bottom)
+                * By the way, since last release [Java module system command line arguments `--add-exports`, `--add-opens`, `--add-reads` and `--patch-module` are read](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#one-way-synchronization-for-jpms-directives-from-maven-compiler-arguments-to-classpath-file) ([issues](https://github.com/eclipse-m2e/m2e-core/pull/216#issuecomment-856114907); [example](https://github.com/eclipse-m2e/m2e-core/issues/136#issuecomment-1060327287))
         * XML editor fixes and improvements:
             * Connected editing of start and end tag highlighted with gray instead of pink background
             * _Esc_ to not edit start and end tags together
