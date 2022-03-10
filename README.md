@@ -68,7 +68,7 @@
         * [Warning before changing a final field](https://www.eclipse.org/eclipse/news/4.23/jdt.php#finalFields) enabled by default (preferences: _Java > Debug : Warn before changing final fields_)
         * [Highlight labeled objects in the _Expressions_ view too](https://www.eclipse.org/eclipse/news/4.23/jdt.php#labels-in-expressions-view)
         * [Process ID displayed in _Console_ view header, in _Debug_ view and in properties page of the process](https://www.eclipse.org/eclipse/news/4.23/platform.php#process-pid)
-    * [_Call Hierarchy_: Show implementations of callee](https://www.eclipse.org/eclipse/news/4.23/jdt.php#show-implementations-of-callee) in preferences: _Java_ (disabled by default)
+    * ([_Call Hierarchy_: Show implementations of callee](https://www.eclipse.org/eclipse/news/4.23/jdt.php#show-implementations-of-callee) in preferences: _Java_ (disabled by default))
     * Java Formatter:
         * [Method invocation wrapping indentation](https://www.eclipse.org/eclipse/news/4.23/jdt.php#formatter-wrap-invocation) (enabled by default; can change formatting):
             * _Line Wrapping > Wrapping settings > Function Calls_ (1)
@@ -87,14 +87,15 @@
         * ...
     * [Maven](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#1200):
         * [_Console_ view: improved linking](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#improved-links-to-junit-test-reports-and-project-pomxml-in-the-console-of-a-maven-build)
-            * Test case (`Running <test>`): opens _JUnit_ view with test results
             * Project (project's headline or `Failed ... on <project>`): opens `pom.xml` of that project
+            * Test case (`Running <test>`): opens _JUnit_ view with test results
+            * Class with line number (`at com.example.MyClass.foo(MyClass.java:42)`): opens the class and goes to the line
         * [Automatically launch and attach remote debugger](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#automatically-launch-and-attach-remote-application-debugger-when-maven-plug-in-starts-a-forked-jvm-that-waits-for-a-debugger) set breakpoint and `maven.surefire.debug=true` (Tycho: `debugPort=<port-number>`; in the past `Listening for transport dt_socket at address: <port-number>` was logged and a _Remote Java Application_ debug configuration had to be configured and run manually)
         * Content assist:
-            * [Without indexer](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#improved-lemminx-based-editor-with-newer-lemminx-maven) requires less disk space (no `.m2/repository/index/`) by using https://search.maven.org/ instead ([commit](https://github.com/eclipse/lemminx-maven/commit/3047870c5a8eb7c84f574e3156535cb60098d036)
+            * [Without indexer](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#improved-lemminx-based-editor-with-newer-lemminx-maven) (no `.m2/repository/index/`) by using https://search.maven.org/ instead ([commit](https://github.com/eclipse/lemminx-maven/commit/3047870c5a8eb7c84f574e3156535cb60098d036))
             * [Short description of a configuration parameter at the top](https://github.com/eclipse-m2e/m2e-core/issues/477) (instead of at the bottom)
                 * By the way, since last release [Java module system command line arguments `--add-exports`, `--add-opens`, `--add-reads` and `--patch-module` are read](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#one-way-synchronization-for-jpms-directives-from-maven-compiler-arguments-to-classpath-file) ([issues](https://github.com/eclipse-m2e/m2e-core/pull/216#issuecomment-856114907); [example](https://github.com/eclipse-m2e/m2e-core/issues/136#issuecomment-1060327287))
-        * XML editor fixes and improvements:
+        * (XML editor fixes and improvements:)
             * Connected editing of start and end tag highlighted with gray instead of pink background
             * _Esc_ to not edit start and end tags together
             * Ctrl+click on start tag to jump to end tag and vice versa
@@ -103,16 +104,20 @@
         * (Embedded Maven updated from 3.8.1 to 3.8.4)
 * **General**
     * [Large file associations](https://www.eclipse.org/eclipse/news/4.23/platform.php#large-file-associations): in preferences _General > Editors > Large File Associations_ can be specified which editor is used to open large files of a specific type
-    * [Preferences: _Install/Update > Trust_](https://www.eclipse.org/eclipse/news/4.23/platform.php#manage-trusted-pgp-keys)
+    * ([Preferences: _Install/Update > Trust_](https://www.eclipse.org/eclipse/news/4.23/platform.php#manage-trusted-pgp-keys) (work in progress; [_rollout for 2022-06_](https://gitlab.eclipse.org/eclipse-wg/ide-wg/ide-wg.eclipse.org/-/issues/11)))
     * (UI):
         * ([_Progress_ view: new jobs added on bottom](https://www.eclipse.org/eclipse/news/4.23/platform.php#ProgressStableSort) so long running jobs stay on top which makes it easier to hit the cancel button)
         * ([Dark theme on Windows: natively styled buttons](https://www.eclipse.org/eclipse/news/4.23/platform.php#win32-dark-buttons-css))
     * ([Debug: show values inline](https://www.eclipse.org/eclipse/news/4.23/platform.php#inline-debug-values) (not yet supported by JDT, Wild Web Developer, etc.))
     * ([Performance](https://bugs.eclipse.org/bugs/buglist.cgi?classification=Eclipse%20Project&product=JDT&product=PDE&query_format=advanced&short_desc=performance&short_desc_type=allwordssubstr&target_milestone=4.23&target_milestone=4.23%20M1&target_milestone=4.23%20M2&target_milestone=4.23%20M3&target_milestone=4.23%20RC1&target_milestone=4.23%20RC2) (see also [changes by J&ouml;rg Kubitz](https://git.eclipse.org/r/q/owner:jkubitz-eclipse%2540gmx.de+status:merged)))
 * **Git**
-    * [_Fetch Gitea Pull Request..._](https://wiki.eclipse.org/EGit/New_and_Noteworthy/6.1#Fetching_Pull_Requests) (for [gitea.com](https://gitea.com) and as in the preferences _Version Control (Team) > Git > Servers_)
+    * [_Fetch Gitea Pull Request..._](https://wiki.eclipse.org/EGit/New_and_Noteworthy/6.1#Fetching_Pull_Requests) (for [gitea.com](https://gitea.com) and as in the preferences _Version Control (Team) > Git > Servers_, e.g. [`codeberg.org`](https://codeberg.org))
     * _Git Staging_ view:
-        * [_Commit Message_: clean up (as specified by `commit.cleanup`), highlighting of comment lines, preview](https://wiki.eclipse.org/EGit/New_and_Noteworthy/6.1#Commit_Messages) (comment lines, trailing whitespace, leading and trailing empty lines will be removed by default)
+        * [_Commit Message_ clean up](https://wiki.eclipse.org/EGit/New_and_Noteworthy/6.1#Commit_Messages)
+            * Highlighting of comment lines
+            * Preview
+            * By default, comment lines (starting with `#`), trailing whitespace, multiple, leading and trailing empty lines will be removed (same behavior as command line Git)
+            * Behavior can be changed in the config via [`commit.cleanup`](https://git-scm.com/docs/git-config#Documentation/git-config.txt-commitcleanup), e.g. [`verbatim`](https://git-scm.com/docs/git-commit#Documentation/git-commit.txt---cleanupltmodegt) to disable clean up
         * [_Hide Untracked Files_ button](https://wiki.eclipse.org/EGit/New_and_Noteworthy/6.1#Hiding_Untracked_Files) when enabled, number of unstaged changes shown as `(<visible>/<total>)`; switching to a different repository will disable the button
     * [_Push to Upstream_](https://wiki.eclipse.org/EGit/New_and_Noteworthy/6.1#Push_to_Upstream): considers Git config's `branch.<name>.pushRemote`, `remote.pushDefault` and `push.default` now (like `git push` does on the command line)
     * [Push dialog: allow skipping preview](https://bugs.eclipse.org/bugs/show_bug.cgi?id=577079)
@@ -130,6 +135,7 @@
         * (Git support via JGit/EGit)
 
 * **(Under development)**
+    * ([Preferences: _Install/Update > Trust_](https://www.eclipse.org/eclipse/news/4.23/platform.php#manage-trusted-pgp-keys) (work in progress; [_rollout for 2022-06_](https://gitlab.eclipse.org/eclipse-wg/ide-wg/ide-wg.eclipse.org/-/issues/11)))
     * ([Debug: show values inline](https://www.eclipse.org/eclipse/news/4.23/platform.php#inline-debug-values) (not yet supported in Java, JavaScript, etc.))
     * ([XML CodeLens preference page](https://github.com/eclipse/wildwebdeveloper/issues/636) ← [not working yet](https://github.com/eclipse/wildwebdeveloper/issues/644))
 
