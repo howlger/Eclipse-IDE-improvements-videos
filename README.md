@@ -55,7 +55,7 @@
 ### Features to show
 
 * **Java**
-    * [Java 18 support via Marketplace](https://marketplace.eclipse.org/content/https://marketplace.eclipse.org/content/java-18-support-eclipse-2022-03-423)
+    * [Java 18 support via Marketplace](https://marketplace.eclipse.org/content/java-18-support-eclipse-2022-03-423)
     * Java editor:
         * [New quick assist: _Add ... to static member favorites list_](https://www.eclipse.org/eclipse/news/4.23/jdt.php#save-to-static-favorites) to add a static import to preferences _Java > Editor > Content Assist > Favorites_
         * [New quick assist: _Extract lambda body to method_](https://www.eclipse.org/eclipse/news/4.23/jdt.php#extract-lambda-body-to-method)
@@ -112,18 +112,18 @@
     * ([Performance](https://bugs.eclipse.org/bugs/buglist.cgi?classification=Eclipse%20Project&product=JDT&product=PDE&query_format=advanced&short_desc=performance&short_desc_type=allwordssubstr&target_milestone=4.23&target_milestone=4.23%20M1&target_milestone=4.23%20M2&target_milestone=4.23%20M3&target_milestone=4.23%20RC1&target_milestone=4.23%20RC2) (see also [changes by J&ouml;rg Kubitz](https://git.eclipse.org/r/q/owner:jkubitz-eclipse%2540gmx.de+status:merged)))
 * **Git**
     * [_Fetch Gitea Pull Request..._](https://wiki.eclipse.org/EGit/New_and_Noteworthy/6.1#Fetching_Pull_Requests) (for [gitea.com](https://gitea.com) and as in the preferences _Version Control (Team) > Git > Servers_, e.g. [`codeberg.org`](https://codeberg.org))
-    * _Git Staging_ view:
-        * [_Commit Message_ clean up](https://wiki.eclipse.org/EGit/New_and_Noteworthy/6.1#Commit_Messages)
-            * Highlighting of comment lines
-            * Preview
-            * By default, comment lines (starting with `#`), trailing whitespace, multiple, leading and trailing empty lines will be removed (same behavior as command line Git)
-            * Behavior can be changed in the config via [`commit.cleanup`](https://git-scm.com/docs/git-config#Documentation/git-config.txt-commitcleanup), e.g. [`verbatim`](https://git-scm.com/docs/git-commit#Documentation/git-commit.txt---cleanupltmodegt) to disable clean up
-        * [_Hide Untracked Files_ button](https://wiki.eclipse.org/EGit/New_and_Noteworthy/6.1#Hiding_Untracked_Files) when enabled, number of unstaged changes shown as `(<visible>/<total>)`; switching to a different repository will disable the button
-    * [_Push to Upstream_](https://wiki.eclipse.org/EGit/New_and_Noteworthy/6.1#Push_to_Upstream): considers Git config's `branch.<name>.pushRemote`, `remote.pushDefault` and `push.default` now (like `git push` does on the command line)
-    * [Push dialog: allow skipping preview](https://bugs.eclipse.org/bugs/show_bug.cgi?id=577079)
-    * [Git branch configuration dialog: now with _Push remote_](https://git.eclipse.org/c/egit/egit.git/commit/?id=d5001280ff9d97634b0f777902c05ebfabd81580) also shown [in the _Properties_ view for a selected branch](https://git.eclipse.org/c/egit/egit.git/commit/?id=871e432f6cf67358ad53df051bb396e6e503551d) (in config as `branch.<name>.pushRemote`)
-    * [On Windows, SSH agent support for Win32-OpenSSH (in addition to Pageant)](https://wiki.eclipse.org/EGit/New_and_Noteworthy/6.1#SSH_Agent_Support) in preferences _Version Control (Team) > Git_ which can be overridden by the `IdentityAgent` config setting
     * [_Git Repositories_ view: _Open in Commit Viewer_ also for branches and tags](https://wiki.eclipse.org/EGit/New_and_Noteworthy/6.1#Git_Repositories_View)
+    * _Git Staging_ view:
+        * [_Hide Untracked Files_ button](https://wiki.eclipse.org/EGit/New_and_Noteworthy/6.1#Hiding_Untracked_Files) when enabled, number of unstaged changes shown as `(<visible>/<total>)`; switching to a different repository will disable the button
+        * [_Commit Message_ clean up](https://wiki.eclipse.org/EGit/New_and_Noteworthy/6.1#Commit_Messages)
+            * By default, comment lines (starting with `#`), trailing whitespace, multiple, leading and trailing empty lines will be removed (same behavior as command line Git)
+            * Preview
+            * Highlighting of comment lines
+            * Behavior can be changed in the config via [`commit.cleanup`](https://git-scm.com/docs/git-config#Documentation/git-config.txt-commitcleanup), e.g. [`verbatim`](https://git-scm.com/docs/git-commit#Documentation/git-commit.txt---cleanupltmodegt) to disable clean up
+    * [_Push to Upstream_](https://wiki.eclipse.org/EGit/New_and_Noteworthy/6.1#Push_to_Upstream): considers Git config's `branch.<name>.pushRemote`, `remote.pushDefault` and `push.default` now (like `git push` does on the command line)
+        * [Git branch configuration dialog: now with _Push remote_](https://git.eclipse.org/c/egit/egit.git/commit/?id=d5001280ff9d97634b0f777902c05ebfabd81580) also shown [in the _Properties_ view for a selected branch](https://git.eclipse.org/c/egit/egit.git/commit/?id=871e432f6cf67358ad53df051bb396e6e503551d) (in config as `branch.<name>.pushRemote`)
+    * [Push dialog: allow skipping preview](https://bugs.eclipse.org/bugs/show_bug.cgi?id=577079)
+    * [On Windows, SSH agent support for Win32-OpenSSH (in addition to Pageant)](https://wiki.eclipse.org/EGit/New_and_Noteworthy/6.1#SSH_Agent_Support) in preferences _Version Control (Team) > Git_ which can be overridden by the `IdentityAgent` config setting
 * **(Web)**
     * JavaScript/TypeScript:
         * ([Const Assertions and Default Type Arguments in JSDoc](https://devblogs.microsoft.com/typescript/announcing-typescript-4-5/#jsdoc-const-and-type-arg-defaults))
