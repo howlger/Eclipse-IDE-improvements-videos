@@ -1,4 +1,4 @@
-set IDE=jee-2021-12
+set IDE=java-2022-03
 set REPO=sample
 
 set ECLIPSE_DIR=%USERPROFILE%\eclipse\%IDE%
@@ -9,9 +9,10 @@ set ECLIPSE_WORKSPACE_ZIP=%ECLIPSE_WORKSPACE%.7z
 set REPO_DIR=%USERPROFILE%\git\%REPO%
 set REPO_ZIP=%USERPROFILE%\git\%REPO%.7z
 
-:: only for Eclipse 2021-12
-rmdir /s /q "%REPO_DIR%\..\ide-wg.eclipse.org"
-rmdir /s /q "%REPO_DIR%\..\wildwebdeveloper"
+:: only for Eclipse 2022-03
+rmdir /s /q "%REPO_DIR%\..\tea"
+rmdir /s /q "%REPO_DIR%\..\teddit"
+rmdir /s /q "%REPO_DIR%\..\mirror"
 
 dir "%ECLIPSE_DIR%\p2"
 

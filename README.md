@@ -12,7 +12,7 @@
 [2019-06](https://github.com/howlger/Eclipse-IDE-improvements-videos/tree/2019-06)
 </sup>
 
-# +++ Work in progress (for March 16, 2022) +++<br> Eclipse IDE 2022-03 Improvements Video
+# [Eclipse IDE 2022-03 Improvements Video](https://youtu.be/GnNnQY5ujFg)
 
 * [March 16, 2022](https://calendar.google.com/calendar/event?eid=MG5na2VxbGIzdTYxcW80MGFjbzZ2bW9nbnAgZ2NoczdubTRudnBtODM3NDY5ZGRqOXRqbGtAZw&ctz=Europe/Berlin) ([calendar](https://calendar.google.com/calendar/embed?src=gchs7nm4nvpm837469ddj9tjlk@group.calendar.google.com&ctz=Europe/Berlin)) - [68 projects](https://projects.eclipse.org/releases/2022-03) ([-1 +0 → 68](projects_diff.txt)) - [wiki](https://wiki.eclipse.org/Category:SimRel-2022-03) - [website](https://eclipse.org/eclipseide/2022-03) ([New & Noteworthy](https://eclipse.org/eclipseide/2022-03/noteworthy)) - [splash screen](https://bugs.eclipse.org/bugs/show_bug.cgi?id=569333)
 * Builds: [latest unreleased](https://download.eclipse.org/technology/epp/staging/) → [released](https://download.eclipse.org/technology/epp/downloads/release/2022-03/) ([Jenkins](https://ci.eclipse.org/packaging/job/simrel.epp-tycho-build), [log](https://git.eclipse.org/c/simrel/org.eclipse.simrel.build.git/log/), update sites: [staging](https://download.eclipse.org/staging/2022-03), [release](http://download.eclipse.org/releases/2022-03))
@@ -54,7 +54,7 @@
 
 ### Features to show
 
-* **Java**
+* **Java [📽️](https://youtu.be/GnNnQY5ujFg?t=17)**
     * [Java 18 support via Marketplace](https://marketplace.eclipse.org/content/java-18-support-eclipse-2022-03-423)
     * Java editor:
         * [New quick assist: _Add ... to static member favorites list_](https://www.eclipse.org/eclipse/news/4.23/jdt.php#save-to-static-favorites) to add a static import to preferences _Java > Editor > Content Assist > Favorites_
@@ -85,7 +85,7 @@
         * [Speed up startup/shutdown by reducing `state.dat` file sizes](https://bugs.eclipse.org/bugs/show_bug.cgi?id=576646) (caching of Java model)
         * [`CoreASTProvider.getAST()` - Reconciler freezes are sometimes just waits](https://bugs.eclipse.org/bugs/show_bug.cgi?id=575864)
         * ...
-    * [Maven](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#1200):
+    * [Maven](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#1200) [📽️](https://youtu.be/GnNnQY5ujFg?t=370):
         * [_Console_ view: improved linking](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#improved-links-to-junit-test-reports-and-project-pomxml-in-the-console-of-a-maven-build)
             * Project (project's headline or `Failed ... on <project>`): opens `pom.xml` of that project
             * Test case (`Running <test>`): opens _JUnit_ view with test results
@@ -102,7 +102,7 @@
             * ...
         * (Performance improvements: [parent project resolution](https://github.com/eclipse-m2e/m2e-core/commit/ec12bd6222c377f93e21af0dc1988fba2134123d), [`workspaceReader`](https://github.com/eclipse/lemminx-maven/commit/18fb1e5c791435d44d9ce176145622d43556ec1d) and [more](https://github.com/eclipse/lemminx-maven/commit/256aad5056a9963b284a961971cb39ab543ae118))
         * (Embedded Maven updated from 3.8.1 to 3.8.4)
-* **General**
+* **General [📽️](https://youtu.be/GnNnQY5ujFg?t=532)**
     * [Large file associations](https://www.eclipse.org/eclipse/news/4.23/platform.php#large-file-associations): in preferences _General > Editors > Large File Associations_ can be specified which editor is used to open large files of a specific type
     * ([Preferences: _Install/Update > Trust_](https://www.eclipse.org/eclipse/news/4.23/platform.php#manage-trusted-pgp-keys) (work in progress; [_rollout for 2022-06_](https://gitlab.eclipse.org/eclipse-wg/ide-wg/ide-wg.eclipse.org/-/issues/11)))
     * (UI):
@@ -110,7 +110,7 @@
         * ([Dark theme on Windows: natively styled buttons](https://www.eclipse.org/eclipse/news/4.23/platform.php#win32-dark-buttons-css))
     * ([Debug: show values inline](https://www.eclipse.org/eclipse/news/4.23/platform.php#inline-debug-values) (not yet supported by JDT, Wild Web Developer, etc.))
     * ([Performance](https://bugs.eclipse.org/bugs/buglist.cgi?classification=Eclipse%20Project&product=JDT&product=PDE&query_format=advanced&short_desc=performance&short_desc_type=allwordssubstr&target_milestone=4.23&target_milestone=4.23%20M1&target_milestone=4.23%20M2&target_milestone=4.23%20M3&target_milestone=4.23%20RC1&target_milestone=4.23%20RC2) (see also [changes by J&ouml;rg Kubitz](https://git.eclipse.org/r/q/owner:jkubitz-eclipse%2540gmx.de+status:merged)))
-* **Git**
+* **Git [📽️](https://youtu.be/GnNnQY5ujFg?t=619)**
     * [_Fetch Gitea Pull Request..._](https://wiki.eclipse.org/EGit/New_and_Noteworthy/6.1#Fetching_Pull_Requests) (for [gitea.com](https://gitea.com) and as in the preferences _Version Control (Team) > Git > Servers_, e.g. [`codeberg.org`](https://codeberg.org))
     * [_Git Repositories_ view: _Open in Commit Viewer_ also for branches and tags](https://wiki.eclipse.org/EGit/New_and_Noteworthy/6.1#Git_Repositories_View)
     * _Git Staging_ view:

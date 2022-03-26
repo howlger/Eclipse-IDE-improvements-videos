@@ -4,8 +4,7 @@ Set-up:
 - Perspectives: Java, Git
 - Enable "Link with editor"
 - Show keys
-- Hide right side view stacks
-
+(- Hide right side view stacks)
 
 Git:
 Use "main" as default branch
@@ -14,3 +13,13 @@ Add to config:
 [user]
     name = Jane
     email = jane@example.com
+
+To type:
+--add-exports
+java.base/jdk.internal.misc=ALL_UNNAMED
+
+branch.origin.pushRemote
+branch.origin.merge
+
+remote.pushDefault=mirror
+push.default=matching

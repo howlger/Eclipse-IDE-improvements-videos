@@ -17,7 +17,7 @@ Eclipse Embedded CDT (C/C++ Development Tools)	6.1.2
 Eclipse EMF Client Platform	1.26.1
 Eclipse EMF Compare	3.3.10
 Eclipse EMF Parsley	1.13.0
-Eclipse EMF Services	1.13.0
+Eclipse EMF Services	1.12.2
 Eclipse EMF™	2.28.0
 Eclipse Extended Editing Framework (EEF)	2.1.5
 Eclipse GMF Runtime™	1.14.1
@@ -29,7 +29,7 @@ Eclipse Linux Tools	8.6.0
 Eclipse LSP4E	0.20.2
 Eclipse LSP4J	0.12.0
 Eclipse Marketplace Client	1.9.3
-Eclipse Maven Integration - m2eclipse™	1.20.0
+Eclipse Maven Integration - m2eclipse™	1.20.1
 Eclipse Maven Integration for Web Tools Platform	1.4.3
 Eclipse MDT UML2	5.5.2
 Eclipse MDT XSD™ (XML Schema Definition)	2.28.0
@@ -45,7 +45,7 @@ Eclipse Papyrus™	6.1.0
 Eclipse Parallel Tools Platform (PTP)	9.4.0
 Eclipse Passage™	2.3.0
 Eclipse PHP Development Tools	7.2.1
-Eclipse Project	4.23.0
+Eclipse Project™	4.23.0
 Eclipse QVT Operational	2022-03 (3.10.6)
 Eclipse QVTd™ (QVT Declarative)	2022-03 (0.28.1)
 Eclipse RCP Testing Tool	2.5.1
@@ -59,9 +59,9 @@ Eclipse Target Management: Terminal and Remote System Explorer (RSE)	4.5.200
 Eclipse TM4E™ - TextMate support in the Eclipse IDE 	0.4.3
 Eclipse Trace Compass™	7.3.0
 Eclipse User Storage Service SDK	1.2.2
-Eclipse VIATRA	2.7.0
+Eclipse VIATRA™	2.7.0
 Eclipse Web Tools Platform Project	3.25
-Eclipse Wild Web Developer	0.13.2
+Eclipse Wild Web Developer	0.13.3
 Eclipse WindowBuilder	1.9.7
 Eclipse Xpand	2.2.0
 Eclipse Xtext™	2.26.0

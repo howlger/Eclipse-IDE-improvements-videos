@@ -46,7 +46,7 @@ Eclipse Papyrus™	6.0.0
 Eclipse Parallel Tools Platform (PTP)	9.4.0
 Eclipse Passage™	2.2.0
 Eclipse PHP Development Tools	7.2
-Eclipse Project	4.22.0
+Eclipse Project™	4.22.0
 Eclipse QVT Operational	2021-12 (3.10.5)
 Eclipse QVTd™ (QVT Declarative)	2021-12 (0.28.0)
 Eclipse RCP Testing Tool	2.5.1
@@ -60,7 +60,7 @@ Eclipse Target Management: Terminal and Remote System Explorer (RSE)	4.5.200
 Eclipse TM4E™ - TextMate support in the Eclipse IDE 	0.4.3
 Eclipse Trace Compass™	7.2.0
 Eclipse User Storage Service SDK	1.2.2
-Eclipse VIATRA	2.6.0
+Eclipse VIATRA™	2.6.0
 Eclipse Web Tools Platform Project	3.24
 Eclipse Wild Web Developer	0.13.1
 Eclipse WindowBuilder	1.9.7

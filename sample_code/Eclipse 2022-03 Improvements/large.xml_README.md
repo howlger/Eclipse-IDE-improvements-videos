@@ -1,0 +1,1 @@
+As `large.xml` use `content.xml` from the [`https://download.eclipse.org/releases/2022-03/202203161000/content.jar`](https://download.eclipse.org/releases/2022-03/202203161000/content.jar) ZIP archive
