@@ -1,1 +1,0 @@
-- Eclipse BPEL Designer	1.1.3
