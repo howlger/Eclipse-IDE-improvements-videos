@@ -1,0 +1,1 @@
+[`more_checks.js`](more_checks.js) is based on [`plainJSGrammarErrors.js`](https://github.com/microsoft/TypeScript/blob/main/tests/baselines/reference/plainJSGrammarErrors.js) of the [TypeScript project](https://github.com/microsoft/TypeScript) ([Apache-2.0 license](https://github.com/microsoft/TypeScript/blob/main/LICENSE.txt))

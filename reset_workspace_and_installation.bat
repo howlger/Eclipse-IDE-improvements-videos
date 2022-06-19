@@ -1,4 +1,4 @@
-set IDE=java-2022-03
+set IDE=java-2022-06
 set REPO=sample
 
 set ECLIPSE_DIR=%USERPROFILE%\eclipse\%IDE%
@@ -9,10 +9,9 @@ set ECLIPSE_WORKSPACE_ZIP=%ECLIPSE_WORKSPACE%.7z
 set REPO_DIR=%USERPROFILE%\git\%REPO%
 set REPO_ZIP=%USERPROFILE%\git\%REPO%.7z
 
-:: only for Eclipse 2022-03
-rmdir /s /q "%REPO_DIR%\..\tea"
-rmdir /s /q "%REPO_DIR%\..\teddit"
-rmdir /s /q "%REPO_DIR%\..\mirror"
+:: only for Eclipse 2022-06
+start C:\Users\Howlger\eclipse-installer\eclipse-inst.exe
+echo|set/p=C:\Program Files\AdoptOpenJDK\jdk-18.0.1+10|clip
 
 dir "%ECLIPSE_DIR%\p2"
 
@@ -26,7 +25,6 @@ IF NOT exist "%REPO_DIR%\.git" (echo Git repository missing: %REPO_DIR% && pause
 :: restore Git repository
 rmdir /s /q "%REPO_DIR%"
 "%UNZIP_7ZIP%" x "%REPO_ZIP%" "-o%REPO_DIR%\.."
-
 
 :: reset Eclipse (restore "p2" and "configuration" subdirectories from ZIP)
 rmdir /s /q "%ECLIPSE_DIR%\p2"

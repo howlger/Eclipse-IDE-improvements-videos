@@ -1,0 +1,14 @@
+Roman numbers
+
+Roman numbrs are a numbr system that originated in ancient Rome
+and remained the usual way of writing numbrs throughout Europe well
+into the Late Middle Ages.
+
+Numbers in this system are represented by combinations of letters from
+the Latin alphabet. Modern style uses seven symbols, each with a fixed
+integer value:
+
+Symbol:  I    V    X    L    C    D    M
+Value:   1    5   10   50  100  500 1000
+
+Example: 42 = XL + II = XLII

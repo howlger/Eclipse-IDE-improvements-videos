@@ -13,9 +13,9 @@
 [2019-06](https://github.com/howlger/Eclipse-IDE-improvements-videos/tree/2019-06)
 </sup>
 
-# +++ Work in progress (for June 15, 2022) +++<br> Eclipse IDE 2022-06 Improvements Video
+# [Eclipse IDE 2022-06 Improvements Video](https://youtu.be/zDJtVYAJwyY)
 
-* [June 15, 2022](https://calendar.google.com/calendar/event?eid=N3JqaXRwa21jNW5lYmU4OTc0aGZzY2J0NGEgZ2NoczdubTRudnBtODM3NDY5ZGRqOXRqbGtAZw&ctz=Europe/Berlin) ([calendar](https://calendar.google.com/calendar/embed?src=gchs7nm4nvpm837469ddj9tjlk@group.calendar.google.com&ctz=Europe/Berlin)) - [wiki](https://wiki.eclipse.org/Category:SimRel-2022-06) - [website](https://eclipse.org/eclipseide/2022-06) ([New & Noteworthy](https://eclipse.org/eclipseide/2022-06/noteworthy)) - [splash screen](https://bugs.eclipse.org/bugs/show_bug.cgi?id=575781)
+* [June 15, 2022](https://calendar.google.com/calendar/event?eid=N3JqaXRwa21jNW5lYmU4OTc0aGZzY2J0NGEgZ2NoczdubTRudnBtODM3NDY5ZGRqOXRqbGtAZw&ctz=Europe/Berlin) ([calendar](https://calendar.google.com/calendar/embed?src=gchs7nm4nvpm837469ddj9tjlk@group.calendar.google.com&ctz=Europe/Berlin)) - [67 projects](https://projects.eclipse.org/releases/2022-06) ([-1 +0 → 67](projects_diff.txt)) - [wiki](https://wiki.eclipse.org/Category:SimRel-2022-06) - [website](https://eclipse.org/eclipseide/2022-06) ([New & Noteworthy](https://eclipse.org/eclipseide/2022-06/noteworthy)) - [splash screen](https://bugs.eclipse.org/bugs/show_bug.cgi?id=575781)
 * Builds: [latest unreleased](https://download.eclipse.org/technology/epp/staging/) → [released](https://download.eclipse.org/technology/epp/downloads/release/2022-06/) ([Jenkins](https://ci.eclipse.org/packaging/job/simrel.epp-tycho-build), [log](https://git.eclipse.org/c/simrel/org.eclipse.simrel.build.git/log/), update sites: [staging](https://download.eclipse.org/staging/2022-06), [release](http://download.eclipse.org/releases/2022-06))
 * Social media: [Twitter](http://twitter.com/EclipseJavaIDE), [YouTube](https://www.youtube.com/user/EclipseFdn) ([Eclipse IDE playlist](https://www.youtube.com/playlist?list=PLy7t4z5SYNaSNjL60ofpwVhfA7mOF3Pgk)), [Instagram](https://www.instagram.com/eclipsejavaide)
 
@@ -55,40 +55,40 @@
 
 ### Features to show
 
-* **Java <!-- [📽️](https://youtu.be/GnNnQY5ujFg?t=17) -->**
+* **Java [📽️](https://youtu.be/GnNnQY5ujFg?t=16s)**
     * [Java 18 support](https://www.eclipse.org/eclipse/news/4.24/jdt.php#Java_18)
+        * All Java [IDE packages shipped with Java 17](https://git.eclipse.org/c/epp/org.eclipse.epp.packages.git/commit/?id=c79b66ba2004861ad90596e51ab299ce8888ab99) (including [Scout](https://git.eclipse.org/c/epp/org.eclipse.epp.packages.git/commit/?id=3b9200281029a3407487da5a191a80a334ad28ff)), so a Java 18 JDK has to be configured in the preferences _Java > Installed JREs_
         * Code Snippets in Java API Documentation
-        * Pattern Matching for switch (Second Preview)
-        * Code coverage also for Java 18 (via EclEmma 3.1.6)
+        * (Pattern Matching for switch (Second Preview))
+        * (Code coverage also for Java 18 (via EclEmma 3.1.6))
+    * [Performance](https://github.com/search?utf8=%E2%9C%93&q=performance+OR+speed+OR+faster+org%3Aeclipse-jdt+committer-date%3A2022-03-05..2022-06-10&s=committer-date&o=desc&type=Commits)
+        * [Faster content assist, e.g for `List<String> list = new A|`](https://github.com/eclipse-jdt/eclipse.jdt.ui/commit/44d1cac7bbaf7a53357ad63dc01e45bfc1082633)
     * Java editor:
         * [New quick fixes to create sub type for sealed super type](https://www.eclipse.org/eclipse/news/4.24/jdt.php#create_sub_type_for_sealed_type)
         * [New quick assist: _Create new interface, extending ..._](https://www.eclipse.org/eclipse/news/4.24/jdt.php#extend_interface_assist)
-        * [New quick assist: _Remove unused private method parameters_](https://www.eclipse.org/eclipse/news/4.24/jdt.php#strconcat-to-textblock) (also as cleanup: see below)
     * Cleanups:
-        * [_Unnecessary Code > Unused code > Remove unused private method parameters_](https://www.eclipse.org/eclipse/news/4.24/jdt.php#strconcat-to-textblock) (also as quick assist: see above)
+        * [_Unnecessary Code > Unused code > Remove unused private method parameters_](https://www.eclipse.org/eclipse/news/4.24/jdt.php#strconcat-to-textblock)
         * [_Unnecessary Code > Unnecessary code > Remove overridden assignment > Move declaration if necessary_](https://github.com/eclipse-jdt/eclipse.jdt.ui/pull/27)
         * [_Java Feature > Java 7 > Replace system property with constant_ improved](https://www.eclipse.org/eclipse/news/4.24/jdt.php#extend-system-properties): _Boolean property_ → _Boxed type property_ also for _Integer_ and _Long_
-    * [_JUnit_ view: _Rerun Test - Failures First_ button](https://www.eclipse.org/eclipse/news/4.24/jdt.php#junit5-rerun-failures-first)
+    * ([_JUnit_ view: _Rerun Test - Failures First_ button](https://www.eclipse.org/eclipse/news/4.24/jdt.php#junit5-rerun-failures-first))
     * Debug:
-        * [_Java Stack Trace Console_: support for Java stack traces copied from _Debug_ view (via _Copy Stack_ action)](https://www.eclipse.org/eclipse/news/4.24/jdt.php#debug-stack)
-    * [Performance](https://github.com/search?utf8=%E2%9C%93&q=performance+OR+speed+OR+faster+org%3Aeclipse-jdt+committer-date%3A2022-03-05..2022-06-10&s=committer-date&o=desc&type=Commits)
-        * [Faster content assist, e.g for `List<String> list = new A|`](https://github.com/eclipse-jdt/eclipse.jdt.ui/commit/44d1cac7bbaf7a53357ad63dc01e45bfc1082633)
+        * ([_Java Stack Trace Console_: support for Java stack traces copied from _Debug_ view (via _Copy Stack_ action)](https://www.eclipse.org/eclipse/news/4.24/jdt.php#debug-stack))
     * (Gradle: [_New Gradle Project_ for a Gradle version > 6.6.1 no longer requires running Eclipse with Java 11](https://github.com/eclipse/buildship/issues/1077), but [still creates two projects, one with the chosen name and a nested `lib` project](https://github.com/eclipse/buildship/issues/1118) (so the following workaround has still to be used to create a Gradle > 6.6.1 project without a nested `lib` project: _New Gradle Project_ with _Specific Gradle version_ 6.6.1 and _Java home_ of a Java 11 JDK and then in `build.gradle` change `id 'java-library'` to `id 'application'` to keep the simple project structure when in _Project > Properties: Gradle_ choosing a higher Gradle version))
-* **General <!-- [📽️](https://youtu.be/GnNnQY5ujFg?t=532) -->**
+* **General/Platform [📽️](https://youtu.be/GnNnQY5ujFg?t=475s)**
     * ([Welcome screen will not hide main toolbar anymore](https://www.eclipse.org/eclipse/news/4.24/platform.php#welcomescreen))
     * [New multi selection commands](https://www.eclipse.org/eclipse/news/4.24/platform.php#multi-select-commands) (no default key bindings):
-        * _Add all matches to multi-selection_
-        * _Multi selection down relative to anchor selection_
-        * _Multi selection up relative to anchor selection_
-        * _Multi caret down_
-        * _Multi caret up_
-        * _End multi-selection_
+        * _Add all matches to multi-selection_ (e.g. Ctrl+Alt+Shift+K)
+        * _Multi selection down relative to anchor selection_ (e.g. Alt+K)
+        * _Multi selection up relative to anchor selection_ (e.g. Alt+Shift+K)
+        * _Multi caret down_ (e.g. Alt+.)
+        * _Multi caret up_ (e.g. Alt+,)
+        * _End multi-selection_ (e.g. Esc)
     * UTF-8 by default:
         * [Explicit encoding set for new workspaces](https://www.eclipse.org/eclipse/news/4.24/platform.php#explicit-encoding-workspaces)
         * [Explicit encoding set for new projects](https://www.eclipse.org/eclipse/news/4.24/platform.php#explicit-encoding-projects)
         * [Warning for projects with no explicit default encoding](https://www.eclipse.org/eclipse/news/4.24/platform.php#no-explicit-encoding-project-warning)
     * [_Find Actions_ (Ctrl+3) to open a file](https://www.eclipse.org/eclipse/news/4.24/platform.php#codeassist-module)
-    * [Debug thread names](https://www.eclipse.org/eclipse/news/4.24/platform.php#debug-monitor-thread-names)
+    * ([Debug thread names](https://www.eclipse.org/eclipse/news/4.24/platform.php#debug-monitor-thread-names))
     * [UI](https://github.com/search?utf8=%E2%9C%93&q=dark+OR+light+OR+theme+OR+layout+org%3Aeclipse-platform+org%3Aeclipse-jdt+committer-date%3A2022-03-05..2022-06-10&s=committer-date&type=Commits):
         * [Dark theme](https://github.com/search?utf8=%E2%9C%93&q=dark+OR+light+OR+theme+OR+layout+org%3Aeclipse-platform+org%3Aeclipse-jdt+committer-date%3A2022-03-05..2022-06-10&s=committer-date&type=Commits)
             * [Windows: Disable tree and table lines](https://bugs.eclipse.org/bugs/show_bug.cgi?id=567933)
@@ -96,24 +96,21 @@
             * [Windows: In search field the x button](https://github.com/eclipse-platform/eclipse.platform.swt/issues/18#issuecomment-1086413468)
     * [Performance](https://github.com/search?utf8=%E2%9C%93&q=performance+OR+speed+OR+faster+org%3Aeclipse-equinox+org%3Aeclipse-platform+committer-date%3A2022-03-05..2022-06-10&s=committer-date&o=desc&type=Commits)
         * [Faster _Console_](https://github.com/eclipse-platform/eclipse.platform.debug/commit/a31baf97eda1ae062ead1db1215742e2be6b51e0) ([example](https://bugs.eclipse.org/bugs/show_bug.cgi?id=575275#c1))
-        * [Faster sorting of markers](https://github.com/eclipse-platform/eclipse.platform.ui/issues/53)
+        * ([Faster sorting of markers](https://github.com/eclipse-platform/eclipse.platform.ui/issues/53))
         * ([Equinox: Improve performance for operations that modify framework state](https://github.com/eclipse-equinox/equinox.framework/commit/fa10a40b86d58b54fba2789bf9794c5795053f62))
-        * ...
-* **Git <!-- [📽️](https://youtu.be/GnNnQY5ujFg?t=619) -->**
+* **Git [📽️](https://youtu.be/GnNnQY5ujFg?t=730s)**
     * _Git Staging_ view:
-        * [_Push Settings_ button_](https://wiki.eclipse.org/EGit/New_and_Noteworthy/6.2#Git_Staging_View)
+        * [_Push Settings_ button](https://wiki.eclipse.org/EGit/New_and_Noteworthy/6.2#Git_Staging_View)
+        * [Support for `core.commentChar`](https://wiki.eclipse.org/EGit/New_and_Noteworthy/6.2#Commit_Messages)
         * [Support of config's `core.commentChar`](https://wiki.eclipse.org/EGit/New_and_Noteworthy/6.2#Commit_Messages) (see [Git documentation](https://git-scm.com/docs/git-config#Documentation/git-config.txt-corecommentChar))
-* **Web**
+* **Web [📽️](https://youtu.be/GnNnQY5ujFg?t=828)**
     * JavaScript/TypeScript:
         * [More syntax and binding errors](https://devblogs.microsoft.com/typescript/announcing-typescript-4-6/#more-syntax-and-binding-errors-in-javascript) ([examples](https://github.com/microsoft/TypeScript/blob/main/tests/baselines/reference/plainJSGrammarErrors.js))
-        * [Always receive grammar and binding errors](https://devblogs.microsoft.com/typescript/announcing-typescript-4-6/#javascript-files-always-receive-grammar-and-binding-errors)
-* **Misc**
-    * All [IDE packages shipped with Java 17](https://git.eclipse.org/c/epp/org.eclipse.epp.packages.git/commit/?id=c79b66ba2004861ad90596e51ab299ce8888ab99), not Java 18 (including [Scout](https://git.eclipse.org/c/epp/org.eclipse.epp.packages.git/commit/?id=3b9200281029a3407487da5a191a80a334ad28ff))
-
+        * ([Always receive grammar and binding errors](https://devblogs.microsoft.com/typescript/announcing-typescript-4-6/#javascript-files-always-receive-grammar-and-binding-errors))
 * **(Under development)**
     * ([Preferences: _Install/Update > Trust_](https://www.eclipse.org/eclipse/news/4.23/platform.php#manage-trusted-pgp-keys) (work in progress; [_rollout for 2022-06_](https://gitlab.eclipse.org/eclipse-wg/ide-wg/ide-wg.eclipse.org/-/issues/11)))
     * ([Debug: show values inline](https://www.eclipse.org/eclipse/news/4.23/platform.php#inline-debug-values) (not yet supported in Java, JavaScript, etc.))
     * ([XML CodeLens preference page](https://github.com/eclipse/wildwebdeveloper/issues/636) ← [not working yet](https://github.com/eclipse/wildwebdeveloper/issues/644))
 
 ## Publish
-* → [As YouTube video](https://www.youtube.com/playlist?list=PLnh_8hTD4yvnhXSttuewEKgKkmlIj_ND-)
+* → [As YouTube video](https://www.youtube.com/playlist?list=PLnh_8hTD4yvnhXSttuewEKgKkmlIj_ND-) (until release: video title with _+++Coming on June 15, 2022+++_ prefix)
