@@ -30,7 +30,7 @@
         * LemMinx-Maven 0.4.1→**0.5.1**: [release notes](https://github.com/eclipse/lemminx-maven/blob/master/RELEASE_NOTES.md#051), [commits](https://github.com/eclipse/lemminx-maven/compare/0.4.1...0.5.1), [issues](https://github.com/eclipse/lemminx-maven/issues?q=is%3Aissue+sort%3Aupdated-desc+is%3Aclosed)
     * Buildship (Gradle) 3.1.5→**3.1.6**: [review](https://projects.eclipse.org/projects/tools.buildship/releases/3.1.6), [commits](https://github.com/eclipse/buildship/commits/master), [announcements](https://discuss.gradle.org/tag/buildship-release)
 * General
-    * **Platform** 4.23→**4.24**: [Eclipse 4.24 - New and Noteworthy - Platform and Equinox](https://www.eclipse.org/eclipse/news/4.24/platform.php) ([log](https://github.com/eclipse-platform/www.eclipse.org-eclipse-news/commits/master/4.24/platform.html)), [plan](https://www.eclipse.org/projects/project-plan.php?planurl=http://www.eclipse.org/eclipse/development/plans/eclipse_project_plan_4_24.xml#themes_and_priorities), [Git](https://git.eclipse.org/c/platform/eclipse.platform.ui.git/log/), [resolved bugs](https://bugs.eclipse.org/bugs/buglist.cgi?bug_status=RESOLVED&resolution=---&resolution=FIXED&product=Equinox&product=Platform&query_format=advanced&order=changeddate%20DESC)
+    * **Platform** 4.23→**4.24**: [Eclipse 4.24 - New and Noteworthy - Platform and Equinox](https://www.eclipse.org/eclipse/news/4.24/platform.php) ([log](https://github.com/eclipse-platform/www.eclipse.org-eclipse-news/commits/master/4.24/platform.html)), [plan](https://www.eclipse.org/projects/project-plan.php?planurl=http://www.eclipse.org/eclipse/development/plans/eclipse_project_plan_4_24.xml#themes_and_priorities), [Git](https://github.com/eclipse-platform/eclipse.platform.ui/commits/master), [resolved bugs](https://bugs.eclipse.org/bugs/buglist.cgi?bug_status=RESOLVED&resolution=---&resolution=FIXED&product=Equinox&product=Platform&query_format=advanced&order=changeddate%20DESC)
     * (Marketplace Client (MPC) 1.9.2→**1.9.3**: [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=MPC&query_format=advanced&order=changeddate%20DESC), [Git](https://git.eclipse.org/c/mpc/org.eclipse.epp.mpc.git/log/))
     * (Eclipse User Storage 2.0: [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=USSSDK&query_format=advanced&order=changeddate%20DESC), [Git](https://git.eclipse.org/c/usssdk/org.eclipse.usssdk.git/log/))
     * (Mylyn WikiText 3.0.41→**3.0.42**: (Markdown editor, etc.): [Git](https://git.eclipse.org/c/mylyn/org.eclipse.mylyn.docs.git/log/))
@@ -55,7 +55,7 @@
 
 ### Features to show
 
-* **Java [📽️](https://youtu.be/GnNnQY5ujFg?t=16s)**
+* **Java [📽️](https://youtu.be/zDJtVYAJwyY?t=16s)**
     * [Java 18 support](https://www.eclipse.org/eclipse/news/4.24/jdt.php#Java_18)
         * All Java [IDE packages shipped with Java 17](https://git.eclipse.org/c/epp/org.eclipse.epp.packages.git/commit/?id=c79b66ba2004861ad90596e51ab299ce8888ab99) (including [Scout](https://git.eclipse.org/c/epp/org.eclipse.epp.packages.git/commit/?id=3b9200281029a3407487da5a191a80a334ad28ff)), so a Java 18 JDK has to be configured in the preferences _Java > Installed JREs_
         * Code Snippets in Java API Documentation
@@ -74,7 +74,7 @@
     * Debug:
         * ([_Java Stack Trace Console_: support for Java stack traces copied from _Debug_ view (via _Copy Stack_ action)](https://www.eclipse.org/eclipse/news/4.24/jdt.php#debug-stack))
     * (Gradle: [_New Gradle Project_ for a Gradle version > 6.6.1 no longer requires running Eclipse with Java 11](https://github.com/eclipse/buildship/issues/1077), but [still creates two projects, one with the chosen name and a nested `lib` project](https://github.com/eclipse/buildship/issues/1118) (so the following workaround has still to be used to create a Gradle > 6.6.1 project without a nested `lib` project: _New Gradle Project_ with _Specific Gradle version_ 6.6.1 and _Java home_ of a Java 11 JDK and then in `build.gradle` change `id 'java-library'` to `id 'application'` to keep the simple project structure when in _Project > Properties: Gradle_ choosing a higher Gradle version))
-* **General/Platform [📽️](https://youtu.be/GnNnQY5ujFg?t=475s)**
+* **General/Platform [📽️](https://youtu.be/zDJtVYAJwyY?t=475s)**
     * ([Welcome screen will not hide main toolbar anymore](https://www.eclipse.org/eclipse/news/4.24/platform.php#welcomescreen))
     * [New multi selection commands](https://www.eclipse.org/eclipse/news/4.24/platform.php#multi-select-commands) (no default key bindings):
         * _Add all matches to multi-selection_ (e.g. Ctrl+Alt+Shift+K)
@@ -98,12 +98,12 @@
         * [Faster _Console_](https://github.com/eclipse-platform/eclipse.platform.debug/commit/a31baf97eda1ae062ead1db1215742e2be6b51e0) ([example](https://bugs.eclipse.org/bugs/show_bug.cgi?id=575275#c1))
         * ([Faster sorting of markers](https://github.com/eclipse-platform/eclipse.platform.ui/issues/53))
         * ([Equinox: Improve performance for operations that modify framework state](https://github.com/eclipse-equinox/equinox.framework/commit/fa10a40b86d58b54fba2789bf9794c5795053f62))
-* **Git [📽️](https://youtu.be/GnNnQY5ujFg?t=730s)**
+* **Git [📽️](https://youtu.be/zDJtVYAJwyY?t=730s)**
     * _Git Staging_ view:
         * [_Push Settings_ button](https://wiki.eclipse.org/EGit/New_and_Noteworthy/6.2#Git_Staging_View)
         * [Support for `core.commentChar`](https://wiki.eclipse.org/EGit/New_and_Noteworthy/6.2#Commit_Messages)
         * [Support of config's `core.commentChar`](https://wiki.eclipse.org/EGit/New_and_Noteworthy/6.2#Commit_Messages) (see [Git documentation](https://git-scm.com/docs/git-config#Documentation/git-config.txt-corecommentChar))
-* **Web [📽️](https://youtu.be/GnNnQY5ujFg?t=828)**
+* **Web [📽️](https://youtu.be/zDJtVYAJwyY?t=828)**
     * JavaScript/TypeScript:
         * [More syntax and binding errors](https://devblogs.microsoft.com/typescript/announcing-typescript-4-6/#more-syntax-and-binding-errors-in-javascript) ([examples](https://github.com/microsoft/TypeScript/blob/main/tests/baselines/reference/plainJSGrammarErrors.js))
         * ([Always receive grammar and binding errors](https://devblogs.microsoft.com/typescript/announcing-typescript-4-6/#javascript-files-always-receive-grammar-and-binding-errors))
