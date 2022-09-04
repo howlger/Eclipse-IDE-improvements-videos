@@ -1,4 +1,4 @@
-set IDE=java-2022-06
+set IDE=jee-2022-09
 set REPO=sample
 
 set ECLIPSE_DIR=%USERPROFILE%\eclipse\%IDE%
@@ -10,8 +10,8 @@ set REPO_DIR=%USERPROFILE%\git\%REPO%
 set REPO_ZIP=%USERPROFILE%\git\%REPO%.7z
 
 :: only for Eclipse 2022-06
-start C:\Users\Howlger\eclipse-installer\eclipse-inst.exe
-echo|set/p=C:\Program Files\AdoptOpenJDK\jdk-18.0.1+10|clip
+::start C:\Users\Howlger\eclipse-installer\eclipse-inst.exe
+::echo|set/p=C:\Program Files\AdoptOpenJDK\jdk-18.0.1+10|clip
 
 dir "%ECLIPSE_DIR%\p2"
 
