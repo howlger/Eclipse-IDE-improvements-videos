@@ -59,34 +59,35 @@
     * [Java 19 support via Marketplace](https://marketplace.eclipse.org/content/java-19-support-eclipse-2022-09-425)
         * By the way, Eclipse 2022-09 requires Java 17 and is shipped with latest Java 17(.0.4)
     * Cleanups:
-        * [_Java Feature > Java 14 > Convert to switch expression where possible_ improved](https://www.eclipse.org/eclipse/news/4.25/jdt.php#convert-to-switch-expression): if all cases either end in a return statement or a throw of an exception, then `return switch(...) { ... }` (in the past, only if all cases end in an assignment of the same variable or a throw of an exception)
-        * [_Java Feature > Java 5 > Convert to enhanced 'for' loops_ improved](https://www.eclipse.org/eclipse/news/4.25/jdt.php#while-to-enhanced-for) to replace also _while_ loops with _for_ loops
-        * [New buttons](https://github.com/eclipse-jdt/eclipse.jdt.ui/pull/162):
+        * [Dialog with new buttons](https://github.com/eclipse-jdt/eclipse.jdt.ui/pull/162):
             * Per tab: _Select All_ and _Deselect All_
             * At the bottom: _Restore Defaults_ and _Reset Profile_
+        * [_Java Feature > Java 14 > Convert to switch expression_ improved](https://www.eclipse.org/eclipse/news/4.25/jdt.php#convert-to-switch-expression): if all cases either end in a return statement or a throw of an exception, then `return switch(...) { ... }` (in the past, only if all cases end in an assignment of the same variable or a throw of an exception)
+        * [_Java Feature > Java 5 > Convert to enhanced 'for' loops_ improved](https://www.eclipse.org/eclipse/news/4.25/jdt.php#while-to-enhanced-for) to simplify also _while_ loops with an iterator to _for-each_ loops
     * [_New JUnit Test Suite_ dialog also for JUnit 5](https://www.eclipse.org/eclipse/news/4.25/jdt.php#junit5-test-suite-wizard-support)
-    * [_New Java Project_ dialog with module name and option for comment instead of separate dialog](https://github.com/eclipse-jdt/eclipse.jdt.ui/issues/59)
-    * Debug:
-        * [Double click in "All References and "All Instances" pop-up to navigate to Type](https://www.eclipse.org/eclipse/news/4.25/jdt.php#doubleclick-in-debug-popups)
-    * ([Performance](https://github.com/search?utf8=%E2%9C%93&q=performance+OR+speed+OR+faster+org%3Aeclipse-jdt+committer-date%3A2022-06-05..2022-09-10&s=committer-date&o=desc&type=Commits))
+    * ([_New Java Project_ dialog with module name and option for comment instead of separate dialog](https://github.com/eclipse-jdt/eclipse.jdt.ui/issues/59))
+    * (Debug:)
+        * ([Double click in _All References_ pop-up and _All Instances_ pop-up navigates to the type](https://www.eclipse.org/eclipse/news/4.25/jdt.php#doubleclick-in-debug-popups) (in the past, double click was ignored in those pop-ups))
+    * ([Performance](https://github.com/search?utf8=%E2%9C%93&q=performance+OR+speed+OR+faster+org%3Aeclipse-jdt+committer-date%3A2022-06-05..2022-09-10&s=committer-date&o=desc&type=Commits):)
        * (Performance test results tables are back on download page, e.g. for [4.25RC2](https://download.eclipse.org/eclipse/downloads/drops4/S-4.25RC2-202208311800/performance/performance.php))
-* **Maven <!-- [📽️](https://youtu.be/zDJtVYAJwyY?t=16s) -->**
-    * [Autocompletion for directory/file based properties](https://github.com/eclipse/lemminx-maven/issues/292), e.g. `<parent><relativePath>../|</relativePath>`
-    * [Annotation processors support](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#inclusion-of-m2e-apt-plugins-for-annotation-processors) (in the past, JBoss Tools m2e-apt plugins have been required to be installed for that)
-    * [Maven archiver support](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#inclusion-of-maven-archiver-connector) (in the past, not shipped by default; now in [m2e core](https://github.com/eclipse-m2e/m2e-core/tree/master/org.eclipse.m2e.mavenarchiver))
-    * [Colored Maven log in _Console_ view](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#support-for-colored-maven-console-printouts) (requires ANSI support to be enabled: see below)
+    * Maven:
+        * [Autocompletion for directory/file based properties](https://github.com/eclipse/lemminx-maven/issues/292), e.g. `<parent><relativePath>../|</relativePath>` or `<module>../|</module>`
+        * [Maven archiver support](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#inclusion-of-maven-archiver-connector) (in the past, not shipped by default; now in [m2e core](https://github.com/eclipse-m2e/m2e-core/tree/master/org.eclipse.m2e.mavenarchiver)): creates `META-INF/MANIFEST.MF` based on the `pom.xml`'s `maven-jar-plugin` configuration
+        * [Annotation processors support](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#inclusion-of-m2e-apt-plugins-for-annotation-processors) (formally [JBoss Tools m2e-apt](https://github.com/jbosstools/m2e-apt)): disabled by default, can be enabled in the preferences _Maven > Annotation Processing_ or in `pom.xml` via the property `<m2e.apt.activation>jdt_apt</m2e.apt.activation>`; when enabled, _Project > Properties: Java Compiler > Annotation Processing_ will be automatically configured
+        * (Embedded Maven updated from 3.8.4 to the latest version 3.8.6)
+        * [Colored Maven log in _Console_ view](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#support-for-colored-maven-console-printouts) (requires ANSI support to be enabled: see below)
 * **General/Platform <!-- [📽️](https://youtu.be/zDJtVYAJwyY?t=475s) -->**
-    * [Support for ANSI escape codes in Console](https://www.eclipse.org/eclipse/news/4.25/platform.php#debug-ansi-support): preferences _Run/Debug > Console > ANSI Support_
+    * [Support for ANSI escape codes in Console](https://www.eclipse.org/eclipse/news/4.25/platform.php#debug-ansi-support): preferences _Run/Debug > Console > ANSI Support_ (formerly [_ANSI Escape in Console_](https://marketplace.eclipse.org/content/ansi-escape-console) plugin by [Mihai Nita](https://github.com/mihnita))
     * [System encoding for Console](https://www.eclipse.org/eclipse/news/4.25/platform.php#debug-system-encoding): in launch configuration in _Common_ tab
-    * [Preference: _Enable word wrap when opening an editor_](https://www.eclipse.org/eclipse/news/4.25/platform.php#enable-word-wrap-on-open) in preferences _General > Editors > Text Editors_
-    * [Preference: missing project encoding severity](https://www.eclipse.org/eclipse/news/4.25/platform.php#specify-project-encoding-severity) in preferences _General > Workspace_
-    * [UI](https://github.com/search?utf8=%E2%9C%93&q=dark+OR+light+OR+theme+OR+layout+org%3Aeclipse-platform+org%3Aeclipse-jdt+committer-date%3A2022-06-05..2022-09-10&s=committer-date&type=Commits):
-        * [Forms with default background color](https://www.eclipse.org/eclipse/news/4.25/platform.php#form-no-gradients)
-        * [Selected CTabFolder highlighting](https://www.eclipse.org/eclipse/news/4.25/platform.php#CTabFolder-highlightBar)
-        * [Less usage of icons in user confirmation dialogs](https://www.eclipse.org/eclipse/news/4.25/platform.php#less-icons-in-user-dialogs)
-        * ([System theme removed](https://github.com/eclipse-platform/eclipse.platform.ui/commit/9328b2d43cea202deb96f1ce88d73dd39acaa99d))
-    * [Performance](https://github.com/search?utf8=%E2%9C%93&q=performance+OR+speed+OR+faster+org%3Aeclipse-equinox+org%3Aeclipse-platform+committer-date%3A2022-06-05..2022-09-10&s=committer-date&o=desc&type=Commits)
+    * [Preference _General > Editors > Text Editors_: _Enable word wrap when opening an editor_](https://www.eclipse.org/eclipse/news/4.25/platform.php#enable-word-wrap-on-open) (word wrapping can be enabled/disabled per editor)
+    * [Preference _General > Workspace_: missing project encoding severity](https://www.eclipse.org/eclipse/news/4.25/platform.php#specify-project-encoding-severity) in preferences
+    * [Performance](https://github.com/search?utf8=%E2%9C%93&q=performance+OR+speed+OR+faster+org%3Aeclipse-equinox+org%3Aeclipse-platform+committer-date%3A2022-06-05..2022-09-10&s=committer-date&o=desc&type=Commits):
         * [Faster _File Search_](https://github.com/eclipse-platform/eclipse.platform.text/commit/e4fa8d9b12f5229ded1eed8540ddc10f45fe81d2)
+    * ([UI](https://github.com/search?utf8=%E2%9C%93&q=dark+OR+light+OR+theme+OR+layout+org%3Aeclipse-platform+org%3Aeclipse-jdt+committer-date%3A2022-06-05..2022-09-10&s=committer-date&type=Commits):)
+        * ([Selected CTabFolder highlighting](https://www.eclipse.org/eclipse/news/4.25/platform.php#CTabFolder-highlightBar))
+        * ([Forms with default background color](https://www.eclipse.org/eclipse/news/4.25/platform.php#form-no-gradients))
+        * ([Less usage of icons in user confirmation dialogs](https://www.eclipse.org/eclipse/news/4.25/platform.php#less-icons-in-user-dialogs))
+        * ([System theme removed](https://github.com/eclipse-platform/eclipse.platform.ui/commit/9328b2d43cea202deb96f1ce88d73dd39acaa99d))
 * (**Git <!-- [📽️](https://youtu.be/zDJtVYAJwyY?t=730s) -->**)
     * (_Git Staging_ view: [Show `core.commentChar` in a tooltip](https://git.eclipse.org/c/egit/egit.git/commit/?id=b8501646b447f0c7b0f7dc73569bc9e654ae58fa))
 * **(Under development)**
