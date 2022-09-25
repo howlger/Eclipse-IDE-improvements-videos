@@ -14,7 +14,7 @@
 [2019-06](https://github.com/howlger/Eclipse-IDE-improvements-videos/tree/2019-06)
 </sup>
 
-# +++ Work in progress (for September 14, 2022) +++<br> Eclipse IDE 2022-09 Improvements Video
+# [Eclipse IDE 2022-09 Improvements Video](https://youtu.be/eEXvOjtauxI)
 
 * [September 14, 2022](https://calendar.google.com/calendar/event?eid=MWlubzM1cWdzZjU2aHJnZTgxc2hscmsxb2ogZ2NoczdubTRudnBtODM3NDY5ZGRqOXRqbGtAZw&ctz=Europe/Berlin) ([calendar](https://calendar.google.com/calendar/embed?src=gchs7nm4nvpm837469ddj9tjlk@group.calendar.google.com&ctz=Europe/Berlin)) - [66 projects](https://projects.eclipse.org/releases/2022-09) ([-1 +0 → 66](projects_diff.txt)) - [wiki](https://wiki.eclipse.org/Category:SimRel-2022-09) - [website](https://eclipse.org/eclipseide/2022-09) ([New & Noteworthy](https://eclipse.org/eclipseide/2022-09/noteworthy)) - [splash screen](https://bugs.eclipse.org/bugs/show_bug.cgi?id=575781)
 * Builds: [latest unreleased](https://download.eclipse.org/technology/epp/staging/) → [released](https://download.eclipse.org/technology/epp/downloads/release/2022-09/) ([Jenkins](https://ci.eclipse.org/packaging/job/simrel.epp-tycho-build), [log](https://git.eclipse.org/c/simrel/org.eclipse.simrel.build.git/log/), update sites: [staging](https://download.eclipse.org/staging/2022-09), [release](http://download.eclipse.org/releases/2022-09))
@@ -55,7 +55,7 @@
 
 ### Features to show
 
-* **Java <!-- [📽️](https://youtu.be/zDJtVYAJwyY?t=16s) -->**
+* **Java [📽️](https://youtu.be/eEXvOjtauxI?t=16s)**
     * [Java 19 support via Marketplace](https://marketplace.eclipse.org/content/java-19-support-eclipse-2022-09-425)
         * By the way, Eclipse 2022-09 requires Java 17 and is shipped with latest Java 17(.0.4)
     * Cleanups:
@@ -70,13 +70,13 @@
         * ([Double click in _All References_ pop-up and _All Instances_ pop-up navigates to the type](https://www.eclipse.org/eclipse/news/4.25/jdt.php#doubleclick-in-debug-popups) (in the past, double click was ignored in those pop-ups))
     * ([Performance](https://github.com/search?utf8=%E2%9C%93&q=performance+OR+speed+OR+faster+org%3Aeclipse-jdt+committer-date%3A2022-06-05..2022-09-10&s=committer-date&o=desc&type=Commits):)
        * (Performance test results tables are back on download page, e.g. for [4.25RC2](https://download.eclipse.org/eclipse/downloads/drops4/S-4.25RC2-202208311800/performance/performance.php))
-    * Maven:
+    * Maven [📽️](https://youtu.be/eEXvOjtauxI?t=159s):
         * [Autocompletion for directory/file based properties](https://github.com/eclipse/lemminx-maven/issues/292), e.g. `<parent><relativePath>../|</relativePath>` or `<module>../|</module>`
         * [Maven archiver support](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#inclusion-of-maven-archiver-connector) (in the past, not shipped by default; now in [m2e core](https://github.com/eclipse-m2e/m2e-core/tree/master/org.eclipse.m2e.mavenarchiver)): creates `META-INF/MANIFEST.MF` based on the `pom.xml`'s `maven-jar-plugin` configuration
         * [Annotation processors support](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#inclusion-of-m2e-apt-plugins-for-annotation-processors) (formally [JBoss Tools m2e-apt](https://github.com/jbosstools/m2e-apt)): disabled by default, can be enabled in the preferences _Maven > Annotation Processing_ or in `pom.xml` via the property `<m2e.apt.activation>jdt_apt</m2e.apt.activation>`; when enabled, _Project > Properties: Java Compiler > Annotation Processing_ will be automatically configured
         * (Embedded Maven updated from 3.8.4 to the latest version 3.8.6)
         * [Colored Maven log in _Console_ view](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#support-for-colored-maven-console-printouts) (requires ANSI support to be enabled: see below)
-* **General/Platform <!-- [📽️](https://youtu.be/zDJtVYAJwyY?t=475s) -->**
+* **General/Platform [📽️](https://youtu.be/eEXvOjtauxI?t=323s)**
     * [Support for ANSI escape codes in Console](https://www.eclipse.org/eclipse/news/4.25/platform.php#debug-ansi-support): preferences _Run/Debug > Console > ANSI Support_ (formerly [_ANSI Escape in Console_](https://marketplace.eclipse.org/content/ansi-escape-console) plugin by [Mihai Nita](https://github.com/mihnita))
     * [System encoding for Console](https://www.eclipse.org/eclipse/news/4.25/platform.php#debug-system-encoding): in launch configuration in _Common_ tab
     * [Preference _General > Editors > Text Editors_: _Enable word wrap when opening an editor_](https://www.eclipse.org/eclipse/news/4.25/platform.php#enable-word-wrap-on-open) (word wrapping can be enabled/disabled per editor)
@@ -88,7 +88,7 @@
         * ([Forms with default background color](https://www.eclipse.org/eclipse/news/4.25/platform.php#form-no-gradients))
         * ([Less usage of icons in user confirmation dialogs](https://www.eclipse.org/eclipse/news/4.25/platform.php#less-icons-in-user-dialogs))
         * ([System theme removed](https://github.com/eclipse-platform/eclipse.platform.ui/commit/9328b2d43cea202deb96f1ce88d73dd39acaa99d))
-* (**Git <!-- [📽️](https://youtu.be/zDJtVYAJwyY?t=730s) -->**)
+* (**Git**)
     * (_Git Staging_ view: [Show `core.commentChar` in a tooltip](https://git.eclipse.org/c/egit/egit.git/commit/?id=b8501646b447f0c7b0f7dc73569bc9e654ae58fa))
 * **(Under development)**
     * ([Preferences: _Install/Update > Trust_](https://www.eclipse.org/eclipse/news/4.23/platform.php#manage-trusted-pgp-keys) (work in progress; [_rollout for 2022-06_](https://gitlab.eclipse.org/eclipse-wg/ide-wg/ide-wg.eclipse.org/-/issues/11)))

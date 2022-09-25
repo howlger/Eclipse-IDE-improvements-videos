@@ -1,5 +1,9 @@
+package com.example;
+
 class ToSwitchExpression {
-	enum Level { A, B, C, D, E; }
+	enum Level {
+		A, B, C, D, E;
+	}
 
 	// as in the past ...
 	int getScoring(Level level, int bonus) {

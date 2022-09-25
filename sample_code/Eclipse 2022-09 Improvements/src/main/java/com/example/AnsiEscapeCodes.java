@@ -1,3 +1,4 @@
+package com.example;
 class AnsiEscapeCodes {
     private static final String ESCAPE = "\u001b[";
     private static final String BOLD = ESCAPE + "1;";
