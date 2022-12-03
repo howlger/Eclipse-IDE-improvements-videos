@@ -1,1 +1,1 @@
-- Eclipse Maven Integration for Web Tools Platform	1.4.3
+- Eclipse Accessibility Tools Framework	1.5.1

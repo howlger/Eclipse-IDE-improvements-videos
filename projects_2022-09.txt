@@ -16,7 +16,7 @@ Eclipse EGit™: Git Integration for Eclipse	6.3.0
 Eclipse Embedded CDT (C/C++ Development Tools)	6.3.0
 Eclipse EMF Client Platform	1.26.2
 Eclipse EMF Compare	3.3.10
-Eclipse EMF Parsley	1.13.0
+Eclipse EMF Parsley™	1.13.0
 Eclipse EMF Services	1.13.2
 Eclipse EMF™	2.31.0
 Eclipse Extended Editing Framework (EEF)	2.1.5
@@ -24,7 +24,7 @@ Eclipse GMF Runtime™	1.15.2
 Eclipse Graphical Editing Framework™ (GEF)	5.4.0 (2022-06)
 Eclipse Graphiti™	0.19.0
 Eclipse JGit™: Java implementation of Git	6.3.0
-Eclipse JustJ	1.1
+Eclipse JustJ™	1.1
 Eclipse Linux Tools	8.8.0
 Eclipse LSP4E	0.20.6
 Eclipse LSP4J™	0.15.0
@@ -59,7 +59,7 @@ Eclipse Trace Compass™	8.1.0
 Eclipse User Storage Service SDK	1.2.2
 Eclipse VIATRA™	2.7.1
 Eclipse Web Tools Platform Project	3.27
-Eclipse Wild Web Developer	0.15.0
+Eclipse Wild Web Developer™	0.15.0
 Eclipse WindowBuilder	1.9.8
 Eclipse Xpand	2.2.0
 Eclipse Xtext™	2.28.0
