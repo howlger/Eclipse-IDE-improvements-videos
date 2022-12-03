@@ -90,13 +90,19 @@
     * ([Performance](https://github.com/search?utf8=%E2%9C%93&q=performance+OR+speed+OR+fast+OR+faster+OR+slow+org%3Aeclipse-platform+committer-date%3A2022-09-05..2022-12-10&s=committer-date&o=desc&type=Commits))
     * (MPC uses HTTP**S** only)
 * **Web <!--[📽️](https://youtu.be/eEXvOjtauxI?t=16s)-->**
-    * XML element auto-closing also when not using content assist
-    * XML formatting preferences: _XML (Wild Web Developer) > Formatting_
-    * CSS validation preferences: _CSS (Wild Web Developer) > Validation_
+    * XML:
+        * Editing: Element auto-closing when typing `>`, even without using content assist; adding `/` before `>` removes end tag
+        * Preferences: _XML (Wild Web Developer) > Formatting_
+        * _Bind to schema/grammar..._ link at the top of unbound XML files: enabled by default; can be disabled in the preferences _XML (Wild Web Developer) > CodeLense_
+        * [RELAX NG support](https://github.com/eclipse/lemminx/issues/828) ([samples](https://github.com/eclipse/lemminx/tree/main/org.eclipse.lemminx/src/test/resources/relaxng)):
+            * [XML syntax (`*.rng`)](https://en.wikipedia.org/wiki/RELAX_NG#XML_syntax): [`<a:documentation>...</a:documentation>`](https://relaxng.org/tutorial-20011203.html#IDA1OZR) shown as hover
+            * [XML syntax (`*.rnc`)](https://en.wikipedia.org/wiki/RELAX_NG#Compact_syntax)
+    * HTML: Preferences _HTML (Wild Web Developer)_ with _Formating_, etc.
+    * CSS/SCSS/LESS: Preferences _CSS (Wild Web Developer)_ with _Validation_, etc.
     * TypeScript 4.9, [with e.g. `satisfies` operator](https://devblogs.microsoft.com/typescript/announcing-typescript-4-9-beta/#the-satisfies-operator)
     * (YSON/YAML schemas: Preferences _General > Schema Associations_)
     * (YAML: Preferences _YAML (Wild Web Developer) > Format_)
-    * (DTD syntax coloring improved)
+    * (DTD: Syntax coloring improved)
 * **Git <!--[📽️](https://youtu.be/eEXvOjtauxI?t=16s)-->**
     * _Git Staging_ view: [_Compare with each other_](https://wiki.eclipse.org/EGit/New_and_Noteworthy/6.4#Compare_with_each_other_in_Staging_View)
     * ([Show blame menu item in ruler only if not showing blame already](https://git.eclipse.org/c/egit/egit.git/commit/?id=62fc9d7f81bc7b97d443b0d42770cba53d9ac7fc)
