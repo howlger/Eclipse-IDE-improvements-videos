@@ -1,4 +1,4 @@
-class ExtractLocalVariableAndQuickAssist {
+class ExtractLocalVariable {
 
 	
 

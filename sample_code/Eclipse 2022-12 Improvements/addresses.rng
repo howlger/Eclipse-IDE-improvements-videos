@@ -1,0 +1,21 @@
+<grammar xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
+         xmlns:a="http://www.example.com/annotation">
+	<start>
+		<element name="addresses">
+			<zeroOrMore>
+				<element name="card">
+					<element name="name">
+						<a:documentation>
+							Name displayed
+							(see &lt;a href="https://example.com">here&lt;/a>)
+						</a:documentation>
+						<data type="string" />
+					</element>
+					<element name="email">
+						<data type="anyURI" />
+					</element>
+				</element>
+			</zeroOrMore>
+		</element>
+	</start>
+</grammar>

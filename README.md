@@ -15,7 +15,7 @@
 [2019-06](https://github.com/howlger/Eclipse-IDE-improvements-videos/tree/2019-06)
 </sup>
 
-# +++ Work in progress (for December 7, 2022) +++<br> Eclipse IDE 2022-12 Improvements Video
+# [Eclipse IDE 2022-12 Improvements Video](https://youtu.be/jJau4kUoLrA)
 
 * [December 7, 2022](https://calendar.google.com/calendar/event?eid=N2t1M2FmNWM1dnRianM1MWFmZG44dTAxYjkgZ2NoczdubTRudnBtODM3NDY5ZGRqOXRqbGtAZw&ctz=Europe/Berlin) ([calendar](https://calendar.google.com/calendar/embed?src=gchs7nm4nvpm837469ddj9tjlk@group.calendar.google.com&ctz=Europe/Berlin)) - [65 projects](https://projects.eclipse.org/releases/2022-12) ([-1 +0 → 65](projects_diff.txt)) - [wiki](https://wiki.eclipse.org/Category:SimRel-2022-12) - [website](https://eclipse.org/eclipseide/2022-12) ([New & Noteworthy](https://eclipse.org/eclipseide/2022-12/noteworthy)) - [splash screen](https://bugs.eclipse.org/bugs/show_bug.cgi?id=575781)
 * Builds: [latest unreleased](https://download.eclipse.org/technology/epp/staging/) → [released](https://download.eclipse.org/technology/epp/downloads/release/2022-12/) ([Jenkins](https://ci.eclipse.org/packaging/job/simrel.epp-tycho-build), [log](https://git.eclipse.org/c/simrel/org.eclipse.simrel.build.git/log/), update sites: [staging](https://download.eclipse.org/staging/2022-12), [release](http://download.eclipse.org/releases/2022-12))
@@ -56,32 +56,32 @@
 
 ### Features to show
 
-* **Java <!--[📽️](https://youtu.be/eEXvOjtauxI?t=16s)-->**
+* **Java [📽️](https://youtu.be/jJau4kUoLrA?t=16s)**
     * [Java 19 support](https://www.eclipse.org/eclipse/news/4.26/jdt.php#Java_19):
-        * JEP 405: Record Patterns (Preview)
+        * [JEP 405: Record Patterns (Preview)](https://openjdk.org/jeps/405)
             * e.g. `if (o instanceof Node(Object left, Object right)) ...`
             * Nested: `if (o instanceof Node(Object left, Node(Object rl, Object rr)) ...`
-        * JEP 427: Pattern Matching for switch (Third Preview):
+        * [JEP 427: Pattern Matching for switch (Third Preview)](https://openjdk.org/jeps/427):
             * As `instanceof` with optional binding, e.g. `case String s -> System.out.println("Hello " + s);`;
             * Optional `when` clause, e.g. `case String s when !s.isBlank() -> ...`;
         * Combination of JEP 405 + 427
-        * ... JEP 425: Virtual Threads (Preview) and other non-language changes (all as preview features)
+        * (... JEP 425: Virtual Threads (Preview) and other non-language changes (all as preview features))
     * Java editor:
+        * [Improved _Extract local variable_ refactoring](https://www.eclipse.org/eclipse/news/4.26/jdt.php#smarter-extract-local): takes preceding null check into account, e.g. `if (s == null || s.length()) ...`
         * [New quick assists (Ctrl+1) for classes with fields](https://www.eclipse.org/eclipse/news/4.26/jdt.php#new-class-assists):
             * Create getters and setters
             * Create hashCode() and equals() methods
             * Create toString() method
-        * [Improved _Extract local variable_ refactoring](https://www.eclipse.org/eclipse/news/4.26/jdt.php#smarter-extract-local): takes preceding null check into account, e.g. `if (s == null || s.length()) ...`
     * ([Performance](https://github.com/search?utf8=%E2%9C%93&q=performance+OR+speed+OR+faster+org%3Aeclipse-jdt+committer-date%3A2022-09-05..2022-12-10&s=committer-date&o=desc&type=Commits):)
         * ([Faster JUnit 4 and 5 test finders](https://github.com/eclipse-jdt/eclipse.jdt.ui/commit/cf5968f745bcae0f4cd3036dfcb009737b6d18e4))
-    * Maven <!--[📽️](https://youtu.be/eEXvOjtauxI?t=159s)-->:
+    * Maven [📽️](https://youtu.be/jJau4kUoLrA?t=218s):
         * [_Automatically update Maven projects configuration_ enabled by default](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#automatic-configuration-updates-of-maven-projects-enabled-by-default), e.g. when changing [compiler settings](https://stackoverflow.com/a/68058292/6505250), e.g. for `--add-exports java.base/sun.security.util=ALL-UNNAMED`
         * [Autocompletion for more directory/file based properties](https://github.com/eclipse/lemminx-maven/pull/297): for mojo parameters with `type=File` or name ending with `Directory`
         * [Managed version info on hover](https://github.com/eclipse/lemminx-maven/pull/298)
-        * [Performance and memory consumption improvements](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#performance-and-memory-consumption-improvements): [for large deeply nested multi-module projects, the build performance has been improved and the memory consumption has been reduced](https://github.com/eclipse-m2e/m2e-core/commit/281038aa6fdf411a8038e8c50ece86fa11bfe3eb)
+        * ([Performance and memory consumption improvements](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#performance-and-memory-consumption-improvements): [for large deeply nested multi-module projects, the build performance has been improved and the memory consumption has been reduced](https://github.com/eclipse-m2e/m2e-core/commit/281038aa6fdf411a8038e8c50ece86fa11bfe3eb))
         * ([Improved connectors for bnd-maven-plugin and maven-bundle-plugin](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#improved-connectors-for-bnd-maven-plugin-and-maven-bundle-plugin))
         * ([Console support for polyglot Maven projects and projects without Maven nature](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#console-support-for-polyglot-maven-projects-and-projects-without-maven-nature))
-* (**General/Platform <!--[📽️](https://youtu.be/eEXvOjtauxI?t=323s)-->**)
+* (**General/Platform <!--[📽️](https://youtu.be/jJau4kUoLrA?t=000s)-->**)
     * ([Ctrl+E: Prepend parent directories for file name collisions](https://github.com/eclipse-platform/eclipse.platform.ui/pull/302))
     * ([UI](https://github.com/search?utf8=%E2%9C%93&q=dark+OR+light+OR+theme+OR+layout+org%3Aeclipse-platform+org%3Aeclipse-jdt+committer-date%3A2022-09-05..2022-12-10&s=committer-date&type=Commits):)
         * (Dark theme:)
@@ -89,26 +89,25 @@
             * ([_Project > Properties: Resource > Linked Resources_](https://github.com/eclipse-platform/eclipse.platform.ui/commit/5c05000b06c4f17e9af8158b917643069ab79092))
     * ([Performance](https://github.com/search?utf8=%E2%9C%93&q=performance+OR+speed+OR+fast+OR+faster+OR+slow+org%3Aeclipse-platform+committer-date%3A2022-09-05..2022-12-10&s=committer-date&o=desc&type=Commits))
     * (MPC uses HTTP**S** only)
-* **Web <!--[📽️](https://youtu.be/eEXvOjtauxI?t=16s)-->**
+* **Web [📽️](https://youtu.be/jJau4kUoLrA?t=302s)**
     * XML:
         * Editing: Element auto-closing when typing `>`, even without using content assist; adding `/` before `>` removes end tag
         * Preferences: _XML (Wild Web Developer) > Formatting_
         * _Bind to schema/grammar..._ link at the top of unbound XML files: enabled by default; can be disabled in the preferences _XML (Wild Web Developer) > CodeLense_
         * [RELAX NG support](https://github.com/eclipse/lemminx/issues/828) ([samples](https://github.com/eclipse/lemminx/tree/main/org.eclipse.lemminx/src/test/resources/relaxng)):
             * [XML syntax (`*.rng`)](https://en.wikipedia.org/wiki/RELAX_NG#XML_syntax): [`<a:documentation>...</a:documentation>`](https://relaxng.org/tutorial-20011203.html#IDA1OZR) shown as hover
-            * [XML syntax (`*.rnc`)](https://en.wikipedia.org/wiki/RELAX_NG#Compact_syntax)
+            * [Compact syntax (`*.rnc`)](https://en.wikipedia.org/wiki/RELAX_NG#Compact_syntax)
     * HTML: Preferences _HTML (Wild Web Developer)_ with _Formating_, etc.
     * CSS/SCSS/LESS: Preferences _CSS (Wild Web Developer)_ with _Validation_, etc.
     * TypeScript 4.9, [with e.g. `satisfies` operator](https://devblogs.microsoft.com/typescript/announcing-typescript-4-9-beta/#the-satisfies-operator)
     * (YSON/YAML schemas: Preferences _General > Schema Associations_)
     * (YAML: Preferences _YAML (Wild Web Developer) > Format_)
     * (DTD: Syntax coloring improved)
-* **Git <!--[📽️](https://youtu.be/eEXvOjtauxI?t=16s)-->**
+* **Git [📽️](https://youtu.be/jJau4kUoLrA?t=588s)**
     * _Git Staging_ view: [_Compare with each other_](https://wiki.eclipse.org/EGit/New_and_Noteworthy/6.4#Compare_with_each_other_in_Staging_View)
     * ([Show blame menu item in ruler only if not showing blame already](https://git.eclipse.org/c/egit/egit.git/commit/?id=62fc9d7f81bc7b97d443b0d42770cba53d9ac7fc)
 * **(Under development)**
     * ([Debug: show values inline](https://www.eclipse.org/eclipse/news/4.23/platform.php#inline-debug-values) (not yet supported in Java, JavaScript, etc.))
-    * ([XML CodeLens preference page](https://github.com/eclipse/wildwebdeveloper/issues/636) ← [not working yet](https://github.com/eclipse/wildwebdeveloper/issues/644))
     * ([Syntax highlighting and more for various languages/formats via the tm4e language pack feature](https://github.com/eclipse/tm4e/pull/374))
 
 ## Publish

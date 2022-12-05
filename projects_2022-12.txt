@@ -13,7 +13,7 @@ Eclipse EclEmma	3.1.6
 Eclipse Ecore Tools	3.4.0
 Eclipse EGit™: Git Integration for Eclipse	6.4.0
 Eclipse Embedded CDT (C/C++ Development Tools)	6.3.1
-Eclipse EMF Client Platform	1.27.0
+Eclipse EMF Client™ Platform	1.27.0
 Eclipse EMF Compare	3.3.20
 Eclipse EMF Parsley™	1.14.0
 Eclipse EMF Services	1.13.2
@@ -35,7 +35,7 @@ Eclipse Memory Analyzer™	1.13.0
 Eclipse Modeling Workflow Engine™	2.14.0
 Eclipse MoDisco	2021-12 (1.5.2)
 Eclipse Mylyn	Docs 3.0.42
-Eclipse OCL™ (Object Constraint Language)	2022-09 (6.18.0)
+Eclipse OCL™ (Object Constraint Language)	2022-12 (6.18.0)
 Eclipse Oomph™	1.27.0
 Eclipse Packaging Project™	4.26.0
 Eclipse Papyrus™	6.3.0

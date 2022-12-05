@@ -6,31 +6,42 @@
 	<properties>
 
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-			<maven.compiler.source>17</maven.compiler.source>
-			<maven.compiler.target>17</maven.compiler.target>
+			<maven.compiler.source>19</maven.compiler.source>
+			<maven.compiler.target>19</maven.compiler.target>
+			
 <!-- XML (Wild Web Developer):
 	 editing improvements + formatting preferences -->
 	</properties>
+	<repositories>
+		<repository>
+			<id>ecentral</id>
+			<url>https://raw.githubusercontent.com/jmini/ecentral/HEAD/repo</url>
+		</repository>
+	</repositories>
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>fr.jmini.ecentral</groupId>
+				<artifactId>eclipse-platform-dependencies</artifactId>
+				<version>4.25</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+	<dependencies>
+		<dependency>
+			<groupId>org.eclipse.jdt</groupId>
+			<artifactId>org.eclipse.jdt.core</artifactId>
+		</dependency>
+	</dependencies>
 	<build>
 		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.10.1</version>
-				<configuration>
-					<compilerArgs>
-						<arg>--add-exports</arg>
-						<arg>java.base/sun.security.util=ALL-UNNAMED</arg>
-					</compilerArgs>
-				</configuration>
-			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.22.2</version>
 				<configuration>
-					<includesFile>surefireIncludes.txt</includesFile>
-					<classesDirectory>target/classes-gen</classesDirectory>
 				</configuration>
 			</plugin>
 		</plugins>

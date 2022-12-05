@@ -1,4 +1,4 @@
-set IDE=java-2022-09
+set IDE=java-2022-12
 set REPO=sample
 
 set ECLIPSE_DIR=%USERPROFILE%\eclipse\%IDE%
@@ -11,7 +11,8 @@ set REPO_ZIP=%USERPROFILE%\git\%REPO%.7z
 
 :: only for Eclipse 2022-09
 ::start C:\Users\Howlger\eclipse-installer\eclipse-inst.exe
-echo|set/p=^^^<project.build.sourceEncoding^^^>UTF-8^^^</project.build.sourceEncoding^^^>|clip
+::echo|set/p=^^^<project.build.sourceEncoding^^^>UTF-8^^^</project.build.sourceEncoding^^^>|clip
+echo|set/p=C:\Program Files\Adoptium\jdk-19.0.1+10|clip
 
 dir "%ECLIPSE_DIR%\p2"
 
