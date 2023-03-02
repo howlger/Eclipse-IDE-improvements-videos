@@ -1,1 +1,0 @@
-- Eclipse Accessibility Tools Framework	1.5.1

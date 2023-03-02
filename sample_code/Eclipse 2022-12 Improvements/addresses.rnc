@@ -1,6 +1,0 @@
-element addresses {
-  element card {
-    element name { text },
-    element email { text }
-  }*
-}
