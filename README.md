@@ -58,6 +58,8 @@
 
 * **Java<!-- [📽️](https://youtu.be/jJau4kUoLrA?t=16s)-->**
     * Java 20 support via Marketplace?
+    * ([_Bytecode_ view](https://www.eclipse.org/eclipse/news/4.27/jdt.php#new-old-jdt-views) → included in the Eclipse SDK but not yet in any Java IDE package)
+    * ([Java AST _Abstract Syntax Tree_ view](https://www.eclipse.org/eclipse/news/4.27/jdt.php#new-old-jdt-views) (needs to be installed, e.g. [via Marketplace](https://marketplace.eclipse.org/content/ast-view)): shows the abstract syntax tree of the Eclipse compiler for Java (ecj) → helpful only if using ecj as framework/dependency, e.g. in JDT)
     * [Performance](https://github.com/search?utf8=%E2%9C%93&q=performance+OR+speed+OR+faster+org%3Aeclipse-jdt+committer-date%3A2022-12-05..2023-03-10&s=committer-date&o=desc&type=Commits):
         * ([Use meta index for reference search](https://github.com/eclipse-jdt/eclipse.jdt.core/pull/532))
         * [Faster compilation for parameterized types](https://github.com/eclipse-jdt/eclipse.jdt.core/issues/549), e.g. [`compile-perf.zip`](https://github.com/eclipse-jdt/eclipse.jdt.core/files/10041321/compile-perf.zip) _Clean_ >4min → 24s
@@ -75,26 +77,27 @@
         * ([New setting for sealed types](https://github.com/eclipse-jdt/eclipse.jdt.core/commit/7f2b6b230ae5f09345d2f0ebbddae00d9a72b9fe) ([UI](https://github.com/eclipse-jdt/eclipse.jdt.ui/commit/3adb1da52d57c2aa2e1a1edcfcf29640c3dd4ce3): _Line Wrapping > Wrapping Settings > Class Declarations > 'permits' clause_)
         * ([Support for record patterns](https://github.com/eclipse-jdt/eclipse.jdt.core/issues/264) (preview feature in Java [19](https://openjdk.org/jeps/405) and [20](https://openjdk.org/jeps/432)))
     * Maven<!-- [📽️](https://youtu.be/jJau4kUoLrA?t=218s)-->:
-        * [Ignore Test Sources and Resources compilation if `maven.test.skip=true` is specified](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#ignore-test-sources-and-resources-compilation-if-maventestskiptrue-is-specified)
+        * [With `<maven.test.skip>true</maven.test.skip>` `src/test/java` and `src/test/resources` become regular instead of source folders now](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#ignore-test-sources-and-resources-compilation-if-maventestskiptrue-is-specified)
         * No manual project configuration anymore in the following cases:
             * [Mojos without a mapping are now executed by default in incremental builds](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#mojos-without-a-mapping-are-now-executed-by-default-in-incremental-builds) ([**M**aven plain **O**ld **J**ava **O**bject](https://maven.apache.org/guides/plugin/guide-java-plugin-development.html#your-first-mojo))
             * [Configuration of Maven Execution JRE](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#configuration-of-maven-execution-jre) (see [commit](https://github.com/eclipse-m2e/m2e-core/commit/32dc6407c919bb8eb8217df4a3ccddff18ab1ed4))
         * ([Eclipse plugin development: in _Target Editor_, dialog to add or edit Maven dependencies updated](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#updated-dependency-editor))
+* **Web<!-- [📽️](https://youtu.be/jJau4kUoLrA?t=302s)-->**
+    * XML:
+        * [More formatting preferences: _XML (Wild Web Developer) > Formatting_](https://github.com/eclipse/wildwebdeveloper/commit/7c20109bf5e559367826ba66ba9ef596814e88d5): _Preserve new lines_ is what I missed in the past
+        * ([Quick fixes for complex types: _Insert all expected elements_ and _Insert only required elements_](https://github.com/eclipse/lemminx/issues/1218): [issues that have already been fixed after LemMinX 0.23.0](https://github.com/eclipse/lemminx/issues/1218#issuecomment-1190078320))
 * **General/Platform<!-- [📽️](https://youtu.be/jJau4kUoLrA?t=000s)-->**
     * [_Open Resource_ substring search instead of starts with](https://www.eclipse.org/eclipse/news/4.27/platform.php#open-resource-new-search-behavior): use prefix `>` for _starts with_ (old behavior)
     * [UI](https://github.com/search?utf8=%E2%9C%93&q=dark+OR+light+OR+theme+OR+layout+org%3Aeclipse-platform+org%3Aeclipse-jdt+committer-date%3A2022-12-05..2023-03-10&s=committer-date&type=Commits):
         * [Preferences: _General > Editors > Text Editors: Line spacing (extra % of font height)_](https://github.com/eclipse-platform/eclipse.platform.text/issues/98)
     * ([Performance](https://github.com/search?utf8=%E2%9C%93&q=performance+OR+speed+OR+fast+OR+faster+OR+slow+org%3Aeclipse-platform+committer-date%3A2022-12-05..2023-03-10&s=committer-date&o=desc&type=Commits):)
         * ([Faster Search & Replace](https://github.com/eclipse-platform/eclipse.platform.text/commit/8775ea8bd9a6d683d596da5d8d6c89bfd29e8406))
-* **Web<!-- [📽️](https://youtu.be/jJau4kUoLrA?t=302s)-->**
-    * XML:
-        * [More formatting preferences: _XML (Wild Web Developer) > Formatting_](https://github.com/eclipse/wildwebdeveloper/commit/7c20109bf5e559367826ba66ba9ef596814e88d5): _Preserve new lines_ is what I missed in the past
-        * ([Quick fixes for complex types: _Insert all expected elements_ and _Insert only required elements_](https://github.com/eclipse/lemminx/issues/1218): [issues that have already been fixed after LemMinX 0.23.0](https://github.com/eclipse/lemminx/issues/1218#issuecomment-1190078320))
 * (**Git<!-- [📽️](https://youtu.be/jJau4kUoLrA?t=588s)-->**: no changes in the UI (EGit), performance improvements in the underlying Java implementation of Git (JGit), but no scenarios found where this can be reproduced via EGit)
     * ([JGit: Commit-graph support](https://bugs.eclipse.org/bugs/show_bug.cgi?id=574368) ([supplemental data to speed up showing history and computing merge bases](https://git-scm.com/docs/commit-graph)): [if `core.commitGraph` and `gc.writeCommitGraph` are set to `true`, _Collect Garbage_ will (re)write `.git/objects/info/commit-graph`](https://git.eclipse.org/c/jgit/jgit.git/commit/?id=b082c58e0ff3e829071e90b47df022e77cd3dea2), e.g. [torvalds/linux.git](https://github.com/torvalds/linux.git) → [8x faster](https://bugs.eclipse.org/bugs/show_bug.cgi?id=574368#c1))
     * ([JGit: Faster fetching](https://git.eclipse.org/c/jgit/jgit.git/commit/?id=21e902dd7fa4ff53dc35fd7c48f8b5edc52f8eea))
     * ([JGit: Faster _Collect Garbage_](https://git.eclipse.org/c/jgit/jgit.git/commit/?id=cd3fc7a2995c06cf2425f51758094e039c938559))
 * **(Under development)**
+    * ([_Bytecode_ view](https://www.eclipse.org/eclipse/news/4.27/jdt.php#new-old-jdt-views) (not yet [included in all Java IDE packages](https://bugs.eclipse.org/bugs/show_bug.cgi?id=581619)): for advanced Java developers to explore the bytecode `*.class` files, including the compiled source code compiled by Eclipse's own Java compiler; hover or right-click _Open bytecode reference_ for more details)
     * ([Debug: show values inline](https://www.eclipse.org/eclipse/news/4.23/platform.php#inline-debug-values) (not yet supported in Java, JavaScript, etc.))
     * ([Syntax highlighting and more for various languages/formats via the tm4e language pack feature](https://github.com/eclipse/tm4e/pull/374))
 
