@@ -27,7 +27,7 @@
 
 * Java, Maven, Gradle
     * Java development tools (JDT) 4.26→**4.27**: [Eclipse 4.27 - New and Noteworthy - Java Development Tools](https://www.eclipse.org/eclipse/news/4.27/jdt.php) ([log](https://github.com/eclipse-platform/www.eclipse.org-eclipse-news/commits/master/4.27/jdt.html)), Git [core](https://github.com/eclipse-jdt/eclipse.jdt.core/commits/master) [UI](https://github.com/eclipse-jdt/eclipse.jdt.ui/commits/master)
-        * [Java 20](https://jdk.java.net/20/): [issues](https://github.com/eclipse-jdt/eclipse.jdt.core/milestone/20?closed=1), [examples](https://wiki.eclipse.org/Java20/Examples), [update site](https://download.eclipse.org/eclipse/updates/4.27-P-builds/P20230202-0830/), [Marketplace?](https://marketplace.eclipse.org/search/site/Java%252020)
+        * ([Java 20](https://jdk.java.net/20/): [issues](https://github.com/eclipse-jdt/eclipse.jdt.core/milestone/20?closed=1), [examples](https://wiki.eclipse.org/Java20/Examples), [update site](https://download.eclipse.org/eclipse/updates/4.27-P-builds/P20230202-0830/) → [Marketplace?](https://marketplace.eclipse.org/search/site/Java%252020): [not before the Java 21 release, being six days after the 2023-03 release](https://www.eclipse.org/lists/ide-dev/msg02124.html))
     * (EclEmma (Java code coverage) 3.1.6: [changes](https://www.eclemma.org/changes.html) ([JaCoCo](https://www.jacoco.org/jacoco/trunk/doc/changes.html)), [Git](https://github.com/eclipse/eclemma/commits/master), [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=Eclemma&query_format=advanced&order=changeddate%20DESC))
     * M2Eclipse (Maven) 2.1.0→**2.2.0**: [release notes](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#220), [review](https://projects.eclipse.org/projects/technology.m2e/reviews/2.2.0-release-review), [commits](https://github.com/eclipse-m2e/m2e-core/compare/2.1.0...2.2.0), [issues](https://github.com/eclipse-m2e/m2e-core/issues?q=is%3Aissue+sort%3Aupdated-desc+is%3Aclosed)
         * LemMinx-Maven 0.7.0→**0.7.1**: [release notes](https://github.com/eclipse/lemminx-maven/releases/tag/0.7.0), [commits](https://github.com/eclipse/lemminx-maven/compare/0.7.0...0.7.1), [issues](https://github.com/eclipse/lemminx-maven/issues?q=is%3Aissue+sort%3Aupdated-desc+is%3Aclosed)
@@ -57,7 +57,6 @@
 ### Features to show
 
 * **Java<!-- [📽️](https://youtu.be/jJau4kUoLrA?t=16s)-->**
-    * Java 20 support via Marketplace?
     * ([_Bytecode_ view](https://www.eclipse.org/eclipse/news/4.27/jdt.php#new-old-jdt-views) → included in the Eclipse SDK but not yet in any Java IDE package)
     * ([Java AST _Abstract Syntax Tree_ view](https://www.eclipse.org/eclipse/news/4.27/jdt.php#new-old-jdt-views) (needs to be installed, e.g. [via Marketplace](https://marketplace.eclipse.org/content/ast-view)): shows the abstract syntax tree of the Eclipse compiler for Java (ecj) → helpful only if using ecj as framework/dependency, e.g. in JDT)
     * [Performance](https://github.com/search?utf8=%E2%9C%93&q=performance+OR+speed+OR+faster+org%3Aeclipse-jdt+committer-date%3A2022-12-05..2023-03-10&s=committer-date&o=desc&type=Commits):
