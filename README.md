@@ -16,7 +16,7 @@
 [2019-06](https://github.com/howlger/Eclipse-IDE-improvements-videos/tree/2019-06)
 </sup>
 
-# +++ Work in progress (for March 15, 2023) +++<br>Eclipse IDE 2023-03 Improvements Video
+# [Eclipse IDE 2023-03 Improvements Video](https://youtu.be/JgMLyGBEQ1c)
 
 * [March 15, 2023](https://calendar.google.com/calendar/event?eid=Mjcwc2Y1b2xubm85N3FoZjR1M2o5anI2NnYgZ2NoczdubTRudnBtODM3NDY5ZGRqOXRqbGtAZw&ctz=Europe/Berlin) ([calendar](https://calendar.google.com/calendar/embed?src=gchs7nm4nvpm837469ddj9tjlk@group.calendar.google.com&ctz=Europe/Berlin)) - [? projects](https://projects.eclipse.org/releases/2023-03) ([-? +? → ?](projects_diff.txt)) - [wiki](https://wiki.eclipse.org/Category:SimRel-2023-03) - [website](https://eclipse.org/eclipseide/2022-12) ([New & Noteworthy](https://eclipse.org/eclipseide/2023-03/noteworthy)) - [splash screen](https://bugs.eclipse.org/bugs/show_bug.cgi?id=575781)
 * Builds: [latest unreleased](https://download.eclipse.org/technology/epp/staging/) → [released](https://download.eclipse.org/technology/epp/downloads/release/2023-03/) ([Jenkins](https://ci.eclipse.org/packaging/job/simrel.epp-tycho-build), [log](https://git.eclipse.org/c/simrel/org.eclipse.simrel.build.git/log/), update sites: [staging](https://download.eclipse.org/staging/2023-03), [release](http://download.eclipse.org/releases/2022-12))
@@ -27,7 +27,7 @@
 
 * Java, Maven, Gradle
     * Java development tools (JDT) 4.26→**4.27**: [Eclipse 4.27 - New and Noteworthy - Java Development Tools](https://www.eclipse.org/eclipse/news/4.27/jdt.php) ([log](https://github.com/eclipse-platform/www.eclipse.org-eclipse-news/commits/master/4.27/jdt.html)), Git [core](https://github.com/eclipse-jdt/eclipse.jdt.core/commits/master) [UI](https://github.com/eclipse-jdt/eclipse.jdt.ui/commits/master)
-        * ([Java 20](https://jdk.java.net/20/): [issues](https://github.com/eclipse-jdt/eclipse.jdt.core/milestone/20?closed=1), [examples](https://wiki.eclipse.org/Java20/Examples), [update site](https://download.eclipse.org/eclipse/updates/4.27-P-builds/P20230202-0830/) → [Marketplace?](https://marketplace.eclipse.org/search/site/Java%252020): [not before the Java 21 release, being six days after the 2023-03 release](https://www.eclipse.org/lists/ide-dev/msg02124.html))
+        * [Java 20](https://jdk.java.net/20/): [issues](https://github.com/eclipse-jdt/eclipse.jdt.core/milestone/20?closed=1), [examples](https://wiki.eclipse.org/Java20/Examples), [update site](https://download.eclipse.org/eclipse/updates/4.27-P-builds/P20230202-0830/), [Marketplace?](https://marketplace.eclipse.org/search/site/Java%252020)
     * (EclEmma (Java code coverage) 3.1.6: [changes](https://www.eclemma.org/changes.html) ([JaCoCo](https://www.jacoco.org/jacoco/trunk/doc/changes.html)), [Git](https://github.com/eclipse/eclemma/commits/master), [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=Eclemma&query_format=advanced&order=changeddate%20DESC))
     * M2Eclipse (Maven) 2.1.0→**2.2.0**: [release notes](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#220), [review](https://projects.eclipse.org/projects/technology.m2e/reviews/2.2.0-release-review), [commits](https://github.com/eclipse-m2e/m2e-core/compare/2.1.0...2.2.0), [issues](https://github.com/eclipse-m2e/m2e-core/issues?q=is%3Aissue+sort%3Aupdated-desc+is%3Aclosed)
         * LemMinx-Maven 0.7.0→**0.7.1**: [release notes](https://github.com/eclipse/lemminx-maven/releases/tag/0.7.0), [commits](https://github.com/eclipse/lemminx-maven/compare/0.7.0...0.7.1), [issues](https://github.com/eclipse/lemminx-maven/issues?q=is%3Aissue+sort%3Aupdated-desc+is%3Aclosed)
@@ -56,12 +56,8 @@
 
 ### Features to show
 
-* **Java<!-- [📽️](https://youtu.be/jJau4kUoLrA?t=16s)-->**
-    * ([_Bytecode_ view](https://www.eclipse.org/eclipse/news/4.27/jdt.php#new-old-jdt-views) → included in the Eclipse SDK but not yet in any Java IDE package)
-    * ([Java AST _Abstract Syntax Tree_ view](https://www.eclipse.org/eclipse/news/4.27/jdt.php#new-old-jdt-views) (needs to be installed, e.g. [via Marketplace](https://marketplace.eclipse.org/content/ast-view)): shows the abstract syntax tree of the Eclipse compiler for Java (ecj) → helpful only if using ecj as framework/dependency, e.g. in JDT)
-    * [Performance](https://github.com/search?utf8=%E2%9C%93&q=performance+OR+speed+OR+faster+org%3Aeclipse-jdt+committer-date%3A2022-12-05..2023-03-10&s=committer-date&o=desc&type=Commits):
-        * ([Use meta index for reference search](https://github.com/eclipse-jdt/eclipse.jdt.core/pull/532))
-        * [Faster compilation for parameterized types](https://github.com/eclipse-jdt/eclipse.jdt.core/issues/549), e.g. [`compile-perf.zip`](https://github.com/eclipse-jdt/eclipse.jdt.core/files/10041321/compile-perf.zip) _Clean_ >4min → 24s
+* **Java [📽️](https://youtu.be/JgMLyGBEQ1c?t=18s)**
+    * Java 20 support as preview/patch via Marketplace ([probably shortly after Eclipse release](https://marketplace.eclipse.org/search/site/Java%252020))
     * Java editor:
         * Code completion improvements and fixes:
             * [`record Person(|) {}`](https://github.com/eclipse-jdt/eclipse.jdt.core/issues/667)
@@ -70,35 +66,40 @@
         * [New code mining preference: _Ignore inexact reference matches_](https://www.eclipse.org/eclipse/news/4.27/jdt.php#new-code-mining-preference) to ignore [potential matches](https://www.eclipse.org/lists/jdt-core-dev/msg00051.html) (if not everything can completely resolved, e.g. because of compile errors; [pull request #397](https://github.com/eclipse-jdt/eclipse.jdt.ui/pull/397))
         * ([Javadoc: `{@return ...}` support](https://www.eclipse.org/eclipse/news/4.27/jdt.php#javadoc-inline-return): shown in Javadoc view and hover, but [can cause _Javadoc: Missing tag for return type_ false positive](https://github.com/eclipse-jdt/eclipse.jdt.core/issues/795))
         * ([_Open Declaration_ in nested switch expressions fixed](https://github.com/eclipse-jdt/eclipse.jdt.core/issues/708))
+    * [_Bytecode_ view](https://www.eclipse.org/eclipse/news/4.27/jdt.php#new-old-jdt-views) for advanced Java developers to explore the bytecode `*.class` files, including the compiled source code compiled by Eclipse's own Java compiler; hover or right-click _Open bytecode reference_ for more details
+    * ([Java AST _Abstract Syntax Tree_ view](https://www.eclipse.org/eclipse/news/4.27/jdt.php#new-old-jdt-views) (needs to be installed, e.g. [via Marketplace](https://marketplace.eclipse.org/content/ast-view)): shows the abstract syntax tree of the Eclipse compiler for Java (ecj) → helpful only if using ecj as framework/dependency, e.g. in JDT)
     * ([Clean-up _Member Access > Use 'this' qualifier for field access: Only if necessary_ has been fixed to work for parameterized types also](https://github.com/eclipse-jdt/eclipse.jdt.ui/issues/411))
     * [JUnit: Tests in subpackages will now also be launched](https://www.eclipse.org/eclipse/news/4.27/jdt.php#junit-subpackage-support)
     * (Java formatter:)
         * ([New setting for sealed types](https://github.com/eclipse-jdt/eclipse.jdt.core/commit/7f2b6b230ae5f09345d2f0ebbddae00d9a72b9fe) ([UI](https://github.com/eclipse-jdt/eclipse.jdt.ui/commit/3adb1da52d57c2aa2e1a1edcfcf29640c3dd4ce3): _Line Wrapping > Wrapping Settings > Class Declarations > 'permits' clause_)
         * ([Support for record patterns](https://github.com/eclipse-jdt/eclipse.jdt.core/issues/264) (preview feature in Java [19](https://openjdk.org/jeps/405) and [20](https://openjdk.org/jeps/432)))
-    * Maven<!-- [📽️](https://youtu.be/jJau4kUoLrA?t=218s)-->:
+    * [Performance](https://github.com/search?utf8=%E2%9C%93&q=performance+OR+speed+OR+faster+org%3Aeclipse-jdt+committer-date%3A2022-12-05..2023-03-10&s=committer-date&o=desc&type=Commits):
+        * ([Use meta index for reference search](https://github.com/eclipse-jdt/eclipse.jdt.core/pull/532))
+        * [Faster compilation for parameterized types](https://github.com/eclipse-jdt/eclipse.jdt.core/issues/549), e.g. [`compile-perf.zip`](https://github.com/eclipse-jdt/eclipse.jdt.core/files/10041321/compile-perf.zip) _Clean_ >4min → 24s
+    * Maven [📽️](https://youtu.be/JgMLyGBEQ1c?t=269s):
         * [With `<maven.test.skip>true</maven.test.skip>` `src/test/java` and `src/test/resources` become regular instead of source folders now](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#ignore-test-sources-and-resources-compilation-if-maventestskiptrue-is-specified)
         * No manual project configuration anymore in the following cases:
             * [Mojos without a mapping are now executed by default in incremental builds](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#mojos-without-a-mapping-are-now-executed-by-default-in-incremental-builds) ([**M**aven plain **O**ld **J**ava **O**bject](https://maven.apache.org/guides/plugin/guide-java-plugin-development.html#your-first-mojo))
             * [Configuration of Maven Execution JRE](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#configuration-of-maven-execution-jre) (see [commit](https://github.com/eclipse-m2e/m2e-core/commit/32dc6407c919bb8eb8217df4a3ccddff18ab1ed4))
         * ([Eclipse plugin development: in _Target Editor_, dialog to add or edit Maven dependencies updated](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#updated-dependency-editor))
-* **Web<!-- [📽️](https://youtu.be/jJau4kUoLrA?t=302s)-->**
+* **Web [📽️](https://youtu.be/JgMLyGBEQ1c?t=498s)**
     * XML:
         * [More formatting preferences: _XML (Wild Web Developer) > Formatting_](https://github.com/eclipse/wildwebdeveloper/commit/7c20109bf5e559367826ba66ba9ef596814e88d5): _Preserve new lines_ is what I missed in the past
         * ([Quick fixes for complex types: _Insert all expected elements_ and _Insert only required elements_](https://github.com/eclipse/lemminx/issues/1218): [issues that have already been fixed after LemMinX 0.23.0](https://github.com/eclipse/lemminx/issues/1218#issuecomment-1190078320))
-* **General/Platform<!-- [📽️](https://youtu.be/jJau4kUoLrA?t=000s)-->**
-    * [_Open Resource_ substring search instead of starts with](https://www.eclipse.org/eclipse/news/4.27/platform.php#open-resource-new-search-behavior): use prefix `>` for _starts with_ (old behavior)
-    * [UI](https://github.com/search?utf8=%E2%9C%93&q=dark+OR+light+OR+theme+OR+layout+org%3Aeclipse-platform+org%3Aeclipse-jdt+committer-date%3A2022-12-05..2023-03-10&s=committer-date&type=Commits):
-        * [Preferences: _General > Editors > Text Editors: Line spacing (extra % of font height)_](https://github.com/eclipse-platform/eclipse.platform.text/issues/98)
+* **General/Platform<!-- [📽️](https://youtu.be/JgMLyGBEQ1c?t=000s)-->**
+    * [_Open Resource_ substring search instead of starts with](https://www.eclipse.org/eclipse/news/4.27/platform.php#open-resource-new-search-behavior): use prefix `>` for _starts with_ (old behavior) ← missed in the video by mistake
+    * ([UI](https://github.com/search?utf8=%E2%9C%93&q=dark+OR+light+OR+theme+OR+layout+org%3Aeclipse-platform+org%3Aeclipse-jdt+committer-date%3A2022-12-05..2023-03-10&s=committer-date&type=Commits):)
+        * ([Preferences: _General > Editors > Text Editors: Line spacing (extra % of font height)_](https://github.com/eclipse-platform/eclipse.platform.text/issues/98))
     * ([Performance](https://github.com/search?utf8=%E2%9C%93&q=performance+OR+speed+OR+fast+OR+faster+OR+slow+org%3Aeclipse-platform+committer-date%3A2022-12-05..2023-03-10&s=committer-date&o=desc&type=Commits):)
         * ([Faster Search & Replace](https://github.com/eclipse-platform/eclipse.platform.text/commit/8775ea8bd9a6d683d596da5d8d6c89bfd29e8406))
-* (**Git<!-- [📽️](https://youtu.be/jJau4kUoLrA?t=588s)-->**: no changes in the UI (EGit), performance improvements in the underlying Java implementation of Git (JGit), but no scenarios found where this can be reproduced via EGit)
+* (**Git<!-- [📽️](https://youtu.be/JgMLyGBEQ1c?t=000s)-->**: no changes in the UI (EGit), performance improvements in the underlying Java implementation of Git (JGit), but no scenarios found where this can be reproduced via EGit)
     * ([JGit: Commit-graph support](https://bugs.eclipse.org/bugs/show_bug.cgi?id=574368) ([supplemental data to speed up showing history and computing merge bases](https://git-scm.com/docs/commit-graph)): [if `core.commitGraph` and `gc.writeCommitGraph` are set to `true`, _Collect Garbage_ will (re)write `.git/objects/info/commit-graph`](https://git.eclipse.org/c/jgit/jgit.git/commit/?id=b082c58e0ff3e829071e90b47df022e77cd3dea2), e.g. [torvalds/linux.git](https://github.com/torvalds/linux.git) → [8x faster](https://bugs.eclipse.org/bugs/show_bug.cgi?id=574368#c1))
     * ([JGit: Faster fetching](https://git.eclipse.org/c/jgit/jgit.git/commit/?id=21e902dd7fa4ff53dc35fd7c48f8b5edc52f8eea))
     * ([JGit: Faster _Collect Garbage_](https://git.eclipse.org/c/jgit/jgit.git/commit/?id=cd3fc7a2995c06cf2425f51758094e039c938559))
 * **(Under development)**
-    * ([_Bytecode_ view](https://www.eclipse.org/eclipse/news/4.27/jdt.php#new-old-jdt-views) (not yet [included in all Java IDE packages](https://bugs.eclipse.org/bugs/show_bug.cgi?id=581619)): for advanced Java developers to explore the bytecode `*.class` files, including the compiled source code compiled by Eclipse's own Java compiler; hover or right-click _Open bytecode reference_ for more details)
+    * ([Mylyn](https://github.com/eclipse-mylyn/org.eclipse.mylyn))
     * ([Debug: show values inline](https://www.eclipse.org/eclipse/news/4.23/platform.php#inline-debug-values) (not yet supported in Java, JavaScript, etc.))
     * ([Syntax highlighting and more for various languages/formats via the tm4e language pack feature](https://github.com/eclipse/tm4e/pull/374))
 
 ## Publish
-* → [As YouTube video](https://www.youtube.com/playlist?list=PLnh_8hTD4yvnhXSttuewEKgKkmlIj_ND-) (until release: video title with _+++Coming on December 7, 2022+++_ prefix)
+* → [As YouTube video](https://www.youtube.com/playlist?list=PLnh_8hTD4yvnhXSttuewEKgKkmlIj_ND-) (until release: video title with _+++Coming on March 15, 2023+++_ prefix)
