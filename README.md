@@ -58,26 +58,36 @@
 
 ### Features to show
 
-* **Java <!--[📽️](https://youtu.be/JgMLyGBEQ1c?t=18s)-->**
+* **Java 20 <!--[📽️](https://youtu.be/JgMLyGBEQ1c?t=000s)-->**
     * Java 20 support: language changes in preview features only
+    * As you have probably already noted...: [Onboarding information in editor area](https://www.eclipse.org/eclipse/news/4.28/platform.php#editor-onboarding) for those perspectives that supports it
+* **Mylyn <!--[📽️](https://youtu.be/JgMLyGBEQ1c?t=000s)-->**
+    * [Mylyn task-focused UI](https://github.com/eclipse-packaging/packages/issues/19) is back
+        * _Task List_ view
+        * Activating a task restores editors + filtering in _Explorer_ views
+        * Task switching, e.g. disable task, create new local task, edit `README.md` and re-enable first task
+        * Filtering: click on `+` or Alt+click to show all child nodes
+        * Filtering can be disabled, in the view or by default
+        * ...and much more, e.g. scheduling, context sharing, _Builds_ view (e.g. for `https://ci.eclipse.org/packaging/` - `simrel.epp-tycho-build`), etc.
+* **Java <!--[📽️](https://youtu.be/JgMLyGBEQ1c?t=000s)-->**
     * Java editor:
         * [Code completion improvements and fixes](https://github.com/search?utf8=%E2%9C%93&q=assist+OR+completion+OR+codecompletion+OR+intellisense+org%3Aeclipse-jdt+committer-date%3A2023-03-05..2023-06-10&s=committer-date&o=desc&type=Commits):
             * [`String[] lines = new |` proposes `String`](https://github.com/eclipse-jdt/eclipse.jdt.core/issues/1021)
-            * [Missing proposals for switch case labels in switch expressions inside lambda](https://github.com/eclipse-jdt/eclipse.jdt.core/issues/697)
-            * [Missing Ctrl+Shift+Space info for nested object constructors](https://github.com/eclipse-jdt/eclipse.jdt.core/issues/969)
+            * ([Missing proposals for switch case labels in switch expressions inside lambda](https://github.com/eclipse-jdt/eclipse.jdt.core/issues/697))
+            * ([Missing Ctrl+Shift+Space info for nested object constructors](https://github.com/eclipse-jdt/eclipse.jdt.core/issues/969))
         * [_Open Call Hierarchy_ on Ctrl+click](https://www.eclipse.org/eclipse/news/4.28/jdt.php#call-hierarchy-on-ctrl-click)
-        * [Quick fix: _Convert String concatenation to Text Block_](https://github.com/eclipse-jdt/eclipse.jdt.core/issues/725) (also as clean-up: see below)
+        * [Quick fix: _Convert String concatenation to Text Block_](https://github.com/eclipse-jdt/eclipse.jdt.core/issues/725): trailing spaces will be converted to `\s` (also as clean-up: see below)
     * [Clean-up: _Java Feature: Convert String concatenation to Text Block > Include StringBuffer or StringBuilder concatenations_](https://github.com/eclipse-jdt/eclipse.jdt.ui/pull/435) (also as quick fix: see above)
     * (Java formatter:)
         * [New Javadoc HTML format option](https://www.eclipse.org/eclipse/news/4.28/jdt.php#new-javadoc-html-formatting-option)
     * [New preferences: _Java > Launching_](https://www.eclipse.org/eclipse/news/4.28/jdt.php#new-launch-config-name-preferences)
-    * [Performance](https://github.com/search?utf8=%E2%9C%93&q=performance+OR+speed+OR+faster+org%3Aeclipse-jdt+committer-date%3A2023-03-05..2023-06-10&s=committer-date&o=desc&type=Commits):
-        * [Faster compilation for lambdas](https://github.com/eclipse-jdt/eclipse.jdt.core/commit/ed4bdac88b5b96e7bbdebc86d54fff2bce23325e)
+    * ([Performance](https://github.com/search?utf8=%E2%9C%93&q=performance+OR+speed+OR+faster+org%3Aeclipse-jdt+committer-date%3A2023-03-05..2023-06-10&s=committer-date&o=desc&type=Commits):)
+        * ([Faster compilation for lambdas](https://github.com/eclipse-jdt/eclipse.jdt.core/commit/ed4bdac88b5b96e7bbdebc86d54fff2bce23325e))
     * Maven <!--[📽️](https://youtu.be/JgMLyGBEQ1c?t=269s)-->:
         * [New warnings with quick fixes](https://github.com/eclipse/lemminx-maven/pull/362):
             * _GroupId is duplicate of parent groupId_
             * _Version is duplicate of parent version_
-        * [Hover on property: link to open property declaration](https://github.com/eclipse/lemminx-maven/issues/370)
+        * ([Hover on property: link to open property declaration](https://github.com/eclipse/lemminx-maven/issues/370))
         * ([Embedded Maven updated from 3.8.7 to 3.9.1](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#embedded-and-use-maven-391))
         * ([Support for Java 20 and later](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#support-for-java-20-and-later))
         * ([Enhanced M2E Maven Target support](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#enhanced-m2e-maven-target-support))
@@ -86,6 +96,7 @@
         * ([`toolingAPI` compatibility checks](https://github.com/eclipse/buildship/pull/1161): [Gradle version has to be compatible with the Java version running Eclipse and the Java version running Gradle](https://github.com/eclipse/buildship/issues/1125#issuecomment-1004619371) (see [for each Java version unsupported Gradle versions](https://github.com/eclipse/buildship/blob/master/org.eclipse.buildship.core/src/main/resources/org/eclipse/buildship/core/internal/gradle/java-unsupported-gradle.properties))
 * **Web <!--[📽️](https://youtu.be/JgMLyGBEQ1c?t=498s)-->**
     * [TypeScript 5.0](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0) (language server requires Node.js 12.20 or higher (ECMAScript 2018) to run)
+        * New language features, for instance [TypeScript 5.0 implements](https://github.com/microsoft/TypeScript/pull/50820) the [ECMAScript Stage 3 decorators proposal](https://github.com/tc39/proposal-decorators) ([less flexible/dynamic than Stage 2 to be better optimizable](https://github.com/tc39/proposal-decorators#comparison-with-the-previous-stage-2-decorators-proposal))
     * ECMAScript/JavaScript:
         * [Decorators](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0/#decorators) (upcoming ECMAScript feature)
         * [`@overload` Support in JSDoc](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0/#overload-support-in-jsdoc)
@@ -94,22 +105,22 @@
             * [_Select enclosing Element_/_Restore Last Selection_ (Alt+Shift+Up/Down)](https://github.com/eclipse/lsp4e/pull/562): expands/reduces selection (not supported in YAML)
             * [_Go to Matching Breaket_ (Alt+Shift+P)](https://github.com/eclipse/lsp4e/pull/562)
 * **General/Platform<!--[📽️](https://youtu.be/JgMLyGBEQ1c?t=000s)-->**
-    * [Mylyn task-focused UI](https://github.com/eclipse-packaging/packages/issues/19)
     * Security:
         * [Enforce HTTPS protocol (CVE-2021-41033)](https://www.eclipse.org/eclipse/news/4.28/platform.php#force-https)
         * [Track trusted hosts (CVE-2021-41037)](https://www.eclipse.org/eclipse/news/4.28/platform.php#trusted-authorities)
         * [PGP key revocation](https://www.eclipse.org/eclipse/news/4.28/platform.php#pgp-revocation)
         * [Improved untrusted artifact handling](https://www.eclipse.org/eclipse/news/4.28/platform.php#untrusted-artifacts)
-    * [_Run/Debug As > ..._ right-click menu directly shows available launch configurations_](https://www.eclipse.org/eclipse/news/4.28/platform.php#launch-debug-shortcuts-expanded)
     * ([UI](https://github.com/search?utf8=%E2%9C%93&q=dark+OR+light+OR+theme+OR+layout+org%3Aeclipse-platform+org%3Aeclipse-jdt+committer-date%3A2023-03-05..2023-06-10&s=committer-date&type=Commits):)
-        * [Onboarding information in editor area](https://www.eclipse.org/eclipse/news/4.28/platform.php#editor-onboarding)
-        * [Improve responsiveness of _Switch Workspace_ dialog](https://github.com/eclipse-platform/eclipse.platform.ui/pull/299)
+        * ([Onboarding information in editor area](https://www.eclipse.org/eclipse/news/4.28/platform.php#editor-onboarding) (see above: _As you have probably already noted..._))
+        * ([Improve responsiveness of _Switch Workspace_ dialog](https://github.com/eclipse-platform/eclipse.platform.ui/pull/299))
     * ([Performance](https://github.com/search?utf8=%E2%9C%93&q=performance+OR+speed+OR+fast+OR+faster+OR+slow+org%3Aeclipse-platform+committer-date%3A2023-03-05..2023-06-10&s=committer-date&o=desc&type=Commits):)
         * ([Resizing views with empty editor area slow, shows paint artifacts](https://github.com/eclipse-platform/eclipse.platform.ui/commit/2fd96fae6a3ff279611ba8ebf58ca97bddfa732f))
+    * ([_Run/Debug As > ..._ right-click menu directly shows available launch configurations_](https://www.eclipse.org/eclipse/news/4.28/platform.php#launch-debug-shortcuts-expanded) - seems not yet supported by JDT)
 * (**Git<!--[📽️](https://youtu.be/JgMLyGBEQ1c?t=000s)-->**: no changes in the UI (EGit), performance improvements in the underlying Java implementation of Git (JGit), but no scenarios found where this can be reproduced via EGit)
 * **(Under development)**
     * ([Debug: show values inline](https://www.eclipse.org/eclipse/news/4.23/platform.php#inline-debug-values) (not yet supported in Java, JavaScript, etc.))
     * ([Syntax highlighting and more for various languages/formats via the tm4e language pack feature](https://github.com/eclipse/tm4e/pull/374))
+    * ([_Run/Debug As > ..._ right-click menu directly shows available launch configurations_](https://www.eclipse.org/eclipse/news/4.28/platform.php#launch-debug-shortcuts-expanded): supported by JDT?)
 
 ## Publish
 * → [As YouTube video](https://www.youtube.com/playlist?list=PLnh_8hTD4yvnhXSttuewEKgKkmlIj_ND-) (title prefix until release: `+++Coming on June 14, 2023+++ ` )
