@@ -17,9 +17,9 @@
 [2019-06](https://github.com/howlger/Eclipse-IDE-improvements-videos/tree/2019-06)
 </sup>
 
-# +++ Work in progress (for June 14, 2023) +++<br>Eclipse IDE 2023-06 Improvements Video <!--[Eclipse IDE 2023-06 Improvements Video](https://youtu.be/JgMLyGBEQ1c)-->
+# [Eclipse IDE 2023-06 Improvements Video](https://youtu.be/OQe_hafeuz8)
 
-* [June 14, 2023](https://calendar.google.com/calendar/event?eid=M25kMGtnbWlqc2ZoYTk2OXU3ZWw3cTgyNGUgZ2NoczdubTRudnBtODM3NDY5ZGRqOXRqbGtAZw&ctz=Europe/Berlin) ([calendar](https://calendar.google.com/calendar/embed?src=gchs7nm4nvpm837469ddj9tjlk@group.calendar.google.com&ctz=Europe/Berlin)) - [? projects](https://projects.eclipse.org/releases/2023-06) ([-? +? → ?](projects_diff.txt)) - [wiki](https://wiki.eclipse.org/Category:SimRel-2023-06) - [website](https://eclipse.org/eclipseide/2023-06) ([New & Noteworthy](https://eclipse.org/eclipseide/2023-06/noteworthy)) - [splash screen](https://gitlab.eclipse.org/eclipsefdn/helpdesk/-/issues/2336)
+* [June 14, 2023](https://calendar.google.com/calendar/event?eid=M25kMGtnbWlqc2ZoYTk2OXU3ZWw3cTgyNGUgZ2NoczdubTRudnBtODM3NDY5ZGRqOXRqbGtAZw&ctz=Europe/Berlin) ([calendar](https://calendar.google.com/calendar/embed?src=gchs7nm4nvpm837469ddj9tjlk@group.calendar.google.com&ctz=Europe/Berlin)) - [69?](https://github.com/merks/simrel-maven/issues/7) [projects](https://projects.eclipse.org/releases/2023-06) ([-? +? → ?](projects_diff.txt)) - [wiki](https://wiki.eclipse.org/Category:SimRel-2023-06) - [website](https://eclipse.org/eclipseide/2023-06) ([New & Noteworthy](https://eclipse.org/eclipseide/2023-06/noteworthy)) - [splash screen](https://gitlab.eclipse.org/eclipsefdn/helpdesk/-/issues/2336)
 * Builds: [latest unreleased](https://download.eclipse.org/technology/epp/staging/) → [released](https://download.eclipse.org/technology/epp/downloads/release/2023-06/) ([Jenkins](https://ci.eclipse.org/packaging/job/simrel.epp-tycho-build), [log](https://git.eclipse.org/c/simrel/org.eclipse.simrel.build.git/log/), update sites: [staging](https://download.eclipse.org/staging/2023-06), [release](http://download.eclipse.org/releases/2023-06))
 * Social media: [Twitter](http://twitter.com/EclipseJavaIDE), [YouTube](https://www.youtube.com/user/EclipseFdn) ([Eclipse IDE playlist](https://www.youtube.com/playlist?list=PLy7t4z5SYNaSNjL60ofpwVhfA7mOF3Pgk))
 
@@ -58,10 +58,10 @@
 
 ### Features to show
 
-* **Java 20 <!--[📽️](https://youtu.be/JgMLyGBEQ1c?t=000s)-->**
+* **Java 20 [📽️](https://youtu.be/OQe_hafeuz8?t=17)**
     * Java 20 support: language changes in preview features only
     * As you have probably already noticed...: [Onboarding information in editor area](https://www.eclipse.org/eclipse/news/4.28/platform.php#editor-onboarding) for those perspectives that supports it
-* **Mylyn <!--[📽️](https://youtu.be/JgMLyGBEQ1c?t=000s)-->**
+* **Mylyn [📽️](https://youtu.be/OQe_hafeuz8?t=72)**
     * [Mylyn task-focused UI](https://github.com/eclipse-packaging/packages/issues/19) is back
         * _Task List_ view
         * Activating a task restores editors + filtering in _Explorer_ views
@@ -69,7 +69,7 @@
         * Filtering: click on `+` or Alt+click to show all child nodes
         * Filtering can be disabled, in the view or by default
         * ...and much more, e.g. scheduling, context sharing, _Builds_ view (e.g. for `https://ci.eclipse.org/packaging/` - `simrel.epp-tycho-build`), etc.
-* **Java <!--[📽️](https://youtu.be/JgMLyGBEQ1c?t=000s)-->**
+* **Java [📽️](https://youtu.be/OQe_hafeuz8?t=183)**
     * Java editor:
         * [_Open Call Hierarchy_ on Ctrl+click](https://www.eclipse.org/eclipse/news/4.28/jdt.php#call-hierarchy-on-ctrl-click)
         * [Code completion improvements and fixes](https://github.com/search?utf8=%E2%9C%93&q=assist+OR+completion+OR+codecompletion+OR+intellisense+org%3Aeclipse-jdt+committer-date%3A2023-03-05..2023-06-10&s=committer-date&o=desc&type=Commits):
@@ -84,7 +84,7 @@
     * [New preferences: _Java > Launching_](https://www.eclipse.org/eclipse/news/4.28/jdt.php#new-launch-config-name-preferences)
     * ([Performance](https://github.com/search?utf8=%E2%9C%93&q=performance+OR+speed+OR+faster+org%3Aeclipse-jdt+committer-date%3A2023-03-05..2023-06-10&s=committer-date&o=desc&type=Commits):)
         * ([Faster compilation for lambdas](https://github.com/eclipse-jdt/eclipse.jdt.core/commit/ed4bdac88b5b96e7bbdebc86d54fff2bce23325e))
-    * Maven <!--[📽️](https://youtu.be/JgMLyGBEQ1c?t=269s)-->:
+    * Maven [📽️](https://youtu.be/OQe_hafeuz8?t=334):
         * [New warnings with quick fixes](https://github.com/eclipse/lemminx-maven/pull/362):
             * _GroupId is duplicate of parent groupId_
             * _Version is duplicate of parent version_
@@ -92,10 +92,10 @@
         * ([Embedded Maven updated from 3.8.7 to 3.9.1](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#embedded-and-use-maven-391))
         * ([Support for Java 20 and later](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#support-for-java-20-and-later))
         * ([Enhanced M2E Maven Target support](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#enhanced-m2e-maven-target-support))
-    * Gradle <!--[📽️](https://youtu.be/JgMLyGBEQ1c?t=000s)-->:
+    * Gradle [📽️](https://youtu.be/OQe_hafeuz8?t=352):
         * [Smart Import](https://github.com/eclipse/buildship/issues/356)
         * ([`toolingAPI` compatibility checks](https://github.com/eclipse/buildship/pull/1161): [Gradle version has to be compatible with the Java version running Eclipse and the Java version running Gradle](https://github.com/eclipse/buildship/issues/1125#issuecomment-1004619371) (see [for each Java version unsupported Gradle versions](https://github.com/eclipse/buildship/blob/master/org.eclipse.buildship.core/src/main/resources/org/eclipse/buildship/core/internal/gradle/java-unsupported-gradle.properties))
-* **Web <!--[📽️](https://youtu.be/JgMLyGBEQ1c?t=498s)-->**
+* **Web [📽️](https://youtu.be/OQe_hafeuz8?t=366)**
     * [TypeScript 5.0](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0) (language server requires Node.js 12.20 or higher (ECMAScript 2018) to run)
         * New language features, for instance [TypeScript 5.0 implements](https://github.com/microsoft/TypeScript/pull/50820) the [ECMAScript Stage 3 decorators proposal](https://github.com/tc39/proposal-decorators) ([less flexible/dynamic than Stage 2 to be better optimizable](https://github.com/tc39/proposal-decorators#comparison-with-the-previous-stage-2-decorators-proposal))
     * ECMAScript/JavaScript:
@@ -104,7 +104,7 @@
         * _Generic Text Editor_ with language support (via LSP4E) for JavaScript, XML (except yet in the Maven POM editor), JSON, CSS, etc.:
             * [_Select enclosing Element_/_Restore Last Selection_ (Alt+Shift+Up/Down)](https://github.com/eclipse/lsp4e/pull/562): expands/reduces selection (not supported in YAML)
             * [_Go to Matching Bracket_ (Ctrl+Shift+P)](https://github.com/eclipse/lsp4e/pull/562)
-* **General/Platform<!--[📽️](https://youtu.be/JgMLyGBEQ1c?t=000s)-->**
+* **General/Platform [📽️](https://youtu.be/OQe_hafeuz8?t=462)**
     * Security/code audit: financial support by the [Open Source Security Foundation (OpenSSF) Alpha-Omega project](https://openssf.org/community/alpha-omega/) (in June 2022 [Mike Milinkovich : _"Initiate a number of security audits for high-profile Eclipse Foundation projects"_](https://blogs.eclipse.org/post/mike-milinkovich/open-source-security-eclipse-foundation) and [OpenSSF: _"$400K to the Eclipse Foundation to fund additional staff and resources ... security audits for high-profile Eclipse Foundation projects"_ ](https://openssf.org/blog/2022/06/20/openssf-funds-python-and-eclipse-foundations-and-acquires-sos-dev-through-alpha-omega-project/)):
         * [Enforce HTTPS protocol (CVE-2021-41033)](https://www.eclipse.org/eclipse/news/4.28/platform.php#force-https)
         * [Track trusted hosts (CVE-2021-41037)](https://www.eclipse.org/eclipse/news/4.28/platform.php#trusted-authorities)
@@ -116,7 +116,7 @@
     * ([Performance](https://github.com/search?utf8=%E2%9C%93&q=performance+OR+speed+OR+fast+OR+faster+OR+slow+org%3Aeclipse-platform+committer-date%3A2023-03-05..2023-06-10&s=committer-date&o=desc&type=Commits):)
         * ([Resizing views with empty editor area slow, shows paint artifacts](https://github.com/eclipse-platform/eclipse.platform.ui/commit/2fd96fae6a3ff279611ba8ebf58ca97bddfa732f))
     * ([_Run/Debug As > ..._ right-click menu directly shows available launch configurations_](https://www.eclipse.org/eclipse/news/4.28/platform.php#launch-debug-shortcuts-expanded) - seems not yet supported by JDT)
-* (**Git<!--[📽️](https://youtu.be/JgMLyGBEQ1c?t=000s)-->**: no changes in the UI (EGit), performance improvements in the underlying Java implementation of Git (JGit), but no scenarios found where this can be reproduced via EGit)
+* (**Git<!--[📽️](https://youtu.be/OQe_hafeuz8?t=000)-->**: no changes in the UI (EGit), performance improvements in the underlying Java implementation of Git (JGit), but no scenarios found where this can be reproduced via EGit)
 * **(Under development)**
     * ([Debug: show values inline](https://www.eclipse.org/eclipse/news/4.23/platform.php#inline-debug-values) (not yet supported in Java, JavaScript, etc.))
     * ([Syntax highlighting and more for various languages/formats via the tm4e language pack feature](https://github.com/eclipse/tm4e/pull/374))
