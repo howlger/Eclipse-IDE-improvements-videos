@@ -1,4 +1,5 @@
 <sup>Past releases:
+[2023-06](https://github.com/howlger/Eclipse-IDE-improvements-videos/tree/2023-06)
 [2023-03](https://github.com/howlger/Eclipse-IDE-improvements-videos/tree/2023-03)
 [2022-12](https://github.com/howlger/Eclipse-IDE-improvements-videos/tree/2022-12)
 [2022-09](https://github.com/howlger/Eclipse-IDE-improvements-videos/tree/2022-09)
@@ -17,110 +18,98 @@
 [2019-06](https://github.com/howlger/Eclipse-IDE-improvements-videos/tree/2019-06)
 </sup>
 
-# [Eclipse IDE 2023-06 Improvements Video](https://youtu.be/OQe_hafeuz8)
+# +++ Work in progress (for September 13, 2023) +++<br>Eclipse IDE 2023-09 Improvements Video <!--[Eclipse IDE 2023-09 Improvements Video](https://youtu.be/OQe_hafeuz8)-->
 
-* [June 14, 2023](https://calendar.google.com/calendar/event?eid=M25kMGtnbWlqc2ZoYTk2OXU3ZWw3cTgyNGUgZ2NoczdubTRudnBtODM3NDY5ZGRqOXRqbGtAZw&ctz=Europe/Berlin) ([calendar](https://calendar.google.com/calendar/embed?src=gchs7nm4nvpm837469ddj9tjlk@group.calendar.google.com&ctz=Europe/Berlin)) - [69?](https://github.com/merks/simrel-maven/issues/7) [projects](https://projects.eclipse.org/releases/2023-06) ([-? +? → ?](projects_diff.txt)) - [wiki](https://wiki.eclipse.org/Category:SimRel-2023-06) - [website](https://eclipse.org/eclipseide/2023-06) ([New & Noteworthy](https://eclipse.org/eclipseide/2023-06/noteworthy)) - [splash screen](https://gitlab.eclipse.org/eclipsefdn/helpdesk/-/issues/2336)
-* Builds: [latest unreleased](https://download.eclipse.org/technology/epp/staging/) → [released](https://download.eclipse.org/technology/epp/downloads/release/2023-06/) ([Jenkins](https://ci.eclipse.org/packaging/job/simrel.epp-tycho-build), [log](https://git.eclipse.org/c/simrel/org.eclipse.simrel.build.git/log/), update sites: [staging](https://download.eclipse.org/staging/2023-06), [release](http://download.eclipse.org/releases/2023-06))
+* [September 13, 2023](https://calendar.google.com/calendar/event?eid=MGczMmNxbHZoMDJhYWNpdTdvYjZ1MjI4a20gZ2NoczdubTRudnBtODM3NDY5ZGRqOXRqbGtAZw&ctz=Europe/Berlin) ([calendar](https://calendar.google.com/calendar/embed?src=gchs7nm4nvpm837469ddj9tjlk@group.calendar.google.com&ctz=Europe/Berlin)) - [projects](https://projects.eclipse.org/releases/2023-09) - [wiki](https://wiki.eclipse.org/Category:SimRel-2023-09) - [website](https://eclipse.org/eclipseide/2023-09) ([New & Noteworthy](https://eclipse.org/eclipseide/2023-09/noteworthy)) - [splash screen](https://gitlab.eclipse.org/eclipsefdn/helpdesk/-/issues/2336)
+* Builds: [latest unreleased](https://download.eclipse.org/technology/epp/staging/) → [released](https://download.eclipse.org/technology/epp/downloads/release/2023-09/) ([Jenkins](https://ci.eclipse.org/packaging/job/simrel.epp-tycho-build), [log](https://git.eclipse.org/c/simrel/org.eclipse.simrel.build.git/log/), update sites: [staging](https://download.eclipse.org/staging/2023-09), [release](http://download.eclipse.org/releases/2023-09))
 * Social media: [Twitter](http://twitter.com/EclipseJavaIDE), [YouTube](https://www.youtube.com/user/EclipseFdn) ([Eclipse IDE playlist](https://www.youtube.com/playlist?list=PLy7t4z5SYNaSNjL60ofpwVhfA7mOF3Pgk))
 
 
 ### Sources
 
 * Java, Maven, Gradle
-    * Java development tools (JDT) 4.27→**4.28**: [Eclipse 4.28 - New and Noteworthy - Java Development Tools](https://www.eclipse.org/eclipse/news/4.28/jdt.php) ([log](https://github.com/eclipse-platform/www.eclipse.org-eclipse-news/commits/master/4.28/jdt.html)), Git [core](https://github.com/eclipse-jdt/eclipse.jdt.core/commits/master) [UI](https://github.com/eclipse-jdt/eclipse.jdt.ui/commits/master)
-        * [Java 20](https://jdk.java.net/20/): [issues](https://github.com/eclipse-jdt/eclipse.jdt.core/milestone/20?closed=1), [examples](https://wiki.eclipse.org/Java20/Examples)
+    * Java development tools (JDT) 4.28→**4.29**: [Eclipse 4.29 - New and Noteworthy - Java Development Tools](https://www.eclipse.org/eclipse/news/4.29/jdt.php) ([log](https://github.com/eclipse-platform/www.eclipse.org-eclipse/commits/master/news/4.29/jdt.html)), Git [core](https://github.com/eclipse-jdt/eclipse.jdt.core/commits/master) [UI](https://github.com/eclipse-jdt/eclipse.jdt.ui/commits/master)
+        * [Java 21](https://jdk.java.net/21/): [issues](https://github.com/eclipse-jdt/eclipse.jdt.core/milestone/33?closed=1), [update site](https://download.eclipse.org/eclipse/updates/4.29-P-builds/P20230720-0450/), [Marketplace?](https://marketplace.eclipse.org/search/site/Java%252021)
     * (EclEmma (Java code coverage) 3.1.6: [changes](https://www.eclemma.org/changes.html) ([JaCoCo](https://www.jacoco.org/jacoco/trunk/doc/changes.html)), [Git](https://github.com/eclipse/eclemma/commits/master), [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=Eclemma&query_format=advanced&order=changeddate%20DESC))
-    * M2Eclipse (Maven) 2.2.0→**2.3.0**: [release notes](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#230), [review](https://projects.eclipse.org/projects/technology.m2e/reviews/2.3.0-release-review), [commits](https://github.com/eclipse-m2e/m2e-core/compare/2.2.0...2.3.0), [issues](https://github.com/eclipse-m2e/m2e-core/issues?q=is%3Aissue+sort%3Aupdated-desc+is%3Aclosed)
-        * LemMinx-Maven 0.7.1→**0.7.2**: [release notes](https://github.com/eclipse/lemminx-maven/releases/tag/0.7.2), [commits](https://github.com/eclipse/lemminx-maven/compare/0.7.1...0.7.2), [issues](https://github.com/eclipse/lemminx-maven/issues?q=is%3Aissue+sort%3Aupdated-desc+is%3Aclosed)
-    * Buildship (Gradle) 3.1.6→**3.1.7**: [review](https://projects.eclipse.org/projects/tools.buildship/releases/3.1.7), [commits](https://github.com/eclipse/buildship/commits/master), [announcements](https://discuss.gradle.org/tag/buildship-release)
+    * (M2Eclipse (Maven) 2.3.0: [release notes](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#230), [review](https://projects.eclipse.org/projects/technology.m2e/reviews/2.3.0-release-review), [commits](https://github.com/eclipse-m2e/m2e-core/compare/2.2.0...2.3.0), [issues](https://github.com/eclipse-m2e/m2e-core/issues?q=is%3Aissue+sort%3Aupdated-desc+is%3Aclosed))
+        * (LemMinx-Maven 0.7.2: [release notes](https://github.com/eclipse/lemminx-maven/releases/tag/0.7.2), [commits](https://github.com/eclipse/lemminx-maven/compare/0.7.1...0.7.2), [issues](https://github.com/eclipse/lemminx-maven/issues?q=is%3Aissue+sort%3Aupdated-desc+is%3Aclosed))
+    * (Buildship (Gradle) 3.1.7: [review](https://projects.eclipse.org/projects/tools.buildship/releases/3.1.7), [commits](https://github.com/eclipse/buildship/commits/master), [announcements](https://discuss.gradle.org/tag/buildship-release))
 * General
-    * **Platform** 4.27→**4.28**: [Eclipse 4.28 - New and Noteworthy - Platform and Equinox](https://www.eclipse.org/eclipse/news/4.28/platform.php) ([log](https://github.com/eclipse-platform/www.eclipse.org-eclipse-news/commits/master/4.28/platform.html)), Git [UI](https://github.com/eclipse-platform/eclipse.platform.ui/commits/master) [text](https://github.com/eclipse-platform/eclipse.platform.text/commits/master)
-    * (Marketplace Client (MPC) 1.10.0→**1.10.1**: [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=MPC&query_format=advanced&order=changeddate%20DESC), [Git](https://git.eclipse.org/c/mpc/org.eclipse.epp.mpc.git/log/))
-    * Mylyn (task-focused UI) **3.26.0**: [GitHub](https://github.com/eclipse-mylyn/org.eclipse.mylyn), [commits](https://github.com/eclipse-mylyn/org.eclipse.mylyn/commits/main)
-    * (Mylyn WikiText (Markdown editor, etc.) 3.0.46→**3.0.47**: [GitHub](https://github.com/eclipse-mylyn/org.eclipse.mylyn.docs), [commits](https://github.com/eclipse-mylyn/org.eclipse.mylyn.docs/compare/wikitext.core-3.0.46...wikitext.core-3.0.47))
-    * (Oomph 1.28→**1.28**: [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=Oomph&query_format=advanced&order=changeddate%20DESC), [Git](https://git.eclipse.org/c/oomph/org.eclipse.oomph.git/log/))
-    * EPP: [issues](https://github.com/eclipse-packaging/packages/issues), [Git](https://github.com/eclipse-packaging/packages/commits/master)
-* J**Git**/EGit 6.5→**6.6**: wiki [JGit](https://wiki.eclipse.org/JGit/New_and_Noteworthy/6.6)/[EGit](https://wiki.eclipse.org/EGit/New_and_Noteworthy/6.6), review [JGit](https://projects.eclipse.org/projects/technology.jgit/reviews/6.6.0-release-review)/[EGit](https://projects.eclipse.org/projects/technology.egit/reviews/6.6.0-release-review), [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=EGit&product=JGit&query_format=advanced&order=changeddate%20DESC), Git [JGit](https://git.eclipse.org/c/jgit/jgit.git/log/)/[EGit](https://git.eclipse.org/c/egit/egit.git/log/)
+    * **Platform** 4.28→**4.29**: [Eclipse 4.29 - New and Noteworthy - Platform and Equinox](https://www.eclipse.org/eclipse/news/4.29/platform.php) ([log](https://github.com/eclipse-platform/www.eclipse.org-eclipse/commits/master/news/4.29/platform.html)), Git [UI](https://github.com/eclipse-platform/eclipse.platform.ui/commits/master) [platform](https://github.com/eclipse-platform/eclipse.platform/commits/master)
+    * ([Marketplace Client (MPC)](https://projects.eclipse.org/projects/technology.packaging.mpc) 1.10.1: [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=MPC&query_format=advanced&order=changeddate%20DESC), [Git](https://git.eclipse.org/c/mpc/org.eclipse.epp.mpc.git/log/))
+    * ([Mylyn](https://projects.eclipse.org/projects/tools.mylyn) (task-focused UI) 3.26.0→**[4.0.0](https://github.com/eclipse-mylyn/org.eclipse.mylyn/milestone/3?closed=1)**: [GitHub](https://github.com/eclipse-mylyn/org.eclipse.mylyn), [commits](https://github.com/eclipse-mylyn/org.eclipse.mylyn/commits/main))
+    * (Mylyn WikiText (Markdown editor, etc.) 3.0.47→**3.0.48**: [GitHub](https://github.com/eclipse-mylyn/org.eclipse.mylyn.docs), [commits](https://github.com/eclipse-mylyn/org.eclipse.mylyn.docs/compare/wikitext.core-3.0.47...wikitext.core-3.0.48))
+    * ([Oomph](https://projects.eclipse.org/projects/tools.oomph) 1.29→**1.30**: [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=Oomph&query_format=advanced&order=changeddate%20DESC)/[issus](https://github.com/eclipse-oomph/oomph/issues?q=is%3Aissue+is%3Aclosed+sort%3Aupdated-desc), [Git](https://github.com/eclipse-oomph/oomph/commits/master))
+    * (EPP: [issues](https://github.com/eclipse-packaging/packages/issues), [Git](https://github.com/eclipse-packaging/packages/commits/master))
+* J**Git**/EGit 6.6→**6.7**: wiki [JGit](https://wiki.eclipse.org/JGit/New_and_Noteworthy/6.7)/[EGit](https://wiki.eclipse.org/EGit/New_and_Noteworthy/6.7), review [JGit](https://projects.eclipse.org/projects/technology.jgit/reviews/6.7.0-release-review)/[EGit](https://projects.eclipse.org/projects/technology.egit/reviews/6.7.0-release-review), [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=EGit&product=JGit&query_format=advanced&order=changeddate%20DESC), Git [JGit](https://git.eclipse.org/c/jgit/jgit.git/log/)/[EGit](https://git.eclipse.org/c/egit/egit.git/log/)
 * Web, XML
-    * [Wild Web Developer](https://projects.eclipse.org/projects/tools.wildwebdeveloper) 1.0.2→**1.1.1**: [GitHub](https://github.com/eclipse/wildwebdeveloper), [release notes](https://github.com/eclipse/wildwebdeveloper/blob/master/RELEASE_NOTES.md#111), [commits](https://github.com/eclipse/wildwebdeveloper/compare/1.0.2...1.1.1)
-        * JavaScript/TypeScript language server ([`"typescript": "..."`](https://github.com/eclipse/wildwebdeveloper/blob/master/org.eclipse.wildwebdeveloper/package.json#L5); `plugins/org.eclipse.wildwebdeveloper_<version>/node_modules/typescript/package.json`): 4.9.5→**5.0.4** [releases](https://github.com/microsoft/TypeScript/releases), [announcement](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0)
-    * [LemMinX](https://projects.eclipse.org/projects/technology.lemminx) 0.23.0→**0.25.0** ([`org.eclipse.lemminx ... <version>...</version>`](https://github.com/eclipse/wildwebdeveloper/blob/master/org.eclipse.wildwebdeveloper.xml/pom.xml#L40-L43)): [GitHub](https://github.com/eclipse/lemminx), [changelog](https://github.com/eclipse/lemminx/blob/main/CHANGELOG.md#0250-april-18-2023)
-    * ([Web Tools Platform](https://projects.eclipse.org/projects/webtools) 3.29→**3.30**: [bugs](https://bugs.eclipse.org/bugs/report.cgi?x_axis_field=bug_status&y_axis_field=product&query_format=report-table&classification=WebTools&target_milestone=3.30&format=table&action=wrap), [_New & Noteworthy_](https://www.eclipse.org/webtools/releases/3.30/NewAndNoteworthy/), Git [JSF](https://git.eclipse.org/c/jsf/webtools.jsf.git/log/)/[JEE](https://git.eclipse.org/c/jeetools/webtools.javaee.git/log/)/[EJB](https://git.eclipse.org/c/jeetools/webtools.ejb.git/log/)/[Dali](https://git.eclipse.org/c/dali/webtools.dali.git/log/)/[Server Tools](https://git.eclipse.org/c/servertools/webtools.servertools.git/log/)/[Source Editing](https://git.eclipse.org/c/sourceediting/webtools.sourceediting.git/log/))
+    * [Wild Web Developer](https://projects.eclipse.org/projects/tools.wildwebdeveloper) 1.1.1→**1.3.0**: [GitHub](https://github.com/eclipse/wildwebdeveloper), [release notes](https://github.com/eclipse/wildwebdeveloper/blob/master/RELEASE_NOTES.md#130), [commits](https://github.com/eclipse/wildwebdeveloper/compare/1.1.1...1.3.0)
+        * JavaScript/TypeScript language server ([`"typescript": "..."`](https://github.com/eclipse/wildwebdeveloper/blob/master/org.eclipse.wildwebdeveloper/package.json#L5); `plugins/org.eclipse.wildwebdeveloper_<version>/node_modules/typescript/package.json`): 5.0.4→**5.1.6** [releases](https://github.com/microsoft/TypeScript/releases), [announcement](https://devblogs.microsoft.com/typescript/announcing-typescript-5-1)
+        * [LemMinX](https://projects.eclipse.org/projects/technology.lemminx) 0.25.0→**0.27.0** ([`org.eclipse.lemminx ... <version>...</version>`](https://github.com/eclipse/wildwebdeveloper/blob/master/org.eclipse.wildwebdeveloper.xml/pom.xml#L40-L43)): [GitHub](https://github.com/eclipse/lemminx), [changelog](https://github.com/eclipse/lemminx/blob/main/CHANGELOG.md#0270-august-3-2023)
+    * ([Web Tools Platform](https://projects.eclipse.org/projects/webtools) 3.30→**3.31**: [bugs](https://bugs.eclipse.org/bugs/report.cgi?x_axis_field=bug_status&y_axis_field=product&query_format=report-table&classification=WebTools&target_milestone=3.31&format=table&action=wrap), [_New & Noteworthy_](https://www.eclipse.org/webtools/releases/3.31/NewAndNoteworthy/), Git [JSF](https://git.eclipse.org/c/jsf/webtools.jsf.git/log/)/[JEE](https://git.eclipse.org/c/jeetools/webtools.javaee.git/log/)/[EJB](https://git.eclipse.org/c/jeetools/webtools.ejb.git/log/)/[Dali](https://git.eclipse.org/c/dali/webtools.dali.git/log/)/[Server Tools](https://git.eclipse.org/c/servertools/webtools.servertools.git/log/)/[Source Editing](https://git.eclipse.org/c/sourceediting/webtools.sourceediting.git/log/))
 * C/C++, PHP, Rust
-    * ([CDT](https://projects.eclipse.org/projects/tools.cdt) (C/C++) 11.1.0→**11.2.0**: [_New & Noteworthy_](https://github.com/eclipse-cdt/cdt/blob/main/NewAndNoteworthy/CDT-11.2.md), [release](https://github.com/eclipse-cdt/cdt/releases/tag/CDT_11_2_0), [commits](https://github.com/eclipse-cdt/cdt/compare/CDT_11_1_0...CDT_11_2_0), [issues](https://github.com/eclipse-cdt/cdt/issues?q=is%3Aissue+sort%3Aupdated-desc))
-        * ([Embedded CDT](https://projects.eclipse.org/projects/iot.embed-cdt) (C/C++ for Arm/RISC-V) 6.3.1→**6.3.2**: [GitHub](https://github.com/eclipse-embed-cdt/eclipse-plugins), [commits](https://github.com/eclipse-embed-cdt/eclipse-plugins/compare/v6.3.1...v6.3.2), [review](https://projects.eclipse.org/projects/iot.embed-cdt/reviews/6.3.2-release-review), [news](https://eclipse-embed-cdt.github.io/news/))
-    * ([PDT](https://projects.eclipse.org/projects/tools.pdt) (PHP) 7.2.1→**8.0.0**: [issues](https://github.com/eclipse/pdt/issues?q=is%3Aissue+sort%3Aupdated-asc), [Git](https://github.com/eclipse/pdt/commits/master), [_New & Noteworthy 8.0_](https://github.com/eclipse-pdt/pdt/wiki/NewIn80))
-    * ([LSP4J](https://projects.eclipse.org/projects/technology.lsp4j) (LSP Java binding) 0.20.1→**0.21.0**: [GitHub](https://github.com/eclipse/lsp4j), [release](https://github.com/eclipse/lsp4j/releases/tag/v0.21.0), [commits](https://github.com/eclipse/lsp4j/compare/v0.20.1...v0.21.0), [review](https://projects.eclipse.org/projects/technology.lsp4j))
-    * ([LSP4E](https://projects.eclipse.org/projects/technology.lsp4e) (LSP Eclipse IDE integration) 0.21.0→**0.23.0**: [GitHub](https://github.com/eclipse/lsp4e), [release](https://github.com/eclipse/lsp4e/releases/tag/0.23.0), [commits](https://github.com/eclipse/lsp4e/compare/0.21.0...0.23.0), [review](https://projects.eclipse.org/projects/technology.lsp4e/releases/0.23.0))
-    * ([TM4E](https://projects.eclipse.org/projects/technology.tm4e) (TextMate) 0.6.2: [GitHub](https://github.com/eclipse/tm4e), [review](https://projects.eclipse.org/projects/technology.tm4e/reviews/0.6.2-release-review), [release notes](https://github.com/eclipse/tm4e/blob/master/RELEASE_NOTES.md#062), [commits](https://github.com/eclipse/tm4e/compare/0.6.0...0.6.2))
-    * ([Corrosion](https://github.com/eclipse/corrosion) (only via Eclipse IDE for Rust Developers) 1.2.4: [Git](https://github.com/eclipse/corrosion/commits/master), [review](https://projects.eclipse.org/projects/tools.corrosion/reviews/1.2.4-release-review), [release notes](https://github.com/eclipse/corrosion/blob/master/RELEASE_NOTES.md))
+    * ([CDT](https://projects.eclipse.org/projects/tools.cdt) (C/C++) 11.2.0→**11.3.0**: [_New & Noteworthy_](https://github.com/eclipse-cdt/cdt/blob/main/NewAndNoteworthy/CDT-11.3.md), [release](https://github.com/eclipse-cdt/cdt/releases/tag/CDT_11_3_0), [commits](https://github.com/eclipse-cdt/cdt/compare/CDT_11_2_0...CDT_11_3_0), [issues](https://github.com/eclipse-cdt/cdt/issues?q=is%3Aissue+sort%3Aupdated-desc))
+        * ([Embedded CDT](https://projects.eclipse.org/projects/iot.embed-cdt) (C/C++ for Arm/RISC-V) 6.3.2→**6.4.0**: [GitHub](https://github.com/eclipse-embed-cdt/eclipse-plugins), [commits](https://github.com/eclipse-embed-cdt/eclipse-plugins/compare/v6.3.1...v6.3.2), [review](https://projects.eclipse.org/projects/iot.embed-cdt/reviews/6.4.0-release-review), [news](https://eclipse-embed-cdt.github.io/news/))
+    * ([PDT](https://projects.eclipse.org/projects/tools.pdt) (PHP) 8.0.0→**8.1.0**: [issues](https://github.com/eclipse/pdt/issues?q=is%3Aissue+sort%3Aupdated-asc), [Git](https://github.com/eclipse/pdt/commits/master), [_New & Noteworthy 8.1_](https://github.com/eclipse-pdt/pdt/wiki/NewIn81))
+    * ([LSP4J](https://projects.eclipse.org/projects/technology.lsp4j) (LSP Java binding) 0.21.0→**0.21.1**: [GitHub](https://github.com/eclipse/lsp4j), [release](https://github.com/eclipse/lsp4j/releases/tag/v0.21.1), [commits](https://github.com/eclipse/lsp4j/compare/v0.21.0...v0.21.1), [review](https://projects.eclipse.org/projects/technology.lsp4j))
+    * ([LSP4E](https://projects.eclipse.org/projects/technology.lsp4e) (LSP Eclipse IDE integration) 0.23.0: [GitHub](https://github.com/eclipse/lsp4e), [release](https://github.com/eclipse/lsp4e/releases/tag/0.23.0), [commits](https://github.com/eclipse/lsp4e/compare/0.21.0...0.23.0), [review](https://projects.eclipse.org/projects/technology.lsp4e/releases/0.23.0))
+    * ([TM4E](https://projects.eclipse.org/projects/technology.tm4e) (TextMate) 0.6.2→**0.8.1**: [GitHub](https://github.com/eclipse/tm4e), [review](https://projects.eclipse.org/projects/technology.tm4e/reviews/0.8.1-release-review), [release notes](https://github.com/eclipse/tm4e/blob/main/RELEASE_NOTES.md#081), [commits](https://github.com/eclipse/tm4e/compare/0.6.2...0.8.1))
 
 
 ### Features to show
 
-* **Java 20 [📽️](https://youtu.be/OQe_hafeuz8?t=17)**
-    * Java 20 support: language changes in preview features only
-    * As you have probably already noticed...: [Onboarding information in editor area](https://www.eclipse.org/eclipse/news/4.28/platform.php#editor-onboarding) for those perspectives that supports it
-* **Mylyn [📽️](https://youtu.be/OQe_hafeuz8?t=72)**
-    * [Mylyn task-focused UI](https://github.com/eclipse-packaging/packages/issues/19) is back
-        * _Task List_ view
-        * Activating a task restores editors + filtering in _Explorer_ views
-        * Task switching, e.g. disable task, create new local task, edit `README.md` and re-enable first task
-        * Filtering: click on `+` or Alt+click to show all child nodes
-        * Filtering can be disabled, in the view or by default
-        * ...and much more, e.g. scheduling, context sharing, _Builds_ view (e.g. for `https://ci.eclipse.org/packaging/` - `simrel.epp-tycho-build`), etc.
-* **Java [📽️](https://youtu.be/OQe_hafeuz8?t=183)**
+* **Java <!--[📽️](https://youtu.be/OQe_hafeuz8?t=17)-->**
+    * [Java 21 support as preview/patch via Marketplace (probably shortly after Eclipse release)](https://marketplace.eclipse.org/search/site/Java%252021)
     * Java editor:
-        * [_Open Call Hierarchy_ on Ctrl+click](https://www.eclipse.org/eclipse/news/4.28/jdt.php#call-hierarchy-on-ctrl-click)
-        * [Code completion improvements and fixes](https://github.com/search?utf8=%E2%9C%93&q=assist+OR+completion+OR+codecompletion+OR+intellisense+org%3Aeclipse-jdt+committer-date%3A2023-03-05..2023-06-10&s=committer-date&o=desc&type=Commits):
-            * [Content assist: boost based on parameter name](https://github.com/eclipse-jdt/eclipse.jdt.core/pull/779)
-            * ([`String[] lines = new |` proposes `String`](https://github.com/eclipse-jdt/eclipse.jdt.core/issues/1021))
-            * ([Missing proposals for switch case labels in switch expressions inside lambda](https://github.com/eclipse-jdt/eclipse.jdt.core/issues/697))
-            * ([Missing Ctrl+Shift+Space info for nested object constructors](https://github.com/eclipse-jdt/eclipse.jdt.core/issues/969))
-        * [Quick fix: _Convert String concatenation to Text Block_](https://github.com/eclipse-jdt/eclipse.jdt.core/issues/725): trailing spaces will be converted to `\s` (also as clean-up: see below)
-    * [Clean-up: _Java Feature: Convert String concatenation to Text Block > Include StringBuffer or StringBuilder concatenations_](https://github.com/eclipse-jdt/eclipse.jdt.ui/pull/435) (also as quick fix: see above)
-    * Java formatter:
-        * [New Javadoc HTML format option](https://www.eclipse.org/eclipse/news/4.28/jdt.php#new-javadoc-html-formatting-option)
-    * [New preferences: _Java > Launching_](https://www.eclipse.org/eclipse/news/4.28/jdt.php#new-launch-config-name-preferences)
-    * ([Performance](https://github.com/search?utf8=%E2%9C%93&q=performance+OR+speed+OR+faster+org%3Aeclipse-jdt+committer-date%3A2023-03-05..2023-06-10&s=committer-date&o=desc&type=Commits):)
-        * ([Faster compilation for lambdas](https://github.com/eclipse-jdt/eclipse.jdt.core/commit/ed4bdac88b5b96e7bbdebc86d54fff2bce23325e))
-    * Maven [📽️](https://youtu.be/OQe_hafeuz8?t=334):
-        * [New warnings with quick fixes](https://github.com/eclipse/lemminx-maven/pull/362):
-            * _GroupId is duplicate of parent groupId_
-            * _Version is duplicate of parent version_
-        * ([Hover on property: link to open property declaration](https://github.com/eclipse/lemminx-maven/issues/370))
-        * ([Embedded Maven updated from 3.8.7 to 3.9.1](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#embedded-and-use-maven-391))
-        * ([Support for Java 20 and later](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#support-for-java-20-and-later))
-        * ([Enhanced M2E Maven Target support](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#enhanced-m2e-maven-target-support))
-    * Gradle [📽️](https://youtu.be/OQe_hafeuz8?t=352):
-        * [Smart Import](https://github.com/eclipse/buildship/issues/356)
-        * ([`toolingAPI` compatibility checks](https://github.com/eclipse/buildship/pull/1161): [Gradle version has to be compatible with the Java version running Eclipse and the Java version running Gradle](https://github.com/eclipse/buildship/issues/1125#issuecomment-1004619371) (see [for each Java version unsupported Gradle versions](https://github.com/eclipse/buildship/blob/master/org.eclipse.buildship.core/src/main/resources/org/eclipse/buildship/core/internal/gradle/java-unsupported-gradle.properties))
-* **Web [📽️](https://youtu.be/OQe_hafeuz8?t=366)**
-    * [TypeScript 5.0](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0) (language server requires Node.js 12.20 or higher (ECMAScript 2018) to run)
-        * New language features, for instance [TypeScript 5.0 implements](https://github.com/microsoft/TypeScript/pull/50820) the [ECMAScript Stage 3 decorators proposal](https://github.com/tc39/proposal-decorators) ([less flexible/dynamic than Stage 2 to be better optimizable](https://github.com/tc39/proposal-decorators#comparison-with-the-previous-stage-2-decorators-proposal))
-    * ECMAScript/JavaScript:
-        * [`@overload` Support in JSDoc](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0/#overload-support-in-jsdoc)
-        * [`@satisfies` Support in JSDoc](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0/#satisfies-support-in-jsdoc)
-        * _Generic Text Editor_ with language support (via LSP4E) for JavaScript, XML (except yet in the Maven POM editor), JSON, CSS, etc.:
-            * [_Select enclosing Element_/_Restore Last Selection_ (Alt+Shift+Up/Down)](https://github.com/eclipse/lsp4e/pull/562): expands/reduces selection (not supported in YAML)
-            * [_Go to Matching Bracket_ (Ctrl+Shift+P)](https://github.com/eclipse/lsp4e/pull/562)
-* **General/Platform [📽️](https://youtu.be/OQe_hafeuz8?t=462)**
-    * Security/code audit: financial support by the [Open Source Security Foundation (OpenSSF) Alpha-Omega project](https://openssf.org/community/alpha-omega/) (in June 2022 [Mike Milinkovich : _"Initiate a number of security audits for high-profile Eclipse Foundation projects"_](https://blogs.eclipse.org/post/mike-milinkovich/open-source-security-eclipse-foundation) and [OpenSSF: _"$400K to the Eclipse Foundation to fund additional staff and resources ... security audits for high-profile Eclipse Foundation projects"_ ](https://openssf.org/blog/2022/06/20/openssf-funds-python-and-eclipse-foundations-and-acquires-sos-dev-through-alpha-omega-project/)):
-        * [Enforce HTTPS protocol (CVE-2021-41033)](https://www.eclipse.org/eclipse/news/4.28/platform.php#force-https)
-        * [Track trusted hosts (CVE-2021-41037)](https://www.eclipse.org/eclipse/news/4.28/platform.php#trusted-authorities)
-        * [Improved untrusted artifact handling](https://www.eclipse.org/eclipse/news/4.28/platform.php#untrusted-artifacts)
-        * [PGP key revocation](https://www.eclipse.org/eclipse/news/4.28/platform.php#pgp-revocation)
-    * ([UI](https://github.com/search?utf8=%E2%9C%93&q=dark+OR+light+OR+theme+OR+layout+org%3Aeclipse-platform+org%3Aeclipse-jdt+committer-date%3A2023-03-05..2023-06-10&s=committer-date&type=Commits):)
-        * ([Onboarding information in editor area](https://www.eclipse.org/eclipse/news/4.28/platform.php#editor-onboarding) (see above: _As you have probably already noticed..._))
-        * ([Improve responsiveness of _Switch Workspace_ dialog](https://github.com/eclipse-platform/eclipse.platform.ui/pull/299))
-    * ([Performance](https://github.com/search?utf8=%E2%9C%93&q=performance+OR+speed+OR+fast+OR+faster+OR+slow+org%3Aeclipse-platform+committer-date%3A2023-03-05..2023-06-10&s=committer-date&o=desc&type=Commits):)
-        * ([Resizing views with empty editor area slow, shows paint artifacts](https://github.com/eclipse-platform/eclipse.platform.ui/commit/2fd96fae6a3ff279611ba8ebf58ca97bddfa732f))
+        * [Java Constant Hover](https://eclipse.dev/eclipse/news/4.29/jdt.php#java-constant-hover): for integer or float constants specified in binary, octal, or hex format
+        * [Code completion improvements and fixes](https://github.com/search?utf8=%E2%9C%93&q=assist+OR+completion+OR+codecompletion+OR+intellisense+org%3Aeclipse-jdt+committer-date%3A2023-06-05..2023-09-10&s=committer-date&o=desc&type=Commits):
+            * [Quick assist for deprecated method call](https://github.com/eclipse-jdt/eclipse.jdt.ui/pull/704): [example](https://github.com/eclipse-jdt/eclipse.jdt.ui/issues/687)
+            * [Boost constructor parameters](https://github.com/eclipse-jdt/eclipse.jdt.core/pull/1103): [example](https://github.com/eclipse-jdt/eclipse.jdt.core/issues/1102)
+            * [Context-based name recommendation](https://github.com/eclipse-jdt/eclipse.jdt.ui/issues/655
+            * [Code minings filters](https://github.com/eclipse-jdt/eclipse.jdt.ui/issues/457) (hard-coded)
+        * [Quick fix: to convert an anonymous class improved](https://eclipse.dev/eclipse/news/4.29/jdt.php#lambda-cleanup-improvements): for examples see [tests](https://github.com/eclipse-jdt/eclipse.jdt.ui/pull/635/files#diff-b96d632fbc4a0ba97e97e168596307eb575e908d4c49873aac5b0893aebc60a4) (also as clean-up: see below)
+    * [Clean-up: _Java Feature: Convert functional interface instances > Simplify lambda expression and method reference syntax_](https://eclipse.dev/eclipse/news/4.29/jdt.php#lambda-cleanup-improvements) (also as quick fix: see above)
+    * [Improved _Ignore Whitespace_ in Java Compare](https://eclipse.dev/eclipse/news/4.29/jdt.php#ignoreWhitespace)
+    * [JUnit: Show progress when searching test methods](https://eclipse.dev/eclipse/news/4.29/jdt.php#junit-search-progress)
+    * ([Performance](https://github.com/search?utf8=%E2%9C%93&q=performance+OR+speed+OR+faster+org%3Aeclipse-jdt+committer-date%3A2023-06-05..2023-09-10&s=committer-date&o=desc&type=Commits):)
+        * ([ClasspathJar: query length & lastModified together](https://github.com/eclipse-jdt/eclipse.jdt.core/pull/1246))
+        * ([Improve indexing performance for .jar in classpath](https://github.com/eclipse-jdt/eclipse.jdt.core/pull/299))
+        * ([FileHashing: avoid getCanonicalFile()](https://github.com/eclipse-jdt/eclipse.jdt.debug/commit/3f0dd5c661dfe1b017c5f8bdcff39ca9f8b5af44))
+* **General/Platform<!--[📽️](https://youtu.be/OQe_hafeuz8?t=462)-->**
+    * [Import more than one project at once](https://github.com/eclipse-platform/eclipse.platform/issues/226)
+    * ([UI](https://github.com/search?utf8=%E2%9C%93&q=dark+OR+light+OR+theme+OR+layout+org%3Aeclipse-platform+org%3Aeclipse-jdt+committer-date%3A2023-06-05..2023-09-10&s=committer-date&type=Commits):)
+        * ([Color preferences for form header messages](https://github.com/eclipse-platform/eclipse.platform.ui/issues/938) (instead of hard-coded colors))
+    * ([Performance](https://github.com/search?utf8=%E2%9C%93&q=performance+OR+speed+OR+fast+OR+faster+OR+slow+org%3Aeclipse-platform+committer-date%3A2023-06-05..2023-09-10&s=committer-date&o=desc&type=Commits):)
+        * [AnnotationModel uses inefficient iteration over map](https://github.com/eclipse-platform/eclipse.platform.ui/issues/892)
+        * [Update the marker in BasicMarkerUpdater::updateMarker in one operation](https://github.com/eclipse-platform/eclipse.platform.ui/commit/7da51e78950bfec17f05361f7d64cd817eb5b72c)
+        * [Move calls to lock::isConflicting in DeadlocDetector to the end](https://github.com/eclipse-platform/eclipse.platform/commit/cebe637f94a94480c00b24f29d460ec163ba973c)
+        * [Avoid redraw animation on StructuredViewer](https://github.com/eclipse-platform/eclipse.platform.ui/commit/3b9c02c4e1f8364bfb05f66fc5d046ab4d2ff8a2)
+        * [Performance E4 Injector](https://github.com/eclipse-platform/eclipse.platform/pull/577)
+    * [Enable 'Clear Console' key binding for all consoles](https://github.com/eclipse-platform/eclipse.platform/commit/78d2a8cc4955dce7be05966d7c18bb20b6931fdd)
+    * ([Open New Workbench Window on Current Monitor](https://eclipse.dev/eclipse/news/4.29/platform.php#open-new-workbench-window-on-current-monitor))
     * ([_Run/Debug As > ..._ right-click menu directly shows available launch configurations_](https://www.eclipse.org/eclipse/news/4.28/platform.php#launch-debug-shortcuts-expanded) - seems not yet supported by JDT)
-* (**Git<!--[📽️](https://youtu.be/OQe_hafeuz8?t=000)-->**: no changes in the UI (EGit), performance improvements in the underlying Java implementation of Git (JGit), but no scenarios found where this can be reproduced via EGit)
+    * (Mylyn:)
+        * ([Rename Hudson connector to Jenkins connector](https://github.com/eclipse-mylyn/org.eclipse.mylyn/issues/63))
+* **Web<!--[📽️](https://youtu.be/OQe_hafeuz8?t=366)-->**
+    * [Vue.js support](https://github.com/eclipse-wildwebdeveloper/wildwebdeveloper/issues/83)
+    * [TypeScript 5.1](https://devblogs.microsoft.com/typescript/announcing-typescript-5-1)
+        * ...
+    * ECMAScript/JavaScript:
+        * [Completions for `@param` JSDoc tags](https://devblogs.microsoft.com/typescript/announcing-typescript-5-1/#snippet-completions-for-param-jsdoc-tags)
+        * [Implicit returns for `undefined`-returning functions](https://devblogs.microsoft.com/typescript/announcing-typescript-5-1/#easier-implicit-returns-for-undefined-returning-functions)?
+        * React:
+            * [Better type-checking between JSX elements and JSX tag types](https://devblogs.microsoft.com/typescript/announcing-typescript-5-1/#decoupled-type-checking-between-jsx-elements-and-jsx-tag-types)?
+            *...?
+        * _Generic Text Editor_ with language support (via LSP4E) for JavaScript, XML (except yet in the Maven POM editor), JSON, CSS, etc.:
+            * ...
+    * [New preferences _TextMate > Task Tags_](https://github.com/eclipse/tm4e/commit/75adb76aec66a1eed1f5131c54bab87ceda30844)
+* (**Git<!--[📽️](https://youtu.be/OQe_hafeuz8?t=000)-->**)
+    * ([SSH Connections support PKCS#11 Hardware Security Modules](https://wiki.eclipse.org/EGit/New_and_Noteworthy/6.7#SSH_Connections_support_PKCS.2311_Hardware_Security_Modules): see [Wikipedia](https://en.wikipedia.org/wiki/PKCS_11))
 * **(Under development)**
+    * ([Gradle: Kotlin DSL support](https://github.com/eclipse/buildship/pull/1259): `build.gradle.kts`)
     * ([Debug: show values inline](https://www.eclipse.org/eclipse/news/4.23/platform.php#inline-debug-values) (not yet supported in Java, JavaScript, etc.))
     * ([Syntax highlighting and more for various languages/formats via the tm4e language pack feature](https://github.com/eclipse/tm4e/pull/374))
     * ([_Run/Debug As > ..._ right-click menu directly shows available launch configurations_](https://www.eclipse.org/eclipse/news/4.28/platform.php#launch-debug-shortcuts-expanded): supported by JDT?)
 
 ## Publish
-* → [As YouTube video](https://www.youtube.com/playlist?list=PLnh_8hTD4yvnhXSttuewEKgKkmlIj_ND-) (title prefix until release: `+++Coming on June 14, 2023+++ ` )
+* → [As YouTube video](https://www.youtube.com/playlist?list=PLnh_8hTD4yvnhXSttuewEKgKkmlIj_ND-) (title prefix until release: `+++Coming on September 13, 2023+++ ` )

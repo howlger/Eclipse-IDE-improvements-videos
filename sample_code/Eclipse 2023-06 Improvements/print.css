@@ -1,8 +1,0 @@
-@media print {
-    .search_box, .breadcrumbs {
-        display: none;
-    }
-    .menu ol {
-        overflow: hidden !important; /* important is required by IE */
-    }
-}
