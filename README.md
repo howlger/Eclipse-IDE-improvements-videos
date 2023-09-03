@@ -46,14 +46,14 @@
     * [Wild Web Developer](https://projects.eclipse.org/projects/tools.wildwebdeveloper) 1.1.1→**1.3.0**: [GitHub](https://github.com/eclipse/wildwebdeveloper), [release notes](https://github.com/eclipse/wildwebdeveloper/blob/master/RELEASE_NOTES.md#130), [commits](https://github.com/eclipse/wildwebdeveloper/compare/1.1.1...1.3.0)
         * JavaScript/TypeScript language server ([`"typescript": "..."`](https://github.com/eclipse/wildwebdeveloper/blob/master/org.eclipse.wildwebdeveloper/package.json#L5); `plugins/org.eclipse.wildwebdeveloper_<version>/node_modules/typescript/package.json`): 5.0.4→**5.1.6** [releases](https://github.com/microsoft/TypeScript/releases), [announcement](https://devblogs.microsoft.com/typescript/announcing-typescript-5-1)
         * [LemMinX](https://projects.eclipse.org/projects/technology.lemminx) 0.25.0→**0.27.0** ([`org.eclipse.lemminx ... <version>...</version>`](https://github.com/eclipse/wildwebdeveloper/blob/master/org.eclipse.wildwebdeveloper.xml/pom.xml#L40-L43)): [GitHub](https://github.com/eclipse/lemminx), [changelog](https://github.com/eclipse/lemminx/blob/main/CHANGELOG.md#0270-august-3-2023)
+        * ([TM4E](https://projects.eclipse.org/projects/technology.tm4e) (TextMate) 0.6.2→**0.8.1**: [GitHub](https://github.com/eclipse/tm4e), [review](https://projects.eclipse.org/projects/technology.tm4e/reviews/0.8.1-release-review), [release notes](https://github.com/eclipse/tm4e/blob/main/RELEASE_NOTES.md#081), [commits](https://github.com/eclipse/tm4e/compare/0.6.2...0.8.1))
+        * ([LSP4E](https://projects.eclipse.org/projects/technology.lsp4e) (LSP Eclipse IDE integration) 0.23.0: [GitHub](https://github.com/eclipse/lsp4e), [release](https://github.com/eclipse/lsp4e/releases/tag/0.23.0), [commits](https://github.com/eclipse/lsp4e/compare/0.21.0...0.23.0), [review](https://projects.eclipse.org/projects/technology.lsp4e/releases/0.23.0))
+        * ([LSP4J](https://projects.eclipse.org/projects/technology.lsp4j) (LSP Java binding) 0.21.0→**0.21.1**: [GitHub](https://github.com/eclipse/lsp4j), [release](https://github.com/eclipse/lsp4j/releases/tag/v0.21.1), [commits](https://github.com/eclipse/lsp4j/compare/v0.21.0...v0.21.1), [review](https://projects.eclipse.org/projects/technology.lsp4j))
     * ([Web Tools Platform](https://projects.eclipse.org/projects/webtools) 3.30→**3.31**: [bugs](https://bugs.eclipse.org/bugs/report.cgi?x_axis_field=bug_status&y_axis_field=product&query_format=report-table&classification=WebTools&target_milestone=3.31&format=table&action=wrap), [_New & Noteworthy_](https://www.eclipse.org/webtools/releases/3.31/NewAndNoteworthy/), Git [JSF](https://git.eclipse.org/c/jsf/webtools.jsf.git/log/)/[JEE](https://git.eclipse.org/c/jeetools/webtools.javaee.git/log/)/[EJB](https://git.eclipse.org/c/jeetools/webtools.ejb.git/log/)/[Dali](https://git.eclipse.org/c/dali/webtools.dali.git/log/)/[Server Tools](https://git.eclipse.org/c/servertools/webtools.servertools.git/log/)/[Source Editing](https://git.eclipse.org/c/sourceediting/webtools.sourceediting.git/log/))
-* C/C++, PHP, Rust
+* (C/C++, PHP)
     * ([CDT](https://projects.eclipse.org/projects/tools.cdt) (C/C++) 11.2.0→**11.3.0**: [_New & Noteworthy_](https://github.com/eclipse-cdt/cdt/blob/main/NewAndNoteworthy/CDT-11.3.md), [release](https://github.com/eclipse-cdt/cdt/releases/tag/CDT_11_3_0), [commits](https://github.com/eclipse-cdt/cdt/compare/CDT_11_2_0...CDT_11_3_0), [issues](https://github.com/eclipse-cdt/cdt/issues?q=is%3Aissue+sort%3Aupdated-desc))
         * ([Embedded CDT](https://projects.eclipse.org/projects/iot.embed-cdt) (C/C++ for Arm/RISC-V) 6.3.2→**6.4.0**: [GitHub](https://github.com/eclipse-embed-cdt/eclipse-plugins), [commits](https://github.com/eclipse-embed-cdt/eclipse-plugins/compare/v6.3.1...v6.3.2), [review](https://projects.eclipse.org/projects/iot.embed-cdt/reviews/6.4.0-release-review), [news](https://eclipse-embed-cdt.github.io/news/))
     * ([PDT](https://projects.eclipse.org/projects/tools.pdt) (PHP) 8.0.0→**8.1.0**: [issues](https://github.com/eclipse/pdt/issues?q=is%3Aissue+sort%3Aupdated-asc), [Git](https://github.com/eclipse/pdt/commits/master), [_New & Noteworthy 8.1_](https://github.com/eclipse-pdt/pdt/wiki/NewIn81))
-    * ([LSP4J](https://projects.eclipse.org/projects/technology.lsp4j) (LSP Java binding) 0.21.0→**0.21.1**: [GitHub](https://github.com/eclipse/lsp4j), [release](https://github.com/eclipse/lsp4j/releases/tag/v0.21.1), [commits](https://github.com/eclipse/lsp4j/compare/v0.21.0...v0.21.1), [review](https://projects.eclipse.org/projects/technology.lsp4j))
-    * ([LSP4E](https://projects.eclipse.org/projects/technology.lsp4e) (LSP Eclipse IDE integration) 0.23.0: [GitHub](https://github.com/eclipse/lsp4e), [release](https://github.com/eclipse/lsp4e/releases/tag/0.23.0), [commits](https://github.com/eclipse/lsp4e/compare/0.21.0...0.23.0), [review](https://projects.eclipse.org/projects/technology.lsp4e/releases/0.23.0))
-    * ([TM4E](https://projects.eclipse.org/projects/technology.tm4e) (TextMate) 0.6.2→**0.8.1**: [GitHub](https://github.com/eclipse/tm4e), [review](https://projects.eclipse.org/projects/technology.tm4e/reviews/0.8.1-release-review), [release notes](https://github.com/eclipse/tm4e/blob/main/RELEASE_NOTES.md#081), [commits](https://github.com/eclipse/tm4e/compare/0.6.2...0.8.1))
 
 
 ### Features to show
@@ -65,44 +65,35 @@
         * [Code completion improvements and fixes](https://github.com/search?utf8=%E2%9C%93&q=assist+OR+completion+OR+codecompletion+OR+intellisense+org%3Aeclipse-jdt+committer-date%3A2023-06-05..2023-09-10&s=committer-date&o=desc&type=Commits):
             * [Quick assist for deprecated method call](https://github.com/eclipse-jdt/eclipse.jdt.ui/pull/704): [example](https://github.com/eclipse-jdt/eclipse.jdt.ui/issues/687)
             * [Boost constructor parameters](https://github.com/eclipse-jdt/eclipse.jdt.core/pull/1103): [example](https://github.com/eclipse-jdt/eclipse.jdt.core/issues/1102)
-            * [Context-based name recommendation](https://github.com/eclipse-jdt/eclipse.jdt.ui/issues/655
+            * [Context-based name recommendation](https://github.com/eclipse-jdt/eclipse.jdt.ui/issues/655)
             * [Code minings filters](https://github.com/eclipse-jdt/eclipse.jdt.ui/issues/457) (hard-coded)
         * [Quick fix: to convert an anonymous class improved](https://eclipse.dev/eclipse/news/4.29/jdt.php#lambda-cleanup-improvements): for examples see [tests](https://github.com/eclipse-jdt/eclipse.jdt.ui/pull/635/files#diff-b96d632fbc4a0ba97e97e168596307eb575e908d4c49873aac5b0893aebc60a4) (also as clean-up: see below)
     * [Clean-up: _Java Feature: Convert functional interface instances > Simplify lambda expression and method reference syntax_](https://eclipse.dev/eclipse/news/4.29/jdt.php#lambda-cleanup-improvements) (also as quick fix: see above)
     * [Improved _Ignore Whitespace_ in Java Compare](https://eclipse.dev/eclipse/news/4.29/jdt.php#ignoreWhitespace)
-    * [JUnit: Show progress when searching test methods](https://eclipse.dev/eclipse/news/4.29/jdt.php#junit-search-progress)
+    * ([JUnit: Show progress when searching test methods](https://eclipse.dev/eclipse/news/4.29/jdt.php#junit-search-progress))
     * ([Performance](https://github.com/search?utf8=%E2%9C%93&q=performance+OR+speed+OR+faster+org%3Aeclipse-jdt+committer-date%3A2023-06-05..2023-09-10&s=committer-date&o=desc&type=Commits):)
         * ([ClasspathJar: query length & lastModified together](https://github.com/eclipse-jdt/eclipse.jdt.core/pull/1246))
         * ([Improve indexing performance for .jar in classpath](https://github.com/eclipse-jdt/eclipse.jdt.core/pull/299))
         * ([FileHashing: avoid getCanonicalFile()](https://github.com/eclipse-jdt/eclipse.jdt.debug/commit/3f0dd5c661dfe1b017c5f8bdcff39ca9f8b5af44))
 * **General/Platform<!--[📽️](https://youtu.be/OQe_hafeuz8?t=462)-->**
-    * [Import more than one project at once](https://github.com/eclipse-platform/eclipse.platform/issues/226)
+    * [Import more than one project at once](https://github.com/eclipse-platform/eclipse.platform/issues/226): in the _Project Explorere_, select multiple folders containing a `.project` file, right-click and choose _Import as Project_ (does not work in the _Package Explorer_; in the past _Import as Project_ was provided only for a single folder containing a `.project` file)
     * ([UI](https://github.com/search?utf8=%E2%9C%93&q=dark+OR+light+OR+theme+OR+layout+org%3Aeclipse-platform+org%3Aeclipse-jdt+committer-date%3A2023-06-05..2023-09-10&s=committer-date&type=Commits):)
         * ([Color preferences for form header messages](https://github.com/eclipse-platform/eclipse.platform.ui/issues/938) (instead of hard-coded colors))
     * ([Performance](https://github.com/search?utf8=%E2%9C%93&q=performance+OR+speed+OR+fast+OR+faster+OR+slow+org%3Aeclipse-platform+committer-date%3A2023-06-05..2023-09-10&s=committer-date&o=desc&type=Commits):)
-        * [AnnotationModel uses inefficient iteration over map](https://github.com/eclipse-platform/eclipse.platform.ui/issues/892)
-        * [Update the marker in BasicMarkerUpdater::updateMarker in one operation](https://github.com/eclipse-platform/eclipse.platform.ui/commit/7da51e78950bfec17f05361f7d64cd817eb5b72c)
-        * [Move calls to lock::isConflicting in DeadlocDetector to the end](https://github.com/eclipse-platform/eclipse.platform/commit/cebe637f94a94480c00b24f29d460ec163ba973c)
-        * [Avoid redraw animation on StructuredViewer](https://github.com/eclipse-platform/eclipse.platform.ui/commit/3b9c02c4e1f8364bfb05f66fc5d046ab4d2ff8a2)
-        * [Performance E4 Injector](https://github.com/eclipse-platform/eclipse.platform/pull/577)
-    * [Enable 'Clear Console' key binding for all consoles](https://github.com/eclipse-platform/eclipse.platform/commit/78d2a8cc4955dce7be05966d7c18bb20b6931fdd)
+        * ([AnnotationModel uses inefficient iteration over map](https://github.com/eclipse-platform/eclipse.platform.ui/issues/892))
+        * ([Update the marker in BasicMarkerUpdater::updateMarker in one operation](https://github.com/eclipse-platform/eclipse.platform.ui/commit/7da51e78950bfec17f05361f7d64cd817eb5b72c))
+        * ([Move calls to lock::isConflicting in DeadlocDetector to the end](https://github.com/eclipse-platform/eclipse.platform/commit/cebe637f94a94480c00b24f29d460ec163ba973c))
+        * ([Performance E4 Injector](https://github.com/eclipse-platform/eclipse.platform/pull/577))
+    * ([Enable _Clear Console_ key binding for all consoles](https://github.com/eclipse-platform/eclipse.platform/commit/78d2a8cc4955dce7be05966d7c18bb20b6931fdd) (_Clear Console_ by default without key binding))
     * ([Open New Workbench Window on Current Monitor](https://eclipse.dev/eclipse/news/4.29/platform.php#open-new-workbench-window-on-current-monitor))
     * ([_Run/Debug As > ..._ right-click menu directly shows available launch configurations_](https://www.eclipse.org/eclipse/news/4.28/platform.php#launch-debug-shortcuts-expanded) - seems not yet supported by JDT)
     * (Mylyn:)
         * ([Rename Hudson connector to Jenkins connector](https://github.com/eclipse-mylyn/org.eclipse.mylyn/issues/63))
 * **Web<!--[📽️](https://youtu.be/OQe_hafeuz8?t=366)-->**
-    * [Vue.js support](https://github.com/eclipse-wildwebdeveloper/wildwebdeveloper/issues/83)
-    * [TypeScript 5.1](https://devblogs.microsoft.com/typescript/announcing-typescript-5-1)
-        * ...
-    * ECMAScript/JavaScript:
-        * [Completions for `@param` JSDoc tags](https://devblogs.microsoft.com/typescript/announcing-typescript-5-1/#snippet-completions-for-param-jsdoc-tags)
-        * [Implicit returns for `undefined`-returning functions](https://devblogs.microsoft.com/typescript/announcing-typescript-5-1/#easier-implicit-returns-for-undefined-returning-functions)?
-        * React:
-            * [Better type-checking between JSX elements and JSX tag types](https://devblogs.microsoft.com/typescript/announcing-typescript-5-1/#decoupled-type-checking-between-jsx-elements-and-jsx-tag-types)?
-            *...?
-        * _Generic Text Editor_ with language support (via LSP4E) for JavaScript, XML (except yet in the Maven POM editor), JSON, CSS, etc.:
-            * ...
-    * [New preferences _TextMate > Task Tags_](https://github.com/eclipse/tm4e/commit/75adb76aec66a1eed1f5131c54bab87ceda30844)
+    * [Vue.js support](https://github.com/eclipse-wildwebdeveloper/wildwebdeveloper/issues/83): [example](https://vuejs.org/examples/#conditionals-and-loops) ([playground](https://play.vuejs.org); no syntax highlighting when file starts with `<!-- ... -->`)
+    * [TypeScript 5.1](https://devblogs.microsoft.com/typescript/announcing-typescript-5-1) and ECMAScript/JavaScript:
+        * [Implicit returns for `undefined`-returning functions](https://devblogs.microsoft.com/typescript/announcing-typescript-5-1/#easier-implicit-returns-for-undefined-returning-functions): for both, TypeScript and JavaScript (with `// @ts-check` and type definitions via JSDoc)
+        * (Improved React support, e.g. [Better type-checking between JSX elements and JSX tag types](https://devblogs.microsoft.com/typescript/announcing-typescript-5-1/#decoupled-type-checking-between-jsx-elements-and-jsx-tag-types))
 * (**Git<!--[📽️](https://youtu.be/OQe_hafeuz8?t=000)-->**)
     * ([SSH Connections support PKCS#11 Hardware Security Modules](https://wiki.eclipse.org/EGit/New_and_Noteworthy/6.7#SSH_Connections_support_PKCS.2311_Hardware_Security_Modules): see [Wikipedia](https://en.wikipedia.org/wiki/PKCS_11))
 * **(Under development)**
