@@ -9,20 +9,19 @@ class Sample {
 	double mask = 0xffp8d;
 
 	// For deprecated method call: "Replace with inlined method" quick fix
-	void printFactor(int x, int y) {
-		int boost = Api.getFactor(x, y);
+	void printBoost(int a, int b, int c) {
+		int boost = Api.getFactor(a, b, c);
 		System.out.println(boost);
 	}
 
-	// Code completion: propose matching constructor parameters first
+	// Code completion proposes matching constructor parameters first
 	void runTask(Task task) {
-		var job= new Execution();
-		job.run();
+		new Job().run();
 	}
 
-	// Extract local variable: proposed name also based on existing code
-	int getFactor(int a) {
-		return Api.getFactor(a);
+	// Extract local variable: proposed name based on existing code
+	int getFactor(int a, int k) {
+		return Api.getFactor(a, k);
 	}
 
 	// Improved "Convert to lambda expression" quick fix (also as clean-up)
@@ -33,7 +32,7 @@ class Sample {
 				Api.init();
 			}
 		};
-		// Runnable initJob = () -> Api.init();
+		// Before:   ... = () -> Api.init();
 		new Thread(initJob).start();
 	}
 
@@ -42,29 +41,30 @@ class Sample {
 class Api {
 
 	/**
-	 * @deprecated use {@link #getFactor(int)} instead
+	 * @deprecated use {@link #getFactor(int, int)} instead
 	 */
 	@Deprecated
-	public static int getFactor(int x, int y) {
-		int z = x + y;
-		return getFactor(z);
+	public static int getFactor(int x, int y, int z) {
+		int k = 2 * y + 3 * z;
+		return getFactor(x, k);
 	}
 
-	public static int getFactor(int a) {
-		return a & 0xff;
+	public static int getFactor(int a, int b) {
+		return a + b;
 	}
 
 	public static void init() { /* ... */ }
 }
 
-class Execution implements Runnable {
+record Job(String id, String name) implements Runnable {
 
-	Execution() { /* ... */ }
-
-	Execution(String taskId, String taskName) { /* ... */ }
+	Job() {
+		this(null, null);
+	}
 
 	@Override
 	public void run() { /* ... */ }
+
 }
 
-record Task(String taskId, String taskName) {}
+record Task(String id, String name) {}

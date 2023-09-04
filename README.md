@@ -31,8 +31,8 @@
     * Java development tools (JDT) 4.28→**4.29**: [Eclipse 4.29 - New and Noteworthy - Java Development Tools](https://www.eclipse.org/eclipse/news/4.29/jdt.php) ([log](https://github.com/eclipse-platform/www.eclipse.org-eclipse/commits/master/news/4.29/jdt.html)), Git [core](https://github.com/eclipse-jdt/eclipse.jdt.core/commits/master) [UI](https://github.com/eclipse-jdt/eclipse.jdt.ui/commits/master)
         * [Java 21](https://jdk.java.net/21/): [issues](https://github.com/eclipse-jdt/eclipse.jdt.core/milestone/33?closed=1), [update site](https://download.eclipse.org/eclipse/updates/4.29-P-builds/P20230720-0450/), [Marketplace?](https://marketplace.eclipse.org/search/site/Java%252021)
     * (EclEmma (Java code coverage) 3.1.6: [changes](https://www.eclemma.org/changes.html) ([JaCoCo](https://www.jacoco.org/jacoco/trunk/doc/changes.html)), [Git](https://github.com/eclipse/eclemma/commits/master), [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=Eclemma&query_format=advanced&order=changeddate%20DESC))
-    * (M2Eclipse (Maven) 2.3.0: [release notes](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#230), [review](https://projects.eclipse.org/projects/technology.m2e/reviews/2.3.0-release-review), [commits](https://github.com/eclipse-m2e/m2e-core/compare/2.2.0...2.3.0), [issues](https://github.com/eclipse-m2e/m2e-core/issues?q=is%3Aissue+sort%3Aupdated-desc+is%3Aclosed))
-        * (LemMinx-Maven 0.7.2: [release notes](https://github.com/eclipse/lemminx-maven/releases/tag/0.7.2), [commits](https://github.com/eclipse/lemminx-maven/compare/0.7.1...0.7.2), [issues](https://github.com/eclipse/lemminx-maven/issues?q=is%3Aissue+sort%3Aupdated-desc+is%3Aclosed))
+    * M2Eclipse (Maven) 2.3.0→**2.4.0**: [release notes](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#240), [review](https://projects.eclipse.org/projects/technology.m2e/reviews/2.4.0-release-review), [commits](https://github.com/eclipse-m2e/m2e-core/compare/2.3.0...2.4.0), [issues](https://github.com/eclipse-m2e/m2e-core/issues?q=is%3Aissue+sort%3Aupdated-desc+is%3Aclosed)
+        * LemMinx-Maven 0.7.2→**0.10.1** ([included via m2e](https://github.com/eclipse-m2e/m2e-core/blob/master/org.eclipse.m2e.editor.lemminx/pom.xml#L48)): [release notes](https://github.com/eclipse/lemminx-maven/releases/tag/0.10.1), [commits](https://github.com/eclipse/lemminx-maven/compare/0.7.2...0.10.1), [issues](https://github.com/eclipse/lemminx-maven/issues?q=is%3Aissue+sort%3Aupdated-desc+is%3Aclosed)
     * (Buildship (Gradle) 3.1.7: [review](https://projects.eclipse.org/projects/tools.buildship/releases/3.1.7), [commits](https://github.com/eclipse/buildship/commits/master), [announcements](https://discuss.gradle.org/tag/buildship-release))
 * General
     * **Platform** 4.28→**4.29**: [Eclipse 4.29 - New and Noteworthy - Platform and Equinox](https://www.eclipse.org/eclipse/news/4.29/platform.php) ([log](https://github.com/eclipse-platform/www.eclipse.org-eclipse/commits/master/news/4.29/platform.html)), Git [UI](https://github.com/eclipse-platform/eclipse.platform.ui/commits/master) [platform](https://github.com/eclipse-platform/eclipse.platform/commits/master)
@@ -58,7 +58,7 @@
 
 ### Features to show
 
-* **Java <!--[📽️](https://youtu.be/OQe_hafeuz8?t=17)-->**
+* **Java <!-- [📽️](https://youtu.be/OQe_hafeuz8?t=17)-->**
     * [Java 21 support as preview/patch via Marketplace (probably shortly after Eclipse release)](https://marketplace.eclipse.org/search/site/Java%252021)
     * Java editor:
         * [Java Constant Hover](https://eclipse.dev/eclipse/news/4.29/jdt.php#java-constant-hover): for integer or float constants specified in binary, octal, or hex format
@@ -75,7 +75,20 @@
         * ([ClasspathJar: query length & lastModified together](https://github.com/eclipse-jdt/eclipse.jdt.core/pull/1246))
         * ([Improve indexing performance for .jar in classpath](https://github.com/eclipse-jdt/eclipse.jdt.core/pull/299))
         * ([FileHashing: avoid getCanonicalFile()](https://github.com/eclipse-jdt/eclipse.jdt.debug/commit/3f0dd5c661dfe1b017c5f8bdcff39ca9f8b5af44))
-* **General/Platform<!--[📽️](https://youtu.be/OQe_hafeuz8?t=462)-->**
+    * **Maven<!-- [📽️](https://youtu.be/OQe_hafeuz8?t=334)-->**:
+        * [Hover and Ctrl-click for dependencies: restore historical behavior](https://github.com/eclipse/lemminx-maven/issues/345#issuecomment-1504890438)
+        * [Provide refactoring capabilities for Maven properties](https://github.com/eclipse/lemminx-maven/issues/383)
+        * Version completion: [latest versions first](https://github.com/eclipse/lemminx-maven/issues/410) and without [duplicates](https://github.com/eclipse/lemminx-maven/issues/409)
+        * [Support for multiple embedded runtimes](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#support-for-multiple-embedded-runtimes)
+        * Performance (mostly via [LemMinx-Maven](https://github.com/eclipse/lemminx-maven/compare/0.7.2...0.10.1)):
+            * [Show with progress bar the load of long process](https://github.com/eclipse/lemminx-maven/pull/473)
+            * [Initialize maven on background](https://github.com/eclipse/lemminx-maven/pull/468)
+            * [Dependency completion performance](https://github.com/eclipse/lemminx-maven/pull/470)
+            * [Improve performance with artifact id completion](https://github.com/eclipse/lemminx-maven/pull/467)
+            * [Maven Central search results should be cached](https://github.com/eclipse/lemminx-maven/pull/453)
+            * [Support chanceling of operations](https://github.com/eclipse/lemminx-maven/issues/358)
+        * [Download sources by default earlier](https://github.com/eclipse-m2e/m2e-core/issues/117) so that they are already available for code completion before navigating to it
+* **General/Platform<!-- [📽️](https://youtu.be/OQe_hafeuz8?t=462)-->**
     * [Import more than one project at once](https://github.com/eclipse-platform/eclipse.platform/issues/226): in the _Project Explorere_, select multiple folders containing a `.project` file, right-click and choose _Import as Project_ (does not work in the _Package Explorer_; in the past _Import as Project_ was provided only for a single folder containing a `.project` file)
     * ([UI](https://github.com/search?utf8=%E2%9C%93&q=dark+OR+light+OR+theme+OR+layout+org%3Aeclipse-platform+org%3Aeclipse-jdt+committer-date%3A2023-06-05..2023-09-10&s=committer-date&type=Commits):)
         * ([Color preferences for form header messages](https://github.com/eclipse-platform/eclipse.platform.ui/issues/938) (instead of hard-coded colors))
@@ -89,12 +102,12 @@
     * ([_Run/Debug As > ..._ right-click menu directly shows available launch configurations_](https://www.eclipse.org/eclipse/news/4.28/platform.php#launch-debug-shortcuts-expanded) - seems not yet supported by JDT)
     * (Mylyn:)
         * ([Rename Hudson connector to Jenkins connector](https://github.com/eclipse-mylyn/org.eclipse.mylyn/issues/63))
-* **Web<!--[📽️](https://youtu.be/OQe_hafeuz8?t=366)-->**
+* **Web<!-- [📽️](https://youtu.be/OQe_hafeuz8?t=366)-->**
     * [Vue.js support](https://github.com/eclipse-wildwebdeveloper/wildwebdeveloper/issues/83): [example](https://vuejs.org/examples/#conditionals-and-loops) ([playground](https://play.vuejs.org); no syntax highlighting when file starts with `<!-- ... -->`)
     * [TypeScript 5.1](https://devblogs.microsoft.com/typescript/announcing-typescript-5-1) and ECMAScript/JavaScript:
         * [Implicit returns for `undefined`-returning functions](https://devblogs.microsoft.com/typescript/announcing-typescript-5-1/#easier-implicit-returns-for-undefined-returning-functions): for both, TypeScript and JavaScript (with `// @ts-check` and type definitions via JSDoc)
         * (Improved React support, e.g. [Better type-checking between JSX elements and JSX tag types](https://devblogs.microsoft.com/typescript/announcing-typescript-5-1/#decoupled-type-checking-between-jsx-elements-and-jsx-tag-types))
-* (**Git<!--[📽️](https://youtu.be/OQe_hafeuz8?t=000)-->**)
+* (**Git<!-- [📽️](https://youtu.be/OQe_hafeuz8?t=000)-->**)
     * ([SSH Connections support PKCS#11 Hardware Security Modules](https://wiki.eclipse.org/EGit/New_and_Noteworthy/6.7#SSH_Connections_support_PKCS.2311_Hardware_Security_Modules): see [Wikipedia](https://en.wikipedia.org/wiki/PKCS_11))
 * **(Under development)**
     * ([Gradle: Kotlin DSL support](https://github.com/eclipse/buildship/pull/1259): `build.gradle.kts`)
