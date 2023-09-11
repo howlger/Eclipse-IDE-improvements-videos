@@ -1,4 +1,4 @@
-set IDE=java-2023-06
+set IDE=java-2023-09
 set REPO=sample
 
 set ECLIPSE_DIR=%USERPROFILE%\eclipse\%IDE%
@@ -13,7 +13,7 @@ set REPO_ZIP=%USERPROFILE%\git\%REPO%.7z
 ::start C:\Users\Howlger\eclipse-installer\eclipse-inst.exe
 ::echo|set/p=^^^<project.build.sourceEncoding^^^>UTF-8^^^</project.build.sourceEncoding^^^>|clip
 ::echo|set/p=""C:\Program Files\Java\jdk-20-ea\bin\javac^" -d . src\main\java\BytecodeSample.java"|clip
-echo|set/p="C:\Program Files\Eclipse Adoptium\jdk-20.0.1.9-hotspot"|clip
+::echo|set/p="C:\Program Files\Eclipse Adoptium\jdk-20.0.1.9-hotspot"|clip
 
 dir "%ECLIPSE_DIR%\p2"
 

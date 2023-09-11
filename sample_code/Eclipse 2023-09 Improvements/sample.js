@@ -3,6 +3,6 @@
 /**
  * @returns {undefined}
  */
-function sample() {
+function sampleJs() {
     // no returns (okay now)
 }
