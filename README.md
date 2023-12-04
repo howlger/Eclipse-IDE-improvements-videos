@@ -19,7 +19,7 @@
 [2019-06](https://github.com/howlger/Eclipse-IDE-improvements-videos/tree/2019-06)
 </sup>
 
-# +++ Work in progress (for December 6, 2023) +++<br>Eclipse IDE 2023-12 Improvements Video <!--[Eclipse IDE 2023-12 Improvements Video](https://youtu.be/bUnx9_jF-i)-->
+# [Eclipse IDE 2023-12 Improvements Video](https://youtu.be/ilM7GY1uEYI)
 
 * [December 6, 2023](https://calendar.google.com/calendar/event?eid=MnZoYWYyaDZrZnRuOWtpdG9ucjh0NDQwMDYgZ2NoczdubTRudnBtODM3NDY5ZGRqOXRqbGtAZw&ctz=Europe/Berlin) ([calendar](https://calendar.google.com/calendar/embed?src=gchs7nm4nvpm837469ddj9tjlk@group.calendar.google.com&ctz=Europe/Berlin)) - [projects](https://projects.eclipse.org/releases/2023-12) - [wiki](https://wiki.eclipse.org/Category:SimRel-2023-12) - [website](https://eclipse.org/eclipseide/2023-12) ([New & Noteworthy](https://eclipse.org/eclipseide/2023-12/noteworthy)) - [splash screen](https://gitlab.eclipse.org/eclipsefdn/helpdesk/-/issues/2336)
 * Builds: [latest unreleased](https://download.eclipse.org/technology/epp/staging/) → [released](https://download.eclipse.org/technology/epp/downloads/release/2023-12/) ([Jenkins](https://ci.eclipse.org/packaging/job/simrel.epp-tycho-build), [*.aggrcon](https://github.com/eclipse-simrel/simrel.build/commits/main), update sites: [staging](https://download.eclipse.org/staging/2023-12), [release](http://download.eclipse.org/releases/2023-12))
@@ -38,7 +38,7 @@
 * General
     * **Platform** 4.29→**4.30**: [Eclipse 4.30 - New and Noteworthy - Platform and Equinox](https://www.eclipse.org/eclipse/news/4.30/platform.php) ([log](https://github.com/eclipse-platform/www.eclipse.org-eclipse/commits/master/news/4.30/platform.html)), Git [UI](https://github.com/eclipse-platform/eclipse.platform.ui/commits/master) [platform](https://github.com/eclipse-platform/eclipse.platform/commits/master)
     * ([Marketplace Client (MPC)](https://projects.eclipse.org/projects/technology.packaging.mpc) 1.10.1→**1.10.2**: [commits](https://github.com/eclipse-mpc/epp.mpc/commits/master), [issues](https://github.com/eclipse-mpc/epp.mpc/issues))
-    * [Mylyn](https://projects.eclipse.org/projects/tools.mylyn) (task-focused UI) 4.0.0→**[4.1.0](https://github.com/eclipse-mylyn/org.eclipse.mylyn/milestone/3?closed=1)**: [commits](https://github.com/eclipse-mylyn/org.eclipse.mylyn/commits/main)
+    * [Mylyn](https://projects.eclipse.org/projects/tools.mylyn) (task-focused UI) 4.0.0→[**4.1.0**](https://github.com/eclipse-mylyn/org.eclipse.mylyn/milestone/4?closed=1): [commits](https://github.com/eclipse-mylyn/org.eclipse.mylyn/commits/main)
     * (Mylyn WikiText (Markdown editor, etc.) 3.0.48→**3.0.49**: [commits](https://github.com/eclipse-mylyn/org.eclipse.mylyn.docs/compare/wikitext.core-3.0.48...wikitext.core-3.0.49))
     * ([Oomph](https://projects.eclipse.org/projects/tools.oomph) 1.30→**1.31**: [commits](https://github.com/eclipse-oomph/oomph/commits/master), [issus](https://github.com/eclipse-oomph/oomph/issues?q=is%3Aissue+is%3Aclosed+sort%3Aupdated-desc))
     * (EPP: [changelog](https://github.com/eclipse-packaging/packages/blob/master/CHANGELOG.md#2023-12), [commits](https://github.com/eclipse-packaging/packages/commits/master), [issues](https://github.com/eclipse-packaging/packages/issues))
@@ -59,7 +59,7 @@
 
 ### Features to show
 
-* **Java<!-- [📽️](https://youtu.be/bUnx9_jF-ig?t=17)-->**
+* **Java [📽️](https://youtu.be/ilM7GY1uEYI?t=15)**
     * [Java 21 support](https://eclipse.dev/eclipse/news/4.30/jdt.php#Java_21)
         * [Record Patterns (JEP 440)](https://openjdk.org/jeps/440)
         * [Pattern Matching for switch (JEP 441)](https://openjdk.org/jeps/441)
@@ -77,17 +77,17 @@
         * ([In P2Utils.findBundle() the check if the bundle file exists is deferred to the latest possibility in order to speed-up the search if multiple versions are present](https://github.com/eclipse-jdt/eclipse.jdt.ui/commit/80cdc892db1271aaeffd5ea88c73c74b088dcb07))
         * ([Use JavaElementComparator in CleanUpRefactoringWizard](https://github.com/eclipse-jdt/eclipse.jdt.ui/commit/3f6796695adf6fdd9d607cd200f9af05f5c1d20d))
         * ([Avoid O(n^2) in ContentProviders](https://github.com/eclipse-jdt/eclipse.jdt.ui/commit/aadde02f88c7529c28842d389d4c9b30c3b0ee7b))
-    * (**Maven<!-- [📽️](https://youtu.be/bUnx9_jF-ig?t=140)-->**)
-    * (**Gradle<!-- [📽️](https://youtu.be/bUnx9_jF-ig?t=140)-->**:)
+    * (**Maven<!-- [📽️](https://youtu.be/ilM7GY1uEYI?t=000)-->**)
+    * (**Gradle<!-- [📽️](https://youtu.be/ilM7GY1uEYI?t=000)-->**:)
         * ([Kotlin DSL editor support](https://gist.github.com/D0zee/90b63a9cfd2edb7a039f111e2406f5b8#file-gsoc-md): optional installable feature; does not work on Windows yet (by Nikolai Vladimirov in the Google Summer of Code program))
-* **General/Platform<!-- [📽️](https://youtu.be/bUnx9_jF-ig?t=222)-->**
+* (**General/Platform<!-- [📽️](https://youtu.be/ilM7GY1uEYI?t=000)-->**)
     * ([Opening a directory shows existing projects in Project Explorer](https://github.com/eclipse-platform/eclipse.platform.ui/commit/35a5e7bfdc632a8ec9e752c8e068a010c2c346dc) (instead of running always the import wizard as in the past): seems not to work on Windows)
     * ([UI](https://github.com/search?utf8=%E2%9C%93&q=dark+OR+light+OR+theme+OR+layout+org%3Aeclipse-platform+org%3Aeclipse-jdt+committer-date%3A2023-09-05..2023-12-10&s=committer-date&type=Commits))
     * ([Performance](https://github.com/search?utf8=%E2%9C%93&q=performance+OR+speed+OR+fast+OR+faster+OR+slow+org%3Aeclipse-platform+committer-date%3A2023-09-05..2023-12-10&s=committer-date&o=desc&type=Commits):)
         * ([PropertyManager2 iterates the tree for infinite depth for deleting/moving an IFile](https://github.com/eclipse-platform/eclipse.platform/commit/5e0a9979f91c067059ccb88cbe5166f82b3492a3))
     * (Mylyn:)
         * ([Performance: Use an OSGi declarative service instead of IStartup](https://github.com/eclipse-mylyn/org.eclipse.mylyn/pull/201))
-* **Web<!-- [📽️](https://youtu.be/bUnx9_jF-ig?t=238)-->**
+* **Web [📽️](https://youtu.be/ilM7GY1uEYI?t=236)**
     * Latest [TypeScript 5.2](https://devblogs.microsoft.com/typescript/announcing-typescript-5-2) (e.g. [`using ...`](https://devblogs.microsoft.com/typescript/announcing-typescript-5-2/#using-declarations-and-explicit-resource-management)) and ECMAScript/JavaScript:
         * [_Code Actions > Inline variable_](https://devblogs.microsoft.com/typescript/announcing-typescript-5-2/#inline-variable-refactoring)
     * ([Allow using TypeScript version specified by project](https://github.com/eclipse-wildwebdeveloper/wildwebdeveloper/pull/1308))
@@ -96,7 +96,7 @@
         * [Support (code completion and no warnings anymore) for the properties `container`, `container-name` and `container-type`](https://github.com/microsoft/vscode-css-languageservice/pull/365), e.g. `div { container-type: size; }`
         * ([Support (no errors anymore) for `<timeline-range-name>` in `@keyframes`](https://github.com/microsoft/vscode-css-languageservice/pull/355), e.g. `@keyframes sample { cover 50% { color: red; } }` ([experimental](https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes#timeline-range-name)))
     * [Vue support: code completion for Vue-specific things](https://github.com/eclipse-wildwebdeveloper/wildwebdeveloper/issues/1332), e.g. `<li v-|` ([project name must not contain spaces](https://github.com/eclipse-wildwebdeveloper/wildwebdeveloper/issues/1413))
-* (**Git<!-- [📽️](https://youtu.be/bUnx9_jF-ig?t=000)-->**)
+* (**Git<!-- [📽️](https://youtu.be/ilM7GY1uEYI?t=000)-->**)
     * (Performance:)
         * ([Optimize RefDirectory.getRefsByPrefix(String...)](https://github.com/eclipse-jgit/jgit/commit/4f18c5095049116350828e9bb499964ea887ac02))
         * ([RepositoryTreeNode: cache hashCode](https://github.com/eclipse-egit/egit/commit/981b7278c232903ff22cf66d81552907bee86609))

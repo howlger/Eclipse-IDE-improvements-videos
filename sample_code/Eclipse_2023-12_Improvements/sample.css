@@ -1,0 +1,11 @@
+
+li:nth-child(1 of .active) {
+	color: green;
+}
+li:nth-last-child(1 of .not-hidden) {
+	color: orange;
+}
+
+.container {
+	background-color: gray;
+	}
