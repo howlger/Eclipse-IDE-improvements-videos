@@ -81,7 +81,7 @@
     * (**Gradle<!-- [📽️](https://youtu.be/ilM7GY1uEYI?t=000)-->**:)
         * ([Kotlin DSL editor support](https://gist.github.com/D0zee/90b63a9cfd2edb7a039f111e2406f5b8#file-gsoc-md): optional installable feature; does not work on Windows yet (by Nikolai Vladimirov in the Google Summer of Code program))
 * (**General/Platform<!-- [📽️](https://youtu.be/ilM7GY1uEYI?t=000)-->**)
-    * ([Opening a directory shows existing projects in Project Explorer](https://github.com/eclipse-platform/eclipse.platform.ui/commit/35a5e7bfdc632a8ec9e752c8e068a010c2c346dc) (instead of running always the import wizard as in the past): seems not to work on Windows)
+    * ([Opening a directory shows existing projects in _Project Explorer_](https://github.com/eclipse-platform/eclipse.platform.ui/commit/35a5e7bfdc632a8ec9e752c8e068a010c2c346dc): if the project has already been imported, it will be selected in the _Project Explorer_ and ensured that it is opened; otherwise, the dialog for importing projects will be displayed as in the past)
     * ([UI](https://github.com/search?utf8=%E2%9C%93&q=dark+OR+light+OR+theme+OR+layout+org%3Aeclipse-platform+org%3Aeclipse-jdt+committer-date%3A2023-09-05..2023-12-10&s=committer-date&type=Commits))
     * ([Performance](https://github.com/search?utf8=%E2%9C%93&q=performance+OR+speed+OR+fast+OR+faster+OR+slow+org%3Aeclipse-platform+committer-date%3A2023-09-05..2023-12-10&s=committer-date&o=desc&type=Commits):)
         * ([PropertyManager2 iterates the tree for infinite depth for deleting/moving an IFile](https://github.com/eclipse-platform/eclipse.platform/commit/5e0a9979f91c067059ccb88cbe5166f82b3492a3))
