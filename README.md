@@ -20,7 +20,7 @@
 [2019-06](https://github.com/howlger/Eclipse-IDE-improvements-videos/tree/2019-06)
 </sup>
 
-# +++ Work in progress (for March 13, 2024) +++<br>Eclipse IDE 2024-03 Improvements Video <!--[Eclipse IDE 2024-03 Improvements Video](https://youtu.be/ilM7GY1uEYI)-->
+# [Eclipse IDE 2024-03 Improvements Video](https://youtu.be/jMJ7FBMxPgw)
 
 * [March 13, 2024](https://calendar.google.com/calendar/event?eid=MXEwMm1zM2ExMnBwZWJwcjNyMnZkaTkyMHMgZ2NoczdubTRudnBtODM3NDY5ZGRqOXRqbGtAZw&ctz=Europe/Berlin) ([calendar](https://calendar.google.com/calendar/embed?src=gchs7nm4nvpm837469ddj9tjlk@group.calendar.google.com&ctz=Europe/Berlin)) - [projects](https://projects.eclipse.org/releases/2024-03) - [wiki](https://github.com/eclipse-simrel/.github/blob/main/wiki/Simultaneous_Release.md) - [website](https://eclipseide.org/) ([New & Noteworthy](https://eclipseide.org/release/noteworthy/)) - [splash screen](https://gitlab.eclipse.org/eclipsefdn/helpdesk/-/issues/2336)
 * Builds: [latest unreleased](https://download.eclipse.org/technology/epp/staging/) → [released](https://download.eclipse.org/technology/epp/downloads/release/2024-03/) ([Jenkins](https://ci.eclipse.org/packaging/job/simrel.epp-tycho-build), [*.aggrcon](https://github.com/eclipse-simrel/simrel.build/commits/main), update sites: [staging](https://download.eclipse.org/staging/2024-03), [release](http://download.eclipse.org/releases/2024-03))
@@ -47,8 +47,8 @@
     * ([Wild Web Developer](https://projects.eclipse.org/projects/tools.wildwebdeveloper) 1.3.3: [GitHub](https://github.com/eclipse/wildwebdeveloper), [release notes](https://github.com/eclipse/wildwebdeveloper/blob/master/RELEASE_NOTES.md#133), [commits](https://github.com/eclipse/wildwebdeveloper/compare/1.3.0...1.3.3))
         * (JavaScript/TypeScript language server ([`"typescript": "..."`](https://github.com/eclipse/wildwebdeveloper/blob/master/org.eclipse.wildwebdeveloper/package.json#L5); `plugins/org.eclipse.wildwebdeveloper_<version>/node_modules/typescript/package.json`): 5.2.2 [releases](https://github.com/microsoft/TypeScript/releases), [announcement](https://devblogs.microsoft.com/typescript/announcing-typescript-5-2))
         * ([LemMinX](https://projects.eclipse.org/projects/technology.lemminx) 0.27.0 ([`org.eclipse.lemminx ... <version>...</version>`](https://github.com/eclipse/wildwebdeveloper/blob/master/org.eclipse.wildwebdeveloper.xml/pom.xml#L40-L43)): [GitHub](https://github.com/eclipse/lemminx), [changelog](https://github.com/eclipse/lemminx/blob/main/CHANGELOG.md#0270-august-3-2023))
-        * [TM4E](https://projects.eclipse.org/projects/technology.tm4e) (TextMate) 0.8.1→**0.10.2**: [GitHub](https://github.com/eclipse/tm4e), [review](https://projects.eclipse.org/projects/technology.tm4e/reviews/0.8.1-release-review), [releases](https://github.com/eclipse/tm4e/releases), [commits](https://github.com/eclipse/tm4e/compare/0.8.1...0.10.2)
-        * ([LSP4E](https://projects.eclipse.org/projects/technology.lsp4e) (LSP Eclipse IDE integration) 0.24.4→**0.24.8**: [GitHub](https://github.com/eclipse/lsp4e), [release](https://github.com/eclipse/lsp4e/releases/tag/0.24.8), [commits](https://github.com/eclipse/lsp4e/compare/0.24.4...0.24.8), [review](https://projects.eclipse.org/projects/technology.lsp4e/releases/0.24.8))
+        * [TM4E](https://projects.eclipse.org/projects/technology.tm4e) (TextMate) 0.8.1→**0.10.3**: [GitHub](https://github.com/eclipse/tm4e), [review](https://projects.eclipse.org/projects/technology.tm4e/reviews/0.8.1-release-review), [releases](https://github.com/eclipse/tm4e/releases), [commits](https://github.com/eclipse/tm4e/compare/0.8.1...0.10.3)
+        * ([LSP4E](https://projects.eclipse.org/projects/technology.lsp4e) (LSP Eclipse IDE integration) 0.24.4→**0.25.0**: [GitHub](https://github.com/eclipse/lsp4e), [releases](https://github.com/eclipse/lsp4e/releases), [commits](https://github.com/eclipse/lsp4e/compare/0.24.4...0.25.0), [review](https://projects.eclipse.org/projects/technology.lsp4e/releases/0.24.8))
         * ([LSP4J](https://projects.eclipse.org/projects/technology.lsp4j) (LSP Java binding) 0.21.1→**0.22.0**: [GitHub](https://github.com/eclipse/lsp4j), [release](https://github.com/eclipse/lsp4j/releases/tag/v0.22.0), [commits](https://github.com/eclipse/lsp4j/compare/v0.21.1...v0.22.0), [review](https://projects.eclipse.org/projects/technology.lsp4j))
     * ([Web Tools Platform](https://projects.eclipse.org/projects/webtools) 3.32→**3.33**: commits [JSF](https://github.com/eclipse-jsf/webtools.jsf/commits/master/)/[JEE](https://github.com/eclipse-jeetools/webtools.javaee/commits/master/)/[Dali](https://github.com/eclipse-dali/webtools.dali/commits/master/)/[Server Tools](https://github.com/eclipse-servertools/servertools/commits/master/)/[Source Editing](https://github.com/eclipse-sourceediting/sourceediting/commits/master/))
 * (C/C++, PHP)
@@ -59,21 +59,22 @@
 
 ### Features to show
 
-* **Java<!-- [📽️](https://youtu.be/ilM7GY1uEYI?t=15)-->**
+* **Java [📽️](https://youtu.be/jMJ7FBMxPgw?t=16)**
     * Java 22 support [as preview/patch via Marketplace maybe after it has been released](https://marketplace.eclipse.org/search/site/Java%252021) ([branch](https://github.com/eclipse-jdt/eclipse.jdt.core/tree/BETA_JAVA22) exists, but [update site](https://download.eclipse.org/eclipse/updates/4.31-P-builds/) is yet empty)
     * Editor
         * [New Refactoring: _Make static_](https://eclipse.dev/eclipse/news/4.31/jdt.php#new-make-static-refactoring)
+            * By the way, Compare Editor shows number of differences (see below)
         * [Analysis of resource leaks improved with the annotations `@Owning`/`@NotOwning`](https://eclipse.dev/eclipse/news/4.31/jdt.php#annotation-based-resource-analysis)
         * ([Support for code completion inside text block templates](https://github.com/eclipse-jdt/eclipse.jdt.ui/pull/1055): _String Templates_ still preview feature in Java 21 ([JEP 430](https://openjdk.org/jeps/430)) and Java 22 ([JEP 459](https://openjdk.org/jeps/459)))
     * Formatter:
         * [Switch statements/expressions: align arrows on column](https://eclipse.dev/eclipse/news/4.31/jdt.php#align-arrows)
-    * **Maven<!-- [📽️](https://youtu.be/ilM7GY1uEYI?t=000)-->**
+    * **Mave [📽️](https://youtu.be/jMJ7FBMxPgw?t=188)**
+        * [Improved toolchain.xml handling](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#improved-toolchainxml-handling): new preference _Maven > User Settings: User Toolchains_
         * [Project preference for automated Maven project configuration updates](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#project-preference-for-automated-maven-project-configuration-updates): _Automatically update Maven projects configuration_
         * ([Support of global and user settings in .mvn/maven.config](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#support-of-global-and-user-settings-in-mvnmavenconfig))
-        * ([Improved toolchain.xml handling](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#improved-toolchainxml-handling))
         * ([Improved resource linking](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#improved-resource-linking) (see also [commit](https://github.com/eclipse-m2e/m2e-core/commit/60e66fffd0758c4e94c49c0b7e0a2951582d44b3#diff-f622f7b2acc6da6d0be8a24fa90ff2b02f28b2c26200d5ead4361d286effdd8c)))
         * ([Embedded and use Maven 3.9.6](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#embedded-and-use-maven-396))
-    * **(Gradle<!-- [📽️](https://youtu.be/ilM7GY1uEYI?t=000)-->)**
+    * **(Gradle<!-- [📽️](https://youtu.be/jMJ7FBMxPgw?t=000)-->)**
         * ([Kotlin DSL editor support](https://github.com/eclipse/buildship/commit/fbc92bac13b73695671fc04105bb82047d50713e) via the update site https://download.eclipse.org/buildship/updates/latest/ (by Nikolai Vladimirov in the Google Summer of Code program))
     * ([Performance](https://github.com/search?utf8=%E2%9C%93&q=performance+OR+speed+OR+faster+org%3Aeclipse-jdt+committer-date%3A2023-12-05..2024-03-10&s=committer-date&o=desc&type=Commits):)
         * ([Remember non-existence of files](https://github.com/eclipse-jdt/eclipse.jdt.core/commit/b2f56fbee3311425c351990cd8ca66d0ca73a940))
@@ -85,7 +86,7 @@
         * ([Deduplicate "eclipse"](https://github.com/eclipse-jdt/eclipse.jdt.core/commit/86aa2dd8738980fec8a7b1b0db179f1923fbcbdb) ([_"can be reproduced by renaming a class in Platform workspace to IPath"_](https://github.com/eclipse-jdt/eclipse.jdt.core/issues/1743#issuecomment-1854653597)))
         * ([Cache JARs during UI Operations](https://github.com/eclipse-jdt/eclipse.jdt.ui/commit/fc6a25a6a1d46627eae34f4aeab98cafb71a5f70): improves performance of Call-Hierarchy, Type-Hierarchy, Hover, ...)
         * ([Batch reads in UI](https://github.com/eclipse-jdt/eclipse.jdt.core/commit/9fb036c285a793408dcfdd03b2edbc5c3f771170))
-* **General/Platform<!-- [📽️](https://youtu.be/ilM7GY1uEYI?t=000)-->**
+* **General/Platform [📽️](https://youtu.be/jMJ7FBMxPgw?t=227)**
     * Windows Defender Exclusion Check
     * [Compare Editor: number of differences](https://eclipse.dev/eclipse/news/4.31/platform.php#Number_of_differences_shown)
     * [Default editor for a content type](https://github.com/eclipse-platform/eclipse.platform.ui/issues/1380): in preferences _General > Content Types_
@@ -94,8 +95,8 @@
         * [Light theme: highlighting of active editor/view](https://eclipse.dev/eclipse/news/4.31/platform.php#tab_highlight): similar to dark theme
         * ([On macOS, on hovering slightly different editor/view tab color](https://eclipse.dev/eclipse/news/4.31/platform.php#tab_hover))
         * [Options to hide view icons](https://github.com/eclipse-platform/eclipse.platform.ui/pull/1071): preferences _General > Appearance_
-        * [Maximum number of elements to show initial in views](https://eclipse.dev/eclipse/news/4.31/platform.php#viewer_limit_applied)
         * [Windows 11: The text editor font defaults now to _Consolas_](https://github.com/eclipse-platform/eclipse.platform.ui/commit/949383f81ba0d50e8eeab49d5e8f1ca3899a48f2)
+        * [Maximum number of elements to show initial in views](https://eclipse.dev/eclipse/news/4.31/platform.php#viewer_limit_applied)
         * ([Showing resolved workspace path in launch dialog](https://eclipse.dev/eclipse/news/4.31/platform.php#tab_installation_details_features_filter) (_File > Switch Workspace > Other..._))
         * ([_Quick Search_: dialog title now with the query](https://eclipse.dev/eclipse/news/4.31/platform.php#display_search_pattern_in_Quick_Search_dialog))
         * ([_Installation Details_: Filter field for _Features_](https://eclipse.dev/eclipse/news/4.31/platform.php#tab_installation_details_features_filter))
@@ -110,8 +111,8 @@
         * ([Linux: Speedup TreeItem retrieval by removing redundant iterations](https://github.com/eclipse-platform/eclipse.platform.swt/commit/42dd69529632c57467d7a8028485c74bcc97aceb))
         * ([Tree expand in reverse order](https://github.com/eclipse-platform/eclipse.platform.ui/commit/5930a51b59272ef620b4b7ab09e39d356912baa1))
     * (**Mylyn**)
-* **(Git<!-- [📽️](https://youtu.be/ilM7GY1uEYI?t=000)-->)**
-* **(Web<!-- [📽️](https://youtu.be/ilM7GY1uEYI?t=000)-->)**
+* **(Git<!-- [📽️](https://youtu.be/jMJ7FBMxPgw?t=000)-->)**
+* **(Web<!-- [📽️](https://youtu.be/jMJ7FBMxPgw?t=000)-->)**
 * **(Under development)**
     * ([Gradle: Kotlin DSL support](https://github.com/eclipse/buildship/pull/1259): `build.gradle.kts` (does not work on Windows yet))
     * ([Debug: show values inline](https://www.eclipse.org/eclipse/news/4.23/platform.php#inline-debug-values) (not yet supported in Java, JavaScript, etc.))

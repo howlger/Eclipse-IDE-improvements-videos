@@ -1,0 +1,7 @@
+<root>
+	<!-- comment -->
+	<element id="a1" attr1="value">
+		Some text...
+	</element>
+	
+</root>
