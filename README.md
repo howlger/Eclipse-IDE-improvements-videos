@@ -68,7 +68,7 @@
         * ([Support for code completion inside text block templates](https://github.com/eclipse-jdt/eclipse.jdt.ui/pull/1055): _String Templates_ still preview feature in Java 21 ([JEP 430](https://openjdk.org/jeps/430)) and Java 22 ([JEP 459](https://openjdk.org/jeps/459)))
     * Formatter:
         * [Switch statements/expressions: align arrows on column](https://eclipse.dev/eclipse/news/4.31/jdt.php#align-arrows)
-    * **Mave [📽️](https://youtu.be/jMJ7FBMxPgw?t=188)**
+    * **Maven [📽️](https://youtu.be/jMJ7FBMxPgw?t=188)**
         * [Improved toolchain.xml handling](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#improved-toolchainxml-handling): new preference _Maven > User Settings: User Toolchains_
         * [Project preference for automated Maven project configuration updates](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#project-preference-for-automated-maven-project-configuration-updates): _Automatically update Maven projects configuration_
         * ([Support of global and user settings in .mvn/maven.config](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#support-of-global-and-user-settings-in-mvnmavenconfig))
