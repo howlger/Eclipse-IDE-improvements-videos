@@ -60,7 +60,7 @@
 ### Features to show
 
 * **Java [📽️](https://youtu.be/jMJ7FBMxPgw?t=16)**
-    * Java 22 support [as preview/patch via Marketplace maybe after it has been released](https://marketplace.eclipse.org/search/site/Java%252021) ([branch](https://github.com/eclipse-jdt/eclipse.jdt.core/tree/BETA_JAVA22) exists, but [update site](https://download.eclipse.org/eclipse/updates/4.31-P-builds/) is yet empty)
+    * [Java 22 support as preview/patch via the Eclipse Marketplace](https://marketplace.eclipse.org/content/java-22-support-eclipse-2024-03-431)
     * Editor
         * [New Refactoring: _Make static_](https://eclipse.dev/eclipse/news/4.31/jdt.php#new-make-static-refactoring)
             * By the way, Compare Editor shows number of differences (see below)
