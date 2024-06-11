@@ -1,4 +1,4 @@
-set IDE=java-2024-03
+set IDE=java-2024-06
 set REPO=sample
 
 set ECLIPSE_DIR=%USERPROFILE%\eclipse\%IDE%
@@ -13,7 +13,7 @@ set REPO_ZIP=%USERPROFILE%\git\%REPO%.7z
 ::start C:\Users\Howlger\eclipse-installer\eclipse-inst.exe
 ::echo|set/p=^^^<project.build.sourceEncoding^^^>UTF-8^^^</project.build.sourceEncoding^^^>|clip
 ::echo|set/p=""C:\Program Files\Java\jdk-20-ea\bin\javac^" -d . src\main\java\BytecodeSample.java"|clip
-::echo|set/p="C:\Program Files\Eclipse Adoptium\jdk-21.0.1.12-hotspot"|clip
+echo|set/p="C:\Program Files\Eclipse Adoptium\jdk-22.0.1.8-hotspot"|clip
 
 dir "%ECLIPSE_DIR%\p2"
 
@@ -21,12 +21,12 @@ dir "%ECLIPSE_DIR%\p2"
 IF NOT exist "%ECLIPSE_DIR%" (echo Eclipse installation missing: %ECLIPSE_DIR% && pause && exit 1)
 IF NOT exist "%ECLIPSE_P2_CONFIG_ZIP%" (echo Backup of Eclipse p2/configuration missing: %ECLIPSE_P2_CONFIG_ZIP% && pause && exit 1)
 IF NOT exist "%ECLIPSE_WORKSPACE%\.metadata" (echo Workspace missing: %ECLIPSE_WORKSPACE% && pause && exit 1)
-IF NOT exist "%ECLIPSE_WORKSPACE_ZIP%" (echo Backup of workspace missing: %ECLIPSE_WORKSPACE_ZIP% && pause && exit 1)
+::IF NOT exist "%ECLIPSE_WORKSPACE_ZIP%" (echo Backup of workspace missing: %ECLIPSE_WORKSPACE_ZIP% && pause && exit 1)
 IF NOT exist "%REPO_DIR%\.git" (echo Git repository missing: %REPO_DIR% && pause && exit 1)
 
 :: restore Git repository
-rmdir /s /q "%REPO_DIR%"
-"%UNZIP_7ZIP%" x "%REPO_ZIP%" "-o%REPO_DIR%\.."
+::rmdir /s /q "%REPO_DIR%"
+::"%UNZIP_7ZIP%" x "%REPO_ZIP%" "-o%REPO_DIR%\.."
 
 :: reset Eclipse (restore "p2" and "configuration" subdirectories from ZIP)
 rmdir /s /q "%ECLIPSE_DIR%\p2"

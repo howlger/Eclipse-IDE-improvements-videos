@@ -21,7 +21,7 @@
 [2019-06](https://github.com/howlger/Eclipse-IDE-improvements-videos/tree/2019-06)
 </sup>
 
-# +++ Work in progress (for June 12, 2024) +++<br>Eclipse IDE 2024-06 Improvements Video <!--[Eclipse IDE 2024-06 Improvements Video](https://youtu.be/jMJ7FBMxPgw)-->
+# [Eclipse IDE 2024-06 Improvements Video](https://youtu.be/jTaiDGVwygE)
 
 * [June 12, 2024](https://calendar.google.com/calendar/event?eid=MWwxdHBmMmQyanUxNnV0aWswYTA4aWFvbmEgZ2NoczdubTRudnBtODM3NDY5ZGRqOXRqbGtAZw&ctz=Europe/Berlin) ([calendar](https://calendar.google.com/calendar/embed?src=gchs7nm4nvpm837469ddj9tjlk@group.calendar.google.com&ctz=Europe/Berlin)) - [projects](https://projects.eclipse.org/releases/2024-03) - [wiki](https://github.com/eclipse-simrel/.github/blob/main/wiki/Simultaneous_Release.md) - [website](https://eclipseide.org/) ([New & Noteworthy](https://eclipseide.org/release/noteworthy/)) - [splash screen](https://gitlab.eclipse.org/eclipsefdn/helpdesk/-/issues/3963)
 * Builds: [latest unreleased](https://download.eclipse.org/technology/epp/staging/) → [released](https://download.eclipse.org/technology/epp/downloads/release/2024-06/) ([Jenkins](https://ci.eclipse.org/packaging/job/simrel.epp-tycho-build), [*.aggrcon](https://github.com/eclipse-simrel/simrel.build/commits/main), update sites: [staging](https://download.eclipse.org/staging/2024-06), [release](http://download.eclipse.org/releases/2024-06))
@@ -62,29 +62,29 @@
 
 ### Features to show
 
-* **Java<!-- [📽️](https://youtu.be/jMJ7FBMxPgw?t=16)-->**
-    * [Java 22 support](https://github.com/eclipse-jdt/eclipse.jdt.core/milestone/47?closed=1)
+* **Java [📽️](https://youtu.be/jTaiDGVwygE?t=17)**
+    * [Eclipse 2024-06 (4.32) requires and is shipped with Java 21](https://www.eclipse.org/setups/sponsor/?campaign=2024-06)
+    * **[Java 22 support](https://github.com/eclipse-jdt/eclipse.jdt.core/milestone/47?closed=1)** ([`JavaSE-23` is offered as execution environment by mistake](https://github.com/eclipse-jdt/eclipse.jdt.ui/issues/1448))
         * [JEP 456: Unnamed Variables & Patterns](https://openjdk.org/jeps/456): `_` is only allowed in the following cases, not e.g. in a method declaration (`new Consumer<Object>() { @Override public void accept(Object _) { ... }  };` → compile error):
+            * Unnamed lambda parameter: `Consumer<String> progress = _ -> System.out.println('.');`
+            * Unnamed exception parameter: `try { ... } catch (Exception _) { ... }`
             * Unnamed pattern: `switch ... case Point(var x, var _)`
             * Unnamed local variable: `for (Item _ : items) total++;`
-            * Unnamed exception parameter: `try { ... } catch (Exception _) { ... }`
-            * Unnamed lambda parameter: `Consumer<String> progress = _ -> System.out.println('.');`
-    * Editor
+    * Java editor
         * [New Quick Assist: _Split try resource expressions into inner try-with-resources_](https://eclipse.dev/eclipse/news/4.32/jdt.php#split-try-with-resources)
         * [New Quick Assist: _Extract anonymous class declaration to local_](https://eclipse.dev/eclipse/news/4.32/jdt.php#extract-anonymous-class)
         * [Improved Quick Assist: _Use 'MessageFormat/String.format' for string concatenation_](https://eclipse.dev/eclipse/news/4.32/jdt.php#message-format-text-block) for multi-line concatenation to use a text block when using Java 15 or higher
         * [New refactor function: _Encapsulate Fields..._](https://eclipse.dev/eclipse/news/4.32/jdt.php#batch-encapsulate-fields) replaces/enhances _Encapsulate Field..._ for multiple fields
-        * [Record accessor completion](https://github.com/eclipse-jdt/eclipse.jdt.ui/pull/1227): `record X1(int foo) { foo| }`
-        * ([Ctrl+hover menu for a type now also with _Open Call Hierarchy_](https://eclipse.dev/eclipse/news/4.32/jdt.php#types-call-hierarchy-on-ctrl-click) - [seems to work for record and enum types, but not for class types](https://github.com/eclipse-jdt/eclipse.jdt.ui/pull/1367#issuecomment-2143788876))
+        * [Ctrl+hover menu for a type now also with _Open Call Hierarchy_](https://eclipse.dev/eclipse/news/4.32/jdt.php#types-call-hierarchy-on-ctrl-click) - [seems to work for record and enum types, but not for class types](https://github.com/eclipse-jdt/eclipse.jdt.ui/pull/1367#issuecomment-2143788876)
+        * ([Record accessor completion](https://github.com/eclipse-jdt/eclipse.jdt.ui/pull/1227): `record X1(int foo) { foo| }`)
     * [Clean-up improved: _Unnecessary Code: Remove overridden assignment_](https://eclipse.dev/eclipse/news/4.32/jdt.php#combine-decl-and-assignment) to join a variable declaration that is immediately followed by an assignment (e.g. `int count; count = 0;` → `int count = 0;`)
-    * [Javadoc hover and view: Coloring for type parameters](https://eclipse.dev/eclipse/news/4.32/jdt.php#javadocStylingImprovements): coloring can be disabled or configured via new button
-    * (**Maven<!-- [📽️](https://youtu.be/jMJ7FBMxPgw?t=188)-->**)
-    * (**Gradle<!-- [📽️](https://youtu.be/jMJ7FBMxPgw?t=000)-->**)
+    * [Javadoc hover and view: Coloring and improved formatting for type parameters](https://eclipse.dev/eclipse/news/4.32/jdt.php#javadocStylingImprovements): coloring can be disabled or configured via new button
+    * (**Maven<!-- [📽️](https://youtu.be/jTaiDGVwygE?t=188)-->**)
+    * (**Gradle<!-- [📽️](https://youtu.be/jTaiDGVwygE?t=000)-->**)
     * ([Performance](https://github.com/search?utf8=%E2%9C%93&q=performance+OR+speed+OR+faster+org%3Aeclipse-jdt+committer-date%3A2024-03-05..2024-06-10&s=committer-date&o=desc&type=Commits))
-* **General/Platform<!-- [📽️](https://youtu.be/jMJ7FBMxPgw?t=227)-->**
-    * [TextMate Language Pack provides syntax highlighting for many languages and formats](https://github.com/eclipse/tm4e/tree/main/org.eclipse.tm4e.language_pack) (via [Eclipse Wild Web Developer](https://github.com/eclipse-wildwebdeveloper/wildwebdeveloper/commit/796ae273669719c5deb208dcf045ab5d23cc8cbf))
+* **General/Platform [📽️](https://youtu.be/jTaiDGVwygE?t=302)**
+    * [TextMate Language Pack provides syntax highlighting](https://github.com/eclipse/tm4e/tree/main/org.eclipse.tm4e.language_pack) for  [61 languages and formats](https://github.com/eclipse/tm4e/blob/9b43c93cbf881e2b840a663fcb0b8caa5363a338/org.eclipse.tm4e.language_pack/README.md#supported-fileformats) ([initial contribution](https://github.com/eclipse/tm4e/pull/374); included via [Eclipse Wild Web Developer](https://github.com/eclipse-wildwebdeveloper/wildwebdeveloper/commit/796ae273669719c5deb208dcf045ab5d23cc8cbf))
     * [Compare Editor with syntax highlighting](https://eclipse.dev/eclipse/news/4.32/platform.php#generic_editor_in_diff) powered by the Generic Editor and the TextMate Language Pack (from the tm4e project)
-    * ...
     * ([UI](https://github.com/search?utf8=%E2%9C%93&q=dark+OR+light+OR+theme+OR+layout+org%3Aeclipse-platform+org%3Aeclipse-jdt+committer-date%3A2024-03-05..2024-06-10&s=committer-date&type=Commits))
         * ([Keep theme coloring of cells in FocusCellOwnerDrawHighlighter](https://github.com/eclipse-platform/eclipse.platform.ui/commit/229d768ff1fecd095fdde4224de5ae9675236055))
     * ([Performance](https://github.com/search?utf8=%E2%9C%93&q=performance+OR+speed+OR+fast+OR+faster+OR+slow+org%3Aeclipse-platform+committer-date%3A2024-03-05..2024-06-10&s=committer-date&o=desc&type=Commits))
@@ -92,10 +92,10 @@
         * ([SafeFileOutputStream: remember the hash of content to avoid read on save when content hash did not change (~50ms slower)](https://github.com/eclipse-platform/eclipse.platform/commit/8911e2dafaf1044fb28b671bcf2d9b931cdcbc45))
         * ([Do not normalize locations that are already normalized](https://github.com/eclipse-platform/eclipse.platform/commit/a9889fa757c2aee62a551e616fea0e64b13cdd08))
     * (**Mylyn**)
-* (**Git<!-- [📽️](https://youtu.be/jMJ7FBMxPgw?t=000)-->**)
-* **Web<!-- [📽️](https://youtu.be/jMJ7FBMxPgw?t=000)-->**
+* (**Git<!-- [📽️](https://youtu.be/jTaiDGVwygE?t=000)-->**)
+* **Web [📽️](https://youtu.be/jTaiDGVwygE?t=370)**
     * TypeScript 5.4 support, e.g. [`NoInfer` utility type](https://devblogs.microsoft.com/typescript/announcing-typescript-5-4/#the-noinfer-utility-type)
-    * JavaSript/TypeScript tooling:
+    * JavaScript/TypeScript tooling:
         * [Checks for super property accesses on instance fields](https://devblogs.microsoft.com/typescript/announcing-typescript-5-3/#checks-for-super-property-accesses-on-instance-fields)
         * [Preserved Narrowing in Closures Following Last Assignments](https://devblogs.microsoft.com/typescript/announcing-typescript-5-4/#preserved-narrowing-in-closures-following-last-assignments) avoids false-positive _Property '...' does not exist on type ..._ errors
         * [Quick fix for adding missing parameters: _Add missing/optional parameters..._](https://devblogs.microsoft.com/typescript/announcing-typescript-5-4/#quick-fix-for-adding-missing-parameters)
