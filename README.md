@@ -33,7 +33,7 @@
 
 * Java, Maven, Gradle
     * Java development tools (JDT) 4.32→**4.33**: [Eclipse 4.33 - New and Noteworthy - Java Development Tools](https://www.eclipse.org/eclipse/news/4.33/jdt.php) ([log](https://github.com/eclipse-platform/www.eclipse.org-eclipse/commits/master/news/4.32/jdt.html)), Git [core](https://github.com/eclipse-jdt/eclipse.jdt.core/commits/master) [UI](https://github.com/eclipse-jdt/eclipse.jdt.ui/commits/master)
-        * [Java 23](https://jdk.java.net/23/): [issues](https://github.com/eclipse-jdt/eclipse.jdt.core/milestone/69?closed=1) - [already supported in _New Java Project_ dialog?](https://github.com/eclipse-jdt/eclipse.jdt.ui/issues/1349)
+        * [Java 23](https://jdk.java.net/23/): [issues](https://github.com/eclipse-jdt/eclipse.jdt.core/milestone/69?closed=1)
         * [Drop support of Java versions older than Java 8](https://github.com/eclipse-jdt/eclipse.jdt.core/issues/2536)
     * (EclEmma (Java code coverage) 3.1.9→**3.1.10**: [changes](https://www.eclemma.org/changes.html) ([JaCoCo](https://www.jacoco.org/jacoco/trunk/doc/changes.html)), [commits](https://github.com/eclipse/eclemma/commits/master), [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=Eclemma&query_format=advanced&order=changeddate%20DESC))
     * M2Eclipse (Maven) 2.6.1→**2.6.2**: [release notes](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#262), [commits](https://github.com/eclipse-m2e/m2e-core/compare/2.6.1...2.6.2), [issues](https://github.com/eclipse-m2e/m2e-core/issues?q=is%3Aissue+sort%3Aupdated-desc+is%3Aclosed)
@@ -44,7 +44,7 @@
     * ([Marketplace Client (MPC)](https://projects.eclipse.org/projects/technology.packaging.mpc) 1.10.3→**1.11.0**: [commits](https://github.com/eclipse-mpc/epp.mpc/commits/master), [issues](https://github.com/eclipse-mpc/epp.mpc/issues))
     * ([Mylyn](https://projects.eclipse.org/projects/tools.mylyn) (task-focused UI) 4.3.0→[**4.4.0**](https://github.com/eclipse-mylyn/org.eclipse.mylyn/milestone/7?closed=1): [commits](https://github.com/eclipse-mylyn/org.eclipse.mylyn/commits/main))
     * ([Oomph](https://projects.eclipse.org/projects/tools.oomph) 1.33→**1.34**: [commits](https://github.com/eclipse-oomph/oomph/commits/master), [issus](https://github.com/eclipse-oomph/oomph/issues?q=is%3Aissue+is%3Aclosed+sort%3Aupdated-desc))
-    * (EPP: [changelog](https://github.com/eclipse-packaging/packages/blob/master/CHANGELOG.md#2024-06), [commits](https://github.com/eclipse-packaging/packages/commits/master), [issues](https://github.com/eclipse-packaging/packages/issues))
+    * (EPP: [changelog](https://github.com/eclipse-packaging/packages/blob/master/CHANGELOG.md#2024-09), [commits](https://github.com/eclipse-packaging/packages/commits/master), [issues](https://github.com/eclipse-packaging/packages/issues))
 * (J**Git**/EGit 6.10→**7.0**: wiki [JGit](https://github.com/eclipse-jgit/jgit/wiki/New-and-Noteworthy)/[EGit](https://github.com/eclipse-egit/egit/wiki/New-and-Noteworthy-7.0), review [JGit](https://projects.eclipse.org/projects/technology.jgit/releases/7.0.0)/[EGit](https://projects.eclipse.org/projects/technology.egit/releases/7.0.0), commits [JGit](https://github.com/eclipse-jgit/jgit/commits/master)/[EGit](https://github.com/eclipse-egit/egit/commits/master))
 * Web, XML
     * [Wild Web Developer](https://projects.eclipse.org/projects/tools.wildwebdeveloper) 1.3.6→**1.3.7**: [GitHub](https://github.com/https://github.com/eclipse-wildwebdeveloper/wildwebdeveloperwebdeveloper), [release notes](https://github.com/eclipse-wildwebdeveloper/wildwebdeveloper/blob/master/RELEASE_NOTES.md#137), [commits](https://github.com/eclipse-wildwebdeveloper/wildwebdeveloper/compare/1.3.6...1.3.7)
@@ -62,7 +62,53 @@
 
 ### Features to show
 
-* TODO
+* **Java<!-- [📽️](https://youtu.be/jTaiDGVwygE?t=17)-->**
+    * Java 23 support [as preview/patch via Marketplace maybe after it has been released](https://marketplace.eclipse.org/search?search_api_fulltext=Java+23) ([branch](https://github.com/eclipse-jdt/eclipse.jdt.core/tree/BETA_JAVA23) and [update site](https://download.eclipse.org/eclipse/updates/4.33-P-builds/P20240828-1240/) exist, but [composite update site](https://download.eclipse.org/eclipse/updates/4.33-P-builds/) is empty)
+    * [No support of Java versions older than Java 8 anymore](https://eclipse.dev/eclipse/news/4.33/jdt.php#removed-support-for-java7-and-below) (see [details](https://github.com/eclipse-jdt/eclipse.jdt.core/issues/2536))
+        * [Update older project by going to _Project > Properties: Java Compiler_ and hitting _Apply and Close_](https://github.com/eclipse-jdt/eclipse.jdt.ui/commit/95a365fc91472629e70e763516fb0576cddf4ee6#diff-75bddcdfd2484e74dd12777aa5f88c804a476cb214989f7363c5a654ef9eb0b1)
+    * Java editor
+        * [Quick fix to change constructor type](https://eclipse.dev/eclipse/news/4.33/jdt.php#quickfix-change-constructor-type)
+    * Clean-ups
+        * [Improved: _Code Style: Convert if/else if/else chain with 3 blocks min to switch_](https://eclipse.dev/eclipse/news/4.33/jdt.php#enhanced-if-else-switch-cleanup) works now also for Strings and enums
+        * [Improved: _Java Features > Java 15: Convert String concatenation to Text Block > Include StringBuffer or StringBuilder concatenations_](https://eclipse.dev/eclipse/news/4.33/jdt.php#enhnaced-stringbuf-to-text-block-cleanup) works now also without a final `toString()` on the `StringBuffer`/`StringBuilder`
+    * ([Performance](https://github.com/search?utf8=%E2%9C%93&q=performance+OR+speed+OR+faster+org%3Aeclipse-jdt+committer-date%3A2024-06-05..2024-09-10&s=committer-date&o=desc&type=Commits))
+        * ([Use new `IFile` API `IFile.readAllBytes()`/`readAllChars()`](https://github.com/eclipse-jdt/eclipse.jdt.core/commit/18d9a53b48f3ecb3a700b286dde8727c3ae8a3e3))
+    * **Maven<!-- [📽️](https://youtu.be/jTaiDGVwygE?t=188)-->**
+        * [Environment variables, system properties, etc. used in JUnit launch configurations and _Maven > Update Project..._](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#surefirefailsafe-plugin-configuration-propagated-to-junittestng-launch-configuration)
+        * [Embedded Maven updated from 3.9.7 to 3.9.9](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#embedded-and-use-maven-399)
+    * **Gradle<!-- [📽️](https://youtu.be/jTaiDGVwygE?t=000)-->**
+        * [Problems API integration](https://discuss.gradle.org/t/buildship-3-1-10-is-now-available/49045) (experimental; see also [commit](https://github.com/eclipse/buildship/commit/ec8eee378138a446e95631f56baaf389405210fd))
+        * [Syntax highlighting in the compare editor for Gradle build scripts](https://github.com/eclipse/buildship/commit/9ba95e906a6509158560495f9565c1c0b7bbd0c6)
+* **General/Platform [📽️](https://youtu.be/jTaiDGVwygE?t=302)**
+    * Debug
+        * [Possibility to pin _Inspect_ pop-up](https://eclipse.dev/eclipse/news/4.33/platform.php#pin-debug-inspect-popup)
+    * Text editors
+        * [Find/replace overlay](https://eclipse.dev/eclipse/news/4.33/platform.php#find-replace-overlay): enabled by default (option hidden when text editor is too small); can be disabled or moved to the bottom in the preferences _General > Editors > Text Editors_
+        * [Sticky scrolling](https://eclipse.dev/eclipse/news/4.33/platform.php#sticky-scrolling): disabled by default; can be enabled in the preferences _General > Editors > Text Editors_
+    * [UI](https://github.com/search?utf8=%E2%9C%93&q=dark+OR+light+OR+theme+OR+layout+org%3Aeclipse-platform+org%3Aeclipse-jdt+committer-date%3A2024-06-05..2024-09-10&s=committer-date&type=Commits)
+        * [Preview version of improved light theme](https://eclipse.dev/eclipse/news/4.33/platform.php#new-light-theme)
+        * ([Improvement to light and dark theme for Linux](https://github.com/eclipse-platform/eclipse.platform.ui/commit/e41945cce6a8f2ed49c783c58de425cf5ca310f6))
+        * (Hover indicators added for tabs in views and editor - [light theme](https://github.com/eclipse-platform/eclipse.platform.ui/commit/c3ea86f3921d9ec3803ac53d9a69c01bddf14701) and [dark theme](https://github.com/eclipse-platform/eclipse.platform.ui/commit/1356bb314d4a8c25804f023263872c2f0c948b23))
+        * (Improvement to the existing [light theme](https://github.com/eclipse-platform/eclipse.platform.ui/commit/387ec96abfebbf471fe1b79d0020275e29727ad2) and [dark theme](https://github.com/eclipse-platform/eclipse.platform.ui/commit/3678858b611d4c4428b5f5342a427d19de87fb3b))
+        * ([Dark theme: Fix color of toolbar item for macOS only](https://github.com/eclipse-platform/eclipse.platform.swt/pull/1234) (not yet fixed on Windows))
+    * ([New preference to show/hide active editor name](https://eclipse.dev/eclipse/news/4.33/platform.php#show-hide-editor-name))
+    * ([Automatic link handler registration on macOS](https://eclipse.dev/eclipse/news/4.33/platform.php#link-handlers-on-mac))
+    * ([Performance](https://github.com/search?utf8=%E2%9C%93&q=performance+OR+speed+OR+fast+OR+faster+OR+slow+org%3Aeclipse-platform+committer-date%3A2024-06-05..2024-09-10&s=committer-date&o=desc&type=Commits))
+        * ...
+    * (**Mylyn**)
+* (**Git<!-- [📽️](https://youtu.be/jTaiDGVwygE?t=000)-->**)
+    * ([Support of X.509 signatures on commits and tags if an external GPG is used](https://github.com/eclipse-egit/egit/wiki/New-and-Noteworthy-7.0#x509-signatures))
+* **Web [📽️](https://youtu.be/jTaiDGVwygE?t=370)**
+    * TypeScript 5.5 support
+    * JavaScript/TypeScript tooling:
+        * [Regular expression syntax checking](https://devblogs.microsoft.com/typescript/announcing-typescript-5-5/#regular-expression-syntax-checking)
+        * ...
+* (**Under development**)
+    * ([Windows on Arm64 (WoA)](https://eclipse.dev/eclipse/news/4.32/platform.php#winows-on-arm): Eclipse SDK already available, but no IDE packages due to missing Eclipse Temurin JDKs (years ago done in OpenJDK in [JEP 388](https://openjdk.org/jeps/388), but [no OpenJDK JDK 23 Windows/AArch64 early-access builds](https://jdk.java.net/23/); [Microsoft OpenJDK 21 Windows AArch64/ARM64](https://learn.microsoft.com/en-us/java/openjdk/download#openjdk-21)))
+    * ([JDT to support javac instead of ejc](https://www.eclipse.org/lists/jdt-dev/msg02333.html) driven by jdtls: [incubator](https://github.com/eclipse-jdtls/eclipse-jdt-core-incubator/labels/javac))
+    * ([Gradle: Kotlin DSL support](https://github.com/eclipse/buildship/pull/1259): `build.gradle.kts` (does not work on Windows yet))
+    * ([Debug: show values inline](https://www.eclipse.org/eclipse/news/4.23/platform.php#inline-debug-values) (not yet supported in Java, JavaScript, etc.))
+    * ([_Run/Debug As > ..._ right-click menu directly shows available launch configurations_](https://www.eclipse.org/eclipse/news/4.28/platform.php#launch-debug-shortcuts-expanded): supported by JDT?)
 
 
 ## Publish
