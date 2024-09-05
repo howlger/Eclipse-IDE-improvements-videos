@@ -32,7 +32,7 @@
 ### Sources
 
 * Java, Maven, Gradle
-    * Java development tools (JDT) 4.32→**4.33**: [Eclipse 4.33 - New and Noteworthy - Java Development Tools](https://www.eclipse.org/eclipse/news/4.33/jdt.php) ([log](https://github.com/eclipse-platform/www.eclipse.org-eclipse/commits/master/news/4.32/jdt.html)), Git [core](https://github.com/eclipse-jdt/eclipse.jdt.core/commits/master) [UI](https://github.com/eclipse-jdt/eclipse.jdt.ui/commits/master)
+    * Java development tools (JDT) 4.32→**4.33**: [Eclipse 4.33 - New and Noteworthy - Java Development Tools](https://www.eclipse.org/eclipse/news/4.33/jdt.php) ([log](https://github.com/eclipse-platform/www.eclipse.org-eclipse/commits/master/news/4.33/jdt.html)), Git [core](https://github.com/eclipse-jdt/eclipse.jdt.core/commits/master) [UI](https://github.com/eclipse-jdt/eclipse.jdt.ui/commits/master)
         * [Java 23](https://jdk.java.net/23/): [issues](https://github.com/eclipse-jdt/eclipse.jdt.core/milestone/69?closed=1)
         * [Drop support of Java versions older than Java 8](https://github.com/eclipse-jdt/eclipse.jdt.core/issues/2536)
     * (EclEmma (Java code coverage) 3.1.9→**3.1.10**: [changes](https://www.eclemma.org/changes.html) ([JaCoCo](https://www.jacoco.org/jacoco/trunk/doc/changes.html)), [commits](https://github.com/eclipse/eclemma/commits/master), [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=Eclemma&query_format=advanced&order=changeddate%20DESC))
@@ -40,7 +40,7 @@
         * (LemMinx-Maven 0.11.1 ([included via m2e](https://github.com/eclipse-m2e/m2e-core/blob/master/org.eclipse.m2e.editor.lemminx/pom.xml#L48)): [release notes](https://github.com/eclipse/lemminx-maven/releases/tag/0.11.1), [commits](https://github.com/eclipse/lemminx-maven/compare/0.11.0...0.11.1), [issues](https://github.com/eclipse/lemminx-maven/issues?q=is%3Aissue+sort%3Aupdated-desc+is%3Aclosed))
     * Buildship (Gradle) 3.1.9→**3.1.10**: [review](https://projects.eclipse.org/projects/tools.buildship/releases/3.1.10), [commits](https://github.com/eclipse/buildship/commits/master), [announcements](https://discuss.gradle.org/tag/buildship-release)
 * General
-    * **Platform** 4.32→**4.33**: [Eclipse 4.33 - New and Noteworthy - Platform and Equinox](https://www.eclipse.org/eclipse/news/4.33/platform.php) ([log](https://github.com/eclipse-platform/www.eclipse.org-eclipse/commits/master/news/4.32/platform.html)), Git [UI](https://github.com/eclipse-platform/eclipse.platform.ui/commits/master) [platform](https://github.com/eclipse-platform/eclipse.platform/commits/master)
+    * **Platform** 4.32→**4.33**: [Eclipse 4.33 - New and Noteworthy - Platform and Equinox](https://www.eclipse.org/eclipse/news/4.33/platform.php) ([log](https://github.com/eclipse-platform/www.eclipse.org-eclipse/commits/master/news/4.33/platform.html)), Git [UI](https://github.com/eclipse-platform/eclipse.platform.ui/commits/master) [platform](https://github.com/eclipse-platform/eclipse.platform/commits/master)
     * ([Marketplace Client (MPC)](https://projects.eclipse.org/projects/technology.packaging.mpc) 1.10.3→**1.11.0**: [commits](https://github.com/eclipse-mpc/epp.mpc/commits/master), [issues](https://github.com/eclipse-mpc/epp.mpc/issues))
     * ([Mylyn](https://projects.eclipse.org/projects/tools.mylyn) (task-focused UI) 4.3.0→[**4.4.0**](https://github.com/eclipse-mylyn/org.eclipse.mylyn/milestone/7?closed=1): [commits](https://github.com/eclipse-mylyn/org.eclipse.mylyn/commits/main))
     * ([Oomph](https://projects.eclipse.org/projects/tools.oomph) 1.33→**1.34**: [commits](https://github.com/eclipse-oomph/oomph/commits/master), [issus](https://github.com/eclipse-oomph/oomph/issues?q=is%3Aissue+is%3Aclosed+sort%3Aupdated-desc))
@@ -83,26 +83,34 @@
     * Debug
         * [Possibility to pin _Inspect_ pop-up](https://eclipse.dev/eclipse/news/4.33/platform.php#pin-debug-inspect-popup)
     * Text editors
-        * [Find/replace overlay](https://eclipse.dev/eclipse/news/4.33/platform.php#find-replace-overlay): enabled by default (option hidden when text editor is too small); can be disabled or moved to the bottom in the preferences _General > Editors > Text Editors_
         * [Sticky scrolling](https://eclipse.dev/eclipse/news/4.33/platform.php#sticky-scrolling): disabled by default; can be enabled in the preferences _General > Editors > Text Editors_
+        * [Find/replace overlay](https://eclipse.dev/eclipse/news/4.33/platform.php#find-replace-overlay): enabled by default (option hidden when text editor is too small); can be disabled or moved to the bottom in the preferences _General > Editors > Text Editors_
     * [UI](https://github.com/search?utf8=%E2%9C%93&q=dark+OR+light+OR+theme+OR+layout+org%3Aeclipse-platform+org%3Aeclipse-jdt+committer-date%3A2024-06-05..2024-09-10&s=committer-date&type=Commits)
         * [Preview version of improved light theme](https://eclipse.dev/eclipse/news/4.33/platform.php#new-light-theme)
         * ([Improvement to light and dark theme for Linux](https://github.com/eclipse-platform/eclipse.platform.ui/commit/e41945cce6a8f2ed49c783c58de425cf5ca310f6))
         * (Hover indicators added for tabs in views and editor - [light theme](https://github.com/eclipse-platform/eclipse.platform.ui/commit/c3ea86f3921d9ec3803ac53d9a69c01bddf14701) and [dark theme](https://github.com/eclipse-platform/eclipse.platform.ui/commit/1356bb314d4a8c25804f023263872c2f0c948b23))
         * (Improvement to the existing [light theme](https://github.com/eclipse-platform/eclipse.platform.ui/commit/387ec96abfebbf471fe1b79d0020275e29727ad2) and [dark theme](https://github.com/eclipse-platform/eclipse.platform.ui/commit/3678858b611d4c4428b5f5342a427d19de87fb3b))
         * ([Dark theme: Fix color of toolbar item for macOS only](https://github.com/eclipse-platform/eclipse.platform.swt/pull/1234) (not yet fixed on Windows))
+        * ([Convert shared DnD icons from bmp to png and add 2x zoom variants](https://github.com/eclipse-platform/eclipse.platform.ui/commit/b502ad73786ead3e22c1cfc639c1671d7e953bc1))
+        * (Code minings: unnecessary vertical spaces fixed on Windows (might be related to [multi lines code minings](https://eclipse.dev/eclipse/news/4.33/platform.php#multi-line-code-mining) or [Draw code minings at end of line before eol character if possible](https://github.com/eclipse-platform/eclipse.platform.ui/commit/1acae4f9333132ff94da8712908d3b185a165d74)))
+        * ([Adapt close-hovering icon for notification API](https://github.com/eclipse-platform/eclipse.platform.ui/commit/991408d8354de3024f4e650a53badb8eaa82dac7))
     * ([New preference to show/hide active editor name](https://eclipse.dev/eclipse/news/4.33/platform.php#show-hide-editor-name))
     * ([Automatic link handler registration on macOS](https://eclipse.dev/eclipse/news/4.33/platform.php#link-handlers-on-mac))
     * ([Performance](https://github.com/search?utf8=%E2%9C%93&q=performance+OR+speed+OR+fast+OR+faster+OR+slow+org%3Aeclipse-platform+committer-date%3A2024-06-05..2024-09-10&s=committer-date&o=desc&type=Commits))
-        * ...
+        * ([Compare View for big files with Line Spacing freezes eclipse](https://github.com/eclipse-platform/eclipse.platform/commit/80fd47a8edc2915fd4b9fa8efc152881ca7f05e2))
+        * ([Use `InputStream.transferTo()` instead of custom transfers](https://github.com/eclipse-platform/eclipse.platform/commit/cbfee1844b9a9df60424b56c5074378f869fbdfd))
+        * ([Speed up `LocalFile.copy()` by using Java-NIO's `Files.copy()`](https://github.com/eclipse-platform/eclipse.platform/commit/034c7ccc662543ca902a8a95fef74cf71c6b3081))
+        * ([Replace DosHandler by a Handler calling native functions via JNA](https://github.com/eclipse-platform/eclipse.platform/commit/317d41b4a3ced617791a5cce97689ae7ba343274))
+        * ([Avoid 2nd file access on lightweightAutoRefresh](https://github.com/eclipse-platform/eclipse.platform/commit/9fa486f709df66134116aed0a7a94ba5b975b22b))
+        * ([`IFile.write(byte[])`: reduce `store.fetchInfo()`](https://github.com/eclipse-platform/eclipse.platform/commit/31f4f9871349eea1af5b4bb77be22be364fb3763), [2](https://github.com/eclipse-platform/eclipse.platform/commit/c5603d23b5f8879bf018850fe89924c04288ed43))
     * (**Mylyn**)
 * (**Git<!-- [📽️](https://youtu.be/jTaiDGVwygE?t=000)-->**)
     * ([Support of X.509 signatures on commits and tags if an external GPG is used](https://github.com/eclipse-egit/egit/wiki/New-and-Noteworthy-7.0#x509-signatures))
 * **Web [📽️](https://youtu.be/jTaiDGVwygE?t=370)**
     * TypeScript 5.5 support
-    * JavaScript/TypeScript tooling:
-        * [Regular expression syntax checking](https://devblogs.microsoft.com/typescript/announcing-typescript-5-5/#regular-expression-syntax-checking)
-        * ...
+    * JavaScript/TypeScript tooling (in JavaScript enable validation via `// @ts-check`):
+        * [Regular expression syntax checking](https://devblogs.microsoft.com/typescript/announcing-typescript-5-5/#regular-expression-syntax-checking4)
+        * [Inferred type predicates](https://devblogs.microsoft.com/typescript/announcing-typescript-5-5/#inferred-type-predicates1)
 * (**Under development**)
     * ([Windows on Arm64 (WoA)](https://eclipse.dev/eclipse/news/4.32/platform.php#winows-on-arm): Eclipse SDK already available, but no IDE packages due to missing Eclipse Temurin JDKs (years ago done in OpenJDK in [JEP 388](https://openjdk.org/jeps/388), but [no OpenJDK JDK 23 Windows/AArch64 early-access builds](https://jdk.java.net/23/); [Microsoft OpenJDK 21 Windows AArch64/ARM64](https://learn.microsoft.com/en-us/java/openjdk/download#openjdk-21)))
     * ([JDT to support javac instead of ejc](https://www.eclipse.org/lists/jdt-dev/msg02333.html) driven by jdtls: [incubator](https://github.com/eclipse-jdtls/eclipse-jdt-core-incubator/labels/javac))
