@@ -38,7 +38,7 @@
     * (EclEmma (Java code coverage) 3.1.9→**3.1.10**: [changes](https://www.eclemma.org/changes.html) ([JaCoCo](https://www.jacoco.org/jacoco/trunk/doc/changes.html)), [commits](https://github.com/eclipse/eclemma/commits/master), [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=Eclemma&query_format=advanced&order=changeddate%20DESC))
     * M2Eclipse (Maven) 2.6.1→**2.6.2**: [release notes](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#262), [commits](https://github.com/eclipse-m2e/m2e-core/compare/2.6.1...2.6.2), [issues](https://github.com/eclipse-m2e/m2e-core/issues?q=is%3Aissue+sort%3Aupdated-desc+is%3Aclosed)
         * (LemMinx-Maven 0.11.1 ([included via m2e](https://github.com/eclipse-m2e/m2e-core/blob/master/org.eclipse.m2e.editor.lemminx/pom.xml#L48)): [release notes](https://github.com/eclipse/lemminx-maven/releases/tag/0.11.1), [commits](https://github.com/eclipse/lemminx-maven/compare/0.11.0...0.11.1), [issues](https://github.com/eclipse/lemminx-maven/issues?q=is%3Aissue+sort%3Aupdated-desc+is%3Aclosed))
-    * Buildship (Gradle) 3.1.9→**3.1.10**: [review](https://projects.eclipse.org/projects/tools.buildship/releases/3.1.10), [commits](https://github.com/eclipse/buildship/commits/master), [announcements](https://discuss.gradle.org/tag/buildship-release)
+    * (Buildship (Gradle) 3.1.9: [review](https://projects.eclipse.org/projects/tools.buildship/releases/3.1.9), [commits](https://github.com/eclipse/buildship/commits/master), [announcements](https://discuss.gradle.org/tag/buildship-release))
 * General
     * **Platform** 4.32→**4.33**: [Eclipse 4.33 - New and Noteworthy - Platform and Equinox](https://www.eclipse.org/eclipse/news/4.33/platform.php) ([log](https://github.com/eclipse-platform/www.eclipse.org-eclipse/commits/master/news/4.33/platform.html)), Git [UI](https://github.com/eclipse-platform/eclipse.platform.ui/commits/master) [platform](https://github.com/eclipse-platform/eclipse.platform/commits/master)
     * ([Marketplace Client (MPC)](https://projects.eclipse.org/projects/technology.packaging.mpc) 1.10.3→**1.11.0**: [commits](https://github.com/eclipse-mpc/epp.mpc/commits/master), [issues](https://github.com/eclipse-mpc/epp.mpc/issues))
@@ -64,21 +64,19 @@
 
 * **Java<!-- [📽️](https://youtu.be/jTaiDGVwygE?t=17)-->**
     * Java 23 support [as preview/patch via Marketplace maybe after it has been released](https://marketplace.eclipse.org/search?search_api_fulltext=Java+23) ([branch](https://github.com/eclipse-jdt/eclipse.jdt.core/tree/BETA_JAVA23) and [update site](https://download.eclipse.org/eclipse/updates/4.33-P-builds/P20240828-1240/) exist, but [composite update site](https://download.eclipse.org/eclipse/updates/4.33-P-builds/) is empty)
-    * [No support of Java versions older than Java 8 anymore](https://eclipse.dev/eclipse/news/4.33/jdt.php#removed-support-for-java7-and-below) (see [details](https://github.com/eclipse-jdt/eclipse.jdt.core/issues/2536))
+    * [No support of Java versions older than Java 8 anymore](https://eclipse.dev/eclipse/news/4.33/jdt.php#removed-support-for-java7-and-below) (see [details](https://github.com/eclipse-jdt/eclipse.jdt.core/issues/2536); in _New Java Project_ dialog Java versions pull-down menu in reversed order: highest version on top now)
         * [Update older project by going to _Project > Properties: Java Compiler_ and hitting _Apply and Close_](https://github.com/eclipse-jdt/eclipse.jdt.ui/commit/95a365fc91472629e70e763516fb0576cddf4ee6#diff-75bddcdfd2484e74dd12777aa5f88c804a476cb214989f7363c5a654ef9eb0b1)
     * Java editor
-        * [Quick fix to change constructor type](https://eclipse.dev/eclipse/news/4.33/jdt.php#quickfix-change-constructor-type)
+        * ([Quick fix to change constructor type](https://eclipse.dev/eclipse/news/4.33/jdt.php#quickfix-change-constructor-type))
     * Clean-ups
         * [Improved: _Code Style: Convert if/else if/else chain with 3 blocks min to switch_](https://eclipse.dev/eclipse/news/4.33/jdt.php#enhanced-if-else-switch-cleanup) works now also for Strings and enums
         * [Improved: _Java Features > Java 15: Convert String concatenation to Text Block > Include StringBuffer or StringBuilder concatenations_](https://eclipse.dev/eclipse/news/4.33/jdt.php#enhnaced-stringbuf-to-text-block-cleanup) works now also without a final `toString()` on the `StringBuffer`/`StringBuilder`
     * ([Performance](https://github.com/search?utf8=%E2%9C%93&q=performance+OR+speed+OR+faster+org%3Aeclipse-jdt+committer-date%3A2024-06-05..2024-09-10&s=committer-date&o=desc&type=Commits))
         * ([Use new `IFile` API `IFile.readAllBytes()`/`readAllChars()`](https://github.com/eclipse-jdt/eclipse.jdt.core/commit/18d9a53b48f3ecb3a700b286dde8727c3ae8a3e3))
     * **Maven<!-- [📽️](https://youtu.be/jTaiDGVwygE?t=188)-->**
-        * [Environment variables, system properties, etc. used in JUnit launch configurations and _Maven > Update Project..._](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#surefirefailsafe-plugin-configuration-propagated-to-junittestng-launch-configuration)
+        * [Environment variables, system properties, etc. used in JUnit launch configurations](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#surefirefailsafe-plugin-configuration-propagated-to-junittestng-launch-configuration): after editing, manually run _Maven > Update Project..._ to update existing run configurations
         * [Embedded Maven updated from 3.9.7 to 3.9.9](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#embedded-and-use-maven-399)
-    * **Gradle<!-- [📽️](https://youtu.be/jTaiDGVwygE?t=000)-->**
-        * [Problems API integration](https://discuss.gradle.org/t/buildship-3-1-10-is-now-available/49045) (experimental; see also [commit](https://github.com/eclipse/buildship/commit/ec8eee378138a446e95631f56baaf389405210fd))
-        * [Syntax highlighting in the compare editor for Gradle build scripts](https://github.com/eclipse/buildship/commit/9ba95e906a6509158560495f9565c1c0b7bbd0c6)
+    * (**Gradle<!-- [📽️](https://youtu.be/jTaiDGVwygE?t=000)-->**)
 * **General/Platform [📽️](https://youtu.be/jTaiDGVwygE?t=302)**
     * Debug
         * [Possibility to pin _Inspect_ pop-up](https://eclipse.dev/eclipse/news/4.33/platform.php#pin-debug-inspect-popup)
