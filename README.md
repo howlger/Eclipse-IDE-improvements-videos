@@ -22,7 +22,7 @@
 [2019-06](https://github.com/howlger/Eclipse-IDE-improvements-videos/tree/2019-06)
 </sup>
 
-# +++ Work in progress (for September 11, 2024) +++<br>Eclipse IDE 2024-09 Improvements Video <!--# [Eclipse IDE 2024-09 Improvements Video](https://youtu.be/jTaiDGVwygE)-->
+# [Eclipse IDE 2024-09 Improvements Video](https://youtu.be/u8llH82TfPc)
 
 * [September 11, 2024](https://calendar.google.com/calendar/event?eid=MTNudGlsMjd1cWFoM2ZkdjY3bjJjbWs1Z2wgZ2NoczdubTRudnBtODM3NDY5ZGRqOXRqbGtAZw&ctz=Europe/Berlin) ([calendar](https://calendar.google.com/calendar/embed?src=gchs7nm4nvpm837469ddj9tjlk@group.calendar.google.com&ctz=Europe/Berlin)) - [projects](https://projects.eclipse.org/releases/2024-09) - [wiki](https://github.com/eclipse-simrel/.github/blob/main/wiki/Simultaneous_Release.md) - [website](https://eclipseide.org/) ([New & Noteworthy](https://eclipseide.org/release/noteworthy/)) - [splash screen](https://gitlab.eclipse.org/eclipsefdn/helpdesk/-/issues/3963)
 * Builds: [latest unreleased](https://download.eclipse.org/technology/epp/staging/) → [released](https://download.eclipse.org/technology/epp/downloads/release/2024-09/) ([Jenkins](https://ci.eclipse.org/packaging/job/simrel.epp-tycho-build), [*.aggrcon](https://github.com/eclipse-simrel/simrel.build/commits/main), update sites: [staging](https://download.eclipse.org/staging/2024-09), [release](http://download.eclipse.org/releases/2024-09))
@@ -62,10 +62,15 @@
 
 ### Features to show
 
-* **Java<!-- [📽️](https://youtu.be/jTaiDGVwygE?t=17)-->**
+* **Java (1/2) [📽️](https://youtu.be/u8llH82TfPc?t=16)**
     * Java 23 support [as preview/patch via Marketplace maybe after it has been released](https://marketplace.eclipse.org/search?search_api_fulltext=Java+23) ([branch](https://github.com/eclipse-jdt/eclipse.jdt.core/tree/BETA_JAVA23) and [update site](https://download.eclipse.org/eclipse/updates/4.33-P-builds/P20240828-1240/) exist, but [composite update site](https://download.eclipse.org/eclipse/updates/4.33-P-builds/) is empty)
     * [No support of Java versions older than Java 8 anymore](https://eclipse.dev/eclipse/news/4.33/jdt.php#removed-support-for-java7-and-below) (see [details](https://github.com/eclipse-jdt/eclipse.jdt.core/issues/2536); in _New Java Project_ dialog Java versions pull-down menu in reversed order: highest version on top now)
-        * [Update older project by going to _Project > Properties: Java Compiler_ and hitting _Apply and Close_](https://github.com/eclipse-jdt/eclipse.jdt.ui/commit/95a365fc91472629e70e763516fb0576cddf4ee6#diff-75bddcdfd2484e74dd12777aa5f88c804a476cb214989f7363c5a654ef9eb0b1)
+       * [Update older project by going to _Project > Properties: Java Compiler_ and hitting _Apply and Close_](https://github.com/eclipse-jdt/eclipse.jdt.ui/commit/95a365fc91472629e70e763516fb0576cddf4ee6#diff-75bddcdfd2484e74dd12777aa5f88c804a476cb214989f7363c5a654ef9eb0b1)
+* **General/Platform (1/2) [📽️](https://youtu.be/u8llH82TfPc?t=93)**
+    * Text editors
+       * [Find/replace overlay](https://eclipse.dev/eclipse/news/4.33/platform.php#find-replace-overlay): enabled by default (option hidden when text editor is too small); can be disabled or moved to the bottom in the preferences _General > Editors > Text Editors_
+       * [Sticky scrolling](https://eclipse.dev/eclipse/news/4.33/platform.php#sticky-scrolling): disabled by default; can be enabled in the preferences _General > Editors > Text Editors_
+* **Java (2/2) [📽️](https://youtu.be/u8llH82TfPc?t=204)**
     * Java editor
         * ([Quick fix to change constructor type](https://eclipse.dev/eclipse/news/4.33/jdt.php#quickfix-change-constructor-type))
     * Clean-ups
@@ -73,16 +78,9 @@
         * [Improved: _Java Features > Java 15: Convert String concatenation to Text Block > Include StringBuffer or StringBuilder concatenations_](https://eclipse.dev/eclipse/news/4.33/jdt.php#enhnaced-stringbuf-to-text-block-cleanup) works now also without a final `toString()` on the `StringBuffer`/`StringBuilder`
     * ([Performance](https://github.com/search?utf8=%E2%9C%93&q=performance+OR+speed+OR+faster+org%3Aeclipse-jdt+committer-date%3A2024-06-05..2024-09-10&s=committer-date&o=desc&type=Commits))
         * ([Use new `IFile` API `IFile.readAllBytes()`/`readAllChars()`](https://github.com/eclipse-jdt/eclipse.jdt.core/commit/18d9a53b48f3ecb3a700b286dde8727c3ae8a3e3))
-    * **Maven<!-- [📽️](https://youtu.be/jTaiDGVwygE?t=188)-->**
-        * [Environment variables, system properties, etc. used in JUnit launch configurations](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#surefirefailsafe-plugin-configuration-propagated-to-junittestng-launch-configuration): after editing, manually run _Maven > Update Project..._ to update existing run configurations
-        * [Embedded Maven updated from 3.9.7 to 3.9.9](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#embedded-and-use-maven-399)
-    * (**Gradle<!-- [📽️](https://youtu.be/jTaiDGVwygE?t=000)-->**)
-* **General/Platform [📽️](https://youtu.be/jTaiDGVwygE?t=302)**
+* **General/Platform (2/2) [📽️](https://youtu.be/u8llH82TfPc?t=262)**
     * Debug
         * [Possibility to pin _Inspect_ pop-up](https://eclipse.dev/eclipse/news/4.33/platform.php#pin-debug-inspect-popup)
-    * Text editors
-        * [Sticky scrolling](https://eclipse.dev/eclipse/news/4.33/platform.php#sticky-scrolling): disabled by default; can be enabled in the preferences _General > Editors > Text Editors_
-        * [Find/replace overlay](https://eclipse.dev/eclipse/news/4.33/platform.php#find-replace-overlay): enabled by default (option hidden when text editor is too small); can be disabled or moved to the bottom in the preferences _General > Editors > Text Editors_
     * [UI](https://github.com/search?utf8=%E2%9C%93&q=dark+OR+light+OR+theme+OR+layout+org%3Aeclipse-platform+org%3Aeclipse-jdt+committer-date%3A2024-06-05..2024-09-10&s=committer-date&type=Commits)
         * [Preview version of improved light theme](https://eclipse.dev/eclipse/news/4.33/platform.php#new-light-theme)
         * ([Improvement to light and dark theme for Linux](https://github.com/eclipse-platform/eclipse.platform.ui/commit/e41945cce6a8f2ed49c783c58de425cf5ca310f6))
@@ -102,9 +100,13 @@
         * ([Avoid 2nd file access on lightweightAutoRefresh](https://github.com/eclipse-platform/eclipse.platform/commit/9fa486f709df66134116aed0a7a94ba5b975b22b))
         * ([`IFile.write(byte[])`: reduce `store.fetchInfo()`](https://github.com/eclipse-platform/eclipse.platform/commit/31f4f9871349eea1af5b4bb77be22be364fb3763), [2](https://github.com/eclipse-platform/eclipse.platform/commit/c5603d23b5f8879bf018850fe89924c04288ed43))
     * (**Mylyn**)
-* (**Git<!-- [📽️](https://youtu.be/jTaiDGVwygE?t=000)-->**)
+* **Maven [📽️](https://youtu.be/u8llH82TfPc?t=328)**
+    * [Environment variables, system properties, etc. used in JUnit launch configurations](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#surefirefailsafe-plugin-configuration-propagated-to-junittestng-launch-configuration): after editing, manually run _Maven > Update Project..._ to update existing run configurations ([documentation](https://maven.apache.org/surefire/maven-surefire-plugin/test-mojo.html))
+    * [Embedded Maven updated from 3.9.7 to 3.9.9](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#embedded-and-use-maven-399)
+* (**Gradle<!-- [📽️](https://youtu.be/u8llH82TfPc?t=000)-->**)
+* (**Git<!-- [📽️](https://youtu.be/u8llH82TfPc?t=000)-->**)
     * ([Support of X.509 signatures on commits and tags if an external GPG is used](https://github.com/eclipse-egit/egit/wiki/New-and-Noteworthy-7.0#x509-signatures))
-* **Web [📽️](https://youtu.be/jTaiDGVwygE?t=370)**
+* **Web [📽️](https://youtu.be/u8llH82TfPc?t=424)**
     * TypeScript 5.5 support
     * JavaScript/TypeScript tooling (in JavaScript enable validation via `// @ts-check`):
         * [Regular expression syntax checking](https://devblogs.microsoft.com/typescript/announcing-typescript-5-5/#regular-expression-syntax-checking4)
