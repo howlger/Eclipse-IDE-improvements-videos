@@ -72,8 +72,8 @@
             * [JEP 482: Flexible Constructor Bodies (Second Preview)](https://openjdk.org/jeps/482): In constructors, `super(...)` no longer needs to be the first statement
             * [JEP 476: Module Import Declarations (Preview)](https://openjdk.org/jeps/476), e.g. `import module java.desktop;` (with that, type import statements are only needed for ambiguous simple names, like `java.util.List` vs. `java.awt.List`)
      * Java editor
-        * [Problem severity for unused lambda parameters can now be configured](https://eclipse.dev/eclipse/news/4.34/jdt.php#ui-unused-lambda-params)
-        * [New Quich fix: _Rename to unnamed variable_](https://eclipse.dev/eclipse/news/4.34/jdt.php#unused-to-unnamed-quickfix): when using Java 22 or above (see also corresponding clean-up bellow)
+        * [New warning: _Unnecessary code > Value of lambda parameter is not used (22 or higher)_ with corresponding quick fix to configure its problem severity](https://eclipse.dev/eclipse/news/4.34/jdt.php#ui-unused-lambda-params)
+        * [New quick fix: _Rename to unnamed variable_](https://eclipse.dev/eclipse/news/4.34/jdt.php#unused-to-unnamed-quickfix): when using Java 22 or above (see also corresponding clean-up bellow)
      * Clean-ups
          * [Enhanced: _Unnecessary Code > Unused code > Remove unused local variables_](https://eclipse.dev/eclipse/news/4.34/jdt.php#unused-to-unnamed-quickfix): to rename to unnamed variable (`_`) where possible and when using Java 22 or above:
             * Unused lambda parameters
@@ -81,8 +81,8 @@
             * Unused pattern variables in _switch_
             * Unused variables in enhanced and in regular _for_ statements
          * [New: _Code Style > Control statements > Simplify boolean if/else to single return if possible_](https://eclipse.dev/eclipse/news/4.34/jdt.php#boolean-if-else-cleanup): `if (...) { return true; } else { return false; }` → `return ...;`
-         * [Enhanced: _Code Style > Control statements > Convert if/else if/else chain with 3 blocks min to switch_](https://eclipse.dev/eclipse/news/4.34/jdt.php#if-else-to-switch-null-handling): to properly handle the case where the value can be `null` (depending on Java 21 and above vs. lower than Java 20)
-     * [_Call Hierarchy_ view: new filter button](https://eclipse.dev/eclipse/news/4.34/jdt.php#move-filter-button) to [filter test or non-test code](https://eclipse.dev/eclipse/news/4.34/jdt.php#new-filter-options)
+         * ([Enhanced: _Code Style > Control statements > Convert if/else if/else chain with 3 blocks min to switch_](https://eclipse.dev/eclipse/news/4.34/jdt.php#if-else-to-switch-null-handling) to properly handle cases where the value can be `null`: Java 20 and lower (`if (... != null) { switch (...) { ... } } else { ... }`) vs. Java 21 and higher (`case null: ...` thanks to [JEP 441](https://openjdk.org/jeps/441)))
+     * [_Call Hierarchy_ view: new filter button](https://eclipse.dev/eclipse/news/4.34/jdt.php#move-filter-button) with new option [to show test code only](https://eclipse.dev/eclipse/news/4.34/jdt.php#new-filter-options) (_Filter Test Code_ became _Hide Test Code_ or _Test Code only_)
      * [Performance](https://github.com/search?utf8=%E2%9C%93&q=performance+OR+speed+OR+faster+org%3Aeclipse-jdt+committer-date%3A2024-09-05..2024-12-10&s=committer-date&o=desc&type=Commits)
          * ([Avoid reading SourceFile twice](https://github.com/eclipse-jdt/eclipse.jdt.core/commit/55d99cde490111cad4874bc05eec03397ca5bc0e))
          * Faster _Project > Clean..._ via [BatchImageBuilder: write .class files in batches](https://github.com/eclipse-jdt/eclipse.jdt.core/commit/334703df1992132f62da0a3370f47492b99ae613)
@@ -97,7 +97,7 @@
         * [Find/replace overlay: error marker for regular expressions](https://eclipse.dev/eclipse/news/4.34/platform.php#improved-regex-handeling)
      * [UI](https://github.com/search?utf8=%E2%9C%93&q=dark+OR+light+OR+theme+OR+layout+org%3Aeclipse-platform+org%3Aeclipse-jdt+committer-date%3A2024-09-05..2024-12-10&s=committer-date&type=Commits)
         * [On Windows, Monitor-specific scaling (experimental)](https://eclipse.dev/eclipse/news/4.34/platform.php#rescale-on-runtime-preference): disabled by default; can be enabled in _Window > Preferences: General > Appearance_
-        * [Multi-page editors: Tabs at top or bottom](https://eclipse.dev/eclipse/news/4.34/platform.php#dynamic-tab-alignment)
+        * [Multi-page editors: Tabs at top or bottom](https://eclipse.dev/eclipse/news/4.34/platform.php#dynamic-tab-alignment): in preferences _General > Editors_ for _Align multi-page editor tabs_ choose _Top_ or _Bottom_
         * ([Code Mining text color configurable](https://eclipse.dev/eclipse/news/4.34/platform.php#code-minig-color))
         * ([Make Grey Highlight of Inactive Tabs Darker](https://github.com/eclipse-platform/eclipse.platform.ui/commit/8df2017769466ee8993656468e7ccb8fc99a5228))
         * ([On Windows, improvements to Edge browser](https://eclipse.dev/eclipse/news/4.34/platform.php#edge-browser-improvements))
@@ -114,6 +114,7 @@
         * (https://devblogs.microsoft.com/typescript/announcing-typescript-5-6/#correct-override-checks-on-computed-properties) (`override` in JavaScript via JSDoc: `/** @override */`)
         * [Checks for never-initialized variables](https://devblogs.microsoft.com/typescript/announcing-typescript-5-7/#checks-for-never-initialized-variables) (TypeScript only)
  * (**Under development**)
+    * ([Initiative 31](https://github.com/swt-initiative31/): Prototyping work for candidate technology evaluation on Eclipse SWT)
     * ([JDT to support javac instead of ejc](https://www.eclipse.org/lists/jdt-dev/msg02333.html) driven by jdtls: [incubator](https://github.com/eclipse-jdtls/eclipse-jdt-core-incubator/labels/javac))
     * ([Gradle: Kotlin DSL support](https://github.com/eclipse/buildship/pull/1259): `build.gradle.kts` (does not work on Windows yet))
     * ([Debug: show values inline](https://www.eclipse.org/eclipse/news/4.23/platform.php#inline-debug-values) (not yet supported in Java, JavaScript, etc.))
