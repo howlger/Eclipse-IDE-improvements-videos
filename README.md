@@ -23,7 +23,7 @@
 [2019-06](https://github.com/howlger/Eclipse-IDE-improvements-videos/tree/2019-06)
 </sup>
 
-# +++ Work in progress (for December 4, 2024) +++<br>Eclipse IDE 2024-12 Improvements Video <!--# [Eclipse IDE 2024-12 Improvements Video](https://youtu.be/jTaiDGVwygE)-->
+# [Eclipse IDE 2024-12 Improvements Video](https://youtu.be/jTaiDGVwygE)
 
 * [December 4, 2024](https://calendar.google.com/calendar/event?eid=MnJoYzFsOGk1Y3BocjNrYTY4NW9kdXNuODUgZ2NoczdubTRudnBtODM3NDY5ZGRqOXRqbGtAZw&ctz=Europe/Berlin) ([calendar](https://calendar.google.com/calendar/embed?src=gchs7nm4nvpm837469ddj9tjlk@group.calendar.google.com&ctz=Europe/Berlin)) - [projects](https://projects.eclipse.org/releases/2024-12) - [wiki](https://github.com/eclipse-simrel/.github/blob/main/wiki/Simultaneous_Release.md) - [website](https://eclipseide.org/) ([New & Noteworthy](https://eclipseide.org/release/noteworthy/)) - [splash screen](https://gitlab.eclipse.org/eclipsefdn/helpdesk/-/issues/3963)
 * Builds: [latest unreleased](https://download.eclipse.org/technology/epp/staging/) → [released](https://download.eclipse.org/technology/epp/downloads/release/2024-12/) ([Jenkins](https://ci.eclipse.org/packaging/job/simrel.epp-tycho-build), [*.aggrcon](https://github.com/eclipse-simrel/simrel.build/commits/main), update sites: [staging](https://download.eclipse.org/staging/2024-12), [release](http://download.eclipse.org/releases/2024-12))
@@ -63,38 +63,36 @@
 
 ### Features to show
 
- * [IDE packages for Windows on ARM](https://github.com/eclipse-packaging/packages/issues/162) (thanks to the now available Eclipse Temurin JDKs for Windows on ARM)
- * **Java<!-- [📽️](https://youtu.be/u8llH82TfPc?t=16)-->**
+ * **IDE packages for additional platforms [📽️](https://youtu.be/J-oudd3UWmg?t=19)**:
+     * **[Windows on ARM](https://github.com/eclipse-packaging/packages/issues/162)** (supported by the [Eclipse platform since the last release](https://download.eclipse.org/eclipse/downloads/drops4/R-4.32-202406010610/#PlatformRuntime) and now also by [OpenJDK](https://openjdk.org/jeps/388)/[Eclipse Temurin](https://adoptium.net/temurin/releases/?os=windows&arch=aarch64&version=21))
+     * [Linux on RISC-V](https://github.com/eclipse-packaging/packages/issues/162) (supported by the Eclipse platform since this release; longer supported by [OpenJDK](https://openjdk.org/jeps/422)/Eclipse Temurin)
+ * **Java[📽️](https://youtu.be/J-oudd3UWmg?t=45)**
      * [Java 23 support](https://eclipse.dev/eclipse/news/4.34/jdt.php#Java_23) (but IDE packages shipped with Java 21, the latest LTS version)
         * [JEP 467: Markdown Documentation Comments](https://openjdk.org/jeps/467), including [rendering in hover and _Javadoc_ view](https://eclipse.dev/eclipse/news/4.34/jdt.php#markdown-doc)
         * Preview features:
-            * [JEP 477: Implicitly Declared Classes and Instance Main Methods (Third Preview)](https://openjdk.org/jeps/477): `void main() { println("Hello, World!"); }` is a minimal and complete "Hello, World!" application
-            * [JEP 482: Flexible Constructor Bodies (Second Preview)](https://openjdk.org/jeps/482): In constructors, `super(...)` no longer needs to be the first statement
             * [JEP 476: Module Import Declarations (Preview)](https://openjdk.org/jeps/476), e.g. `import module java.desktop;` (with that, type import statements are only needed for ambiguous simple names, like `java.util.List` vs. `java.awt.List`)
+            * [JEP 482: Flexible Constructor Bodies (Second Preview)](https://openjdk.org/jeps/482): In constructors, `super(...)` no longer needs to be the first statement
+            * [JEP 477: Implicitly Declared Classes and Instance Main Methods (Third Preview)](https://openjdk.org/jeps/477): `void main() { println("Hello, World!"); }` is a minimal and complete "Hello, World!" application
      * Java editor
         * [New warning: _Unnecessary code > Value of lambda parameter is not used (22 or higher)_ with corresponding quick fix to configure its problem severity](https://eclipse.dev/eclipse/news/4.34/jdt.php#ui-unused-lambda-params)
         * [New quick fix: _Rename to unnamed variable_](https://eclipse.dev/eclipse/news/4.34/jdt.php#unused-to-unnamed-quickfix): when using Java 22 or above (see also corresponding clean-up bellow)
      * Clean-ups
-         * [Enhanced: _Unnecessary Code > Unused code > Remove unused local variables_](https://eclipse.dev/eclipse/news/4.34/jdt.php#unused-to-unnamed-quickfix): to rename to unnamed variable (`_`) where possible and when using Java 22 or above:
-            * Unused lambda parameters
-            * Unused _try-with-resources_ resources
-            * Unused pattern variables in _switch_
-            * Unused variables in enhanced and in regular _for_ statements
+         * [Enhanced: _Unnecessary Code > Unused code > Remove unused local variables_](https://eclipse.dev/eclipse/news/4.34/jdt.php#unused-to-unnamed-quickfix): to rename to unnamed variable (`_`) where possible and when using Java 22 or above (unused lambda parameters, _try-with-resources_ resources, pattern variables in _switch_ and variables in enhanced as well as in regular _for_ statements)
          * [New: _Code Style > Control statements > Simplify boolean if/else to single return if possible_](https://eclipse.dev/eclipse/news/4.34/jdt.php#boolean-if-else-cleanup): `if (...) { return true; } else { return false; }` → `return ...;`
          * ([Enhanced: _Code Style > Control statements > Convert if/else if/else chain with 3 blocks min to switch_](https://eclipse.dev/eclipse/news/4.34/jdt.php#if-else-to-switch-null-handling) to properly handle cases where the value can be `null`: Java 20 and lower (`if (... != null) { switch (...) { ... } } else { ... }`) vs. Java 21 and higher (`case null: ...` thanks to [JEP 441](https://openjdk.org/jeps/441)))
      * [_Call Hierarchy_ view: new filter button](https://eclipse.dev/eclipse/news/4.34/jdt.php#move-filter-button) with new option [to show test code only](https://eclipse.dev/eclipse/news/4.34/jdt.php#new-filter-options) (_Filter Test Code_ became _Hide Test Code_ or _Test Code only_)
      * [Performance](https://github.com/search?utf8=%E2%9C%93&q=performance+OR+speed+OR+faster+org%3Aeclipse-jdt+committer-date%3A2024-09-05..2024-12-10&s=committer-date&o=desc&type=Commits)
+         * (Faster _Project > Clean..._ via [BatchImageBuilder: write .class files in batches](https://github.com/eclipse-jdt/eclipse.jdt.core/commit/334703df1992132f62da0a3370f47492b99ae613))
          * ([Avoid reading SourceFile twice](https://github.com/eclipse-jdt/eclipse.jdt.core/commit/55d99cde490111cad4874bc05eec03397ca5bc0e))
-         * Faster _Project > Clean..._ via [BatchImageBuilder: write .class files in batches](https://github.com/eclipse-jdt/eclipse.jdt.core/commit/334703df1992132f62da0a3370f47492b99ae613)
-         * [In the preferences _Java > Installed JREs > Execution Environments_, faster switching of the JRE](https://github.com/eclipse-jdt/eclipse.jdt.core/issues/2884) (via [Share JRT entries across projects](https://github.com/eclipse-jdt/eclipse.jdt.core/issues/2884) and [Faster `ExecutionEnvironmentsPreferencePage.performOk()`](https://github.com/eclipse-jdt/eclipse.jdt.debug/commit/c14e32ffe3e7b1bea78f2585a3f3c00d08993083))
-     * (**Maven<!-- [📽️](https://youtu.be/u8llH82TfPc?t=328)-->**)
-     * **Gradle<!-- [📽️](https://youtu.be/u8llH82TfPc?t=000)-->**
-         * [Problems API integration](https://discuss.gradle.org/t/buildship-3-1-10-is-now-available/49045) (experimental; see also [commit](https://github.com/eclipse/buildship/commit/ec8eee378138a446e95631f56baaf389405210fd))
-         * [Syntax highlighting in the compare editor for `build.gradle` files](https://github.com/eclipse/buildship/pull/1311)
- * **General/Platform<!-- [📽️](https://youtu.be/u8llH82TfPc?t=93)-->**
+         * ([In the preferences _Java > Installed JREs > Execution Environments_, faster switching of the JRE](https://github.com/eclipse-jdt/eclipse.jdt.core/issues/2884) (via [Share JRT entries across projects](https://github.com/eclipse-jdt/eclipse.jdt.core/issues/2884) and [Faster `ExecutionEnvironmentsPreferencePage.performOk()`](https://github.com/eclipse-jdt/eclipse.jdt.debug/commit/c14e32ffe3e7b1bea78f2585a3f3c00d08993083)))
+     * (**Maven<!-- [📽️](https://youtu.be/J-oudd3UWmg?t=328)-->**)
+     * **Gradle [📽️](https://youtu.be/J-oudd3UWmg?t=311)**
+         * [Problems API integration](https://discuss.gradle.org/t/buildship-3-1-10-is-now-available/49045): disabled by default; can be enabled in the preferences _Gradel > Experimental features: Enable Problems API support_, e.g. to get problem messages from `javac`, but not e.g. [from this _Modernizer Gradle plugin_](https://github.com/andygoossens/gradle-modernizer-plugin/issues/7) (experimental; see also [commit](https://github.com/eclipse/buildship/commit/ec8eee378138a446e95631f56baaf389405210fd))
+         * ([Syntax highlighting in the compare editor for `build.gradle` files](https://github.com/eclipse/buildship/pull/1311))
+ * **General/Platform [📽️](https://youtu.be/J-oudd3UWmg?t=364)**
      * Text editors
-        * [Syntax highlighting for many formats in all IDE packages via TM4E language pack](https://github.com/eclipse-packaging/packages/blob/master/CHANGELOG.md#2024-12)
-        * [Find/replace overlay: error marker for regular expressions](https://eclipse.dev/eclipse/news/4.34/platform.php#improved-regex-handeling)
+        * ([Syntax highlighting for many formats in all IDE packages via TM4E language pack](https://github.com/eclipse-packaging/packages/blob/master/CHANGELOG.md#2024-12))
+        * ([Find/replace overlay: error marker for regular expressions](https://eclipse.dev/eclipse/news/4.34/platform.php#improved-regex-handeling))
      * [UI](https://github.com/search?utf8=%E2%9C%93&q=dark+OR+light+OR+theme+OR+layout+org%3Aeclipse-platform+org%3Aeclipse-jdt+committer-date%3A2024-09-05..2024-12-10&s=committer-date&type=Commits)
         * [On Windows, Monitor-specific scaling (experimental)](https://eclipse.dev/eclipse/news/4.34/platform.php#rescale-on-runtime-preference): disabled by default; can be enabled in _Window > Preferences: General > Appearance_
         * [Multi-page editors: Tabs at top or bottom](https://eclipse.dev/eclipse/news/4.34/platform.php#dynamic-tab-alignment): in preferences _General > Editors_ for _Align multi-page editor tabs_ choose _Top_ or _Bottom_
@@ -102,16 +100,16 @@
         * ([Make Grey Highlight of Inactive Tabs Darker](https://github.com/eclipse-platform/eclipse.platform.ui/commit/8df2017769466ee8993656468e7ccb8fc99a5228))
         * ([On Windows, improvements to Edge browser](https://eclipse.dev/eclipse/news/4.34/platform.php#edge-browser-improvements))
      * [Performance](https://github.com/search?utf8=%E2%9C%93&q=performance+OR+speed+OR+fast+OR+faster+OR+slow+org%3Aeclipse-platform+committer-date%3A2024-09-05..2024-12-10&s=committer-date&o=desc&type=Commits)
-        * [Improve 'Replace All' performance](https://github.com/eclipse-platform/eclipse.platform.ui/commit/c9b34e44a6fa6d6619916e31f2c1fd0439cb5d71)
-        * [Delete Files of Directories in parallel](https://github.com/eclipse-platform/eclipse.platform/commit/6d514be2aca4b9be131184b63570fd4351c47c77)
-        * [Improve performance for large selection](https://github.com/eclipse-platform/eclipse.platform.ui/commit/5fb1fb4d790c1f65dec22997fbb4e38079b6b7a5)
         * Faster Quick Search: via [Parallel Quick Search](https://github.com/eclipse-platform/eclipse.platform.ui/commit/8d8da43c0baf9f7dab9ca7f3fcf818d7d62cdd1f) and [QuickTextSearcher avoid streaming](https://github.com/eclipse-platform/eclipse.platform.ui/commit/a43889deed6bece2600069c81d5b2368d2d86137)
-        * [Search: fail fast for binary file types without opening the file](https://github.com/eclipse-platform/eclipse.platform.ui/commit/4af4df453fe6fb1de6d487975b987931eaeb9605)
- * (**Git<!-- [📽️](https://youtu.be/u8llH82TfPc?t=000)-->**)
- * **Web<!-- [📽️](https://youtu.be/u8llH82TfPc?t=424)-->**
+        * ([Search: fail fast for binary file types without opening the file](https://github.com/eclipse-platform/eclipse.platform.ui/commit/4af4df453fe6fb1de6d487975b987931eaeb9605))
+        * ([Improve 'Replace All' performance](https://github.com/eclipse-platform/eclipse.platform.ui/commit/c9b34e44a6fa6d6619916e31f2c1fd0439cb5d71))
+        * ([Delete Files of Directories in parallel](https://github.com/eclipse-platform/eclipse.platform/commit/6d514be2aca4b9be131184b63570fd4351c47c77))
+        * ([Improve performance for large selection](https://github.com/eclipse-platform/eclipse.platform.ui/commit/5fb1fb4d790c1f65dec22997fbb4e38079b6b7a5))
+ * (**Git<!-- [📽️](https://youtu.be/J-oudd3UWmg?t=000)-->**)
+ * **Web [📽️](https://youtu.be/J-oudd3UWmg?t=470)**
     * TypeScript 5.7 support
     * JavaScript/TypeScript tooling (in JavaScript enable validation via `// @ts-check`):
-        * (https://devblogs.microsoft.com/typescript/announcing-typescript-5-6/#correct-override-checks-on-computed-properties) (`override` in JavaScript via JSDoc: `/** @override */`)
+        * [Correct `override` checks on computed properties](https://devblogs.microsoft.com/typescript/announcing-typescript-5-6/#correct-override-checks-on-computed-properties) (`override` in JavaScript via JSDoc: `/** @override */`)
         * [Checks for never-initialized variables](https://devblogs.microsoft.com/typescript/announcing-typescript-5-7/#checks-for-never-initialized-variables) (TypeScript only)
  * (**Under development**)
     * ([Initiative 31](https://github.com/swt-initiative31/): Prototyping work for candidate technology evaluation on Eclipse SWT)
@@ -122,4 +120,4 @@
 
 
 ## Publish
-* → [As YouTube video](https://www.youtube.com/playlist?list=PLnh_8hTD4yvnhXSttuewEKgKkmlIj_ND-) (title prefix until release: `+++Coming on September 11, 2024+++ ` )
+* → [As YouTube video](https://www.youtube.com/playlist?list=PLnh_8hTD4yvnhXSttuewEKgKkmlIj_ND-) (title prefix until release: `+++Coming on December 4, 2024+++ ` )
