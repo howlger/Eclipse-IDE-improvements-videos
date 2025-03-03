@@ -23,7 +23,7 @@
 [2019-06](https://github.com/howlger/Eclipse-IDE-improvements-videos/tree/2019-06)
 </sup>
 
-# [Eclipse IDE 2024-12 Improvements Video](https://youtu.be/jTaiDGVwygE)
+# [Eclipse IDE 2024-12 Improvements Video](https://youtu.be/J-oudd3UWmg)
 
 * [December 4, 2024](https://calendar.google.com/calendar/event?eid=MnJoYzFsOGk1Y3BocjNrYTY4NW9kdXNuODUgZ2NoczdubTRudnBtODM3NDY5ZGRqOXRqbGtAZw&ctz=Europe/Berlin) ([calendar](https://calendar.google.com/calendar/embed?src=gchs7nm4nvpm837469ddj9tjlk@group.calendar.google.com&ctz=Europe/Berlin)) - [projects](https://projects.eclipse.org/releases/2024-12) - [wiki](https://github.com/eclipse-simrel/.github/blob/main/wiki/Simultaneous_Release.md) - [website](https://eclipseide.org/) ([New & Noteworthy](https://eclipseide.org/release/noteworthy/)) - [splash screen](https://gitlab.eclipse.org/eclipsefdn/helpdesk/-/issues/3963)
 * Builds: [latest unreleased](https://download.eclipse.org/technology/epp/staging/) → [released](https://download.eclipse.org/technology/epp/downloads/release/2024-12/) ([Jenkins](https://ci.eclipse.org/packaging/job/simrel.epp-tycho-build), [*.aggrcon](https://github.com/eclipse-simrel/simrel.build/commits/main), update sites: [staging](https://download.eclipse.org/staging/2024-12), [release](http://download.eclipse.org/releases/2024-12))
