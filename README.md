@@ -24,7 +24,7 @@
 [2019-06](https://github.com/howlger/Eclipse-IDE-improvements-videos/tree/2019-06)
 </sup>
 
-# +++ Work in progress (for March 12, 2025) +++<br>Eclipse IDE 2025-03 Improvements Video <!--# # [Eclipse IDE 2024-12 Improvements Video](https://youtu.be/J-oudd3UWmg) -->
+# [Eclipse IDE 2025-03 Improvements Video](https://youtu.be/2p_9unQiSz4)
 
 * [March 12, 2025](https://calendar.google.com/calendar/event?eid=NnQzYWptOW12cDIwMnJhaTk1aWwzZXJkN2ggZ2NoczdubTRudnBtODM3NDY5ZGRqOXRqbGtAZw&ctz=Europe/Berlin) ([calendar](https://calendar.google.com/calendar/embed?src=gchs7nm4nvpm837469ddj9tjlk@group.calendar.google.com&ctz=Europe/Berlin)) - [projects](https://projects.eclipse.org/releases/2025-03) - [wiki](https://github.com/eclipse-simrel/.github/blob/main/wiki/Simultaneous_Release.md) - [website](https://eclipseide.org/) ([New & Noteworthy](https://eclipseide.org/release/noteworthy/)) - [splash screen](https://gitlab.eclipse.org/eclipsefdn/helpdesk/-/issues/3963)
 * Builds: [latest unreleased](https://download.eclipse.org/technology/epp/staging/) → [released](https://download.eclipse.org/technology/epp/downloads/release/2025-03/) ([Jenkins](https://ci.eclipse.org/packaging/job/simrel.epp-tycho-build), [*.aggrcon](https://github.com/eclipse-simrel/simrel.build/commits/main), update sites: [staging](https://download.eclipse.org/staging/2025-03), [release](http://download.eclipse.org/releases/2025-03))
@@ -56,59 +56,62 @@
         * ([LSP4J](https://projects.eclipse.org/projects/technology.lsp4j) (LSP Java binding) 0.23.1→**0.24.0**: [GitHub](https://github.com/eclipse/lsp4j), [releases](https://github.com/eclipse/lsp4j/releases), [commits](https://github.com/eclipse/lsp4j/compare/v0.23.1...v0.24.0), [review](https://projects.eclipse.org/projects/technology.lsp4j))
     * ([Web Tools Platform](https://projects.eclipse.org/projects/webtools) 3.36→**3.37**: commits [JSF](https://github.com/eclipse-jsf/webtools.jsf/commits/master/)/[JEE](https://github.com/eclipse-jeetools/webtools.javaee/commits/master/)/[Dali](https://github.com/eclipse-dali/webtools.dali/commits/master/)/[Server Tools](https://github.com/eclipse-servertools/servertools/commits/master/)/[Source Editing](https://github.com/eclipse-sourceediting/sourceediting/commits/master/))
  * (C/C++, PHP)
-     * [CDT](https://projects.eclipse.org/projects/tools.cdt) (C/C++) 11.6.1→**12.0.0**: [_New & Noteworthy_](https://github.com/eclipse-cdt/cdt/blob/main/NewAndNoteworthy/CDT-12.0.md), [releases](https://github.com/eclipse-cdt/cdt/releases), [commits](https://github.com/eclipse-cdt/cdt/compare/CDT_11_6_0...CDT_11_6_1), [issues](https://github.com/eclipse-cdt/cdt/issues?q=is%3Aissue+sort%3Aupdated-desc)
-        * [CDT-LSP](https://github.com/eclipse-cdt/cdt-lsp) 2.0.0→**3.0.0**: [commits](https://github.com/eclipse-cdt/cdt-lsp/commits/master/), [release](https://github.com/eclipse-cdt/cdt-lsp/releases/tag/CDT_LSP_3_0_0)
+     * ([CDT](https://projects.eclipse.org/projects/tools.cdt) (C/C++) 11.6.1→**12.0.0**: [_New & Noteworthy_](https://github.com/eclipse-cdt/cdt/blob/main/NewAndNoteworthy/CDT-12.0.md), [releases](https://github.com/eclipse-cdt/cdt/releases), [commits](https://github.com/eclipse-cdt/cdt/compare/CDT_11_6_0...CDT_11_6_1), [issues](https://github.com/eclipse-cdt/cdt/issues?q=is%3Aissue+sort%3Aupdated-desc))<br>[📽️ Eclipse CDT 12.0 New and Noteworthy (5:42)](https://youtu.be/FvNHo9bDA7Q) ([issue](https://gitlab.eclipse.org/eclipse-wg/ide-wg/community/-/issues/68#note_3256046))
+        * ([CDT-LSP](https://github.com/eclipse-cdt/cdt-lsp) 2.0.0→**3.0.0**: [commits](https://github.com/eclipse-cdt/cdt-lsp/commits/master/), [release](https://github.com/eclipse-cdt/cdt-lsp/releases/tag/CDT_LSP_3_0_0))
         * ([Embedded CDT](https://projects.eclipse.org/projects/iot.embed-cdt) (C/C++ for Arm/RISC-V) 6.6.1: [GitHub](https://github.com/eclipse-embed-cdt/eclipse-plugins), [commits](https://github.com/eclipse-embed-cdt/eclipse-plugins/compare/v6.6.0...v6.6.1), [review](https://projects.eclipse.org/projects/iot.embed-cdt/releases/6.6.1), [news](https://eclipse-embed-cdt.github.io/news/))
     * ([PDT](https://projects.eclipse.org/projects/tools.pdt) (PHP) 8.2.0: [issues](https://github.com/eclipse/pdt/issues?q=is%3Aissue+sort%3Aupdated-asc), [commits](https://github.com/eclipse/pdt/commits/master), [_New & Noteworthy 8.2_](https://github.com/eclipse-pdt/pdt/wiki/NewIn82))
 
 
 ### Features to show
 
- * **Java<!-- [📽️](https://youtu.be/J-oudd3UWmg?t=45)-->**
+ * **Java [📽️](https://youtu.be/2p_9unQiSz4?t=17)**
+     * "Welcome with a fresh light theme": [Enhanced light theme](https://eclipse.dev/eclipse/news/4.35/platform.html#newLightTheme) see General/Platform below
      * Java 24 support [via Marketplace](https://marketplace.eclipse.org/content/java-24-support-eclipse-2025-03-435)
+        * By the way, [GitHub Copilot](https://marketplace.eclipse.org/content/github-copilot) is also finally available on the Marketplace
      * Java editor
-        * [Folding for control statements](https://eclipse.dev/eclipse/news/4.35/jdt.html#new-folding)
         * [New quick fix: _Add permitted types cases_](https://eclipse.dev/eclipse/news/4.35/jdt.html#new-add-permitted-types-quick-fix): for switch statements/expressions of a sealed type (adds also `null` and `default` to make the switch exhaustive)
-     * Clean-ups
-         * [New: _Java Feature > Java 21 > Pattern instanceof to Switch_](https://eclipse.dev/eclipse/news/4.35/jdt.html#new-pattern-instanceof-to-switch): `if (... instanceof ...) { ...` → `switch (...) { case ... -> ...`
-         * [Enhanced: _Java Feature > Java 15 > Convert String concatenation to text block > Include StringBuffer or StringBuilder concatenations_](https://eclipse.dev/eclipse/news/4.35/jdt.html#string-concat-to-text-block-enhancement)
+        * [Folding for control statements](https://eclipse.dev/eclipse/news/4.35/jdt.html#new-folding)
+     * (Clean-ups)
+         * ([New: _Java Feature > Java 21 > Pattern instanceof to Switch_](https://eclipse.dev/eclipse/news/4.35/jdt.html#new-pattern-instanceof-to-switch): `if (... instanceof ...) { ...` → `switch (...) { case ... -> ...`; [does not work in some cases](https://github.com/eclipse-jdt/eclipse.jdt.ui/issues/2066), so maybe show it in the next release when it has been fixed and improved)
+         * ([Enhanced: _Java Feature > Java 15 > Convert String concatenation to text block > Include StringBuffer or StringBuilder concatenations_](https://eclipse.dev/eclipse/news/4.35/jdt.html#string-concat-to-text-block-enhancement))
      * Debug
          * [_Variables_ view: Compare objects](https://eclipse.dev/eclipse/news/4.35/jdt.html#compare-objects)
          * [_Variables/Expressions_ views: Enhanced formatting for exception objects](https://eclipse.dev/eclipse/news/4.35/jdt.html#Detailformatter-for-Exception)
-         * [Detail formatters for primitives and primitives arrays](https://eclipse.dev/eclipse/news/4.35/jdt.html#Detailformatter-for-primitives): in the preferences _Java > Debug > Detail Formatters_ hit _Add..._
+         * [Detail formatters for primitives and primitives arrays](https://eclipse.dev/eclipse/news/4.35/jdt.html#Detailformatter-for-primitives): in the preferences _Java > Debug > Detail Formatters_ hit _Add..._ (see [issue](https://github.com/eclipse-jdt/eclipse.jdt.debug/issues/268))
      * [Performance](https://github.com/search?utf8=%E2%9C%93&q=performance+OR+speed+OR+faster+org%3Aeclipse-jdt+committer-date%3A2024-12-05..2025-03-10&s=committer-date&o=desc&type=Commits)
          * [Performance issues of type inference](https://github.com/eclipse-jdt/eclipse.jdt.core/issues/3590), e.g. `List<Map.Entry<String, String>> value = Arrays.asList(Map.entry("key", "value"), Map.entry("key", "value"), ...);`
-            * [BoundSet: move properTypesByInferenceVariable before loop](https://github.com/eclipse-jdt/eclipse.jdt.core/commit/e498a7a504f6945066f114c4eb029339a967b6d8)
-            * [`InferenceVariable.hashCode`: avoid Mersenne prime](https://github.com/eclipse-jdt/eclipse.jdt.core/commit/15f22d41d670d23e041416f34d566037a2dbf86c)
-         * [Some updates for DOM-first code selection](https://github.com/eclipse-jdt/eclipse.jdt.core/commit/9827871a983ae00938e387fd4030f8982f6893f4)
-         * [DiskIndex: use BufferedOutputStream](https://github.com/eclipse-jdt/eclipse.jdt.core/commit/00010e7cc6c9c416a9a2374c27ae89fdf746835c): `IndexManagerTests` 28s → 22s
-         * [`HierarchyResolver`: check redundant superinterfaces only once](https://github.com/eclipse-jdt/eclipse.jdt.core/commit/e3d4707183811e6beb454ad73eaf2069356a3e74) (see [code example](https://github.com/eclipse-jdt/eclipse.jdt.ui/issues/1945#issue-2791915021))
-         * [Faster `JavaProject.CycleInfo#add`](https://github.com/eclipse-jdt/eclipse.jdt.core/commit/dd00bad884690ae50dc2f560091b30215e698d46)
-         * Avoid `File.getCanonicalPath()` [1](https://github.com/eclipse-jdt/eclipse.jdt.core/commit/aa2310ab8760883f838a50ae60aeeabc9b177509), [2](https://github.com/eclipse-jdt/eclipse.jdt.debug/commit/d9719ca5ea3a43c23df1ab2f164e716328436883)
-         * [`determineIfOnClasspath` with last project used](https://github.com/eclipse-jdt/eclipse.jdt.core/commit/fe3554b98c404a904ddcbde28f9c46dcd6c2f1f6)
-         * [Improve performance in `CharOperation`](https://github.com/eclipse-jdt/eclipse.jdt.core/commit/c2a99e6eead2fe6bba6315dea887f14f046718cd)
-         * [Optimized `ClasspathDirectory`](https://github.com/eclipse-jdt/eclipse.jdt.core/commit/3b617e5d37d296f0de838f464c4667a84cf4ade2)
-         * [Batch compiler util: `writeToDisk` use `Files.write()`](https://github.com/eclipse-jdt/eclipse.jdt.core/commit/8d1cb65af06b6f7d57aaff75919e833747601696)
-     * **Maven<!-- [📽️](https://youtu.be/J-oudd3UWmg?t=328)-->**
-         * [Support for variables in maven installations](https://github.com/eclipse-m2e/m2e-core/blob/main/RELEASE_NOTES.md#support-for-variables-in-maven-installations): in the preferences _Maven > Installations_ hit _Add..._ and use e.g. `${env_var:MAVEN_LATEST}` as _Insallation home_
-         * [Code completion in `bnd-maven-plugin` and `felix-bundle-plugin`](https://github.com/eclipse-m2e/m2e-core/blob/main/RELEASE_NOTES.md#auto-completion-support-for-bnd-maven-plugin-and-felix-bundle-plugin-with-lemminx-editor)
-     * (**Gradle<!-- [📽️](https://youtu.be/J-oudd3UWmg?t=311)-->**)
- * **General/Platform<!-- [📽️](https://youtu.be/J-oudd3UWmg?t=364)-->**
+            * ([BoundSet: move properTypesByInferenceVariable before loop](https://github.com/eclipse-jdt/eclipse.jdt.core/commit/e498a7a504f6945066f114c4eb029339a967b6d8))
+            * ([`InferenceVariable.hashCode`: avoid Mersenne prime](https://github.com/eclipse-jdt/eclipse.jdt.core/commit/15f22d41d670d23e041416f34d566037a2dbf86c))
+         * ([Some updates for DOM-first code selection](https://github.com/eclipse-jdt/eclipse.jdt.core/commit/9827871a983ae00938e387fd4030f8982f6893f4))
+         * ([DiskIndex: use BufferedOutputStream](https://github.com/eclipse-jdt/eclipse.jdt.core/commit/00010e7cc6c9c416a9a2374c27ae89fdf746835c): `IndexManagerTests` 28s → 22s)
+         * ([`HierarchyResolver`: check redundant superinterfaces only once](https://github.com/eclipse-jdt/eclipse.jdt.core/commit/e3d4707183811e6beb454ad73eaf2069356a3e74) (see [code example](https://github.com/eclipse-jdt/eclipse.jdt.ui/issues/1945#issue-2791915021)))
+         * ([Faster `JavaProject.CycleInfo#add`](https://github.com/eclipse-jdt/eclipse.jdt.core/commit/dd00bad884690ae50dc2f560091b30215e698d46))
+         * (Avoid `File.getCanonicalPath()` [1](https://github.com/eclipse-jdt/eclipse.jdt.core/commit/aa2310ab8760883f838a50ae60aeeabc9b177509), [2](https://github.com/eclipse-jdt/eclipse.jdt.debug/commit/d9719ca5ea3a43c23df1ab2f164e716328436883))
+         * ([`determineIfOnClasspath` with last project used](https://github.com/eclipse-jdt/eclipse.jdt.core/commit/fe3554b98c404a904ddcbde28f9c46dcd6c2f1f6))
+         * ([Improve performance in `CharOperation`](https://github.com/eclipse-jdt/eclipse.jdt.core/commit/c2a99e6eead2fe6bba6315dea887f14f046718cd))
+         * ([Optimized `ClasspathDirectory`](https://github.com/eclipse-jdt/eclipse.jdt.core/commit/3b617e5d37d296f0de838f464c4667a84cf4ade2))
+         * ([Batch compiler util: `writeToDisk` use `Files.write()`](https://github.com/eclipse-jdt/eclipse.jdt.core/commit/8d1cb65af06b6f7d57aaff75919e833747601696))
+     * **Maven [📽️](https://youtu.be/2p_9unQiSz4?t=242)**
+         * [Support for variables in Maven installations](https://github.com/eclipse-m2e/m2e-core/blob/main/RELEASE_NOTES.md#support-for-variables-in-maven-installations): in the preferences _Maven > Installations_ hit _Add..._ and use e.g. `${env_var:MVN3}` as _Insallation home_ (works with Maven 3.x; 4.x will be rejected)
+         * ([Code completion in `bnd-maven-plugin` and `felix-bundle-plugin`](https://github.com/eclipse-m2e/m2e-core/blob/main/RELEASE_NOTES.md#auto-completion-support-for-bnd-maven-plugin-and-felix-bundle-plugin-with-lemminx-editor): see [commit](https://github.com/eclipse-m2e/m2e-core/commit/c464287c68fe7930c95cc133c3ae6c36de4346fc) (see also [Apache Felix Maven Bundle Plugin (BND)](https://felix.apache.org/documentation/subprojects/apache-felix-maven-bundle-plugin-bnd.html)))
+     * (**Gradle<!-- [📽️](https://youtu.be/2p_9unQiSz4?t=311)-->**)
+ * **General/Platform [📽️](https://youtu.be/2p_9unQiSz4?t=337)**
      * [UI](https://github.com/search?utf8=%E2%9C%93&q=dark+OR+light+OR+theme+OR+layout+org%3Aeclipse-platform+org%3Aeclipse-jdt+committer-date%3A2024-12-05..2025-03-10&s=committer-date&type=Commits)
-        * [Enhanced light theme](https://eclipse.dev/eclipse/news/4.35/platform.html#newLightTheme)
+        * ([Enhanced light theme](https://eclipse.dev/eclipse/news/4.35/platform.html#newLightTheme): already mentioned above)
         * [Enhanced monitor-specific UI scaling (experimental, Windows only)](https://eclipse.dev/eclipse/news/4.35/platform.html#rescaleOnRuntimePreference)
-        * [Edge as default browser on Windows](https://eclipse.dev/eclipse/news/4.35/platform.html#edgeBrowserDefault)
+        * ([Edge as default browser on Windows](https://eclipse.dev/eclipse/news/4.35/platform.html#edgeBrowserDefault))
         * ([In the preferences _General > Keys_ `Up`/`Down`/`Left`/`Right` as `↑`/`↓`/`←`/`→`](https://eclipse.dev/eclipse/news/4.35/platform.html#arrowsInKeyBindings))
         * ([Reset in colors preference page now respects theme-specific defaults](https://github.com/eclipse-platform/eclipse.platform.ui/commit/61cca8fd9d0e92f498ef35ee9408fe669520642d))
+     * ([Quick Search: _in ..._ field with history drop-down](https://github.com/eclipse-platform/eclipse.platform.ui/commit/6c8df42d31d7c54a567449c7758f8eb182d1116a))
      * [Language pack updated](https://github.com/eclipse-tm4e/tm4e/commit/a3d1daeae2b9e002f5a361d20c4394e473ddb8a6)
      * `eclipse.ini` settings
         * [No more with `-Xmx` and `-Xms`](https://github.com/eclipse-packaging/packages/blob/master/CHANGELOG.md#2025-03)
-        * [New system property: `eclipse.appName`](https://eclipse.dev/eclipse/news/4.35/platform.html#sysPropAppName), e.g. `-Declipse.appName=EclipseJavaIDE` (on Windows, in the task bar apps with the same name will be stacked)
+        * ([New system property: `eclipse.appName`](https://eclipse.dev/eclipse/news/4.35/platform.html#sysPropAppName), e.g. `-Declipse.appName=EclipseJavaIDE` (on Windows, in the task bar apps with the same name will be stacked))
      * ([Performance](https://github.com/search?utf8=%E2%9C%93&q=performance+OR+speed+OR+fast+OR+faster+OR+slow+org%3Aeclipse-platform+committer-date%3A2024-12-05..2025-03-10&s=committer-date&o=desc&type=Commits))
         * ([Avoid O(n^2) in DeadlockDetector.lockAcquired()](https://github.com/eclipse-platform/eclipse.platform/commit/31bb835514329d41c5dbb05a538761e17c7f48b9))
         * ([Implement filter-based TableViewer as a counterpart to the FilteredTree](https://github.com/eclipse-platform/eclipse.platform.ui/pull/2567))
- * (**Git<!-- [📽️](https://youtu.be/J-oudd3UWmg?t=000)-->**)
- * **Web<!-- [📽️](https://youtu.be/J-oudd3UWmg?t=470)-->**
+ * (**Git<!-- [📽️](https://youtu.be/2p_9unQiSz4?t=000)-->**)
+ * **Web<!-- [📽️](https://youtu.be/2p_9unQiSz4?t=470)-->**
      * [New preference _Language Servers > Folding_](https://github.com/eclipse-lsp4e/lsp4e/pull/1171)
         * [_License Header Comments_](https://github.com/eclipse-lsp4e/lsp4e/pull/1184) (comments matching `(?i)(copyright|licensed under|all rights reserved|SPDX-License-Identifier)`)
      * ([_Outline_ view with _Collapse All_ button](https://github.com/eclipse-lsp4e/lsp4e/pull/1177))

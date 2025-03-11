@@ -1,4 +1,4 @@
-set IDE=java-2024-09
+set IDE=java-2025-03
 set REPO=sample
 
 set ECLIPSE_DIR=%USERPROFILE%\eclipse\%IDE%
@@ -14,6 +14,7 @@ set REPO_ZIP=%USERPROFILE%\git\%REPO%.7z
 ::echo|set/p=^^^<project.build.sourceEncoding^^^>UTF-8^^^</project.build.sourceEncoding^^^>|clip
 ::echo|set/p=""C:\Program Files\Java\jdk-20-ea\bin\javac^" -d . src\main\java\BytecodeSample.java"|clip
 ::echo|set/p="C:\Program Files\Eclipse Adoptium\jdk-22.0.1.8-hotspot"|clip
+(echo if ^^^(this == null^^^) return null;&echo String str= "";&echo for ^^^(int i = 0; i ^^^< this.length; i++^^^) {&echo ^^^    str+= "["+ i + "]: " + this[i] + "\n";&echo }&echo return str;) | clip
 
 dir "%ECLIPSE_DIR%\p2"
 
@@ -22,7 +23,7 @@ IF NOT exist "%ECLIPSE_DIR%" (echo Eclipse installation missing: %ECLIPSE_DIR% &
 IF NOT exist "%ECLIPSE_P2_CONFIG_ZIP%" (echo Backup of Eclipse p2/configuration missing: %ECLIPSE_P2_CONFIG_ZIP% && pause && exit 1)
 IF NOT exist "%ECLIPSE_WORKSPACE%\.metadata" (echo Workspace missing: %ECLIPSE_WORKSPACE% && pause && exit 1)
 ::IF NOT exist "%ECLIPSE_WORKSPACE_ZIP%" (echo Backup of workspace missing: %ECLIPSE_WORKSPACE_ZIP% && pause && exit 1)
-IF NOT exist "%REPO_DIR%\.git" (echo Git repository missing: %REPO_DIR% && pause && exit 1)
+::IF NOT exist "%REPO_DIR%\.git" (echo Git repository missing: %REPO_DIR% && pause && exit 1)
 
 :: restore Git repository
 ::rmdir /s /q "%REPO_DIR%"
