@@ -25,7 +25,7 @@
 [2019-06](https://github.com/howlger/Eclipse-IDE-improvements-videos/tree/2019-06)
 </sup>
 
-# +++ Work in progress (for June 11, 2025) +++<br>Eclipse IDE 2025-06 Improvements Video <!--# [Eclipse IDE 2025-06 Improvements Video](https://youtu.be/2p_9unQiSz4) -->
+# [Eclipse IDE 2025-06 Improvements Video](https://youtu.be/IlPw3PWR0ZM)
 
 * [June 11, 2025](https://calendar.google.com/calendar/event?eid=NjBjaWZybWpkcDNhZGhuYjE4cWYxNnFkYnIgZ2NoczdubTRudnBtODM3NDY5ZGRqOXRqbGtAZw&ctz=Europe/Berlin) ([calendar](https://calendar.google.com/calendar/embed?src=gchs7nm4nvpm837469ddj9tjlk@group.calendar.google.com&ctz=Europe/Berlin)) - [projects](https://projects.eclipse.org/releases/2025-06) - [wiki](https://github.com/eclipse-simrel/.github/blob/main/wiki/Simultaneous_Release.md) - [website](https://eclipseide.org/) ([New & Noteworthy](https://eclipseide.org/release/noteworthy/)) - [splash screen](https://gitlab.eclipse.org/eclipsefdn/helpdesk/-/issues/5332)
 * Builds: [latest unreleased](https://download.eclipse.org/technology/epp/staging/) → [released](https://download.eclipse.org/technology/epp/downloads/release/2025-06/) ([Jenkins](https://ci.eclipse.org/packaging/job/simrel.epp-tycho-build), [*.aggrcon](https://github.com/eclipse-simrel/simrel.build/commits/main), update sites: [staging](https://download.eclipse.org/staging/2025-03), [release](http://download.eclipse.org/releases/2025-06))
@@ -65,21 +65,19 @@
 
 ### Features to show
 
- * **Java<!-- [📽️](https://youtu.be/2p_9unQiSz4?t=17)-->**
+ * **Java [📽️](https://youtu.be/IlPw3PWR0ZM?t=18)**
      * [Java 24 support](https://eclipse.dev/eclipse/markdown/?f=news/4.36/jdt.md#java-compiler) (but IDE packages shipped with Java 21, the latest LTS version)
-        * No new language features, also no new preview language features
-        * New APIs: Stream Gatherers ([JEP 485](https://openjdk.org/jeps/485)) and Class-File API ([JEP 484](https://openjdk.org/jeps/484))
-        * New implementation of the quantum-resistant Module-Lattice-Based Key-Encapsulation Mechanism (ML-KEM): Key Encapsulation Mechanism ([JEP 496](https://openjdk.org/jeps/496)) and Digital Signature Algorithm ([JEP 497](https://openjdk.org/jeps/497))
+        * Java 24: New APIs, e.g. Stream Gatherers ([JEP 485](https://openjdk.org/jeps/485)) and Class-File API ([JEP 484](https://openjdk.org/jeps/484)), new implementations (e.g. quantum-resistant Module-Lattice-Based Key-Encapsulation Mechanism (ML-KEM): Key Encapsulation Mechanism ([JEP 496](https://openjdk.org/jeps/496)) and Digital Signature Algorithm ([JEP 497](https://openjdk.org/jeps/497))), but no new final or preview language features
      * Java editor
         * Folding:
-           * [Folding for other code blocks enabled by default](https://eclipse.dev/eclipse/markdown/?f=news/4.36/jdt.md#new-folding-mechanism-as-default)
+           * [Extended folding enabled by default](https://eclipse.dev/eclipse/markdown/?f=news/4.36/jdt.md#new-folding-mechanism-as-default)
            * [Custom folding regions](https://eclipse.dev/eclipse/markdown/?f=news/4.36/jdt.md#custom-folding-regions)
            * [Project specific folding settings](https://eclipse.dev/eclipse/markdown/?f=news/4.36/jdt.md#project-properties-page-for-folding)
         * [Inline refactoring improved](https://eclipse.dev/eclipse/markdown/?f=news/4.36/jdt.md#inliner-improvements-for-lambdas): to inline a method into lambda expressions and method references works now also
         * ([Minimum indent support V2](https://github.com/eclipse-jdt/eclipse.jdt.core/pull/3795))
      * ([Move refactoring for Java files dialog now with filter field](https://github.com/eclipse-jdt/eclipse.jdt.ui/pull/2034))
      * Clean-ups
-         * [New: _Unnecessary Code > Remove unnecessary suppress warnings tokens_](https://eclipse.dev/eclipse/markdown/?f=news/4.36/jdt.md#unnecessary-suppresswarnings-clean-up)
+         * [New: _Unnecessary Code > Remove unnecessary suppress warning tokens_](https://eclipse.dev/eclipse/markdown/?f=news/4.36/jdt.md#unnecessary-suppresswarnings-clean-up)
          * [_Java Feature > Java 21 > Pattern instanceof to Switch_](https://eclipse.dev/eclipse/markdown/?f=news/4.36/jdt.md#improved-pattern-instanceof-to-switch-clean-up): `if (... instanceof ...) { ...` → `switch (...) { case ... -> ...` (introduced in the previous version, but not shown in the video due some [limitations](https://github.com/eclipse-jdt/eclipse.jdt.ui/issues/2066))
      * Debug
         * [Collapsing stack frames](https://eclipse.dev/eclipse/markdown/?f=news/4.36/jdt.md#collapsing-stack-frames): disabled by default; can be enabled via the _Debug_ view menu _Java > Collapse Stack Frames_; collapses JRE/dependencies stack frames to focus on the project code
@@ -88,21 +86,21 @@
         * [Custom labels for breakpoints](https://eclipse.dev/eclipse/markdown/?f=news/4.36/platform.md#custom-labels-for-breakpoints) in _Breakpoints_ view via right-click menu _Label_; blank label to reset it to the default label (general/platform improvement: not only for Java)
      * ([Performance](https://github.com/search?utf8=%E2%9C%93&q=performance+OR+speed+OR+faster+org%3Aeclipse-jdt+committer-date%3A2025-03-05..2025-06-10&s=committer-date&o=desc&type=Commits))
          * ([Add Filter Mechanism for Target in Move Refactoring - with caching](https://github.com/eclipse-jdt/eclipse.jdt.ui/pull/2034))
-     * (**Maven<!-- [📽️](https://youtu.be/2p_9unQiSz4?t=242)-->**)
-     * (**Gradle<!-- [📽️](https://youtu.be/2p_9unQiSz4?t=311)-->**)
- * **General/Platform<!-- [📽️](https://youtu.be/2p_9unQiSz4?t=337)-->**
+     * (**Maven<!-- [📽️](https://youtu.be/IlPw3PWR0ZM?t=242)-->**)
+     * (**Gradle<!-- [📽️](https://youtu.be/IlPw3PWR0ZM?t=311)-->**)
+ * **General/Platform [📽️](https://youtu.be/IlPw3PWR0ZM?t=335)**
      * [UI](https://github.com/search?utf8=%E2%9C%93&q=dark+OR+light+OR+theme+OR+layout+org%3Aeclipse-platform+org%3Aeclipse-jdt+committer-date%3A2025-03-05..2025-06-10&s=committer-date&type=Commits)
         * [SVG icons](https://eclipse.dev/eclipse/markdown/?f=news/4.36/platform.md#support-for-svg-images)
         * ([Improved disabled icons](https://eclipse.dev/eclipse/markdown/?f=news/4.36/platform.md#improved-disabled-icons-generation))
         * [Monitor-specific UI scaling as default (Windows only)](https://eclipse.dev/eclipse/markdown/?f=news/4.36/platform.md#monitor-specific-ui-scaling-as-default-windows-only)
         * ([Prevent DevStyle Darkest Dark theme to be installed since it breaks Eclipse startup](https://github.com/eclipse-platform/eclipse.platform.ui/commit/84a34136650232cae539f9519ac6f4ea5b08d2cd))
      * [_Generic Code Editor_ as new default text editor](https://github.com/eclipse-platform/eclipse.platform.ui/commit/9d52b26c3f3d22eb91754ce673043227e5ce9318) instead of the _Plain Text Editor_; for new text files as well as for a new _Untitled Text File_
-     * [Help view: _Link with Selection_](https://github.com/eclipse-platform/eclipse.platform/issues/1874): disable it to pin its content instead of displaying the related topics of the current active UI element
+     * ([Help view: _Link with Selection_](https://github.com/eclipse-platform/eclipse.platform/issues/1874): disable it to pin its content instead of displaying the related topics of the current active UI element)
      * ([Performance](https://github.com/search?utf8=%E2%9C%93&q=performance+OR+speed+OR+fast+OR+faster+OR+slow+org%3Aeclipse-platform+committer-date%3A2025-03-05..2025-06-10&s=committer-date&o=desc&type=Commits))
- * (**Git<!-- [📽️](https://youtu.be/2p_9unQiSz4?t=000)-->**)
+ * (**Git<!-- [📽️](https://youtu.be/IlPw3PWR0ZM?t=000)-->**)
      * ([Improved empty repositories view layout with enabled monitor specific scaling on Windows](https://github.com/eclipse-egit/egit/commit/9a77ad7a13bb5cb04b07cceec009410e1805f4a9))
      * ([Improved empty commit message detection](https://github.com/eclipse-egit/egit/commit/c0f2434f81d2c7755a7017e74d0dc1ce96b58309))
- * (**Web<!-- [📽️](https://youtu.be/2p_9unQiSz4?t=470)-->**)
+ * (**Web<!-- [📽️](https://youtu.be/IlPw3PWR0ZM?t=470)-->**)
  * (**Under development**)
     * ([Initiative 31](https://github.com/swt-initiative31/): Prototyping work for candidate technology evaluation on Eclipse SWT)
     * ([JDT to support javac instead of ejc](https://www.eclipse.org/lists/jdt-dev/msg02333.html) driven by jdtls: [incubator](https://github.com/eclipse-jdtls/eclipse-jdt-core-incubator/labels/javac))
