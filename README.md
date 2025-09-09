@@ -26,7 +26,7 @@
 [2019-06](https://github.com/howlger/Eclipse-IDE-improvements-videos/tree/2019-06)
 </sup>
 
-# +++ Work in progress (for September 10, 2025) +++<br>Eclipse IDE 2025-09 Improvements Video <!--# [Eclipse IDE 2025-09 Improvements Video](https://youtu.be/IlPw3PWR0ZM) -->
+# [Eclipse IDE 2025-09 Improvements Video](https://youtu.be/xpyqX-AxEP0)
 
 * [September 10, 2025](https://calendar.google.com/calendar/event?eid=MGRhOGN2a2tobzYwcWhjaTQ2cGpqOW5jcDYgZ2NoczdubTRudnBtODM3NDY5ZGRqOXRqbGtAZw&ctz=Europe/Berlin) ([calendar](https://calendar.google.com/calendar/embed?src=gchs7nm4nvpm837469ddj9tjlk@group.calendar.google.com&ctz=Europe/Berlin)) - [projects](https://projects.eclipse.org/releases/2025-09) - [wiki](https://github.com/eclipse-simrel/.github/blob/main/wiki/Simultaneous_Release.md) - [website](https://eclipseide.org/) ([New & Noteworthy](https://eclipseide.org/release/noteworthy/)) - [splash screen](https://gitlab.eclipse.org/eclipsefdn/helpdesk/-/issues/5332)
 * Builds: [latest unreleased](https://download.eclipse.org/technology/epp/staging/) → [released](https://download.eclipse.org/technology/epp/downloads/release/2025-09/) ([Jenkins](https://ci.eclipse.org/packaging/job/simrel.epp-tycho-build), [*.aggrcon](https://github.com/eclipse-simrel/simrel.build/commits/main), update sites: [staging](https://download.eclipse.org/staging/2025-09), [release](http://download.eclipse.org/releases/2025-09))
@@ -66,23 +66,9 @@
 
 ### Features to show
 
- * **Java<!-- [📽️](https://youtu.be/IlPw3PWR0ZM?t=18)-->**
+ * **Java 25 [📽️](https://youtu.be/xpyqX-AxEP0?t=17)**
      * Java 25 support [via Marketplace probably soon](https://marketplace.eclipse.org/search?search_api_fulltext=Java+25) ([branch](https://github.com/eclipse-jdt/eclipse.jdt.core/tree/BETA_JAVA25)/[update site](https://download.eclipse.org/eclipse/updates/4.37-Y-builds/))
-     * Java editor
-        * [Folding: Support overlapping start and end markers for custom folding regions](https://eclipse.dev/eclipse/markdown/?f=news/4.37/jdt.md#support-overlapping-start-and-end-markers-for-custom-folding-regions)
-        * [Java-specific sticky scrolling](https://github.com/eclipse-jdt/eclipse.jdt.ui/commit/51a745491eee50750c9eaed215c5c903e6aa3498)
-        * ([_Refactor > Extract Method..._ dialog with options for _final_ and _synchronized_](https://eclipse.dev/eclipse/markdown/?f=news/4.37/jdt.md#access-modifier-specification-added-to-extract-method))
-        * [New quick fix: _Replace deprecated field_](https://eclipse.dev/eclipse/markdown/?f=news/4.37/jdt.md#new-quick-fixclean-up-to-replace-deprecated-fields): also as clean-up _Source Fixing > Replace deprecated field where possible_
-        * [Debugging: The ruler right-click menu provides now _Toggle Triggerpoint_ and _Toggle Breakpoint with Hit Count_](https://eclipse.dev/eclipse/markdown/?f=news/4.37/jdt.md#toggle-triggerpoint-and-breakpoint-with-hit-count)
-     * Clean-ups
-        * [New: _Source Fixing > Replace deprecated field where possible_](https://eclipse.dev/eclipse/markdown/?f=news/4.37/jdt.md#new-quick-fixclean-up-to-replace-deprecated-fields): see above
-     * Debug
-        * [_Breakpoints_ view menu: _Group By > Enablement_](https://eclipse.dev/eclipse/markdown/?f=news/4.37/platform.md#group-breakpoints-by-enablement) (general/platform improvement)
-     * ([Performance](https://github.com/search?utf8=%E2%9C%93&q=performance+OR+speed+OR+faster+org%3Aeclipse-jdt+committer-date%3A2025-06-05..2025-09-10&s=committer-date&o=desc&type=Commits))
-        * ([More efficient, more modern, fast failing version of computation of the abstract contracts of an interface while deriving SAM](https://github.com/eclipse-jdt/eclipse.jdt.core/commit/0eb7ed33a2e33e82a5670b0283fb1bb396d4029e))
-     * (**Maven<!-- [📽️](https://youtu.be/IlPw3PWR0ZM?t=242)-->**)
-     * (**Gradle<!-- [📽️](https://youtu.be/IlPw3PWR0ZM?t=311)-->**)
- * **General/Platform<!-- [📽️](https://youtu.be/IlPw3PWR0ZM?t=335)-->**
+ * **General/Platform [📽️](https://youtu.be/xpyqX-AxEP0?t=32)**
      * [_Compare With > Clipboard_ and _Replace With > Clipboard_](https://eclipse.dev/eclipse/markdown/?f=news/4.37/platform.md#comparereplace-with-clipboard)
      * [Sorting functionality for Quick Search results](https://github.com/eclipse-platform/eclipse.platform.ui/commit/0c268ac70cb38d68d405e479c3c85c888a4e14f4)
      * ([Multi-release compilation support](https://github.com/eclipse-jdt/eclipse.jdt.core/pull/3900) experimental/incubation, so better show it in the next release)
@@ -90,12 +76,28 @@
         * ([Toggle indicator in Windows 11 menus](https://eclipse.dev/eclipse/markdown/?f=news/4.37/platform.md#toggle-indicator-in-windows-11-menus))
         * ([Provide Search Capabilities for WebKit Browser on GTK+](https://eclipse.dev/eclipse/markdown/?f=news/4.37/platform.md#provide-search-capabilities-for-webkit-browser-on-gtk))
      * ([Support launching with a terminal console](https://eclipse.dev/eclipse/markdown/?f=news/4.37/platform.md#support-launching-with-a-terminal-console) → needs _Terminal Session Support_ to be installed from the Eclipse project which seems not be part of this simultaneous release)
-     * Debug
-         * [_Breakpoints_ view menu: _Group By > Enablement_](https://eclipse.dev/eclipse/markdown/?f=news/4.37/platform.md#group-breakpoints-by-enablement) (general improvement): see above
+     * (Debug)
+         * ([_Breakpoints_ view menu: _Group By > Enablement_](https://eclipse.dev/eclipse/markdown/?f=news/4.37/platform.md#group-breakpoints-by-enablement) (general improvement): see Java below)
      * ([Performance](https://github.com/search?utf8=%E2%9C%93&q=performance+OR+speed+OR+fast+OR+faster+OR+slow+org%3Aeclipse-platform+committer-date%3A2025-06-05..2025-09-10&s=committer-date&o=desc&type=Commits))
         * ([Avoid useless computation of getMatchingRegexpAssociated that uses Pattern (time consumming)](https://github.com/eclipse-platform/eclipse.platform/commit/7f4b9bcca0046a8fcc34c3d918123a82f8d1efe0))
- * (**Git<!-- [📽️](https://youtu.be/IlPw3PWR0ZM?t=000)-->**)
- * (**Web<!-- [📽️](https://youtu.be/IlPw3PWR0ZM?t=470)-->**)
+ * **Java [📽️](https://youtu.be/xpyqX-AxEP0?t=132)**
+     * Java editor (1/2)
+        * [New quick fix: _Replace deprecated field_](https://eclipse.dev/eclipse/markdown/?f=news/4.37/jdt.md#new-quick-fixclean-up-to-replace-deprecated-fields): also as clean-up _Source Fixing > Replace deprecated field where possible_
+     * Clean-ups
+        * [New: _Source Fixing > Replace deprecated field where possible_](https://eclipse.dev/eclipse/markdown/?f=news/4.37/jdt.md#new-quick-fixclean-up-to-replace-deprecated-fields): see above
+     * Java editor (2/2)
+        * [Java-specific sticky scrolling](https://github.com/eclipse-jdt/eclipse.jdt.ui/commit/51a745491eee50750c9eaed215c5c903e6aa3498)
+        * [Folding: Support overlapping start and end markers for custom folding regions](https://eclipse.dev/eclipse/markdown/?f=news/4.37/jdt.md#support-overlapping-start-and-end-markers-for-custom-folding-regions)
+        * ([_Refactor > Extract Method..._ dialog with options for _final_ and _synchronized_](https://eclipse.dev/eclipse/markdown/?f=news/4.37/jdt.md#access-modifier-specification-added-to-extract-method))
+     * Debug
+        * [In the Java editor, in the right ruler right-click menu: _Toggle Triggerpoint_ and _Toggle Breakpoint with Hit Count_](https://eclipse.dev/eclipse/markdown/?f=news/4.37/jdt.md#toggle-triggerpoint-and-breakpoint-with-hit-count)
+        * [_Breakpoints_ view menu: _Group By > Enablement_](https://eclipse.dev/eclipse/markdown/?f=news/4.37/platform.md#group-breakpoints-by-enablement) (general/platform improvement: see above)
+     * ([Performance](https://github.com/search?utf8=%E2%9C%93&q=performance+OR+speed+OR+faster+org%3Aeclipse-jdt+committer-date%3A2025-06-05..2025-09-10&s=committer-date&o=desc&type=Commits))
+        * ([More efficient, more modern, fast failing version of computation of the abstract contracts of an interface while deriving SAM](https://github.com/eclipse-jdt/eclipse.jdt.core/commit/0eb7ed33a2e33e82a5670b0283fb1bb396d4029e))
+     * (**Maven<!-- [📽️](https://youtu.be/xpyqX-AxEP0?t=242)-->**)
+     * (**Gradle<!-- [📽️](https://youtu.be/xpyqX-AxEP0?t=311)-->**)
+ * (**Git<!-- [📽️](https://youtu.be/xpyqX-AxEP0?t=000)-->**)
+ * (**Web<!-- [📽️](https://youtu.be/xpyqX-AxEP0?t=000)-->**)
  * (**Under development**)
     * ([Initiative 31](https://github.com/swt-initiative31/): Prototyping work for candidate technology evaluation on Eclipse SWT)
     * ([JDT to support javac instead of ejc](https://www.eclipse.org/lists/jdt-dev/msg02333.html) driven by jdtls: [incubator](https://github.com/eclipse-jdtls/eclipse-jdt-core-incubator/labels/javac), [commits](https://github.com/eclipse-jdt/eclipse.jdt.core/compare/master...eclipse-jdtls:eclipse-jdt-core-incubator:dom-with-javac))
