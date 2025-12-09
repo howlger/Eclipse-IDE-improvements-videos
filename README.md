@@ -69,41 +69,41 @@
 
  * **Java<!-- [📽️](https://youtu.be/xpyqX-AxEP0?t=17)-->**
      * Java 25 support (IDE packages are not [shipped with Java 25](https://download.eclipse.org/justj/jres/25/updates/release/latest) due to the [current unavailability of the Eclipse Temurin Java 25 JDK for Windows on ARM](https://github.com/adoptium/aqa-tests/issues/6623#issuecomment-3596446956))
-        * Coverage (via EclEmma 3.1.11 based on [JaCoCo 0.8.14](https://www.jacoco.org/jacoco/trunk/doc/changes.html))
         * Flexible Constructor Bodies [(JEP 513)](https://openjdk.org/jeps/513):
-        * [Import module support](https://eclipse.dev/eclipse/markdown/?f=news/4.38/jdt.md#java-25-import-module-support) ([JEP 511](https://openjdk.org/jeps/511))
+        * [Module Import Declarations](https://eclipse.dev/eclipse/markdown/?f=news/4.38/jdt.md#java-25-import-module-support) ([JEP 511](https://openjdk.org/jeps/511))
            * [_Organize Imports_](https://eclipse.dev/eclipse/markdown/?f=news/4.38/jdt.md#organize-imports) removes unused import module statements (but leaves imports that are required either because they are not part of the exported module classes or they are found in more than one package for the modules imported or they are static imports
-           * [New clean-up: _Java Features > Java 25 > Use import module_](https://github.com/eclipse-jdt/eclipse.jdt.ui/commit/66872a9531a94069a9ce4eb929c7f6e02401b70d)
+           * ([New clean-up: _Java Features > Java 25 > Use import module_](https://github.com/eclipse-jdt/eclipse.jdt.ui/commit/66872a9531a94069a9ce4eb929c7f6e02401b70d) → doesn't seem to work)
+        * (Coverage (via EclEmma 3.1.11 based on [JaCoCo 0.8.14](https://www.jacoco.org/jacoco/trunk/doc/changes.html)))
+     * Markdown comments (requires Java 23 or higher):
+        * [Markdown comment templates](https://eclipse.dev/eclipse/markdown/?f=news/4.38/jdt.md#markdown-comment-templates): in preferences _Java > Code Style > Code Templates_, the new option _Use markdown comments where available_ needs to be enabled
+        * [New formatter option: _Enable Markdown Javadoc formatting_](https://github.com/eclipse-jdt/eclipse.jdt.ui/pull/2447) (in addition to _Enable Classic Javadoc formatting_)
+     * [_Open Type_ dialog: Wildcard search for non-all-upper-case camle-case inputs](https://eclipse.dev/eclipse/markdown/?f=news/4.38/jdt.md#open-type-dialog-enhancement): e.g. `OutMem` now finds `OutOfMemoryError` where in the past you need to type `out*mem` (but `OME` still not finds `OutOfMemoryError` in contrast to `OMEr`)
+     * Errors/Warnings
+        * [Deprecation warnings: more accurate](https://eclipse.dev/eclipse/markdown/?f=news/4.38/jdt.md#changed-handling-of-access-restriction-for-inherited-methods)
+           * No more warnings for implicitly deprecated members that are false positive according to the Java language specification ([commit](https://github.com/eclipse-jdt/eclipse.jdt.core/commit/397154a4170b4980c90d95fb75df469d525bccf6))
+              * [New warning _Warn when members of a deprecated type are not deprecated_ with default severity _info_ along with a quick fix](https://eclipse.dev/eclipse/markdown/?f=news/4.38/jdt.md#new-support-for-reacting-to-problem-reporting-changes) since it might cause issues in pending migration: _The enclosing type ... is deprecated, perhaps this member should be marked as deprecated, too?_ (commit [core](https://github.com/eclipse-jdt/eclipse.jdt.core/commit/43cfd919f7a8b0064371ab55cc7ec726fbe6bf4e#diff-e63df7db1ff855e5dc437599b295ef02af4ff995226ad3fec9ab3dd0e9aed5b2) and [UI](https://github.com/eclipse-jdt/eclipse.jdt.ui/commit/516af06f59a17d993b550212bac5d75a20eadd9e#diff-75bddcdfd2484e74dd12777aa5f88c804a476cb214989f7363c5a654ef9eb0b1))
+              * New quick fix to add `@Deprecated` to memebers of a deprecated class
+           * Deprecation warnings for annotation elements that were missed in the past
+           * Deprecation warnings when using deprecated elements from within the same compilation unit (file) that were missed in the past
+        * ([Access restriction warnings: No more false positives for methods inherited from a restricted class](https://eclipse.dev/eclipse/markdown/?f=news/4.38/jdt.md#changed-handling-of-access-restriction-for-inherited-methods) (see [corresponding test](https://github.com/eclipse-jdt/eclipse.jdt.core/commit/545483d5e69ae02a4ecbb98b1b813054abb0d0d8#diff-f684c92033a5de622fdd546ec6f4a03bf1c403ad0abeca6943f88ed67df83510)) → for manually set access rules and possibly also for OSGi, but it already worked without it for JPMS)
      * [JUnit 6.0 support](https://eclipse.dev/eclipse/markdown/?f=news/4.38/jdt.md#eclipse-support-for-junit-601): JUnit 5 and 6 are conceptually the same and similar in use, but incompatible, e.g. JUnit 6 requires Java 17 or higher; Platform, Jupiter and Vintage share the same 6.x version number; deprecated things has been removed
         * [When creating a new JUnit test case, you can choose now to add JUnit 5 or JUnit 6 library to the build path](https://eclipse.dev/eclipse/markdown/?f=news/4.38/jdt.md#add-junit-6-library-to-the-build-path)
         * [Make sure not to mix JUnit 5 and JUnit 6 since this can cause `Cannot find class 'org.junit.platform.commons.annotation.Testable' on project build path`](https://eclipse.dev/eclipse/markdown/?f=news/4.38/jdt.md#junit-5-and-junit-6-conflicts)
-     * Markdown comments:
-        * [Markdown comment templates](https://eclipse.dev/eclipse/markdown/?f=news/4.38/jdt.md#markdown-comment-templates) (requires Java 23 or higher): in preferences _Java > Code Style > Code Templates_, the new option _Use markdown comments where available_ needs to be enabled
-        * [New formatter option: _Enable Markdown Javadoc formatting_](https://github.com/eclipse-jdt/eclipse.jdt.ui/pull/2447) (in addition to _Enable Classic Javadoc formatting_)
-     * [Multi-release JAR support](https://eclipse.dev/eclipse/markdown/?f=news/4.38/jdt.md#multi-release-jar-compilation-support): In _Project > Properties: Java Build Path_, in tab _Source_, source folders with new _Release_ option; also supported by Maven integration (see below)
-     * [_Open Type_ dialog: Wildcard search for non-all-upper-case camle-case inputs](https://eclipse.dev/eclipse/markdown/?f=news/4.38/jdt.md#open-type-dialog-enhancement): e.g. `OutMem` now finds `OutOfMemoryError` where in the past you need to type `out*mem` (but `OME` still not finds `OutOfMemoryError` in contrast to `OMEr`)
-     * Clean-ups
-     * [No more false positive access restriction warnings for methods inherited from a restricted class](https://eclipse.dev/eclipse/markdown/?f=news/4.38/jdt.md#changed-handling-of-access-restriction-for-inherited-methods)
-     * [More accurate deprecation warnings](https://eclipse.dev/eclipse/markdown/?f=news/4.38/jdt.md#changed-handling-of-access-restriction-for-inherited-methods)
-        * No more for implicitly deprecated members that are false positive according to the Java language specification
-           * [New warning with default severity _info_ along with a quick](https://eclipse.dev/eclipse/markdown/?f=news/4.38/jdt.md#new-support-for-reacting-to-problem-reporting-changes) since it might cause issues in pending migration: _The enclosing type ... is deprecated, perhaps this member should be marked as deprecated, too?_
-        * More deprecation warnings when using deprecated elements from within the same compilation unit (file)
-        * New warnings for deprecated annotation elements
      * Debug
         * [Set breakpoint  for inline chained lambdas](https://eclipse.dev/eclipse/markdown/?f=news/4.38/jdt.md#breakpoint-support-for-inline-chained-lambdas)
         * [_Variables_ view: _Compare With Clipboard_](https://eclipse.dev/eclipse/markdown/?f=news/4.38/jdt.md#compare-variable-value-with-clipboard) to compare the actual (stringified) value of a variable with the content of the clipboard
+     * [Multi-release JAR support](https://eclipse.dev/eclipse/markdown/?f=news/4.38/jdt.md#multi-release-jar-compilation-support): In _Project > Properties: Java Build Path_, in tab _Source_, source folders with new _Release_ option; also supported by Maven integration (see below)
      * ([Performance](https://github.com/search?utf8=%E2%9C%93&q=performance+OR+speed+OR+faster+org%3Aeclipse-jdt+committer-date%3A2025-09-05..2025-12-10&s=committer-date&o=desc&type=Commits))
         * ([Performance regression fix for Java editor folding](https://github.com/eclipse-jdt/eclipse.jdt.ui/commit/6c5c1b95179d1cf29fc8b9a398dfc536553edd9b))
-     * **Maven<!-- [📽️](https://youtu.be/xpyqX-AxEP0?t=242)-->**)
-        * [Multi-Release-JAR support](https://github.com/eclipse-m2e/m2e-core/blob/main/RELEASE_NOTES.md#multi-release-jar-support)
+     * **Maven<!-- [📽️](https://youtu.be/xpyqX-AxEP0?t=242)-->**
+        * [Multi-Release-JAR support](https://github.com/eclipse-m2e/m2e-core/blob/main/RELEASE_NOTES.md#multi-release-jar-support) (see [example](https://github.com/eclipse-m2e/m2e-core/tree/main/org.eclipse.m2e.jdt.tests/projects/multirelease))
         * [Maven execution JRE used for tests](https://github.com/eclipse-m2e/m2e-core/blob/main/RELEASE_NOTES.md#maven-execution-jre-used-for-tests)
-
      * (**Gradle<!-- [📽️](https://youtu.be/xpyqX-AxEP0?t=311)-->**)
  * **General/Platform<!-- [📽️](https://youtu.be/xpyqX-AxEP0?t=32)-->**
      * [UI](https://github.com/search?utf8=%E2%9C%93&q=dark+OR+light+OR+theme+OR+layout+org%3Aeclipse-platform+org%3Aeclipse-jdt+committer-date%3A2025-09-05..2025-12-10&s=committer-date&type=Commits)
         * _Console_ view:
            * [_Open New Console View_ commands pins now both the active and newly opened _Console_ views](https://eclipse.dev/eclipse/markdown/?f=news/4.38/platform.md#pin-the-console-view), ensuring their content remains visible during output processing
-           * [Configurable elapsed time format](https://eclipse.dev/eclipse/markdown/?f=news/4.38/platform.md#configurable-elapsed-time-display-in-console) in the preferences _Run/Debug > Console: Elapsed Time Format
+          * [Configurable elapsed time format](https://eclipse.dev/eclipse/markdown/?f=news/4.38/platform.md#configurable-elapsed-time-display-in-console) in the preferences _Run/Debug > Console: Elapsed Time Format
         * [Monitor-specific UI scaling enhancements (Windows only)](https://eclipse.dev/eclipse/markdown/?f=news/4.38/platform.md#enhancements-of-monitor-specific-ui-scaling-on-windows): [Performance](https://eclipse.dev/eclipse/markdown/?f=news/4.38/platform.md#performance),  [Layouting](https://eclipse.dev/eclipse/markdown/?f=news/4.38/platform.md#layouting), [Images and icons](https://eclipse.dev/eclipse/markdown/?f=news/4.38/platform.md#images-and-icons), [Cursors](https://eclipse.dev/eclipse/markdown/?f=news/4.38/platform.md#cursors)
         * ([Filters in dialogs at more places](https://eclipse.dev/eclipse/markdown/?f=news/4.38/platform.md#new-filtering-options-in-preference-page), e.g. in the preferences _Version Control (Team) > File Content_, _Java > Editor > Templates_ and _Ant > Editor > Templates_)
      * ([Merging the JVM and the operating system trust stores](https://eclipse.dev/eclipse/markdown/?f=news/4.38/platform.md#merging-the-jvm-and-the-operating-system-trust-stores))
@@ -116,11 +116,11 @@
  * (**Git<!-- [📽️](https://youtu.be/xpyqX-AxEP0?t=000)-->**)
      * ([_History_ view: Clear commits in history view when the path changes](https://github.com/eclipse-egit/egit/commit/9f1ea28288453bc5a754fa3c3f90fab403007042) (see [EGit issue #121](https://github.com/eclipse-egit/egit/issues/121))
      * ([Update UI elements sooner after checkout](https://github.com/eclipse-egit/egit/commit/3495c5ec5cebd3919eeaeb836db30295cde959aa) (see [EGit issue #114](https://github.com/eclipse-egit/egit/issues/114))
- * (**Web<!-- [📽️](https://youtu.be/xpyqX-AxEP0?t=000)-->**)
+ * **Web<!-- [📽️](https://youtu.be/xpyqX-AxEP0?t=000)-->**
     * TypeScript 5.9 support, e.g. [support for `import defer ...`](https://devblogs.microsoft.com/typescript/announcing-typescript-5-9/#support-for-import-defer)
     * JavaScript/TypeScript tooling:
         * [Granular checks for branches in return expressions](https://devblogs.microsoft.com/typescript/announcing-typescript-5-8/#granular-checks-for-branches-in-return-expressions)
-        * [Preserved computed property names in declaration files](Preserved Computed Property Names in Declaration Files)
+        * [Preserved computed property names in declaration files](https://devblogs.microsoft.com/typescript/announcing-typescript-5-8/#preserved-computed-property-names-in-declaration-files)
  * (**Under development**)
     * ([Initiative 31](https://github.com/swt-initiative31/): Prototyping work for candidate technology evaluation on Eclipse SWT)
     * ([JDT to support javac instead of ejc](https://www.eclipse.org/lists/jdt-dev/msg02333.html) driven by jdtls: [incubator](https://github.com/eclipse-jdtls/eclipse-jdt-core-incubator/labels/javac), [commits](https://github.com/eclipse-jdt/eclipse.jdt.core/compare/master...eclipse-jdtls:eclipse-jdt-core-incubator:dom-with-javac))
