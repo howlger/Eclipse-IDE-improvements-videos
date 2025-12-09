@@ -1,4 +1,4 @@
-set IDE=java-2025-09
+set IDE=java-2025-12
 set REPO=sample
 
 set ECLIPSE_DIR=%USERPROFILE%\eclipse\%IDE%
@@ -15,7 +15,7 @@ set REPO_ZIP=%USERPROFILE%\git\%REPO%.7z
 ::echo|set/p=""C:\Program Files\Java\jdk-20-ea\bin\javac^" -d . src\main\java\BytecodeSample.java"|clip
 ::echo|set/p="C:\Program Files\Eclipse Adoptium\jdk-22.0.1.8-hotspot"|clip
 ::(echo if ^^^(this == null^^^) return null;&echo String str= "";&echo for ^^^(int i = 0; i ^^^< this.length; i++^^^) {&echo ^^^    str+= "["+ i + "]: " + this[i] + "\n";&echo }&echo return str;) | clip
-echo|set/p="file:///C:/Users/Howlger/eclipse-workspace/Solution.html"|clip
+::echo|set/p="Eclipse IDE 2025-12"|clip
 
 dir "%ECLIPSE_DIR%\p2"
 

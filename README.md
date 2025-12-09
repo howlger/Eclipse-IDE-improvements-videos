@@ -27,7 +27,7 @@
 [2019-06](https://github.com/howlger/Eclipse-IDE-improvements-videos/tree/2019-06)
 </sup>
 
-# +++ Work in progress (for December 10, 2025) +++<br>Eclipse IDE 2025-12 Improvements Video <!--# [Eclipse IDE 2025-12 Improvements Video](https://youtu.be/xpyqX-AxEP0) -->
+# [Eclipse IDE 2025-12 Improvements Video](https://youtu.be/3GIT1n12nVA)
 
 * [December 10, 2025](https://calendar.google.com/calendar/event?eid=MjB1bmEzZDY4bjdmdmc2cmR0YTBqbWdxdTggZ2NoczdubTRudnBtODM3NDY5ZGRqOXRqbGtAZw&ctz=Europe/Berlin) ([calendar](https://calendar.google.com/calendar/embed?src=gchs7nm4nvpm837469ddj9tjlk@group.calendar.google.com&ctz=Europe/Berlin)) - [projects](https://projects.eclipse.org/releases/2025-12) - [wiki](https://github.com/eclipse-simrel/.github/blob/main/wiki/Simultaneous_Release.md) - [website](https://eclipseide.org/) ([New & Noteworthy](https://eclipseide.org/release/noteworthy/)) - [splash screen](https://gitlab.eclipse.org/eclipsefdn/helpdesk/-/issues/5332)
 * Builds: [latest unreleased](https://download.eclipse.org/technology/epp/staging/) → [released](https://download.eclipse.org/technology/epp/downloads/release/2025-12/) ([Jenkins](https://ci.eclipse.org/packaging/job/simrel.epp-tycho-build), [*.aggrcon](https://github.com/eclipse-simrel/simrel.build/commits/main), update sites: [staging](https://download.eclipse.org/staging/2025-12), [release](http://download.eclipse.org/releases/2025-12))
@@ -67,7 +67,7 @@
 
 ### Features to show
 
- * **Java<!-- [📽️](https://youtu.be/xpyqX-AxEP0?t=17)-->**
+ * **Java [📽️](https://youtu.be/3GIT1n12nVA?t=18)**
      * Java 25 support (IDE packages are not [shipped with Java 25](https://download.eclipse.org/justj/jres/25/updates/release/latest) due to the [current unavailability of the Eclipse Temurin Java 25 JDK for Windows on ARM](https://github.com/adoptium/aqa-tests/issues/6623#issuecomment-3596446956))
         * Flexible Constructor Bodies [(JEP 513)](https://openjdk.org/jeps/513):
         * [Module Import Declarations](https://eclipse.dev/eclipse/markdown/?f=news/4.38/jdt.md#java-25-import-module-support) ([JEP 511](https://openjdk.org/jeps/511))
@@ -95,11 +95,11 @@
      * [Multi-release JAR support](https://eclipse.dev/eclipse/markdown/?f=news/4.38/jdt.md#multi-release-jar-compilation-support): In _Project > Properties: Java Build Path_, in tab _Source_, source folders with new _Release_ option; also supported by Maven integration (see below)
      * ([Performance](https://github.com/search?utf8=%E2%9C%93&q=performance+OR+speed+OR+faster+org%3Aeclipse-jdt+committer-date%3A2025-09-05..2025-12-10&s=committer-date&o=desc&type=Commits))
         * ([Performance regression fix for Java editor folding](https://github.com/eclipse-jdt/eclipse.jdt.ui/commit/6c5c1b95179d1cf29fc8b9a398dfc536553edd9b))
-     * **Maven<!-- [📽️](https://youtu.be/xpyqX-AxEP0?t=242)-->**
+     * **Maven [📽️](https://youtu.be/3GIT1n12nVA?t=555)**
         * [Multi-Release-JAR support](https://github.com/eclipse-m2e/m2e-core/blob/main/RELEASE_NOTES.md#multi-release-jar-support) (see [example](https://github.com/eclipse-m2e/m2e-core/tree/main/org.eclipse.m2e.jdt.tests/projects/multirelease))
         * [Maven execution JRE used for tests](https://github.com/eclipse-m2e/m2e-core/blob/main/RELEASE_NOTES.md#maven-execution-jre-used-for-tests)
-     * (**Gradle<!-- [📽️](https://youtu.be/xpyqX-AxEP0?t=311)-->**)
- * **General/Platform<!-- [📽️](https://youtu.be/xpyqX-AxEP0?t=32)-->**
+     * (**Gradle<!-- [📽️](https://youtu.be/3GIT1n12nVA?t=311)-->**)
+ * **General/Platform [📽️](https://youtu.be/3GIT1n12nVA?t=600)**
      * [UI](https://github.com/search?utf8=%E2%9C%93&q=dark+OR+light+OR+theme+OR+layout+org%3Aeclipse-platform+org%3Aeclipse-jdt+committer-date%3A2025-09-05..2025-12-10&s=committer-date&type=Commits)
         * _Console_ view:
            * [_Open New Console View_ commands pins now both the active and newly opened _Console_ views](https://eclipse.dev/eclipse/markdown/?f=news/4.38/platform.md#pin-the-console-view), ensuring their content remains visible during output processing
@@ -113,14 +113,14 @@
      * ([Performance](https://github.com/search?utf8=%E2%9C%93&q=performance+OR+speed+OR+fast+OR+faster+OR+slow+org%3Aeclipse-platform+committer-date%3A2025-09-05..2025-12-10&s=committer-date&o=desc&type=Commits))
         * ([LocationMap should use HashMap with TreeSet for better performance](https://github.com/eclipse-platform/eclipse.platform/commit/440accda0972c30b58b72e79ee8ff5382d5c3812))
         * ([Cache method calls in loops and optimize string](https://github.com/eclipse-platform/eclipse.platform.ui/commit/343fd57b98addd612e285e10c70be340e784d0b0))
- * (**Git<!-- [📽️](https://youtu.be/xpyqX-AxEP0?t=000)-->**)
+ * (**Git<!-- [📽️](https://youtu.be/3GIT1n12nVA?t=000)-->**)
      * ([_History_ view: Clear commits in history view when the path changes](https://github.com/eclipse-egit/egit/commit/9f1ea28288453bc5a754fa3c3f90fab403007042) (see [EGit issue #121](https://github.com/eclipse-egit/egit/issues/121))
      * ([Update UI elements sooner after checkout](https://github.com/eclipse-egit/egit/commit/3495c5ec5cebd3919eeaeb836db30295cde959aa) (see [EGit issue #114](https://github.com/eclipse-egit/egit/issues/114))
- * **Web<!-- [📽️](https://youtu.be/xpyqX-AxEP0?t=000)-->**
+ * **Web [📽️](https://youtu.be/3GIT1n12nVA?t=674)**
     * TypeScript 5.9 support, e.g. [support for `import defer ...`](https://devblogs.microsoft.com/typescript/announcing-typescript-5-9/#support-for-import-defer)
     * JavaScript/TypeScript tooling:
         * [Granular checks for branches in return expressions](https://devblogs.microsoft.com/typescript/announcing-typescript-5-8/#granular-checks-for-branches-in-return-expressions)
-        * [Preserved computed property names in declaration files](https://devblogs.microsoft.com/typescript/announcing-typescript-5-8/#preserved-computed-property-names-in-declaration-files)
+        * ([Preserved computed property names in declaration files](https://devblogs.microsoft.com/typescript/announcing-typescript-5-8/#preserved-computed-property-names-in-declaration-files))
  * (**Under development**)
     * ([Initiative 31](https://github.com/swt-initiative31/): Prototyping work for candidate technology evaluation on Eclipse SWT)
     * ([JDT to support javac instead of ejc](https://www.eclipse.org/lists/jdt-dev/msg02333.html) driven by jdtls: [incubator](https://github.com/eclipse-jdtls/eclipse-jdt-core-incubator/labels/javac), [commits](https://github.com/eclipse-jdt/eclipse.jdt.core/compare/master...eclipse-jdtls:eclipse-jdt-core-incubator:dom-with-javac))
@@ -130,4 +130,4 @@
 
 
 ## Publish
-* → [As YouTube video](https://www.youtube.com/playlist?list=PLnh_8hTD4yvnhXSttuewEKgKkmlIj_ND-) (title prefix until release: `+++Coming on September 10, 2025+++ `)
+* → [As YouTube video](https://www.youtube.com/playlist?list=PLnh_8hTD4yvnhXSttuewEKgKkmlIj_ND-) (title prefix until release: `+++Coming on December 10, 2025+++ `)
