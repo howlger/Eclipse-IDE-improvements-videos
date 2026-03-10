@@ -1,5 +1,5 @@
-set IDE=java-2025-12
-set REPO=sample
+set IDE=java-2026-03
+set REPO=eclipse
 
 set ECLIPSE_DIR=%USERPROFILE%\eclipse\%IDE%
 set ECLIPSE_P2_CONFIG_ZIP=%ECLIPSE_DIR%\%IDE%.7z
@@ -10,6 +10,7 @@ set REPO_DIR=%USERPROFILE%\git\%REPO%
 set REPO_ZIP=%USERPROFILE%\git\%REPO%.7z
 
 :: start something or copy something to the clipboard
+(echo ^^^<!DOCTYPE html^^^>&echo ^^^<html lang="en"^^^>&echo ^^^<head^^^>&echo ^^^<meta charset="UTF-8"^^^>&echo ^^^<title^^^>^^^</title^^^>&echo ^^^</head^^^>&echo ^^^<body^^^>&echo.&echo ^^^</body^^^>&echo ^^^</html^^^>) | clip
 ::start C:\Users\Howlger\eclipse-installer\eclipse-inst.exe
 ::echo|set/p=^^^<project.build.sourceEncoding^^^>UTF-8^^^</project.build.sourceEncoding^^^>|clip
 ::echo|set/p=""C:\Program Files\Java\jdk-20-ea\bin\javac^" -d . src\main\java\BytecodeSample.java"|clip
@@ -26,9 +27,15 @@ IF NOT exist "%ECLIPSE_WORKSPACE%\.metadata" (echo Workspace missing: %ECLIPSE_W
 ::IF NOT exist "%ECLIPSE_WORKSPACE_ZIP%" (echo Backup of workspace missing: %ECLIPSE_WORKSPACE_ZIP% && pause && exit 1)
 ::IF NOT exist "%REPO_DIR%\.git" (echo Git repository missing: %REPO_DIR% && pause && exit 1)
 
+:: restore sample_code/
+set SAMPLE_CODE_DIR=%USERPROFILE%\git\Eclipse-IDE-improvements-videos\sample_code
+set SAMPLE_CODE_ZIP=%USERPROFILE%\git\sample_code.7z
+rmdir /s /q "%SAMPLE_CODE_DIR%"
+"%UNZIP_7ZIP%" x "%SAMPLE_CODE_ZIP%" "-o%SAMPLE_CODE_DIR%\.."
+
 :: restore Git repository
-::rmdir /s /q "%REPO_DIR%"
-::"%UNZIP_7ZIP%" x "%REPO_ZIP%" "-o%REPO_DIR%\.."
+rmdir /s /q "%REPO_DIR%"
+"%UNZIP_7ZIP%" x "%REPO_ZIP%" "-o%REPO_DIR%\.."
 
 :: reset Eclipse (restore "p2" and "configuration" subdirectories from ZIP)
 rmdir /s /q "%ECLIPSE_DIR%\p2"
