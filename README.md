@@ -28,7 +28,7 @@
 [2019-06](https://github.com/howlger/Eclipse-IDE-improvements-videos/tree/2019-06)
 </sup>
 
-# +++ Work in progress (for March 11, 2026) +++<br>Eclipse IDE 2026-03 Improvements Video <!--# [Eclipse IDE 2026-03 Improvements Video](https://youtu.be/3GIT1n12nVA) -->
+# [Eclipse IDE 2026-03 Improvements Video](https://youtu.be/Ik-sitUBWII)
 
 * [March 11, 2026](https://calendar.google.com/calendar/event?eid=N3J2NmtxdGpxczB0bXRqOGxuajdoNXRhc2ggZ2NoczdubTRudnBtODM3NDY5ZGRqOXRqbGtAZw&ctz=Europe/Berlin) ([calendar](https://calendar.google.com/calendar/embed?src=gchs7nm4nvpm837469ddj9tjlk@group.calendar.google.com&ctz=Europe/Berlin)) - [projects](https://projects.eclipse.org/releases/2026-03) - [wiki](https://github.com/eclipse-simrel/.github/blob/main/wiki/Simultaneous_Release.md) - [website](https://eclipseide.org/) ([New & Noteworthy](https://eclipseide.org/release/noteworthy/)) - [splash screen](https://gitlab.eclipse.org/eclipsefdn/helpdesk/-/issues/5332)
 * Builds: [latest unreleased](https://download.eclipse.org/technology/epp/staging/) → [released](https://download.eclipse.org/technology/epp/downloads/release/2026-03/) ([Jenkins](https://ci.eclipse.org/packaging/job/simrel.epp-tycho-build), [*.aggrcon](https://github.com/eclipse-simrel/simrel.build/commits/main), update sites: [staging](https://download.eclipse.org/staging/2026-03), [release](http://download.eclipse.org/releases/2026-03))
@@ -70,7 +70,7 @@
 
 ### Features to show
 
- * **Java<!-- [📽️](https://youtu.be/3GIT1n12nVA?t=18)-->**
+ * **Java [📽️](https://youtu.be/Ik-sitUBWII?t=17)**
      * Java 26 support [via Marketplace probably soon](https://marketplace.eclipse.org/search?search_api_fulltext=Java+26) ([issue](https://github.com/eclipse-jdt/eclipse.jdt.core/issues/4483)/[branch](https://github.com/eclipse-jdt/eclipse.jdt.core/tree/BETA_JAVA26)/[update site](https://download.eclipse.org/eclipse/updates/4.39-Y-builds/))
      * Java editor
         * [New Convert _Class to Record..._ quick assist and refactoring](https://eclipse.dev/eclipse/markdown/?f=news/4.39/jdt.md#new-convert-class-to-record-quick-assist--refactoring):
@@ -89,10 +89,10 @@
         * [Drag and drop of one or more items from the _Variables_ or the _Expressions_ view into the _Debug Shell_](https://eclipse.dev/eclipse/markdown/?f=news/4.39/jdt.md#drag-and-drop-variables-and-expressions-into-the-debug-shell)
      * ([Performance](https://github.com/search?utf8=%E2%9C%93&q=performance+OR+speed+OR+faster+org%3Aeclipse-jdt+committer-date%3A2025-12-05..2026-03-10&s=committer-date&o=desc&type=Commits))
         * ([Avoid duplicated read of file attributes in ExternalFoldersManager](https://github.com/eclipse-jdt/eclipse.jdt.core/commit/7f2f38b17607e8d06970e8f5ef34ae7be348bc2b))
-     * (**Maven<!-- [📽️](https://youtu.be/3GIT1n12nVA?t=555)-->**)
+     * (**Maven<!-- [📽️](https://youtu.be/Ik-sitUBWII?t=000)-->**)
         * ([Embedded Maven updated from 3.9.11 to 3.9.12](https://github.com/eclipse-m2e/m2e-core/blob/main/RELEASE_NOTES.md#embedded-and-use-maven-3912))
-     * (**Gradle<!-- [📽️](https://youtu.be/3GIT1n12nVA?t=311)-->**)
- * **General/Platform<!-- [📽️](https://youtu.be/3GIT1n12nVA?t=600)-->**
+     * (**Gradle<!-- [📽️](https://youtu.be/Ik-sitUBWII?t=000)-->**)
+ * **General/Platform [📽️](https://youtu.be/Ik-sitUBWII?t=242)**
      * LSP-based _Generic Code Editor_:
         * [Preferences > _TextMate > Templates_](https://github.com/eclipse-tm4e/tm4e/pull/988)
         * ([Inline renaming](https://github.com/eclipse-lsp4e/lsp4e/commit/f5eb029e8d0631f75b322325b9a7d7eaa62ae311), e.g. in a XML file on an element name, hitting Ctrl+Alt+R allows to rename the element name directly without a dialog (same in JavaScript file to rename a variable))
@@ -104,12 +104,12 @@
         * ([Equinox launcher scaling defaults (Windows only)](https://eclipse.dev/eclipse/markdown/?f=news/4.39/platform.md#equinox-launcher-scaling-defaults-windows-only))
      * ([Performance](https://github.com/search?utf8=%E2%9C%93&q=performance+OR+speed+OR+fast+OR+faster+OR+slow+org%3Aeclipse-platform+committer-date%3A2025-12-05..2026-03-10&s=committer-date&o=desc&type=Commits))
         * (Use `String.replace()` instead of `String.replaceAll()` when possible: in [platform](https://github.com/eclipse-platform/eclipse.platform/commit/2446c7303c481f6e8ecc810729b8b2bcd7fd987d) and [platform.ui](https://github.com/eclipse-platform/eclipse.platform.ui/commit/7bb8891bf4f5268f1fb49e0531bc192672d7ce72))
- * **Git<!-- [📽️](https://youtu.be/3GIT1n12nVA?t=000)-->**
+ * **Git [📽️](https://youtu.be/Ik-sitUBWII?t=340)**
      * [Tags in descending instead of ascending order](https://github.com/eclipse-egit/egit/commit/1745af181fca2aa0613244022b34d04633939454) in _Git Repositories_ view and in the right-click > _Compare With > Branch, Tag, or Reference ..._ dialog, since tags are typically used for releases/versions, with the latest versions usually being of greater interest and therefore better listed at the top
      * [_Git Staging_ view menu: _Reuse Compare Editor_ toggle](https://github.com/eclipse-egit/egit/commit/47e58c9d2053c255f172c4163950beed4326507d) as shortcut for preferences > _Version Control (Team) > Reuse open compare editors when opening comparisons_ (enabled by default)
      * [New option: _Use notification instead of dialog for fetch result_](https://github.com/eclipse-egit/egit/commit/2ef313999cfc3d0508497bb26d14797ebfff78a2) in preferences _Version Control (Team) > Git > Confirmations and Warnings > Use notification instead of dialog for fetch result_ (disabled by default)
      * ([Support for `merge.conflictstyle=diff3`](https://github.com/eclipse-jgit/jgit/commit/d4ceb3f8daf02a39d109921d08f79bf98774e925))
- * (**Web<!-- [📽️](https://youtu.be/3GIT1n12nVA?t=674)-->**)
+ * (**Web<!-- [📽️](https://youtu.be/Ik-sitUBWII?t=000)-->**)
  * (**Under development**)
     * ([Initiative 31](https://github.com/swt-initiative31/): Prototyping work for candidate technology evaluation on Eclipse SWT)
     * ([JDT to support javac instead of ejc](https://www.eclipse.org/lists/jdt-dev/msg02333.html) driven by jdtls: [incubator](https://github.com/eclipse-jdtls/eclipse-jdt-core-incubator/labels/javac), [commits](https://github.com/eclipse-jdt/eclipse.jdt.core/compare/master...eclipse-jdtls:eclipse-jdt-core-incubator:dom-with-javac))
