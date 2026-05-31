@@ -39,7 +39,7 @@
 
  * Java, Maven, Gradle
     * Java development tools (JDT) 4.38→**4.39**: [Eclipse 4.39 - New and Noteworthy - Java Development Tools](https://www.eclipse.org/eclipse/news/4.39/jdt.php) ([log](https://github.com/eclipse-platform/www.eclipse.org-eclipse/commits/master/news/4.39/jdt.md)), commits [core](https://github.com/eclipse-jdt/eclipse.jdt.core/commits/master) [UI](https://github.com/eclipse-jdt/eclipse.jdt.ui/commits/master)
-        * [Java 26](https://jdk.java.net/26/): issues [core](https://github.com/eclipse-jdt/eclipse.jdt.core/issues/4405)/[UI](https://github.com/eclipse-jdt/eclipse.jdt.ui/issues/2495), [Marketplace?](https://marketplace.eclipse.org/search?search_api_fulltext=Java+26)
+        * [Java 26](https://jdk.java.net/26/): issues [core](https://github.com/eclipse-jdt/eclipse.jdt.core/issues/4405)/[UI](https://github.com/eclipse-jdt/eclipse.jdt.ui/issues/2495), [Marketplace](https://marketplace.eclipse.org/content/java-26-support-eclipse-2026-03-439)
     * (EclEmma (Java code coverage) 3.1.11: [changes](https://www.eclemma.org/changes.html) ([JaCoCo](https://www.jacoco.org/jacoco/trunk/doc/changes.html)), [commits](https://github.com/eclipse/eclemma/commits/master), [bugs](https://bugs.eclipse.org/bugs/buglist.cgi?product=Eclemma&query_format=advanced&order=changeddate%20DESC))
     * M2Eclipse (Maven) 2.10.0→**2.11.0**: [release notes](https://github.com/eclipse-m2e/m2e-core/blob/master/RELEASE_NOTES.md#2110), [commits](https://github.com/eclipse-m2e/m2e-core/compare/2.10.0...2.11.0), [issues](https://github.com/eclipse-m2e/m2e-core/issues?q=is%3Aissue+sort%3Aupdated-desc+is%3Aclosed)
         * (LemMinx-Maven 0.12.0 ([included via m2e](https://github.com/eclipse-m2e/m2e-core/blob/master/org.eclipse.m2e.editor.lemminx/pom.xml#L48)): [release notes](https://github.com/eclipse/lemminx-maven/releases/tag/0.12.0), [commits](https://github.com/eclipse/lemminx-maven/compare/0.11.1...0.12.0), [issues](https://github.com/eclipse/lemminx-maven/issues?q=is%3Aissue+sort%3Aupdated-desc+is%3Aclosed))
@@ -71,7 +71,7 @@
 ### Features to show
 
  * **Java [📽️](https://youtu.be/Ik-sitUBWII?t=17)**
-     * Java 26 support [via Marketplace probably soon](https://marketplace.eclipse.org/search?search_api_fulltext=Java+26) ([issue](https://github.com/eclipse-jdt/eclipse.jdt.core/issues/4483)/[branch](https://github.com/eclipse-jdt/eclipse.jdt.core/tree/BETA_JAVA26)/[update site](https://download.eclipse.org/eclipse/updates/4.39-Y-builds/))
+     * Java 26 support [via Marketplace](https://marketplace.eclipse.org/content/java-26-support-eclipse-2026-03-439) ([issue](https://github.com/eclipse-jdt/eclipse.jdt.core/issues/4483)/[branch](https://github.com/eclipse-jdt/eclipse.jdt.core/tree/BETA_JAVA26)/[update site](https://download.eclipse.org/eclipse/updates/4.39-Y-builds/))
      * Java editor
         * [New Convert _Class to Record..._ quick assist and refactoring](https://eclipse.dev/eclipse/markdown/?f=news/4.39/jdt.md#new-convert-class-to-record-quick-assist--refactoring):
            * _Refactor > Convert Class to Record..._
