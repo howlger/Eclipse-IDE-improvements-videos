@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<message>
+    <header>
+        <messageId>a1b2c3d4-e5f6-7890-abcd-ef1234567890</messageId>
+        <timestamp>2026-09-08T14:32:00Z</timestamp>
+        <sourceSystem>OrderService</sourceSystem>
+        <destinationQueue>orders.new</destinationQueue>
+        <contentType>application/xml</contentType>
+        <priority>5</priority>
+    </header>
+    <body>
+        <order>
+            <orderId>ORD-100234</orderId>
+            <customerId>CUST-8891</customerId>
+            <orderDate>2026-09-08</orderDate>
+            <items>
+                <item>
+                    <sku>SKU-4471</sku>
+                    <description>Wireless Mouse</description>
+                    <quantity>2</quantity>
+                    <unitPrice>19.99</unitPrice>
+                </item>
+                <item>
+                    <sku>SKU-9021</sku>
+                    <description>USB-C Cable</description>
+                    <quantity>1</quantity>
+                    <unitPrice>9.99</unitPrice>
+                </item>
+            </items>
+            <totalAmount>49.97</totalAmount>
+            <currency>EUR</currency>
+        </order>
+    </body>
+</message>

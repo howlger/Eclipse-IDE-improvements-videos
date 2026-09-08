@@ -30,7 +30,7 @@
 [2019-06](https://github.com/howlger/Eclipse-IDE-improvements-videos/tree/2019-06)
 </sup>
 
-# +++ Work in progress (for September 9, 2026) +++<br>Eclipse IDE 2026-09 Improvements Video <!--# [Eclipse IDE 2026-09 Improvements Video](https://youtu.be/Ik-4w6Y3RVd5Hc)-->
+# [Eclipse IDE 2026-09 Improvements Video](https://youtu.be/slu7xCKaSro)
 
 * [September 9, 2026](https://calendar.google.com/calendar/event?eid=NHI4MGZvb3ByZjhqdGhoY2w0MHZlM2ZwZDkgZ2NoczdubTRudnBtODM3NDY5ZGRqOXRqbGtAZw&ctz=Europe/Berlin) ([calendar](https://calendar.google.com/calendar/embed?src=gchs7nm4nvpm837469ddj9tjlk@group.calendar.google.com&ctz=Europe/Berlin)) - [wiki](https://github.com/eclipse-simrel/.github/blob/main/wiki/Simultaneous_Release.md) - [website](https://eclipseide.org/) ([New & Noteworthy](https://eclipseide.org/release/noteworthy/2026-09/)) - [splash screen](https://gitlab.eclipse.org/eclipsefdn/helpdesk/-/issues/6906)
 * Builds: [latest unreleased](https://download.eclipse.org/technology/epp/staging/) → [released](https://download.eclipse.org/technology/epp/downloads/release/2026-09/) ([*.aggrcon](https://github.com/eclipse-simrel/simrel.build/commits/main), update sites: [staging](https://download.eclipse.org/staging/2026-09), [release](http://download.eclipse.org/releases/2026-09))
@@ -72,7 +72,7 @@
 
 ### Features to show
 
- * **Java<!-- [📽️](https://youtu.be/4w6Y3RVd5Hc?t=16)-->**
+ * **Java [📽️](https://youtu.be/slu7xCKaSro?t=17)**
      * Java 27 support [via Marketplace](https://marketplace.eclipse.org/search?search_api_fulltext=Java+27) probably soon ([issue](https://github.com/eclipse-jdt/eclipse.jdt.core/issues/4946)/[branch](https://github.com/eclipse-jdt/eclipse.jdt.core/tree/BETA_JAVA27)/[update site](https://download.eclipse.org/eclipse/updates/4.41-Y-builds/))
      * [Eclipse IDE now requires and is shipped with Java 25](https://github.com/eclipse-packaging/packages/blob/master/CHANGELOG.md#2026-09)
         * For Windows on ARM (AArch64/ARM64), the [Microsoft JDK 25.0.4.1](https://learn.microsoft.com/en-us/java/openjdk/download#openjdk-25041-lts--see-previous-releases) is shipped as there is still no [Eclipse Adoptium Temurin JDK 25.0.4.1+1 for Windows AArch64](https://github.com/adoptium/temurin25-binaries/releases/tag/jdk-25.0.4.1%2B1)
@@ -86,19 +86,17 @@
      * ([Performance](https://github.com/search?utf8=%E2%9C%93&q=performance+OR+speed+OR+faster+org%3Aeclipse-jdt+committer-date%3A2026-06-05..2026-09-10&s=committer-date&o=desc&type=Commits))
         * ([Use Hash Lookup in OutlineTreeViewer](https://github.com/eclipse-jdt/eclipse.jdt.ui/pull/3009))
         * ([Improve performance](https://github.com/eclipse-jdt/eclipse.jdt.core/commit/67256f986a442c728dee08d6884909292ae74d06))
-     * (**Maven<!-- [📽️](https://youtu.be/4w6Y3RVd5Hc?t=000)-->**)
-     * (**Gradle<!-- [📽️](https://youtu.be/4w6Y3RVd5Hc?t=000)-->**)
- * **General/Platform<!-- [📽️](https://youtu.be/4w6Y3RVd5Hc?t=222)-->**
+     * (**Maven<!-- [📽️](https://youtu.be/slu7xCKaSro?t=000)-->**)
+     * (**Gradle<!-- [📽️](https://youtu.be/slu7xCKaSro?t=000)-->**)
+ * **General/Platform [📽️](https://youtu.be/slu7xCKaSro?t=180)**
      * [Text filter in _Problems_, _Bookmarks_, _Markers_ and _Tasks_ views](https://eclipse.dev/eclipse/markdown/?f=news/4.41/platform.md#text-filter-for-problems-tasks-bookmarks-and-markers-views): shown by default; can be toggled in the view menu _Show text filter_
      * [_Console_ view: zoom in and out](https://eclipse.dev/eclipse/markdown/?f=news/4.41/platform.md#zoom-in-and-out-in-the-console-view) via `Ctrl`+`+` / `Ctrl`+`-`
      * _Terminal_ view
         * [Reorder terminal tabs by drag and drop](https://eclipse.dev/eclipse/markdown/?f=news/4.41/platform.md#reorder-terminal-tabs-by-drag-and-drop)
         * [New preference to disable reopening terminals after restart](https://eclipse.dev/eclipse/markdown/?f=news/4.41/platform.md#disable-reopening-terminals-after-restart) in the preferences > _Terminal_, _Reopen terminals after restart_; enabled by default to preserve the same behavior as before 
-     * Text editors
-        * [Customizable key bindings for the find/replace overlay](https://eclipse.dev/eclipse/markdown/?f=news/4.41/platform.md#customizable-key-bindings-for-the-findreplace-overlay) when the find/replace overlay is focused (only for find/replace overlay, not for the classic find/replace dialog)
-        * _Find/Replace_ overlay
-           * [Customizable key bindings](https://eclipse.dev/eclipse/markdown/?f=news/4.41/platform.md#customizable-key-bindings-for-the-findreplace-overlay)
-           * [Content assist for regular expressions](https://eclipse.dev/eclipse/markdown/?f=news/4.41/platform.md#content-assist-for-regular-expressions-in-the-findreplace-overlay-available-in-all-editors)
+     * _Find/Replace_ overlay (Ctrl+F) in text editors:
+        * [Customizable key bindings](https://eclipse.dev/eclipse/markdown/?f=news/4.41/platform.md#customizable-key-bindings-for-the-findreplace-overlay) when the find/replace overlay is focused (only for find/replace overlay, not for the classic find/replace dialog)
+        * ([Content assist for regular expressions](https://eclipse.dev/eclipse/markdown/?f=news/4.41/platform.md#content-assist-for-regular-expressions-in-the-findreplace-overlay-available-in-all-editors))
      * [Compare editor: Unified diff](https://eclipse.dev/eclipse/markdown/?f=news/4.41/platform.md#unified-diff-in-the-compare-editor): disabled by default; can be enabled in the preferences _General > Compare/Patch > EXPERIMENTAL: Use Unified Diff instead of 2-way compare when possible_
      * [UI](https://github.com/search?utf8=%E2%9C%93&q=dark+OR+light+OR+theme+OR+layout+org%3Aeclipse-platform+org%3Aeclipse-jdt+committer-date%3A2026-06-05..2026-09-10&s=committer-date&type=Commits)
         * [Unsaved changes indicator on tabs is now the default](https://eclipse.dev/eclipse/markdown/?f=news/4.41/platform.md#unsaved-changes-indicator-on-tabs-is-now-the-default)
@@ -113,16 +111,16 @@
         * ([Faster native file system access on Linux x86_64](https://eclipse.dev/eclipse/markdown/?f=news/4.41/platform.md#faster-native-file-system-access-on-linux-x86_64))
         * ([Faster and size-consistent drawing of scaled images (Windows only)](https://eclipse.dev/eclipse/markdown/?f=news/4.41/platform.md#faster-and-size-consistent-drawing-of-scaled-images-on-windows))
         * ([Avoid a second tree lookup in Workspace.getResourceInfo](https://github.com/eclipse-platform/eclipse.platform/commit/f6c2d1def2b06f4bc91b6b800b4e98ea616a2745))
-     * Debug
-        * [_Resume Other Threads_](https://eclipse.dev/eclipse/markdown/?f=news/4.41/platform.md#resume-other-threads-during-debugging)
+     * (Debug)
+        * ([_Resume Other Threads_](https://eclipse.dev/eclipse/markdown/?f=news/4.41/platform.md#resume-other-threads-during-debugging))
      * ([Single sign-on enabled by default for Edge/WebView2 browser](https://eclipse.dev/eclipse/markdown/?f=news/4.41/platform.md#single-sign-on-enabled-by-default-for-edgewebview2-browser))
      * ([TextMate Language Pack updated](https://github.com/eclipse-tm4e/tm4e/pull/1030))
- * **Git<!-- [📽️](https://youtu.be/4w6Y3RVd5Hc?t=468)-->**
-     * [_Close Projects Outside Repository_](https://github.com/eclipse-egit/egit/commit/4c9b249d47475c424315b33f93ffbe81c61fd5d2)
+ * **Git [📽️](https://youtu.be/slu7xCKaSro?t=442)**
      * [Right-click menu _Team > Pull_ is enabled for mixed selections containing at least one Git repository](https://github.com/eclipse-egit/egit/commit/e54f5631f158061ddc1673da6c16ebb0f8f6a861) (instead of, as before, disabling _Pull_ when it is not applicable to all selected items)
+     * [_Close Projects Outside Repository_](https://github.com/eclipse-egit/egit/commit/4c9b249d47475c424315b33f93ffbe81c61fd5d2)
      * ([Simple Fetch for each remote in right-click menu _Team > Remote_](https://github.com/eclipse-egit/egit/issues/185) ([commit](https://github.com/eclipse-egit/egit/commit/0417b979e60bfdd21866e845b1b0c26a49b88fbf)))
      * ([_Staging_ view: Open the submodule's repository on double-click](https://github.com/eclipse-egit/egit/commit/f95538e2b79f275c8513710680b6f0da8369c9a0))
- * **Web<!-- [📽️](https://youtu.be/4w6Y3RVd5Hc?t=000)-->**
+ * **Web [📽️](https://youtu.be/slu7xCKaSro?t=483)**
      * TypeScript 6.0 support, e.g. [less context-sensitivity on this-less functions](https://devblogs.microsoft.com/typescript/announcing-typescript-6-0/#less-context-sensitivity-on-this-less-functions)
      * [XML Minify](https://github.com/redhat-developer/vscode-xml/pull/1139) ([commit](https://github.com/eclipse-lemminx/lemminx/pull/1774))
      * ([Support XPath predicates with wildcards](https://github.com/eclipse-lemminx/lemminx/pull/1762))

@@ -1,5 +1,5 @@
-set IDE=java-2026-06
-set REPO=repo1
+set IDE=java-2026-09
+set REPO=repo
 
 set ECLIPSE_DIR=%USERPROFILE%\eclipse\%IDE%
 set ECLIPSE_P2_CONFIG_ZIP=%ECLIPSE_DIR%\%IDE%.7z
@@ -10,6 +10,7 @@ set REPO_DIR=%USERPROFILE%\git\%REPO%
 set REPO_ZIP=%USERPROFILE%\git\%REPO%.7z
 
 :: start something or copy something to the clipboard
+echo|set/p=record Box(@Deprecated @SuppressWarnings("rawtypes") List items) {}|clip
 :: (echo ^^^<!DOCTYPE html^^^>&echo ^^^<html lang="en"^^^>&echo ^^^<head^^^>&echo ^^^<meta charset="UTF-8"^^^>&echo ^^^<title^^^>^^^</title^^^>&echo ^^^</head^^^>&echo ^^^<body^^^>&echo.&echo ^^^</body^^^>&echo ^^^</html^^^>) | clip
 ::start C:\Users\Howlger\eclipse-installer\eclipse-inst.exe
 ::echo|set/p=^^^<project.build.sourceEncoding^^^>UTF-8^^^</project.build.sourceEncoding^^^>|clip
